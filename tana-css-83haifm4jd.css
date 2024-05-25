@@ -227,7 +227,7 @@ input {
 
 :has(span[data-tag="in progress"]) > span[data-role="editable"]:before {
     color: var(--picton-500);
-    content: "";
+    content: " ";
     display: inline-block; /* Ensure the pseudo-element is treated as an inline-block */
     animation: spin 2s linear infinite; /* Adjust the duration as needed */
 }
