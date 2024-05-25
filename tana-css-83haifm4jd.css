@@ -1,0 +1,158 @@
+* {
+	font-family: "iA Writer Quattro V", "Font Awesome 6 Pro", sans-serif !important;
+}
+
+:root {
+  /* Accent */
+  --picton-100: #CBFEFE;
+  --picton-200: #98F6FE;
+  --picton-300: #65E7FE;
+  --picton-400: #3FD3FD;
+  --picton-500: #00B4FC;
+  --picton-600: #008CD8;
+  --picton-700: #0068B5;
+  --picton-800: #004A92;
+  --picton-900: #003578;
+
+  /* Danger */
+  --tomato-100: #FFE7D8;
+  --tomato-200: #FFC9B2;
+  --tomato-300: #FFA58B;
+  --tomato-400: #FF826F;
+  --tomato-500: #FF493F;
+  --tomato-600: #DB2E33;
+  --tomato-700: #B71F31;
+  --tomato-800: #93142D;
+  --tomato-900: #7A0C2B;
+
+  /* Warning */
+  --canary-100: #FFFDD1;
+  --canary-200: #FFFAA4;
+  --canary-300: #FFF776;
+  --canary-400: #FFF454;
+  --canary-500: #FFEF1C;
+  --canary-600: #DBCB14;
+  --canary-700: #B7A90E;
+  --canary-800: #938708;
+  --canary-900: #7A6E05;
+
+  /* Success */
+  --kelly-100: #EAFBD5;
+  --kelly-200: #D1F8AD;
+  --kelly-300: #ACEB81;
+  --kelly-400: #87D85E;
+  --kelly-500: #56BF2F;
+  --kelly-600: #3CA422;
+  --kelly-700: #268917;
+  --kelly-800: #156E0E;
+  --kelly-900: #095B09;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"] {
+  background: var(--canary-100) !important;
+  border-width: 1px !important;
+  color: var(--canary-700);
+  border-color: var(--canary-700);
+  opacity: 1 !important;
+  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: not-allowed;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"],
+[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"]:hover {
+  color: var(--canary-500);
+  border-color: var(--canary-600);
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"] {
+  background: var(--kelly-100) !important;
+  border-width: 1px !important;
+  color: var(--kelly-500);
+  border-color: var(--kelly-700);
+  opacity: 1 !important;
+  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  cursor: not-allowed;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"],
+[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"]:hover {
+  color: var(--kelly-500);
+  border-color: var(--kelly-600);
+}
+
+.hasAvatar {
+	color: var(--bulletColor1);
+	font-size: 0.9em;
+	font-weight: 400;
+	opacity: 0.9;
+	transition: 0.1s !important;
+}
+.hasAvatar:hover {
+	font-size: 1em;
+	opacity: 1;
+}
+
+.inlinerefurl {
+    color: var(--picton-500) !important;
+}
+
+.titleFields {
+    opacity: 0.4;
+    transition: opacity 0.25s ease-in-out;
+}
+.titleFields:hover {
+    opacity: 1;
+}
+.NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked  {
+    background-color: var(--picton-500) !important;
+}
+
+.itemdone-checkbox {
+    opacity: 0.2;
+    transition: opacity 0.25s ease-in-out;
+}
+.itemdone-checkbox:hover {
+    opacity: 1;
+}
+
+mark {
+	background: var(--kelly-300) !important;
+	padding-left: 0.5em !important;
+	padding-right: 0.5em !important;
+	border-radius: 5px;
+}
+
+[class*="OutlinerItem-module_children"] {
+    padding-bottom: 0px;
+}
+
+/* Experimemtal: special, in-line formatting, currently being used for  */
+
+b > i {
+    text-decoration: none;
+    color: #1C1D22 !important;
+    font-family: "JetBrains Mono", "Font Awesome 6 Pro" !important;
+    font-style: normal;
+}
+
+s, del {
+    color: var(--tomato-500) !important; /* Example color */
+    text-decoration: line-through;
+}
+
+/* Override color for all tags */
+  span[data-tag] {
+  --templateColor: #D9D8E1 !important;
+  --templateColorDimmed: transparent !important;
+  border: 1px solid #D9D8E1;
+}
