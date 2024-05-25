@@ -1,51 +1,57 @@
 * {
-	font-family: "MonaLisa", "Font Awesome 6 Pro", sans-serif !important;
+	font-family: "MonaLisa", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.tw-flex-col .tw-items-end .NodePanelAvatar-module_avatar__Kfqby span {
+  opacity: 0.5;
 }
 
 :root {
   /* Accent */
-  --picton-100: #CBFEFE;
-  --picton-200: #98F6FE;
-  --picton-300: #65E7FE;
-  --picton-400: #3FD3FD;
-  --picton-500: #00B4FC;
-  --picton-600: #008CD8;
-  --picton-700: #0068B5;
-  --picton-800: #004A92;
-  --picton-900: #003578;
+  --picton-100: #D4DCFD;
+  --picton-200: #AABAFB;
+  --picton-300: #7D92F3;
+  --picton-400: #5B72E7;
+  --picton-500: #2A44D7;
+  --picton-600: #1E33B8;
+  --picton-700: #15259A;
+  --picton-800: #0D187C;
+  --picton-900: #081067;
 
   /* Danger */
-  --tomato-100: #FFE7D8;
-  --tomato-200: #FFC9B2;
-  --tomato-300: #FFA58B;
-  --tomato-400: #FF826F;
-  --tomato-500: #FF493F;
-  --tomato-600: #DB2E33;
-  --tomato-700: #B71F31;
-  --tomato-800: #93142D;
-  --tomato-900: #7A0C2B;
+  --tomato-100: #FEE7D1;
+  --tomato-200: #FDC8A4;
+  --tomato-300: #FBA276;
+  --tomato-400: #F87E54;
+  --tomato-500: #F4441D;
+  --tomato-600: #D12915;
+  --tomato-700: #AF130E;
+  --tomato-800: #8D090F;
+  --tomato-900: #750513;
 
   /* Warning */
-  --canary-100: #FFFDD1;
-  --canary-200: #FFFAA4;
-  --canary-300: #FFF776;
-  --canary-400: #FFF454;
-  --canary-500: #FFEF1C;
-  --canary-600: #DBCB14;
-  --canary-700: #B7A90E;
-  --canary-800: #938708;
-  --canary-900: #7A6E05;
+  --canary-100: #FEF8CB;
+  --canary-200: #FEEF98;
+  --canary-300: #FEE365;
+  --canary-400: #FDD83F;
+  --canary-500: #FCC500;
+  --canary-600: #D8A400;
+  --canary-700: #B58500;
+  --canary-800: #926800;
+  --canary-900: #785300;
 
   /* Success */
-  --kelly-100: #EAFBD5;
-  --kelly-200: #D1F8AD;
-  --kelly-300: #ACEB81;
-  --kelly-400: #87D85E;
-  --kelly-500: #56BF2F;
-  --kelly-600: #3CA422;
-  --kelly-700: #268917;
-  --kelly-800: #156E0E;
-  --kelly-900: #095B09;
+  --kelly-100: #EAFDD3;
+  --kelly-200: #D1FBA9;
+  --kelly-300: #AFF57C;
+  --kelly-400: #8DEC5A;
+  --kelly-500: #5CE028;
+  --kelly-600: #40C01D;
+  --kelly-700: #28A114;
+  --kelly-800: #15810C;
+  --kelly-900: #086B07;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*="Warning:"] {
@@ -69,7 +75,7 @@
   border-color: var(--canary-600);
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"] {
+[class^="Button-module_buttonGroup__"] [aria-label*="Action:"] {
   background: var(--kelly-100) !important;
   border-width: 1px !important;
   color: var(--kelly-500);
@@ -78,16 +84,35 @@
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
-  cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"],
-[class^="Button-module_buttonGroup__"] [aria-label*="Loop is in progress"]:hover {
+[class^="Button-module_buttonGroup__"] [aria-label*="Action:"],
+[class^="Button-module_buttonGroup__"] [aria-label*="Action:"]:hover {
   color: var(--kelly-500);
   border-color: var(--kelly-600);
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Info:"] {
+  background: var(--picton-100) !important;
+  border-width: 1px !important;
+  color: var(--picton-500);
+  border-color: var(--picton-700);
+  opacity: 1 !important;
+  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*="Info:"],
+[class^="Button-module_buttonGroup__"] [aria-label*="Info:"]:hover {
+  color: var(--picton-500);
+  border-color: var(--picton-600);
 }
 
 .hasAvatar {
@@ -97,6 +122,7 @@
 	opacity: 0.9;
 	transition: 0.1s !important;
 }
+
 .hasAvatar:hover {
 	font-size: 1em;
 	opacity: 1;
@@ -113,6 +139,7 @@
 .titleFields:hover {
     opacity: 1;
 }
+
 .NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked  {
     background-color: var(--picton-500) !important;
 }
@@ -136,7 +163,7 @@ mark {
     padding-bottom: 0px;
 }
 
-/* Experimemtal: special, in-line formatting, currently being used for  */
+/* Experimemtal: special, in-line formatting */
 
 b > i {
     text-decoration: none;
@@ -155,4 +182,48 @@ s, del {
   --templateColor: #D9D8E1 !important;
   --templateColorDimmed: transparent !important;
   border: 1px solid #D9D8E1;
+}
+
+/* Headers */
+
+.PlainListItem-module_wrapper__spmPJ .isSection [data-role="editable"], .tw-flex-col .tw-flex-col .tw-inline-flex [data-role="editable"]
+{
+  font-family: "MonoLisa" !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.008em;
+}
+
+.NodePanelBanner-module_coverImageWrapper__BqFgB {
+    position: relative;
+    display: inline-block; /* Ensure the element has a bounding box */
+}
+
+.NodePanelBanner-module_coverImageWrapper__BqFgB::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Increase the height for a smoother transition */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
+}
+
+input {
+  caret-color: var(--picton-500);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+:has(span[data-tag="in progress"]) > span[data-role="editable"]:before {
+    color: var(--picton-500);
+    content: " ï„ ";
+    display: inline-block; /* Ensure the pseudo-element is treated as an inline-block */
+    animation: spin 2s linear infinite; /* Adjust the duration as needed */
 }
