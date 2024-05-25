@@ -1,5 +1,7 @@
 * {
-	font-family: "Monaspace Neon Var", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+	font-family: "iA Writer Quattro V", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .tw-flex-col .tw-items-end .NodePanelAvatar-module_avatar__Kfqby span {
