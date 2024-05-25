@@ -195,8 +195,8 @@ s, del {
   font-weight: 700;
   letter-spacing: 0.008em;
   color: inherit; /* Ensure text color remains unchanged */
-  -webkit-text-decoration: underline wavy;
-  text-decoration: underline wavy;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
   text-decoration-color: #2A44D780; /* Set underline color */
 }
 
