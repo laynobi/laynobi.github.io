@@ -186,14 +186,18 @@ s, del {
 
 /* Headers */
 
-.PlainListItem-module_wrapper__spmPJ .isSection [data-role="editable"], .tw-flex-col .tw-flex-col .tw-inline-flex [data-role="editable"]
-{
+.PlainListItem-module_wrapper__spmPJ .isSection [data-role="editable"], 
+.tw-flex-col .tw-flex-col .tw-inline-flex [data-role="editable"] {
   font-family: "MonoLisa" !important;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.008em;
+  color: inherit; /* Ensure text color remains unchanged */
+  -webkit-text-decoration: underline wavy;
+  text-decoration: underline wavy;
+  text-decoration-color: var(--picton-500); /* Set underline color */
 }
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
