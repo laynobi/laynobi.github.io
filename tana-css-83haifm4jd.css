@@ -299,3 +299,22 @@ opacity: 0.5;
     pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
 }
 
+[data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
+    opacity: 0.2;
+    transition: opacity 0.7s ease-in-out, max-height 2s ease-in-out;
+    max-height: 1.2em; /* Adjust this value to fit the desired single line height */
+    overflow: hidden;
+}
+
+[data-list-items="true"] .NodeListView-module_hiddenFields__BXUql:before {
+    content: "";
+}
+
+[data-list-items="true"] .NodeListView-module_hiddenFields__BXUql:hover {
+    opacity: 1;
+    max-height: 100em; /* A large value to ensure it expands fully */
+}
+
+[data-list-items="true"] .NodeListView-module_hiddenFields__BXUql:hover:before {
+    content: "";
+}
