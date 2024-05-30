@@ -82,7 +82,7 @@
 
 /* Warning */ 
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: #FFF3D5 !important;
   border-width: 0px !important;
   color: #9A6E00;
@@ -97,8 +97,8 @@
   overflow: hidden;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #9A6E00;
  background: #FFF3D5 !important;
 }
