@@ -80,7 +80,9 @@
   --kelly-900: #086B07;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"] {
+/* Warning */ 
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: #FFF3D5 !important;
   border-width: 0px !important;
   color: #9A6E00;
@@ -95,10 +97,34 @@
   overflow: hidden;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"],
-[class^="Button-module_buttonGroup__"] [aria-label*="Warning:"]:hover {
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #9A6E00;
 }
+
+/* Danger */
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+  background: #DF464C !important;
+  border-width: 0px !important;
+  color: #CB2733;
+  opacity: 1 !important;
+  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 700;
+	border-radius: 5px !important;
+  cursor: not-allowed;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+  color: #CB2733;
+}
+
+/* Success */
 
 [class^="Button-module_buttonGroup__"] [aria-label*="Action:"] {
   background: var(--kelly-100) !important;
@@ -242,18 +268,3 @@ s, del {
     pointer-events: none; /* Ensure the pseudo-element doesn't interfere with interactions */
 }
 
-input {
-  caret-color: var(--picton-500);
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-:has(span[data-tag="in progress"]) > span[data-role="editable"]:before {
-    color: var(--picton-500);
-    content: " ";
-    display: inline-block; /* Ensure the pseudo-element is treated as an inline-block */
-    animation: spin 2s linear infinite; /* Adjust the duration as needed */
-}
