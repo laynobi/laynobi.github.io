@@ -100,6 +100,7 @@
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #9A6E00;
+ background: #FFF3D5 !important;
 }
 
 /* Danger */
@@ -125,6 +126,7 @@
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #CB2733;
+background: #FFEBE9 !important;
 }
 
 
@@ -140,7 +142,6 @@
   text-transform: uppercase;
   font-weight: 400;
 	border-radius: 5px !important;
-  cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
@@ -149,6 +150,7 @@
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #0F7E65;
+	  background: transparent !important;
 }
 
 /* Regular Command */
@@ -163,7 +165,6 @@
   text-transform: uppercase;
   font-weight: 400;
 	border-radius: 5px !important;
-  cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
