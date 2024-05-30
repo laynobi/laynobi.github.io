@@ -256,10 +256,31 @@ s, del {
   font-weight: 700;
   letter-spacing: 0.008em;
   color: inherit; /* Ensure text color remains unchanged */
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
-  text-decoration-color: #000000; /* Set underline color */
-	 text-underline-offset: 4px;
+}
+
+.tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"]:after {
+  content: "";
+  position: absolute;
+  left: 6px;
+opacity: 0.5;
+  right: 16px;
+  bottom: calc(0.3125em * -0.625);
+  height: 0.3125em;
+  background-image: url("data:image/svg+xml,<svg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2347A68C' stroke-width='14'/></svg>");
+  background-size: auto 100%;
+  z-index: 1;
+}
+
+.tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"]:before {
+  content: "";
+  position: absolute;
+  left: 6px; /* Adjust this value to add margin to the left */
+  right: 16px; /* Adjust this value to add margin to the right */
+  bottom: calc(0.3125em * -0.625);
+  height: 0.3125em;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1));
+ z-index: 2;
+  pointer-events: none; /* Ensure it doesn't interfere with interactions */
 }
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
