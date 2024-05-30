@@ -111,7 +111,7 @@
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 	border-radius: 5px !important;
   cursor: not-allowed;
   letter-spacing: 0.1em;
@@ -126,45 +126,48 @@
 
 /* Success */
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Action:"] {
-  background: var(--kelly-100) !important;
-  border-width: 1px !important;
-  color: var(--kelly-500);
-  border-color: var(--kelly-700);
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+  background: #47A68C !important;
+  border-width: 0px !important;
+  color: #FFFFFF;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
+	border-radius: 5px !important;
+  cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Action:"],
-[class^="Button-module_buttonGroup__"] [aria-label*="Action:"]:hover {
-  color: var(--kelly-500);
-  border-color: var(--kelly-600);
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+  color: #FFFFFF;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Info:"] {
-  background: var(--picton-100) !important;
-  border-width: 1px !important;
-  color: var(--picton-500);
-  border-color: var(--picton-700);
+/* Regular Command */
+
+[class^="Button-module_buttonGroup__"] [aria-label*="⌘"] {
+  background: #F0F0F3 !important;
+  border-width: 0px !important;
+  color: #5E5D62;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
+	border-radius: 5px !important;
+  cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*="Info:"],
-[class^="Button-module_buttonGroup__"] [aria-label*="Info:"]:hover {
-  color: var(--picton-500);
-  border-color: var(--picton-600);
+[class^="Button-module_buttonGroup__"] [aria-label*="⌘"],
+[class^="Button-module_buttonGroup__"] [aria-label*="⌘"]:hover {
+  color: #5E5D62;
 }
+
 
 .hasAvatar {
 	color: var(--bulletColor1);
@@ -180,7 +183,7 @@
 }
 
 .inlinerefurl {
-    color: var(--picton-500) !important;
+    color: #47a68c !important;
 }
 
 .titleFields {
@@ -192,7 +195,7 @@
 }
 
 .NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked  {
-    background-color: var(--picton-500) !important;
+    background-color: #47a68c !important;
 }
 
 .itemdone-checkbox {
