@@ -319,24 +319,28 @@ opacity: 0.5;
     content: "";
 }
 
-
-
 [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] nav [data-testid="tabs-view-current-tab"], [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] nav [data-testid=""] {
   text-transform: uppercase !important;
  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
-	border-radius: 5px !important;
 }
 
 [data-nav-layout-direction="vertical"] nav .navtarget:has(svg) {
   display: none !important;
 }
 
-[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [style="--contentPositionerRootWidth\:\ 376\.796875px\;"] .ContentPositionerContainer-module_container__-TM27 {display: none;}
-
 [data-nav-layout-direction="vertical"] > :last-child:has(.tw-flex-col .GroupedListView-module_header__enIEE) {
   margin-top: -2.5em !important;
 }
 
-[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] .nodeContent > :last-child {display: none;}
+[style="--contentPositionerRootWidth\:\ 376\.796875px\;"] .ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O:has(.searchnode) 
+{
+  text-transform: uppercase !important;
+ font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: absolute;
+  left:3em !important;
+  
+}
