@@ -104,7 +104,8 @@
 
 /* Danger */
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: #FFEBE9 !important;
   border-width: 0px !important;
   color: #CB2733;
@@ -112,7 +113,7 @@
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
-	border-radius: 5px !important;
+  border-radius: 5px !important;
   cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
@@ -120,9 +121,12 @@
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover,
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   color: #CB2733;
 }
+
 
 /* Success */
 
