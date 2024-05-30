@@ -131,9 +131,10 @@
 /* Success */
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
-  background: #47A68C !important;
-  border-width: 0px !important;
-  color: #FFFFFF;
+  background: transparent !important;
+  border-width: 1px !important;
+	border-color: #67B79F !important;
+  color: #0F7E65;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
@@ -147,15 +148,16 @@
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #FFFFFF;
+  color: #0F7E65;
 }
 
 /* Regular Command */
 
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"] {
-  background: #F0F0F3 !important;
-  border-width: 0px !important;
-  color: #5E5D62;
+  background: #transparent !important;
+  border-width: 1px !important;
+	border-color: #BBBAC1 !important;
+  color: #646368;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
@@ -169,7 +171,7 @@
 
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"],
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"]:hover {
-  color: #5E5D62;
+  color: #646368;
 }
 
 
