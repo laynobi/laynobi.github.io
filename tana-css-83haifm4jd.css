@@ -344,3 +344,31 @@ opacity: 0.5;
   left:3em !important;
   
 }
+
+.tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ .tw-flex-col) {
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.9;
+}
+
+.tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ .tw-flex-col):hover {
+  opacity: 1;
+}
+
+.tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ .tw-flex-col)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, white 5%, transparent);
+  pointer-events: none; /* Ensures the gradient does not interfere with hover */
+  z-index: 9; /* Places the gradient behind the content */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ .tw-flex-col):hover::before {
+  opacity: 0;
+}
