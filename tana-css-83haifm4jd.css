@@ -81,14 +81,14 @@
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*="Warning:"] {
-  background: var(--canary-100) !important;
-  border-width: 1px !important;
-  color: var(--canary-700);
-  border-color: var(--canary-700);
+  background: #FFF3D5 !important;
+  border-width: 0px !important;
+  color: #9A6E00;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
   font-weight: 400;
+	border-radius: 5px !important;
   cursor: not-allowed;
   letter-spacing: 0.1em;
   position: relative;
@@ -97,8 +97,7 @@
 
 [class^="Button-module_buttonGroup__"] [aria-label*="Warning:"],
 [class^="Button-module_buttonGroup__"] [aria-label*="Warning:"]:hover {
-  color: var(--canary-500);
-  border-color: var(--canary-600);
+  color: #9A6E00;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*="Action:"] {
