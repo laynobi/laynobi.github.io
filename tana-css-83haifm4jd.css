@@ -338,7 +338,7 @@ text-transform: none;
 }
 
 
-.NodeAsListElement-module_main__kwj8T:focus-within {
+/* .NodeAsListElement-module_main__kwj8T:focus-within {
   background-color: #F4FBF8 !important;
   box-shadow: 0 0 15px 5px rgba(244, 251, 248, 0.75);
   position: relative; /* Ensure that the box-shadow is properly applied */
@@ -355,6 +355,5 @@ caret-color: #008573;
   50% {
     box-shadow: 0 0 25px 10px rgba(244, 251, 248, 0.75);
   }
-}
-
+} */
 
