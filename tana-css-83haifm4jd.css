@@ -12,7 +12,7 @@
     /* Grayscale and Hide icons in sidebar */
     .UnifiedSidebar-module_stack__YlsAk .ObjectAvatar-module_inherit__ciAQC {
         filter: grayscale(100%) brightness(70%);
-        display: none;
+        /* display: none; */
     }
     
     /* Reduce colors of dates, icons, and links in checked todos */
