@@ -341,8 +341,8 @@ text-transform: none;
 
 
 .NodeAsListElement-module_main__kwj8T:focus-within {
-  background-color: #F4FBF8 !important;
-  box-shadow: 0 0 15px 5px rgba(244, 251, 248, 0.75);
+  background-color: #E5F6F0 !important;
+  box-shadow: 0 0 15px 5px rgba(229, 246, 240, 0.75);
   position: relative; /* Ensure that the box-shadow is properly applied */
   border-radius: 3px; /* Rounded corners */
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
@@ -351,9 +351,10 @@ text-transform: none;
 /* Define the keyframes for the breathing animation */
 @keyframes breathingBackground {
   0%, 100% {
-    box-shadow: 0 0 15px 5px rgba(244, 251, 248, 0.75);
+    box-shadow: 0 0 15px 5px rgba(229, 246, 240, 0.75);
   }
   50% {
-    box-shadow: 0 0 25px 10px rgba(244, 251, 248, 0.75);
+    box-shadow: 0 0 25px 10px rgba(229, 246, 240, 0.75);
   }
 }
+
