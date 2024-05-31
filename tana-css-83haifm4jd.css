@@ -91,7 +91,7 @@
   text-transform: uppercase;
   font-weight: 400;
 	border-radius: 5px !important;
-  cursor: not-allowed;
+  cursor: help;
   position: relative;
   overflow: hidden;
 }
@@ -114,7 +114,7 @@
   text-transform: uppercase;
   font-weight: 400;
   border-radius: 5px !important;
-  cursor: not-allowed;
+  cursor: help;
   position: relative;
   overflow: hidden;
 }
