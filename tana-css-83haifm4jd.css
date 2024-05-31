@@ -331,3 +331,8 @@ text-transform: none;
   font-size: 0.7em;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
 }
+
+/* Increase weight of non-H1 headings */
+.tw-items-start .Heading-module_line-height-compact__g0Fxw .tw-inline-flex [data-role="editable"] {
+  font-weight: 600 !important;
+}
