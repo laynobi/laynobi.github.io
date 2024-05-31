@@ -338,3 +338,22 @@ text-transform: none;
 .tw-items-start .Heading-module_line-height-compact__g0Fxw .tw-inline-flex [data-role="editable"] {
   font-weight: 600 !important;
 }
+
+
+.NodeAsListElement-module_main__kwj8T:focus-within {
+  background-color: #F4FBF8 !important;
+  box-shadow: 0 0 15px 5px rgba(244, 251, 248, 0.75);
+  position: relative; /* Ensure that the box-shadow is properly applied */
+  border-radius: 3px; /* Rounded corners */
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Define the keyframes for the breathing animation */
+@keyframes breathingBackground {
+  0%, 100% {
+    box-shadow: 0 0 15px 5px rgba(244, 251, 248, 0.75);
+  }
+  50% {
+    box-shadow: 0 0 25px 10px rgba(244, 251, 248, 0.75);
+  }
+}
