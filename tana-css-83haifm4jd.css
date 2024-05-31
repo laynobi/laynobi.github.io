@@ -159,14 +159,14 @@ background: #FFEBE9 !important;
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label^="1"] {
   background: transparent !important;
-  border-width: 1px !important;
+  border-width: 2px !important;
   border-color: #EB8F8A !important;
   color: #CF2B35;
   font-size: 0.7em !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 700;
   border-radius: 5px !important;
   letter-spacing: 0.1em;
   position: relative;
