@@ -92,7 +92,6 @@
   font-weight: 400;
 	border-radius: 5px !important;
   cursor: not-allowed;
-  letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
 }
@@ -116,7 +115,6 @@
   font-weight: 400;
   border-radius: 5px !important;
   cursor: not-allowed;
-  letter-spacing: 0.1em;
   position: relative;
   overflow: hidden;
 }
