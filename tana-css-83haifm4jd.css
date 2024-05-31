@@ -152,6 +152,30 @@ background: #FFEBE9 !important;
 	  background: transparent !important;
 }
 
+/* Command - Red */
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+  background: transparent !important;
+  border-width: 1px !important;
+	border-color: #EB8F8A !important;
+  color: #CF2B35;
+	  font-size: 0.7em !important;
+  opacity: 1 !important;
+  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
+  font-weight: 400;
+	border-radius: 5px !important;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""],
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+  color: #CF2B35;
+	  background: transparent !important;
+}
+
 /* Magic */
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
