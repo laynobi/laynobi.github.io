@@ -321,18 +321,6 @@ letter-spacing: normal;
 text-transform: none;
 }
 
-.tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"]:before {
-  content: "";
-  position: absolute;
-  left: 6px; /* Adjust this value to add margin to the left */
-  right: 16px; /* Adjust this value to add margin to the right */
-  bottom: calc(0.3125em * -0.625);
-  height: 0.3125em;
-  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1));
- z-index: 2;
-  pointer-events: none; /* Ensure it doesn't interfere with interactions */
-}
-
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
     position: relative;
     display: inline-block; /* Ensure the element has a bounding box */
