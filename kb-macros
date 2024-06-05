@@ -1,5 +1,5 @@
 {
-  "description": "Map F1, F2, and F3 to custom shortcuts when Tana is active",
+  "description": "Map F1, F2, F3, and F8 to custom shortcuts when Tana is active",
   "manipulators": [
     {
       "type": "basic",
@@ -58,6 +58,29 @@
       "to": [
         {
           "key_code": "6",
+          "modifiers": ["left_control"]
+        }
+      ],
+      "conditions": [
+        {
+          "type": "frontmost_application_if",
+          "bundle_identifiers": [
+            "^inc\\.tana\\.desktop$"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "f8",
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "8",
           "modifiers": ["left_control"]
         }
       ],
