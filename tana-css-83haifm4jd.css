@@ -294,7 +294,8 @@ b > i {
     text-decoration: none;
     color: #1C1D22 !important;
     font-family: "JetBrains Mono", "Font Awesome 6 Pro" !important;
-    font-style: normal;
+    font-style: normal !important;
+font-size: 0.6em !important;
 }
 
 s, del {
