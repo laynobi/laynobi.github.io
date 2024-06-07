@@ -307,6 +307,7 @@ s, del {
   --templateColor: #D9D8E1 !important;
   --templateColorDimmed: transparent !important;
   border: 1px solid #D9D8E1;
+display: none;
 }
 
 /* Headers */
@@ -339,7 +340,7 @@ text-transform: none;
 
 [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
     opacity: 0.2;
-    transition: opacity 0.7s ease-in-out, max-height 2s ease-in-out;
+    transition: opacity 0.7s ease-in-out, max-height 1s ease-in-out;
     max-height: 1.2em; /* Adjust this value to fit the desired single line height */
     overflow: hidden;
 }
