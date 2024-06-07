@@ -339,10 +339,12 @@ text-transform: none;
 }
 
 [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
-    opacity: 0;
+    opacity: 0.3;
     transition: opacity 0.7s ease-in-out, max-height 1s ease-in-out;
     max-height: 1.2em; /* Adjust this value to fit the desired single line height */
     overflow: hidden;
+ font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
+  text-transform: uppercase;
 }
 
 [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql:before {
@@ -361,7 +363,6 @@ text-transform: none;
 [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] nav [data-testid="tabs-view-current-tab"], [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] nav [data-testid=""] {
   text-transform: uppercase !important;
  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
   font-weight: 400;
 }
 
