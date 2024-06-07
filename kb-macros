@@ -1,5 +1,5 @@
 {
-    "description": "Map F1, F2, F3, F6, and F8 to custom shortcuts when Tana is active, with Shift key bypass",
+    "description": "Map F1, F2, F3, F6, and F8 to custom shortcuts when Tana is active",
     "manipulators": [
         {
             "conditions": [
@@ -8,11 +8,6 @@
                         "^inc\\.tana\\.desktop$"
                     ],
                     "type": "frontmost_application_if"
-                },
-                {
-                    "type": "variable_if",
-                    "name": "shift_key_pressed",
-                    "value": 0
                 }
             ],
             "from": {
@@ -42,11 +37,6 @@
                         "^inc\\.tana\\.desktop$"
                     ],
                     "type": "frontmost_application_if"
-                },
-                {
-                    "type": "variable_if",
-                    "name": "shift_key_pressed",
-                    "value": 0
                 }
             ],
             "from": {
@@ -74,11 +64,6 @@
                         "^inc\\.tana\\.desktop$"
                     ],
                     "type": "frontmost_application_if"
-                },
-                {
-                    "type": "variable_if",
-                    "name": "shift_key_pressed",
-                    "value": 0
                 }
             ],
             "from": {
@@ -106,11 +91,6 @@
                         "^inc\\.tana\\.desktop$"
                     ],
                     "type": "frontmost_application_if"
-                },
-                {
-                    "type": "variable_if",
-                    "name": "shift_key_pressed",
-                    "value": 0
                 }
             ],
             "from": {
@@ -138,11 +118,6 @@
                         "^inc\\.tana\\.desktop$"
                     ],
                     "type": "frontmost_application_if"
-                },
-                {
-                    "type": "variable_if",
-                    "name": "shift_key_pressed",
-                    "value": 0
                 }
             ],
             "from": {
@@ -162,33 +137,6 @@
                 }
             ],
             "type": "basic"
-        },
-        {
-            "type": "basic",
-            "from": {
-                "key_code": "left_shift",
-                "modifiers": {
-                    "optional": [
-                        "any"
-                    ]
-                }
-            },
-            "to": [
-                {
-                    "set_variable": {
-                        "name": "shift_key_pressed",
-                        "value": 1
-                    }
-                }
-            ],
-            "to_after_key_up": [
-                {
-                    "set_variable": {
-                        "name": "shift_key_pressed",
-                        "value": 0
-                    }
-                }
-            ]
         }
     ]
 }
