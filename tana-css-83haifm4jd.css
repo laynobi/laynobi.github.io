@@ -339,7 +339,7 @@ text-transform: none;
 }
 
 [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
-    opacity: 0.2;
+    opacity: 0;
     transition: opacity 0.7s ease-in-out, max-height 1s ease-in-out;
     max-height: 1.2em; /* Adjust this value to fit the desired single line height */
     overflow: hidden;
