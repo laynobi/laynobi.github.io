@@ -414,12 +414,10 @@ text-transform: none;
 
 /* Styles for the icon (underline element) */
 .tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] u {
-    color: #E0DFE6;
-    opacity: 0.75;
+    color: #11297F;
     font-weight: 400;
     text-decoration: none;
     margin-right: 0.25em !important; /* Adjust this value for spacing */
-    transition: opacity 0.3s ease; /* Add transition for smooth fade */
 }
 
 /* Add an icon before the text if it contains a <u> element */
