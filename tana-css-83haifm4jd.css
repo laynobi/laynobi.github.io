@@ -430,6 +430,9 @@ text-transform: none;
     opacity: 1;
 }
 
+.tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI [data-workspace-avatar="true"] {display: none !important;}
+
+
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB .tw-relative {
   position: absolute !important;
