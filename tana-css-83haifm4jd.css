@@ -404,3 +404,30 @@ text-transform: none;
   opacity: 0.6;
   font-size: 0.85em;
 }
+
+/* Base styles for the editable element */
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] {
+    display: flex;
+    align-items: center;
+    padding-left: 0 !important; /* Reset any padding */
+}
+
+/* Styles for the icon (underline element) */
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] u {
+    color: black;
+    opacity: 0.75;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 0.25em !important; /* Adjust this value for spacing */
+    transition: opacity 0.3s ease; /* Add transition for smooth fade */
+}
+
+/* Add an icon before the text if it contains a <u> element */
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:has(u)::before {
+    content: ''; /* Replace with your desired icon */
+}
+
+/* Hover effect to fade in the icon */
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:hover u {
+    opacity: 1;
+}
