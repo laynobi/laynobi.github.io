@@ -391,3 +391,16 @@ text-transform: none;
 .tw-items-start .Heading-module_line-height-compact__g0Fxw .tw-inline-flex [data-role="editable"] {
   font-weight: 600 !important;
 }
+
+.tw-items-start [data-testid="plain-list-item"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
+  font-family: "Euclid Circular A" !important;
+  font-style: italic;
+  letter-spacing: 0.015em;
+}
+
+.tw-flex-col .tw-items-start [data-testid="plain-list-item"] [title="Created\ time"] {
+  font-family: "MonoLisa" !important;
+  text-transform: uppercase !important;
+  opacity: 0.6;
+  font-size: 0.85em;
+}
