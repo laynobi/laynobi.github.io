@@ -431,3 +431,15 @@ text-transform: none;
 .tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:hover u {
     opacity: 1;
 }
+
+
+.NodePanelBanner-module_coverImageWrapper__BqFgB .tw-relative {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: bottom left !important;
+}
+
