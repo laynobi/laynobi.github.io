@@ -159,7 +159,7 @@ background: #FFEBE9 !important;
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label^="1"] {
   background: transparent !important;
-  border-width: 2px !important;
+  border-width: 1px !important;
   border-color: #EB8F8A !important;
   color: #CF2B35;
   font-size: 0.7em !important;
@@ -254,7 +254,7 @@ background: #FFEBE9 !important;
 }
 
 .inlinerefurl {
-    color: #0D74CE !important;
+    color: #11297F !important;
 }
 
 .titleFields {
