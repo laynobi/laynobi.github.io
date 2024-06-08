@@ -414,7 +414,7 @@ text-transform: none;
 
 /* Styles for the icon (underline element) */
 .tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] u {
-    color: black;
+    color: #E0DFE6;
     opacity: 0.75;
     font-weight: 400;
     text-decoration: none;
