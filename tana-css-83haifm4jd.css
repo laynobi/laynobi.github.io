@@ -47,6 +47,7 @@ div[data-selected] img {
 	--cmd-border-radius: 3px;
 	--button-font-size: 0.8em;
 	--button-font-size-small: 0.7em;
+	--button-font-weight-heavy: 700;
 	--button-font-weight: 600;
 	--button-font-weight-thin: 400;
 	--button-border-width: 1px;
@@ -180,6 +181,7 @@ div[data-selected] img {
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] span {
 	padding-right: var(--button-icon-padding-right) !important;
+	font-weight: var(--button-font-weight-heavy) !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
@@ -241,6 +243,7 @@ div[data-selected] img {
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] span {
 	padding-right: var(--button-icon-padding-right) !important;
+	font-weight: var(--button-font-weight-heavy) !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
