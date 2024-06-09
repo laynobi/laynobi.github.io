@@ -38,6 +38,7 @@ div[data-selected] img {
 
 :root {
 	--button-border-radius: 7px;
+	--button-font-size: 0.65em;
 	--button-font-weight: 700;
 	--button-border-width: 1px;
 	--button-initial-opacity: 0.3;
@@ -60,17 +61,20 @@ div[data-selected] img {
 	color: var(--yellow-text) !important;
 	opacity: var(--button-initial-opacity) !important;
 	font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
+	font-size: var(--button-font-size) !important;
 	font-weight: var(--button-font-weight) !important;
 	border-radius: var(--button-border-radius) !important;
 	cursor: help !important;
 	position: relative !important;
 	overflow: hidden !important;
+	transition: opacity 0.3s ease-in-out
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
 	color: var(--yellow-text) !important;
 	background: var(--yellow-bg) !important;
+	opacity: 1;
 }
 
 /* Danger */
