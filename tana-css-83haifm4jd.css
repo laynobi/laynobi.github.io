@@ -47,8 +47,8 @@ div[data-selected] img {
 	--cmd-border-radius: 3px;
 	--button-font-size: 0.8em;
 	--button-font-size-small: 0.7em;
-	--button-font-weight-heavy: 700;
-	--button-font-weight: 600;
+	--button-font-weight-heavy: 900;
+	--button-font-weight: 900;
 	--button-font-weight-thin: 400;
 	--button-border-width: 1px;
 	--button-initial-opacity: 0.3;
