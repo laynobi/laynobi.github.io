@@ -143,7 +143,7 @@ div[data-selected] img {
 	position: relative !important;
 	overflow: hidden !important;
 	/* Add the breathing and beating effect animations */
-	animation: breathingEffect 2s infinite, beatingEffect 1s infinite;
+	/* animation: breathingEffect 2s infinite, beatingEffect 1s infinite;*/
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
@@ -171,7 +171,7 @@ div[data-selected] img {
 	position: relative !important;
 	overflow: hidden !important;
 	/* Add the breathing and beating effect animations */
-	animation: breathingEffect 2s infinite, beatingEffect 1s infinite;
+	/* animation: breathingEffect 2s infinite, beatingEffect 1s infinite; */
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
@@ -196,7 +196,7 @@ div[data-selected] img {
 	border-radius: var(--button-border-radius) !important;
 	position: relative !important;
 	overflow: hidden !important;
-	animation: breathing 2s infinite;
+	/*animation: breathing 2s infinite;*/
 	filter: saturate(1.5)
 }
 
@@ -213,11 +213,11 @@ div[data-selected] img {
 	height: 100%;
 	background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 100%);
 	transform: skewX(-25deg);
-	animation: shine 2s infinite;
+	/*animation: shine 2s infinite;*/
 	pointer-events: none;
 }
 
-@keyframes breathing {
+/* @keyframes breathing {
 	0% {
 		box-shadow: 0 0 10px var(--green-bg);
 	}
@@ -236,7 +236,7 @@ div[data-selected] img {
 	100% {
 		left: 125%;
 	}
-}
+}*/
 
 
 
