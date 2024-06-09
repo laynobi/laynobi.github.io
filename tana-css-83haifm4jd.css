@@ -390,7 +390,7 @@ text-transform: none;
 }
 
 .tw-items-start [data-testid="plain-list-item"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
-  font-family: "Euclid Circular A" !important;
+  font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
   font-style: italic;
   letter-spacing: 0.015em;
 }
