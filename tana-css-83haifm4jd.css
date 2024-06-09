@@ -98,6 +98,8 @@ div[data-selected] img {
   opacity: 1 !important;
 }
 
+/* Danger */
+
 /* Define the keyframes for the breathing effect */
 @keyframes breathingEffect {
 	0%, 100% {
@@ -139,6 +141,34 @@ div[data-selected] img {
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+	opacity: 1 !important;
+}
+
+/* Rating: 1 */
+
+/* Define the keyframes for the breathing effect */
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] span {
+	padding-right: var(--button-icon-padding-right) !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+	background: var(--red-bg) !important;
+	border-width: var(--button-border-width) !important;
+	border-color: var(--red-border) !important;
+	color: var(--red-text) !important;
+	font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
+	font-size: var(--button-font-size) !important;
+	font-weight: var(--button-font-weight) !important;
+	border-radius: var(--button-border-radius) !important;
+	cursor: help !important;
+	position: relative !important;
+	overflow: hidden !important;
+	/* Add the breathing and beating effect animations */
+	animation: breathingEffect 2s infinite, beatingEffect 1s infinite;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
 	opacity: 1 !important;
 }
 
@@ -273,6 +303,39 @@ div[data-selected] img {
 
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"]:hover {
   opacity: 1 !important;
+}
+
+[data-intro-transition="true"] > .navtarget {
+	font-family: var(--button-font-family) !important;
+}
+
+/* Rating: 2, 3, 4, 5 */
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] span {
+	padding-right: var(--button-icon-padding-right) !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+	background: var(--grey-bg) !important;
+	border-width: var(--button-border-width) !important;
+	border-color: var(--grey-border) !important;
+	color: var(--grey-text) !important;
+	font-family: var(--button-font-family) !important;
+	font-size: var(--button-font-size-small) !important;
+	font-weight: var(--button-font-weight-thin) !important;
+	border-radius: var(--button-border-radius) !important;
+	position: relative !important;
+	overflow: hidden !important;
+	opacity: 1 !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+	color: var(--grey-text) !important;
+	background: var(--grey-bg) !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+ 	opacity: 1 !important;
 }
 
 [data-intro-transition="true"] > .navtarget {
