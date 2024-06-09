@@ -35,62 +35,31 @@
 }
 
 :root {
-  /* Accent */
-  --picton-100: #D4DCFD;
-  --picton-200: #AABAFB;
-  --picton-300: #7D92F3;
-  --picton-400: #5B72E7;
-  --picton-500: #2A44D7;
-  --picton-600: #1E33B8;
-  --picton-700: #15259A;
-  --picton-800: #0D187C;
-  --picton-900: #081067;
-
-  /* Danger */
-  --tomato-100: #FEE7D1;
-  --tomato-200: #FDC8A4;
-  --tomato-300: #FBA276;
-  --tomato-400: #F87E54;
-  --tomato-500: #F4441D;
-  --tomato-600: #D12915;
-  --tomato-700: #AF130E;
-  --tomato-800: #8D090F;
-  --tomato-900: #750513;
-
-  /* Warning */
-  --canary-100: #FEF8CB;
-  --canary-200: #FEEF98;
-  --canary-300: #FEE365;
-  --canary-400: #FDD83F;
-  --canary-500: #FCC500;
-  --canary-600: #D8A400;
-  --canary-700: #B58500;
-  --canary-800: #926800;
-  --canary-900: #785300;
-
-  /* Success */
-  --kelly-100: #EAFDD3;
-  --kelly-200: #D1FBA9;
-  --kelly-300: #AFF57C;
-  --kelly-400: #8DEC5A;
-  --kelly-500: #5CE028;
-  --kelly-600: #40C01D;
-  --kelly-700: #28A114;
-  --kelly-800: #15810C;
-  --kelly-900: #086B07;
+--button-border-radius: 7px;
+--button-font-weight: 700;
+--button-border-width: 1px;
+--button-initial-opacity: 0.3;
+--button-icon-padding-right: 0.1em;
+--yellow-bg: #FFF7F2;
+--yellow-border: #FEBA95;
+--yellow-text: #C75300;
 }
 
 /* Warning */ 
 
+[class^="Button-module_buttonGroup__"] [aria-label*=""] span {
+  padding-right: var(--button-icon-padding-right) !important;
+}
+
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
-  background: #FFF3D5 !important;
-  border-width: 0px !important;
-  color: #9A6E00 !important;
-  opacity: 1 !important;
-  font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase !important;
-  font-weight: 400 !important;
-  border-radius: 5px !important;
+  background: var(--yellow-bg) !important;
+  border-width: var(--button-border-width) !important;
+	border-color: var(--yellow-border) !important;
+  color: var(--yellow-text) !important;
+  opacity: var(--button-initial-opacity) !important;
+  font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
+  font-weight: var(--button-font-weight) !important;
+  border-radius: var(--button-border-radius) !important;
   cursor: help !important;
   position: relative !important;
   overflow: hidden !important;
@@ -98,8 +67,8 @@
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #9A6E00 !important;
-  background: #FFF3D5 !important;
+  color: var(--yellow-text) !important;
+  background: var(--yellow-bg) !important;
 }
 
 /* Danger */
