@@ -85,21 +85,21 @@
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: #FFF3D5 !important;
   border-width: 0px !important;
-  color: #9A6E00;
+  color: #9A6E00 !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 400;
-	border-radius: 5px !important;
-  cursor: help;
-  position: relative;
-  overflow: hidden;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  border-radius: 5px !important;
+  cursor: help !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #9A6E00;
- background: #FFF3D5 !important;
+  color: #9A6E00 !important;
+  background: #FFF3D5 !important;
 }
 
 /* Danger */
@@ -108,51 +108,48 @@
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: #FFEBE9 !important;
   border-width: 0px !important;
-  color: #CB2733;
+  color: #CB2733 !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 400;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
   border-radius: 5px !important;
-  cursor: help;
-  position: relative;
-  overflow: hidden;
+  cursor: help !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover,
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #CB2733;
-background: #FFEBE9 !important;
+  color: #CB2733 !important;
+  background: #FFEBE9 !important;
 }
-
 
 /* Success */
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
   background: transparent !important;
   border-width: 1px !important;
-	border-color: #67B79F !important;
-  color: #0F7E65;
-	  font-size: 0.7em !important;
+  border-color: #67B79F !important;
+  color: #0F7E65 !important;
+  font-size: 0.7em !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 400;
-	border-radius: 5px !important;
-  letter-spacing: 0.1em;
-  position: relative;
-  overflow: hidden;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  border-radius: 5px !important;
+  letter-spacing: 0.1em !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #0F7E65;
-	  background: transparent !important;
+  color: #0F7E65 !important;
+  background: transparent !important;
 }
-
-/* Command - Red */
 
 /* Command - Red */
 
@@ -161,21 +158,21 @@ background: #FFEBE9 !important;
   background: transparent !important;
   border-width: 1px !important;
   border-color: #EB8F8A !important;
-  color: #CF2B35;
+  color: #CF2B35 !important;
   font-size: 0.7em !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
   border-radius: 5px !important;
-  letter-spacing: 0.1em;
-  position: relative;
-  overflow: hidden;
+  letter-spacing: 0.1em !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover,
 [class^="Button-module_buttonGroup__"] [aria-label^="1"]:hover {
-  color: #CF2B35;
+  color: #CF2B35 !important;
   background: transparent !important;
 }
 
@@ -185,59 +182,59 @@ background: #FFEBE9 !important;
   background: transparent !important;
   border-width: 1px !important;
   border-color: #67B79F !important;
-  color: #0F7E65;
+  color: #0F7E65 !important;
   font-size: 0.7em !important;
   opacity: 1 !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 400;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
   border-radius: 5px !important;
-  letter-spacing: 0.1em;
-  position: relative;
-  overflow: hidden;
-  animation: rainbow-shine 3s infinite;
+  letter-spacing: 0.1em !important;
+  position: relative !important;
+  overflow: hidden !important;
+  animation: rainbow-shine 3s infinite !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""],
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-  color: #0F7E65;
+  color: #0F7E65 !important;
   background: transparent !important;
 }
 
 @keyframes rainbow-shine {
-  0% { color: red; }
-  14% { color: orange; }
-  28% { color: yellow; }
-  42% { color: green; }
-  57% { color: blue; }
-  71% { color: indigo; }
-  85% { color: violet; }
-  100% { color: red; }
+  0% { color: red !important; }
+  14% { color: orange !important; }
+  28% { color: yellow !important; }
+  42% { color: green !important; }
+  57% { color: blue !important; }
+  71% { color: indigo !important; }
+  85% { color: violet !important; }
+  100% { color: red !important; }
 }
-
 
 /* Regular Command */
 
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"] {
-  background: #transparent !important;
+  background: transparent !important;
   border-width: 1px !important;
-	border-color: #BBBAC1 !important;
-  color: #646368;
+  border-color: #BBBAC1 !important;
+  color: #646368 !important;
   opacity: 1 !important;
-	  font-size: 0.6em !important;
+  font-size: 0.6em !important;
   font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-  text-transform: uppercase;
-  font-weight: 700;
-	border-radius: 5px !important;
-  letter-spacing: 0.1em;
-  position: relative;
-  overflow: hidden;
+  text-transform: uppercase !important;
+  font-weight: 400 !important;
+  border-radius: 5px !important;
+  letter-spacing: 0.1em !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"],
 [class^="Button-module_buttonGroup__"] [aria-label*="⌘"]:hover {
-  color: #646368;
+  color: #646368 !important;
 }
+
 
 
 .hasAvatar {
@@ -266,7 +263,7 @@ background: #FFEBE9 !important;
 }
 
 .NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked  {
-    background-color: #0D74CE !important;
+    background-color: #11297F !important;
 }
 
 .itemdone-checkbox {
@@ -443,4 +440,3 @@ text-transform: none;
   background-size: cover !important;
   background-position: bottom left !important;
 }
-
