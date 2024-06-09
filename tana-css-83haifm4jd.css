@@ -22,6 +22,10 @@ div[data-selected] img {
 	filter: grayscale(70%);
 }
 
+.ObjectAvatar-module_large__Thwzw img.ObjectAvatar-module_image__6hnmd {
+	filter: saturate(1.3) !important;
+}
+
 /* Darken icons on hover (same as text) */
 .inlinecontent.hastemplate:hover .inlineavatar {
 	filter: brightness(70%);
