@@ -254,7 +254,7 @@ div[data-selected] img {
 	color: var(--green-text) !important;
 	font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
 	font-size: var(--button-font-size) !important;
-	font-weight: var(--button-font-weight) !important;
+	font-weight: var(--button-font-weight);
 	border-radius: var(--button-border-radius) !important;
 	position: relative !important;
 	overflow: hidden !important;
