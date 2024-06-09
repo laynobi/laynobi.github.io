@@ -258,7 +258,6 @@ div[data-selected] img {
 	border-radius: var(--button-border-radius) !important;
 	position: relative !important;
 	overflow: hidden !important;
-	animation: breathing 2s infinite;
 }
 
 [class^="Button-module_buttonGroup__"] [aria-label*=""] {
@@ -269,19 +268,6 @@ div[data-selected] img {
 [class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
   opacity: 1 !important;
 }
-
-@keyframes breathing {
-	0% {
-		box-shadow: 0 0 10px var(--green-bg);
-	}
-	50% {
-		box-shadow: 0 0 20px var(--green-bg), 0 0 30px var(--green-bg);
-	}
-	100% {
-		box-shadow: 0 0 10px var(--green-bg);
-	}
-}
-
 
 /* Grey */
 
