@@ -626,9 +626,9 @@ span[data-tag] {
 }
 
 /* Items in active session are green */
-.PlainListItem-module_contentWrapper__CcDH9:has(button[aria-label=" Stop tracking time"]) .wrapEditableAndMenu > .editable[data-role="editable"], .tw-flex.tw-gap-1.tw-flex-col:has(button[aria-label=" Stop tracking time"]) .wrapEditableAndMenu > .editable[data-role="editable"]
+.PlainListItem-module_contentWrapper__CcDH9:has(button[aria-label=" Stop tracking time"]) .wrapEditableAndMenu > .editable[data-role="editable"], .tw-flex.tw-gap-1.tw-flex-col:has(button[aria-label=" Stop tracking time"]) .wrapEditableAndMenu > .editable[data-role="editable"], .PlainListItem-module_contentWrapper__CcDH9:has(button[aria-label=" Stop tracking time"]) .wrapEditableAndMenu > .editable.noInteractiveInline
+
  {
-	color: var(--green-text);
 	font-weight: var(--button-font-weight-heavy);
 	stroke-width: 3px;
 	filter: saturate(1.3);
