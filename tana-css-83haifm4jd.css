@@ -46,6 +46,9 @@ div[data-selected] img {
 	--yellow-bg: #FFF7F2;
 	--yellow-border: #FEBA95;
 	--yellow-text: #C75300;
+  --red-bg: #FEF8F7;
+	--red-border: #FEBA95;
+	--red-text: #BF3A41;
 }
 
 /* Warning */
@@ -67,39 +70,47 @@ div[data-selected] img {
 	cursor: help !important;
 	position: relative !important;
 	overflow: hidden !important;
-	transition: opacity 0.3s ease-in-out
+	transition: opacity 0.3s ease-in-out !important;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
 	color: var(--yellow-text) !important;
 	background: var(--yellow-bg) !important;
-	opacity: 1;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+  opacity: 1 !important;
 }
 
 /* Danger */
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""] {
-	background: #FFEBE9 !important;
-	border-width: 0px !important;
-	color: #CB2733 !important;
-	opacity: 1 !important;
-	font-family: "MonoLisa", "Font Awesome 6 Pro" !important;
-	text-transform: uppercase !important;
-	font-weight: 400 !important;
-	border-radius: 5px !important;
+[class^="Button-module_buttonGroup__"] [aria-label*=""] span {
+	padding-right: var(--button-icon-padding-right) !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+	background: var(--red-bg) !important;
+	border-width: var(--button-border-width) !important;
+	border-color: var(--red-border) !important;
+	color: var(--red-text) !important;
+	opacity: var(--button-initial-opacity) !important;
+	font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
+	font-size: var(--button-font-size) !important;
+	font-weight: var(--button-font-weight) !important;
+	border-radius: var(--button-border-radius) !important;
 	cursor: help !important;
 	position: relative !important;
 	overflow: hidden !important;
+	transition: opacity 0.3s ease-in-out !important;
 }
 
-[class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover,
-[class^="Button-module_buttonGroup__"] [aria-label*=""],
-[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
-	color: #CB2733 !important;
-	background: #FFEBE9 !important;
+[class^="Button-module_buttonGroup__"] [aria-label*=""] {
+	color: var(--red-text) !important;
+	background: var(--red-bg) !important;
+}
+
+[class^="Button-module_buttonGroup__"] [aria-label*=""]:hover {
+  opacity: 1 !important;
 }
 
 /* Success */
