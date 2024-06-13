@@ -1,0 +1,37 @@
+on performSmartRule(theRecords)
+    tell application id "DNtp"
+        repeat with theRecord in theRecords
+            try
+                -- Get the URL and name of the current record
+                set theURL to URL of theRecord
+                set theTitle to name of theRecord
+                
+                -- Set the clipboard to the title of the DEVONthink record
+                set the clipboard to theTitle
+                
+                -- Get the first parent of the current record
+                set firstParent to parent 1 of theRecord
+                set firstParentName to name of firstParent
+                
+                -- Check if the name of the first parent starts with a number
+                set firstCharacter to character 1 of firstParentName
+                if firstCharacter is in "0123456789" then
+                    set enclosingGroupName to firstParentName
+                else
+                    -- If not, get the second parent
+                    set secondParent to parent 1 of firstParent
+                    set enclosingGroupName to name of secondParent
+                end if
+                
+                -- Construct the Anybox URL scheme with the specified tags and enclosing group name
+                set tagID to "CB1BC0FA-6B08-43DA-B26E-6D2B9D4ABEF5"
+                set anyboxURL to "anybox://save?text=" & theURL & "&tags=" & tagID & "," & enclosingGroupName
+                
+                -- Open the Anybox URL scheme
+                do shell script "open " & quoted form of anyboxURL
+            on error errMsg number errNum
+                log "Error: " & errMsg & " (Error Number: " & errNum & ")"
+            end try
+        end repeat
+    end tell
+end performSmartRule
