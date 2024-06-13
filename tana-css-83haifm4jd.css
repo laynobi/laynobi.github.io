@@ -518,7 +518,7 @@ span[data-tag] {
 }
 
 /* Base styles for the editable element */
-.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] {
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"], .Heading-module_line-height-compact__g0Fxw [data-role="editable"] {
 	display: flex;
 	align-items: center;
 	padding-left: 0 !important;
@@ -526,7 +526,7 @@ span[data-tag] {
 }
 
 /* Styles for the icon (underline element) */
-.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] u {
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"] u, .Heading-module_line-height-compact__g0Fxw [data-role="editable"] u {
 	color: #11297F;
 	font-weight: 400;
 	text-decoration: none;
@@ -535,13 +535,13 @@ span[data-tag] {
 }
 
 /* Add an icon before the text if it contains a <u> element */
-.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:has(u)::before {
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:has(u)::before, .Heading-module_line-height-compact__g0Fxw [data-role="editable"]:has(u)::before {
 	content: '';
 	/* Replace with your desired icon */
 }
 
 /* Hover effect to fade in the icon */
-.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:hover u {
+.tw-flex-col .tw-inline-flex .searchnode [data-role="editable"]:hover u, .Heading-module_line-height-compact__g0Fxw [data-role="editable"]:hover u {
 	opacity: 1;
 }
 
