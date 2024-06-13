@@ -624,3 +624,15 @@ span[data-tag] {
 	stroke-width: 3px;
 	filter: saturate(1.3);
 }
+
+/* Experimental: Hide superfluous elements in Related Content */
+
+[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [style="--contentPositionerRootWidth\:\ 351\.25px\;"] .ContentPositionerContainer-module_container__-TM27 {
+	display: none;
+}
+
+[data-role="calendar-view"] :first-child:has(.Message-module_icon__2yV-8 svg) {display: none !important;}
+
+.tw-flex-col [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] > :last-child {
+	margin-top:-3em !important;
+}
