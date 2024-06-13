@@ -141,6 +141,10 @@ div[data-selected] img {
 	border-radius: var(--button-border-radius) !important;
 	cursor: help !important;
 	position: relative !important;
+	  box-shadow: 0 0 10px var(--red-bg), 
+              0 0 20px var(--red-bg), 
+              0 0 40px var(--red-bg), 
+              0 0 80px var(--red-bg);
 	overflow: hidden !important;
 	/* Add the breathing and beating effect animations */
 	/* animation: breathingEffect 2s infinite, beatingEffect 1s infinite;*/
