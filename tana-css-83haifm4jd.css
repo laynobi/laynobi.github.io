@@ -636,3 +636,7 @@ span[data-tag] {
 }
 
 .nodeContent > .ContentPositioner-module_positioner__2LCsV h1 [placeholder="Untitled"] {display: none !important;}
+
+[data-is-panel-header="true"] .NodeAsTabPaneHeader-module_titleAndToolbar__l415O h1 .navtarget {margin-top:-5.25em !important;}
+[data-is-panel-header="true"] .NodeAsTabPaneHeader-module_titleAndToolbar__l415O h1 [placeholder="Untitled\ menu\ item"] {margin-left: 1.9em !important; 	font-family: "MonoLisa" !important;
+	text-transform: uppercase !important;}
