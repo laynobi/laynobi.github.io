@@ -196,6 +196,7 @@ div[data-selected] img {
 	border-radius: var(--button-border-radius) !important;
 	position: relative !important;
 	overflow: hidden !important;
+	box-shadow: 0 0 20px var(--green-bg), 0 0 30px var(--green-bg) !important;
 	/*animation: breathing 2s infinite;*/
 	filter: saturate(1.5)
 }
