@@ -627,9 +627,7 @@ span[data-tag] {
 
 /* Experimental: Hide superfluous elements in Related Content */
 
-[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"]  .ContentPositionerContainer-module_container__-TM27 {
-	display: none !important;
-}
+.ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O .searchnode [data-role="editable"], .ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O .navtarget:has(.SearchRefreshButton-module_searchIndicator__lSDIK), .ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O [data-testid="view-toolbar-options-button"]:has(svg) {display: none !important;}
 
 [data-role="calendar-view"] :first-child:has(.Message-module_icon__2yV-8 svg) {display: none !important;}
 
