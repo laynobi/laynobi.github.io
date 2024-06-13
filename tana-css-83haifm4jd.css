@@ -634,3 +634,5 @@ span[data-tag] {
 .tw-flex-col [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] > :last-child {
 	margin-top:-3em !important;
 }
+
+.nodeContent > .ContentPositioner-module_positioner__2LCsV h1 [placeholder="Untitled"] {display: none !important;}
