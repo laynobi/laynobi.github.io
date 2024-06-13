@@ -641,11 +641,13 @@ span[data-tag] {
 [data-is-panel-header="true"] .NodeAsTabPaneHeader-module_titleAndToolbar__l415O h1 [placeholder="Untitled\ menu\ item"] {margin-left: 1.9em !important; 	font-family: "MonoLisa" !important;
 	text-transform: uppercase !important;}
 
-	.ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ) {
-    opacity: 0.3 !important;
+.ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ) {
+    filter: blur(0px) grayscale(100%) opacity(50%) !important;
+    transition: filter 0.3s ease !important;
 }
 
 .ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ):hover {
-    opacity: 1 !important;
+    filter: blur(0) grayscale(0) opacity(100%) !important;
 }
+
 
