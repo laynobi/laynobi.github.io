@@ -628,7 +628,7 @@ span[data-tag] {
 /* Experimental: Hide superfluous elements in Related Content */
 
 [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [style="--contentPositionerRootWidth\:\ 351\.25px\;"] .ContentPositionerContainer-module_container__-TM27 {
-	display: none;
+	display: none !important;
 }
 
 [data-role="calendar-view"] :first-child:has(.Message-module_icon__2yV-8 svg) {display: none !important;}
