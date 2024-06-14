@@ -673,3 +673,19 @@ span[data-tag] {
 
 /* Turns links blue */
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a [data-role="editable"] {color: var(--blue-link);}
+
+
+/* Formats title fields not starting with {name} */
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i {
+	font-family: "JetBrains Mono" !important;
+	font-size: 0.75em !important;
+	text-transform: uppercase;
+	font-weight: 400 !important;
+	color: var(--blue-link) !important;
+	opacity: 0.4;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i:hover {
+	opacity: 1 !important;
+}
