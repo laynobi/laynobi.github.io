@@ -657,7 +657,7 @@ span[data-tag] {
 	text-transform: uppercase !important;
 	font-style: normal !important;
 	font-weight: 700 !important;
-	letter-spacing: 0.008em !important;
+	letter-spacing: 0.006em !important;
 }
 
 /*.contentWrapper b {
@@ -668,3 +668,8 @@ span[data-tag] {
 	letter-spacing: 0.015em !important;
 }*/
 
+/* Removes gap in related content */
+[style="--contentPositionerRootWidth\:\ 339\.6875px\;"] .ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O:has(.searchnode) {display: none !important;}
+
+/* Turns links blue */
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a [data-role="editable"] {color: var(--blue-link);}
