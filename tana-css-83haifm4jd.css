@@ -650,4 +650,21 @@ span[data-tag] {
     filter: blur(0) grayscale(0) opacity(100%) !important;
 }
 
+/* Change header of select tags */
+
+.contentWrapper b {
+	font-family: var(--mono-font-family) !important;
+	text-transform: uppercase !important;
+	font-style: normal !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.008em !important;
+}
+
+/*.contentWrapper b {
+	font-family: "Euclid Circular A", "Font Awesome 6 Pro" !important;
+	text-transform: normal !important;
+	font-style: normal !important;
+	font-weight: 600 !important;
+	letter-spacing: 0.015em !important;
+}*/
 
