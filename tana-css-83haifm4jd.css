@@ -381,7 +381,6 @@ div[data-selected] img {
 }
 
 mark {
-	background: var(--kelly-300) !important;
 	padding-left: 0.5em !important;
 	padding-right: 0.5em !important;
 	border-radius: 5px;
