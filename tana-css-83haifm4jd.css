@@ -669,7 +669,7 @@ span[data-tag] {
 }*/
 
 /* Removes gap in related content */
-[style="--contentPositionerRootWidth\:\ 339\.6875px\;"] .ContentPositionerContainer-module_container__-TM27 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O:has(.searchnode) {display: none !important;}
+.NodeAsTabPaneHeader-module_titleAndToolbar__l415O:has(.searchnode) {display: none !important;}
 
 /* Turns links blue */
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a [data-role="editable"] {color: var(--blue-link);}
