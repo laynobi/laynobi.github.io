@@ -9,6 +9,15 @@ div[data-selected] img {
   filter: brightness(200%);
 }
 
+/* Experimental - conditional display none if in light mode */
+html [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
+  display: none !important;
+}
+
+html.isDarkMode [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
+  display: block !important;
+}
+
 /* Grayscale and Hide icons in sidebar */
 .UnifiedSidebar-module_stack__YlsAk .ObjectAvatar-module_inherit__ciAQC {
   filter: grayscale(100%) brightness(70%);
