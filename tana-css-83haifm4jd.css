@@ -715,3 +715,24 @@ span[data-tag] {
 /*.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i, .noInteractiveInline .inlineelement .inlinecontent [style="white-space\:\ nowrap\;"] {
   filter: grayscale(100%) !important;
 }/*/
+
+/* Experimental: Add icon in front of contextual nodes */
+
+.OutlinerItem-module_bullet__gMRnW .hasAssociatedData::before {
+  content: '';
+  font-weight: 300 !important;
+  background-color: white !important;
+  color: var(--bulletColor1);
+  transform: rotate(-45deg) !important;
+  position: absolute !important;
+  left: -1.1em !important;
+  top: 0.6em;
+  z-index: 999 !important;
+  font-size:1.15em;
+  transition: transform 0.3s ease; opacity 0.3s ease /* Add transition for smooth effect */
+}
+
+.OutlinerItem-module_bullet__gMRnW .hasAssociatedData:hover::before {
+  transform: rotate(-45deg) scale(1.3) !important; /* Scale up slightly on hover */
+  opacity: 1;
+}
