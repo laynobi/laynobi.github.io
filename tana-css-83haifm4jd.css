@@ -173,3 +173,8 @@ span > [stroke="currentColor"]:hover {
     filter: opacity(var(--opacity-extra-base));
     
 }
+
+/* Checkbox */
+.NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked {
+  background-color: var(--hue-accent-code) !important;
+}
