@@ -189,3 +189,8 @@ span > [stroke="currentColor"]:hover {
 html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerContainer-module_container__-TM27 #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"]  {
   display: none !important;
 }
+
+/* Adds color to icon bullets */
+.hasAvatar {
+  color: var(--bulletColor1);
+}
