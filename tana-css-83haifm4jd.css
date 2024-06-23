@@ -2,6 +2,7 @@
   --hue: 330deg; /* Default: 0deg */
   --hue-accent: -70deg; /* Applies to AI */
   --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
+  --semaphore-lavender: #7186C7;
   --saturation-base: 100%; /* Default: 100% */
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
@@ -30,6 +31,16 @@
 /* Large hashtag icons in titles */
 .tw-items-end .tw-flex-col .tw-flex-col .NodePanelHeaderTitle-module_supertagHomePageHash__HSp5o {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
+}
+
+/* Icons in search views */
+.NodeAsTabPaneHeader-module_titleAndToolbar__l415O [tabindex] .ObjectAvatar-module_container__L7-TR :first-child {
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
+}
+
+/* Hide hashtag in search view */
+.NodeAsTabPaneHeader-module_titleAndToolbar__l415O .searchnode :last-child:has(> .tw-inline-flex) {
+  display:none !important; 
 }
 
 /* Small hashtag labels */
@@ -195,8 +206,52 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   color: var(--bulletColor1);
 }
 
-/* Grayscale and Hide icons in sidebar */
-.UnifiedSidebar-module_stack__YlsAk .ObjectAvatar-module_inherit__ciAQC {
-	filter: grayscale(100%) brightness(70%);
-	/* display: none; */
+/* Removes icons from sidebar */
+.tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget span {
+    display: none;
+}
+
+/* Adjusts margin in sidebar */
+.tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget .drag-item {
+  margin-left: -0.25em !important;
+}
+
+/* In-line fields */
+.NodeListView-module_hiddenFields__BXUql .navtarget {
+  text-transform: lowercase !important;
+  filter: opacity(var(--opacity-extra-low));
+  transition: var(--transition-default);
+}
+
+.NodeListView-module_hiddenFields__BXUql .navtarget:hover {
+  filter: opacity(var(--opacity-extra-base));
+}
+
+/* Title fields */
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline {
+  font-size: 0.8em;
+}
+
+/* Descriptions */
+[data-testid="plain-list-item"] [placeholder="Add\ description"] {
+  line-height: 1em !important;
+  filter: opacity(var(--opacity-low));
+}
+
+/* External links isolated*/
+.PlainListItem-module_contentWrapper__CcDH9 [data-list-position="nearTop"] a [data-role="editable"], .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a .noInteractiveInline {
+  color: var(--semaphore-lavender);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--semaphore-lavender); /* Different underline color */
+}
+
+/* External links referenced */
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlineelement .inlinecontent {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  text-decoration-style: dotted;
 }
