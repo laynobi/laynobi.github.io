@@ -242,7 +242,6 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* External links isolated*/
 .PlainListItem-module_contentWrapper__CcDH9 [data-list-position="nearTop"] a [data-role="editable"], .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a .noInteractiveInline {
   color: var(--semaphore-lavender);
-  filter: saturation(var(--saturation-high));
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
@@ -252,10 +251,60 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
   filter: opacity(var(--opacity-low));
-  font-size: 0.9em;
+  font-size: 0.8em;
   transition: var(--transition-default);
 }
 
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN:hover {
   filter: opacity(var(--opacity-base));
+}
+
+
+/* Experimental deletions / hide */
+/* Removes lone # in related content */
+.Heading-module_line-height-compact__g0Fxw .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget .TemplateTag-module_tag__8TbLO {
+  display: none !important;
+}
+
+/* Removes redundant title in Related content */
+[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [style="--contentPositionerRootWidth\:\ 416\.375px\;"] .ContentPositionerContainer-module_container__-TM27 {
+  display: none !important;
+}
+
+/* Reduce spacing left behind the elements previously there */
+.tw-flex-col [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] > :last-child {
+ margin-top: -1.1em !important;
+}
+
+[data-nav-layout-direction="horizontal"] nav:has(.navtarget .ObjectAvatar-module_container__L7-TR) {
+  max-width: 80%;
+}
+
+[data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [data-nav-layout-direction="horizontal"] > :last-child {
+  font-size: 0.8em;
+  margin-left: -5em !important;
+}
+
+.tw-flex-col .tw-items-start .Heading-module_line-height-compact__g0Fxw .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm {
+  display: none !important;
+}
+
+
+[data-depth="\36 "] .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .placeHolderEmptyBullet {
+  display: none !important;
+}
+
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .lockedName, .NodeAsListElement-module_sectionHeading__Utf6w .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR :first-child {
+  font-size: 0.8em;
+}
+
+.tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
+    opacity: 0.4;
+    filter: grayscale(100%) saturate(50%);
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col):hover {
+    opacity: 1;
+    filter: grayscale(0%) saturate(100%);
 }
