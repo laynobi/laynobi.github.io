@@ -186,6 +186,6 @@ span > [stroke="currentColor"]:hover {
 }
 
 /* Hide distracting components in light mode */
-html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerContainer-module_container__-TM27 #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col .Heading-module_line-height-compact__g0Fxw, .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"]  {
+html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerContainer-module_container__-TM27 #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"]  {
   display: none !important;
 }
