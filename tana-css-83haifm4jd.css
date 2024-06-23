@@ -1,7 +1,7 @@
 :root {
   --hue: 330deg; /* Default: 0deg */
-  --hue-accent: -40deg; /* Applies to AI */
-  --hue-accent-code: hsl(255deg, 63.6%, 61.2%);
+  --hue-accent: -70deg; /* Applies to AI */
+  --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
   --saturation-base: 100%; /* Default: 100% */
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
@@ -50,6 +50,17 @@
 
 /* Bullets (2/2) */
 .NodeAsListElement-module_main__kwj8T .has1Templates:hover {
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
+}
+
+/* Bullets in table (1/2) */
+.NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"] {
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
+  transition: var(--transition-default);
+}
+
+/* Bullets in table (2/2) */
+.NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
 }
 
@@ -160,4 +171,5 @@ span > [stroke="currentColor"] {
 /* URL node bullet points (2/2) */
 span > [stroke="currentColor"]:hover {
     filter: opacity(var(--opacity-extra-base));
+    
 }
