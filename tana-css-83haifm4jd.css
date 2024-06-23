@@ -6,7 +6,7 @@
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
   --saturation-high: calc(var(--saturation-base) * 1.5);
-  --bold-weight-base: bolder;
+  --bold-weight-base: 400;
   --brightness-low: 0.8;
   --font-primary: "Bear Sans UI";
   --underline-thickness: 1px;
