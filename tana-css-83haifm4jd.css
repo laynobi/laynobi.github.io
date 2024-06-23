@@ -194,3 +194,9 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 .hasAvatar {
   color: var(--bulletColor1);
 }
+
+/* Grayscale and Hide icons in sidebar */
+.UnifiedSidebar-module_stack__YlsAk .ObjectAvatar-module_inherit__ciAQC {
+	filter: grayscale(100%) brightness(70%);
+	/* display: none; */
+}
