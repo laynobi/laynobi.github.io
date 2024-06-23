@@ -221,6 +221,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-transform: lowercase !important;
   filter: opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
+  font-size: 0.7em !important;
 }
 
 .NodeListView-module_hiddenFields__BXUql .navtarget:hover {
@@ -248,10 +249,12 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-decoration-color: var(--semaphore-lavender); /* Different underline color */
 }
 
-/* External links referenced */
-.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlineelement .inlinecontent {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 1px;
-  text-decoration-style: dotted;
+.tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
+  filter: opacity(var(--opacity-low));
+  font-size: 0.8em;
+  transition: var(--transition-default);
+}
+
+.tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN:hover {
+  filter: opacity(var(--opacity-base));
 }
