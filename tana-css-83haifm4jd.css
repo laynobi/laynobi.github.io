@@ -6,7 +6,7 @@
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
   --saturation-high: calc(var(--saturation-base) * 1.5);
-  --bold-weight-base: 600;
+  --bold-weight-base: bolder;
   --brightness-low: 0.8;
   --font-primary: "Bear Sans UI";
   --underline-thickness: 1px;
@@ -32,9 +32,9 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
 }
 
-/* Small hashtag labels 9*/
+/* Small hashtag labels */
 .navtarget .TemplateTag-module_tag__8TbLO, .navtarget .TemplateTag-module_tagPrefix__fUBU4 {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-low));
   transition: var(--transition-default); /* Adjust the duration as needed */
 }
 
@@ -76,7 +76,7 @@
 /* In-line reference */
 span.inlinecontent.hastemplate,
 span.hastemplate.inlinecontent {
-    filter: hue-rotate(var(--hue)) saturate(var(--saturation-high));
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-base));
     font-weight: var(--bold-weight-base);
 }
 
@@ -107,7 +107,7 @@ span.hastemplate.inlinecontent {
 
 /* Gradient background */
  .tw-relative.tw-w-full.tw-h-full {
-    filter: hue-rotate(var(--hue)) opacity(var(--opacity-extra-low));
+    filter: hue-rotate(var(--hue)) opacity(var(--opacity-base)) saturate(var(--saturation-high));
   }
 
 /* Search results (WIP) */
@@ -148,11 +148,12 @@ span.hastemplate.inlinecontent {
   color: var(--hue-accent-code);
 }
 
-/* In-line links (1/2) */
+/*  
 .inlinerefurl > .inlinecontent,
 .inlineinteractive > .inlinecontent {
     color: var(--hue-accent-code);
 }
+*/
 
 /* In-line link icons */
 a[href^=http]:not(.hide-external-link-icon):before, 
@@ -177,4 +178,14 @@ span > [stroke="currentColor"]:hover {
 /* Checkbox */
 .NodeDoneCheckbox-module_doneCheckbox__-PWx1:checked {
   background-color: var(--hue-accent-code) !important;
+}
+
+/* Breadcrumbs */
+.tw-items-center .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .navtarget {
+  text-transform: lowercase !important;
+}
+
+/* Hide distracting components in light mode */
+html.isLightMode .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Help"], .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Keyboard\ shortcuts"], .tw-flex-col:has(> .tw-flex-col > [tabindex="\30 "] .ObjectAvatar-module_container__L7-TR), .tw-flex-col .tw-flex-col .tipy-container .navtarget, .UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg), .DateNavigation-module_container__bbQzf .ContentPositionerContainer-module_container__-TM27 #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col .Heading-module_line-height-compact__g0Fxw, .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"]  {
+  display: none !important;
 }
