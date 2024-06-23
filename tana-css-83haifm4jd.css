@@ -242,6 +242,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* External links isolated*/
 .PlainListItem-module_contentWrapper__CcDH9 [data-list-position="nearTop"] a [data-role="editable"], .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 a .noInteractiveInline {
   color: var(--semaphore-lavender);
+  filter: saturation(var(--saturation-high));
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
