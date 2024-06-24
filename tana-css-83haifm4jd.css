@@ -320,6 +320,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   font-size: var(--button-size) !important;
   text-transform: lowercase !important;
   vertical-align: middle;
+  font-weight: lighter !important;
   background-color: transparent !important;
   border: 1px solid var(--colorGray200) !important;
   transition: border-color 0.3s ease, color 0.3s ease;
@@ -330,12 +331,6 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   color: var(--hue-accent-code) !important;
 }
 
-
-/* Fixes positioning of commands not in the title bar */
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_button__15yoI {
-  position: absolute !important;
-  bottom: 0;
-}
 
 th [data-role="editable"] {
   text-transform: lowercase;
@@ -349,3 +344,4 @@ th [data-role="editable"] {
 /* Fields in tables in search views */
 .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget {
   font-size: var(--font-size-smaller) !important;
+}
