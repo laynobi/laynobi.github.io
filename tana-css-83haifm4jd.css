@@ -219,7 +219,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* In-line fields */
 .NodeListView-module_hiddenFields__BXUql .navtarget {
   text-transform: lowercase !important;
-  filter: opacity(var(--opacity-extra-low));
+  filter: opacity(var(--opacity-low));
   transition: var(--transition-default);
   font-size: 0.9rem !important;
 }
