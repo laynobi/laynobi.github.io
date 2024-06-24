@@ -2,6 +2,7 @@
   --hue: 330deg; /* Default: 0deg */
   --hue-accent: -70deg; /* Applies to AI */
   --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
+  --hue-accent-code-half: hsl(217deg, 64.8%, 51%, 0.5);
   --semaphore-lavender: #7186C7;
   --saturation-base: 100%; /* Default: 100% */
   --saturation-low: calc(var(--saturation-base) * 0.75);
@@ -16,6 +17,9 @@
   --opacity-extra-low: calc(var(--opacity-low) * 0.7);
   --transition-default: filter 0.3s ease-in-out;
   --colorLink: var(--hue-accent-hsl) !important;
+  --font-size-small: 0.9rem;
+  --font-size-smaller: 0.8rem;
+  --button-size: 0.7rem;
 }
 
 * {
@@ -216,12 +220,12 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   margin-left: -0.25em !important;
 }
 
-/* In-line fields */
+/* Local fields */
 .NodeListView-module_hiddenFields__BXUql .navtarget {
   text-transform: lowercase !important;
   filter: opacity(var(--opacity-low));
   transition: var(--transition-default);
-  font-size: 0.9rem !important;
+  font-size: var(--font-size-smaller) !important;
 }
 
 .NodeListView-module_hiddenFields__BXUql .navtarget:hover {
@@ -230,12 +234,12 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 /* Title fields */
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline {
-  font-size: 0.8em;
+  font-size: var(--font-size-smaller);
 }
 
 /* Descriptions */
 [data-testid="plain-list-item"] [placeholder="Add\ description"] {
-  line-height: 1em !important;
+  line-height: 1rem !important;
   filter: opacity(var(--opacity-low));
 }
 
@@ -249,9 +253,10 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-decoration-color: var(--semaphore-lavender); /* Different underline color */
 }
 
+/* Fields under nodes */
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
-  filter: opacity(var(--opacity-low));
-  font-size: 0.9rem;
+  filter: opacity(var(--opacity-base)) grayscale(0.5) opacity(0.8);
+  font-size: var(--font-size-small);
   transition: var(--transition-default);
 }
 
@@ -281,7 +286,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 }
 
 [data-radix-scroll-area-viewport=""] [data-nav-layout-direction="vertical"] [data-nav-layout-direction="horizontal"] > :last-child {
-  font-size: 0.8em;
+  font-size: var(--font-size-small);
   margin-left: -5em !important;
 }
 
@@ -295,7 +300,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 }
 
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .lockedName, .NodeAsListElement-module_sectionHeading__Utf6w .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR :first-child {
-  font-size: 0.8em;
+  font-size: var(--font-size-small);
 }
 
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
@@ -310,3 +315,37 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
     filter: grayscale(0%) saturate(100%);
 }
 
+/* Decreases size of command buttons */
+.Button-module_buttonGroup__Xq194 .navtarget {
+  font-size: var(--button-size) !important;
+  text-transform: lowercase !important;
+  vertical-align: middle;
+  background-color: transparent !important;
+  border: 1px solid var(--colorGray200) !important;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.Button-module_buttonGroup__Xq194 .navtarget:hover {
+  border-color: var(--hue-accent-code-half) !important;
+  color: var(--hue-accent-code) !important;
+}
+
+
+/* Fixes positioning of commands not in the title bar */
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_button__15yoI {
+  position: absolute !important;
+  bottom: 0;
+}
+
+th [data-role="editable"] {
+  text-transform: lowercase;
+}
+
+/* Field icons in tables in search views */
+:first-child > [role="button"] svg {
+  filter: opacity(var(--opacity-low)) hue-rotate(var(--hue));
+}
+
+/* Fields in tables in search views */
+.tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget {
+  font-size: var(--font-size-smaller) !important;
