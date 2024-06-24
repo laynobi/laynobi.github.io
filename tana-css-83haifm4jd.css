@@ -221,7 +221,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-transform: lowercase !important;
   filter: opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
-  font-size: 0.7em !important;
+  font-size: 0.8rem !important;
 }
 
 .NodeListView-module_hiddenFields__BXUql .navtarget:hover {
