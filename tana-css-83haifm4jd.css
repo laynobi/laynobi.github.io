@@ -251,7 +251,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
   filter: opacity(var(--opacity-low));
-  font-size: 0.8em;
+  font-size: 0.8rem;
   transition: var(--transition-default);
 }
 
