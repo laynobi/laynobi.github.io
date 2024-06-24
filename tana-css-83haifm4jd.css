@@ -221,7 +221,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-transform: lowercase !important;
   filter: opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
-  font-size: 0.8rem !important;
+  font-size: 0.9rem !important;
 }
 
 .NodeListView-module_hiddenFields__BXUql .navtarget:hover {
@@ -251,7 +251,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
   filter: opacity(var(--opacity-low));
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: var(--transition-default);
 }
 
