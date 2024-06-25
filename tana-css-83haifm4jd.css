@@ -11,6 +11,7 @@
   --bold-weight-base: 400;
   --brightness-low: 0.8;
   --font-primary: "Bear Sans UI";
+  --font-mono: "MonoLisa";
   --underline-thickness: 1px;
   --opacity-base: 1;
   --opacity-low: calc(var(--opacity-base) * 0.7);
@@ -19,6 +20,7 @@
   --colorLink: var(--hue-accent-hsl) !important;
   --font-size-small: 0.9rem;
   --font-size-smaller: 0.8rem;
+  --font-size-smallest: 0.7rem;
   --button-size: 0.7rem;
 }
 
@@ -304,7 +306,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 }
 
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
-    opacity: 0.7;
+    opacity: 0.4;
     filter: grayscale(100%) saturate(50%);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
@@ -318,12 +320,11 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* Decreases size of command buttons */
 .Button-module_buttonGroup__Xq194 .navtarget {
   font-size: var(--button-size) !important;
-  text-transform: lowercase !important;
-  vertical-align: middle;
-  font-weight: lighter !important;
+  text-transform: uppercase !important;
   background-color: transparent !important;
-  border: 1px solid var(--colorGray200) !important;
   transition: border-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-mono) !important;
+  opacity: var(--opacity-extra-low);
 }
 
 .Button-module_buttonGroup__Xq194 .navtarget:hover {
@@ -331,6 +332,12 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   color: var(--hue-accent-code) !important;
 }
 
+
+/* Fixes positioning of commands not in the title bar */
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_button__15yoI {
+  position: absolute !important;
+  bottom: 0;
+}
 
 th [data-role="editable"] {
   text-transform: lowercase;
@@ -344,4 +351,29 @@ th [data-role="editable"] {
 /* Fields in tables in search views */
 .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget {
   font-size: var(--font-size-smaller) !important;
+}
+/* Decreases size of ID (icons) for tasks, but code may break if color changes */
+.OutlinerItem-module_bullet__gMRnW [style="--bulletColor1\:\ \#d3294a\;\ --bulletColor1Dimmed\:\ \#f4e0e2\;\ --bulletColor1LinkText\:\ \#c37279\;\ --bulletColor1LinkUnderline\:\ \#f3bec4\;\ --bulletColor1LinkBackground\:\ \#fff1f4\;"] .ObjectAvatar-module_container__L7-TR :first-child {
+font-size: var(--font-size-smallest) !important;
+font-family: var(--font-mono) !important;
+}
+
+.PlainListItem-module_wrapper__spmPJ 
+.PlainListItem-module_contentWrapper__CcDH9 
+.titleFields 
+.noInteractiveInline b > i {
+     font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+     font-style: normal;
+     font-weight: normal;
+     text-transform: uppercase;
+     font-size: calc(var(--font-size-smallest) * 0.9);
+     opacity: var(--opacity-extra-low);
+}
+
+.OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR :first-child {
+  font-size: var(--font-size-smaller);
+}
+
+html.isLightMode [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
+  display: none !important;
 }
