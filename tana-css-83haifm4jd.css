@@ -336,7 +336,6 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* Fixes positioning of commands not in the title bar */
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_button__15yoI {
   position: absolute !important;
-  bottom: 0;
 }
 
 th [data-role="editable"] {
