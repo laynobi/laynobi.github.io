@@ -306,8 +306,8 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 }
 
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
-    opacity: 0.4;
-    filter: grayscale(100%) saturate(50%);
+    opacity: 0.7;
+    filter: grayscale(50%) saturate(50%);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
