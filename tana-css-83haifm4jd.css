@@ -392,3 +392,10 @@ font-family: var(--font-mono) !important;
 html.isLightMode [data-list-items="true"] .NodeListView-module_hiddenFields__BXUql {
   display: none !important;
 }
+
+
+
+[data-tag-name="task"] .itemdone-checkbox {
+filter: grayscale(100%) opacity(var(--opacity-extra-low)) !important;
+}
+
