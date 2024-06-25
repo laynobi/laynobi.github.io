@@ -24,6 +24,22 @@
   --button-size: 0.7rem;
 }
 
+.itemdone-checkbox {
+	opacity: 0.2;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.itemdone-checkbox:hover {
+	opacity: 1;
+}
+
+.itemdone-checkbox .inlineelement.inlinerefnode,
+.itemdone-checkbox .inlineelement.inlinerefdate,
+.itemdone-checkbox a {
+	filter: grayscale(70%);
+}
+
+
 * {
   font-family: var(--font-primary), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
   -webkit-font-smoothing: antialiased;
