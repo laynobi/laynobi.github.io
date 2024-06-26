@@ -20,7 +20,7 @@
   --colorLink: var(--hue-accent-hsl) !important;
   --font-size-small: 0.9rem;
   --font-size-smaller: 0.8rem;
-  --font-size-smallest: 0.7rem;
+  --font-size-smallest: 0.6rem;
   --button-size: 0.7rem;
 }
 
@@ -393,9 +393,15 @@ html.isLightMode [data-list-items="true"] .NodeListView-module_hiddenFields__BXU
   display: none !important;
 }
 
-
-
 [data-tag-name="task"] .itemdone-checkbox {
 filter: grayscale(100%) opacity(var(--opacity-extra-low)) !important;
+
 }
 
+div[data-is-reference="true"][data-tag-name="task"] .bulletSide {
+  text-decoration: underline !important;
+  text-decoration-color: var(--bulletColor1LinkUnderline) !important;
+  text-decoration-style: dotted !important;
+  text-underline-offset: 2px;
+  vertical-align: middle !important;
+}
