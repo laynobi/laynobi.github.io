@@ -42,7 +42,7 @@
 
 * {
   font-family: var(--font-primary), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Supertag color palette */
