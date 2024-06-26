@@ -41,7 +41,8 @@
 
 
 * {
-  -webkit-font-smoothing: antialiased;
+font-family: "Bear Sans UI", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+-webkit-font-smoothing: antialiased;
 }
 
 /* Supertag color palette */
