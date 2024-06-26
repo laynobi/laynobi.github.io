@@ -42,7 +42,7 @@
 
 * {
   font-family: var(--font-primary), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 /* Supertag color palette */
@@ -346,12 +346,6 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 .Button-module_buttonGroup__Xq194 .navtarget:hover {
   border-color: var(--hue-accent-code-half) !important;
   color: var(--hue-accent-code) !important;
-}
-
-
-/* Fixes positioning of commands not in the title bar */
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_button__15yoI {
-  position: absolute !important;
 }
 
 th [data-role="editable"] {
