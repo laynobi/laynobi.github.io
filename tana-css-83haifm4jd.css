@@ -10,8 +10,8 @@
   --saturation-high: calc(var(--saturation-base) * 1.5);
   --bold-weight-base: 400;
   --brightness-low: 0.8;
-  --font-primary: "Bear Sans UI", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
-  --font-mono: "MonoLisa", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+  --font-primary: "Bear Sans UI";
+  --font-mono: "MonoLisa";
   --underline-thickness: 1px;
   --opacity-base: 1;
   --opacity-low: calc(var(--opacity-base) * 0.7);
@@ -41,8 +41,8 @@
 
 
 * {
-font-family: "Bear Sans UI", "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
--webkit-font-smoothing: antialiased;
+  font-family: var(--font-primary), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Supertag color palette */
@@ -339,7 +339,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   text-transform: uppercase !important;
   background-color: transparent !important;
   transition: border-color 0.3s ease, color 0.3s ease;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
   opacity: var(--opacity-extra-low);
 }
 
@@ -370,14 +370,14 @@ th [data-role="editable"] {
 /* Decreases size of ID (icons) for tasks, but code may break if color changes */
 .OutlinerItem-module_bullet__gMRnW [style="--bulletColor1\:\ \#d3294a\;\ --bulletColor1Dimmed\:\ \#f4e0e2\;\ --bulletColor1LinkText\:\ \#c37279\;\ --bulletColor1LinkUnderline\:\ \#f3bec4\;\ --bulletColor1LinkBackground\:\ \#fff1f4\;"] .ObjectAvatar-module_container__L7-TR :first-child {
 font-size: var(--font-size-smallest) !important;
-font-family: var(--font-mono);
+font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
 }
 
 .PlainListItem-module_wrapper__spmPJ 
 .PlainListItem-module_contentWrapper__CcDH9 
 .titleFields 
 .noInteractiveInline b > i {
-     font-family: var(--font-mono);
+     font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
      font-style: normal;
      font-weight: normal;
      text-transform: uppercase;
