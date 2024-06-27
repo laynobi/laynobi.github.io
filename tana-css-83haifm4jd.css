@@ -399,3 +399,7 @@ div[data-is-reference="true"][data-tag-name="task"] .bulletSide {
   text-underline-offset: 2px;
   vertical-align: middle !important;
 }
+
+.VisualContent-module_visual__V9NgM .VisualContent-module_mediaContainer__hPCLQ {
+background-color: transparent !important;
+}
