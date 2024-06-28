@@ -403,3 +403,8 @@ div[data-is-reference="true"][data-tag-name="task"] .bulletSide {
 .VisualContent-module_visual__V9NgM .VisualContent-module_mediaContainer__hPCLQ {
 background-color: transparent !important;
 }
+
+/* Calender entries (Bug: Colors everything) */
+.fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc:has(.tw-items-start) {
+  filter: hue-rotate(var(--hue))
+}
