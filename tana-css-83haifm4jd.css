@@ -364,7 +364,7 @@ th [data-role="editable"] {
 /* Decreases size of ID (icons) for tasks, but code may break if color changes */
 .OutlinerItem-module_bullet__gMRnW [style="--bulletColor1\:\ \#d3294a\;\ --bulletColor1Dimmed\:\ \#f4e0e2\;\ --bulletColor1LinkText\:\ \#c37279\;\ --bulletColor1LinkUnderline\:\ \#f3bec4\;\ --bulletColor1LinkBackground\:\ \#fff1f4\;"] .ObjectAvatar-module_container__L7-TR :first-child {
 font-size: var(--font-size-smallest) !important;
-font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+font-family: var(--font-mono), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
 }
 
 .PlainListItem-module_wrapper__spmPJ 
