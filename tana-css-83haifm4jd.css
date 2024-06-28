@@ -371,7 +371,7 @@ font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-ser
 .PlainListItem-module_contentWrapper__CcDH9 
 .titleFields 
 .noInteractiveInline b > i {
-     font-family: var(--font-mono), "Font Awesome 6 Pro", "TossFaceFontMac", sans-serif !important;
+     font-family: var(--font-mono), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
      font-style: normal;
      font-weight: normal;
      text-transform: uppercase;
