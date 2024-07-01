@@ -321,17 +321,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   font-size: var(--font-size-small);
 }
 
-.tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
-    opacity: 0.7;
-    filter: grayscale(50%) saturate(50%);
-    transition: opacity 0.3s ease, filter 0.3s ease;
-}
 
-.tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col):hover,
-.tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col):focus-within {
-    opacity: 1;
-    filter: grayscale(0%) saturate(100%);
-}
 
 /* Decreases size of command buttons */
 .Button-module_buttonGroup__Xq194 .navtarget {
