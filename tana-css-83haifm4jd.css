@@ -229,9 +229,25 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
   color: var(--bulletColor1);
 }
 
-/* Removes icons from sidebar */
+.tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget:has(span) {
+    position: relative !important;
+    padding-left: 2.2rem !important; /* Adjust the value as needed */
+}
+
+/* Sidebar icons */
+
+.tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget:not(:has(span)) {
+    position: relative !important;
+    padding-left: 1rem !important; /* Adjust the value as needed */
+}
+
 .tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget span {
-    display: none;
+    color: var(--bulletColor1);
+    font-size: var(--font-size-smaller) !important;
+    position: absolute !important;
+    left: 6% !important; 
+    top: 50% !important;
+    transform: translateY(-50%) !important;
 }
 
 /* Adjusts margin in sidebar */
@@ -430,3 +446,4 @@ b > i > i {
     filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(calc(var(--opacity-extra-low)*1)) !important;
     margin-right:-1px !important;
 }
+
