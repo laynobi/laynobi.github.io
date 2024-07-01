@@ -400,7 +400,7 @@ background-color: transparent !important;
   filter: hue-rotate(var(--hue))
 }
 
-b i u {
+b > i > u {
     font-style: normal !important;
     text-decoration: none !important;
     font-size: var(--font-size-smaller) !important;
@@ -410,15 +410,25 @@ b i u {
     padding-right: 0.2rem !important;
 }
 
-u b i {
+b > i > b {
     font-style: normal !important;
 font-weight: normal !important;
-    text-decoration: none !important;
-    font-size: var(--font-size-smaller) !important;
+    text-decoration-thickness: 0px !important;
+    font-size: var(--font-size-smallest) !important;
     font-family: var(--font-mono) !important;
     color: var(--bulletColor1) !important;
-    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low)) !important;
-    margin-right:-2px !important;
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(calc(var(--opacity-extra-low)*0.7)) !important;
+    margin-right:-1px !important;
+}
+
+b > i > i {
+    font-style: normal !important;
+    text-decoration-thickness: 0px !important;
+    font-size: var(--font-size-smallest) !important;
+    font-family: var(--font-mono) !important;
+    color: var(--bulletColor1) !important;
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(calc(var(--opacity-extra-low)*1)) !important;
+    margin-right:-1px !important;
 }
 
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ:has(.PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Mark unflagged"]) {
