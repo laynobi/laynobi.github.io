@@ -410,6 +410,17 @@ b i u {
     padding-right: 0.2rem !important;
 }
 
+u b i {
+    font-style: normal !important;
+font-weight: normal !important;
+    text-decoration: none !important;
+    font-size: var(--font-size-smaller) !important;
+    font-family: var(--font-mono) !important;
+    color: var(--bulletColor1) !important;
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low)) !important;
+    margin-right:-2px !important;
+}
+
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ:has(.PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Mark unflagged"]) {
     --color-task-bg: 1;
     background-color: var(--color-task) !important;
