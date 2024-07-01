@@ -22,8 +22,7 @@
   --font-size-smaller: 0.8rem;
   --font-size-smallest: 0.6rem;
   --button-size: 0.7rem;
-  --color-flagged-task: rgba(221, 110, 171, 0.05);
---color-active-task: rgba(73, 124, 70, 0.05);
+  --color-task: rgba(221, 110, 171, 0.05);
 }
 
 .itemdone-checkbox {
@@ -401,29 +400,22 @@ background-color: transparent !important;
   filter: hue-rotate(var(--hue))
 }
 
-.tw-items-start [data-role="editable"] b i {
-    font-style: normal;
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i {
+    font-style: normal !important;
+    font-size: var(--font-size-smaller) !important;
     font-family: var(--font-mono) !important;
-    color: var(--bulletColor1);
-    font-weight: 600;
-    filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-low));
+    color: var(--bulletColor1) !important;
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low)) !important;
     padding-right: 0.2rem !important;
 }
 
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ:has(.PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Mark unflagged"]) {
     --color-task-bg: 1;
-    background-color: var(--color-flagged-task) !important;
+    background-color: var(--color-task) !important;
     padding: 3px !important;
     border-radius: var(--radius200) !important;
     margin: 3px !important;
-    box-shadow: 0 0 10px 5px var(--color-flagged-task); /* Adjust the values as needed */
+    box-shadow: 0 0 10px 5px var(--color-task); /* Adjust the values as needed */
 }
 
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ:has(.PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Stop task"]) {
-    --color-task-bg: 1;
-    background-color: var(--color--active-task) !important;
-    padding: 3px !important;
-    border-radius: var(--radius200) !important;
-    margin: 3px !important;
-    box-shadow: 0 0 10px 5px var(--color-active-task); /* Adjust the values as needed */
-}
+
