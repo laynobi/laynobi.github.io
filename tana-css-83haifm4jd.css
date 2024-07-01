@@ -1,10 +1,10 @@
 :root {
-  --hue: 330deg; /* Default: 0deg */
+  --hue: -30deg; /* Default: 0deg */
   --hue-accent: -70deg; /* Applies to AI */
   --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
   --hue-accent-code-half: hsl(217deg, 64.8%, 51%, 0.5);
   --semaphore-lavender: #7186C7;
-  --saturation-base: 100%; /* Default: 100% */
+  --saturation-base: 120%; /* Default: 100% */
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
   --saturation-high: calc(var(--saturation-base) * 1.5);
@@ -55,10 +55,10 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
 }
 
-/* Icons in search views */
-.NodeAsTabPaneHeader-module_titleAndToolbar__l415O [tabindex] .ObjectAvatar-module_container__L7-TR :first-child {
-    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
-}
+  /* Icons in search views */
+  .NodeAsTabPaneHeader-module_titleAndToolbar__l415O [tabindex] .ObjectAvatar-module_container__L7-TR :first-child {
+      filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
+  }
 
 /* Hide hashtag in search view */
 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O .searchnode :last-child:has(> .tw-inline-flex) {
@@ -117,7 +117,6 @@ span.hastemplate.inlinecontent {
 .PlainListItem-module_contentWrapper__CcDH9 [data-role="editable"] .inlinerefnode .inlinecontent {
     position: relative;
 }
-
 
 /* In-line reference: underline (2/3) */
 .PlainListItem-module_contentWrapper__CcDH9 [data-role="editable"] .inlinerefnode .inlinecontent::after {
@@ -403,5 +402,15 @@ background-color: transparent !important;
 
 /* Calender entries (Bug: Colors everything) */
 .fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc:has(.tw-items-start) {
-  filter: hue-rotate(var(--hue))
+  filter: hue-rotate(var(--hue));
+}
+
+
+.NodePanelBanner-module_coverImageWrapper__BqFgB {
+    filter: hue-rotate(calc(var(--hue)*-1)) saturate(var(--saturation-base));
+}
+
+/* Ensures hashtags are not bolded */
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf :first-child {
+  font-weight: normal !important;
 }
