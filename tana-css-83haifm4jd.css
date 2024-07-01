@@ -431,13 +431,4 @@ b > i > i {
     margin-right:-1px !important;
 }
 
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ:has(.PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Mark unflagged"]) {
-    --color-task-bg: 1;
-    background-color: var(--color-task) !important;
-    padding: 3px !important;
-    border-radius: var(--radius200) !important;
-    margin: 3px !important;
-    box-shadow: 0 0 10px 5px var(--color-task); /* Adjust the values as needed */
-}
-
 
