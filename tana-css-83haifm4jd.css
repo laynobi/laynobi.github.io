@@ -430,5 +430,3 @@ b > i > i {
     filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(calc(var(--opacity-extra-low)*1)) !important;
     margin-right:-1px !important;
 }
-
-
