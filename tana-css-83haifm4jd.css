@@ -162,7 +162,7 @@ span.hastemplate.inlinecontent {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: var(--colorGray300) 0px -1px 0px 0px inset;
+    box-shadow: var(--color300) 0px -1px 0px 0px inset;
     pointer-events: none;
 }
 
@@ -189,12 +189,12 @@ span.hastemplate.inlinecontent {
 */
 
 /* In-line link icons */
-a[href^=http]:not(.hide-external-link-icon):before, 
+/* a[href^=http]:not(.hide-external-link-icon):before, 
 a[href^="https://"]:not(.hide-external-link-icon):before, 
 .inlinerefurl:before {
 
     filter: grayscale(100%) opacity(var(--opacity-low));
-}
+} */
 
 /* URL node bullet points (1/2) */
 span > [stroke="currentColor"] {
@@ -273,8 +273,7 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 /* Fields under nodes */
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
-  filter: opacity(var(--opacity-base)) grayscale(0.5) opacity(0.8);
-  font-size: var(--font-size-small);
+  filter: opacity(var(--opacity-base));
   transition: var(--transition-default);
 }
 
