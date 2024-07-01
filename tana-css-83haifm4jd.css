@@ -75,27 +75,31 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
 }
 
-/* Bullets (1/2) 
+/*Bullets (1/2)*/
 .NodeAsListElement-module_main__kwj8T .has1Templates, .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"] {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
+filter:  saturate(var(--saturation-base)) opacity(var(--opacity-low));
   transition: var(--transition-default);
-}*/
+}
 
-/* Bullets (2/2)
+/*Bullets (2/2)*/
 .NodeAsListElement-module_main__kwj8T .has1Templates:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
-}*/
+}
 
-/* Bullets in table (1/2) 
+.OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR span {
+  filter: hue-rotate(var(--hue));
+}
+
+/*Bullets in table (1/2)*/
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"], .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-low));
   transition: var(--transition-default);
-}*/
+}
 
-/* Bullets in table (2/2)
+/* Bullets in table (2/2)*/
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
-}*/
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
+}
 
 /*[data-is-expanded="true"] [role="button"] {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low));
@@ -424,3 +428,11 @@ background-color: transparent !important;
         padding: 8px 14px !important;
     } 
 
+.tw-items-start [data-role="editable"] b i {
+    font-style: normal;
+    font-family: var(--font-mono) !important;
+    color: var(--bulletColor1);
+    font-weight: 600;
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-low));
+    padding-right: 0.2rem !important;
+}
