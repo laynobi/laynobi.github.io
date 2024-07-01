@@ -75,36 +75,36 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
 }
 
-/* Bullets (1/2) */
+/* Bullets (1/2) 
 .NodeAsListElement-module_main__kwj8T .has1Templates, .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"] {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
   transition: var(--transition-default);
-}
+}*/
 
-/* Bullets (2/2) */
+/* Bullets (2/2)
 .NodeAsListElement-module_main__kwj8T .has1Templates:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
-}
+}*/
 
-/* Bullets in table (1/2) */
+/* Bullets in table (1/2) 
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"], .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
   transition: var(--transition-default);
-}
+}*/
 
-/* Bullets in table (2/2) */
+/* Bullets in table (2/2)
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
-}
+}*/
 
-[data-is-expanded="true"] [role="button"] {
+/*[data-is-expanded="true"] [role="button"] {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
 }
 
 [data-is-expanded="true"] [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-extra-low)) opacity(var(--opacity-base)) !important;
-}
+}*/
 
 /* In-line reference */
 span.inlinecontent.hastemplate,
@@ -414,3 +414,13 @@ background-color: transparent !important;
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf :first-child {
   font-weight: normal !important;
 }
+
+:has(span[data-tag="example"]):not(.expandedNodeContent) > .listContentItem,
+    :has(span[data-tag="block-quote"]):not(.expandedNodeContent) > .listContentItem {
+        background-color: var(--colorReferenceMentionBackground);
+        border-left: 5px solid var(--colorUIStroke) !important;
+        border-left-width: 3px !important;
+        border-radius: 3px !important;
+        padding: 8px 14px !important;
+    } 
+
