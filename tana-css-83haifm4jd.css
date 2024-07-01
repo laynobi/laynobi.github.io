@@ -1,10 +1,10 @@
 :root {
-  --hue: -50deg; /* Default: 0deg */
+  --hue: 330deg; /* Default: 0deg */
   --hue-accent: -70deg; /* Applies to AI */
   --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
   --hue-accent-code-half: hsl(217deg, 64.8%, 51%, 0.5);
   --semaphore-lavender: #7186C7;
-  --saturation-base: 120%; /* Default: 100% */
+  --saturation-base: 100%; /* Default: 100% */
   --saturation-low: calc(var(--saturation-base) * 0.75);
   --saturation-extra-low: calc(var(--saturation-low) * 0.75);
   --saturation-high: calc(var(--saturation-base) * 1.5);
@@ -55,10 +55,10 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
 }
 
-  /* Icons in search views */
-  .NodeAsTabPaneHeader-module_titleAndToolbar__l415O [tabindex] .ObjectAvatar-module_container__L7-TR :first-child {
-      filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
-  }
+/* Icons in search views */
+.NodeAsTabPaneHeader-module_titleAndToolbar__l415O [tabindex] .ObjectAvatar-module_container__L7-TR :first-child {
+    filter: hue-rotate(var(--hue)) saturate(var(--saturation-low));
+}
 
 /* Hide hashtag in search view */
 .NodeAsTabPaneHeader-module_titleAndToolbar__l415O .searchnode :last-child:has(> .tw-inline-flex) {
@@ -75,40 +75,36 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
 }
 
-/*Bullets (1/2)*/
+/* Bullets (1/2) */
 .NodeAsListElement-module_main__kwj8T .has1Templates, .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"] {
-filter:  saturate(var(--saturation-base)) opacity(var(--opacity-low));
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
   transition: var(--transition-default);
 }
 
-/*Bullets (2/2)*/
+/* Bullets (2/2) */
 .NodeAsListElement-module_main__kwj8T .has1Templates:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
 }
 
-.OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR span {
-  filter: hue-rotate(var(--hue));
-}
-
-/*Bullets in table (1/2)*/
+/* Bullets in table (1/2) */
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"], .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-low));
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
   transition: var(--transition-default);
 }
 
-/* Bullets in table (2/2)*/
+/* Bullets in table (2/2) */
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
+  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
 }
 
-/*[data-is-expanded="true"] [role="button"] {
+[data-is-expanded="true"] [role="button"] {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
 }
 
 [data-is-expanded="true"] [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-extra-low)) opacity(var(--opacity-base)) !important;
-}*/
+}
 
 /* In-line reference */
 span.inlinecontent.hastemplate,
@@ -121,6 +117,7 @@ span.hastemplate.inlinecontent {
 .PlainListItem-module_contentWrapper__CcDH9 [data-role="editable"] .inlinerefnode .inlinecontent {
     position: relative;
 }
+
 
 /* In-line reference: underline (2/3) */
 .PlainListItem-module_contentWrapper__CcDH9 [data-role="editable"] .inlinerefnode .inlinecontent::after {
@@ -165,7 +162,7 @@ span.hastemplate.inlinecontent {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: var(--color300) 0px -1px 0px 0px inset;
+    box-shadow: var(--colorGray300) 0px -1px 0px 0px inset;
     pointer-events: none;
 }
 
@@ -192,12 +189,12 @@ span.hastemplate.inlinecontent {
 */
 
 /* In-line link icons */
-/* a[href^=http]:not(.hide-external-link-icon):before, 
+a[href^=http]:not(.hide-external-link-icon):before, 
 a[href^="https://"]:not(.hide-external-link-icon):before, 
 .inlinerefurl:before {
 
     filter: grayscale(100%) opacity(var(--opacity-low));
-} */
+}
 
 /* URL node bullet points (1/2) */
 span > [stroke="currentColor"] {
@@ -276,7 +273,8 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 /* Fields under nodes */
 .tw-flex-col .tw-flex-col .tw-flex-col .NodeAsListElement-module_isTuple__k28TN {
-  filter: opacity(var(--opacity-base));
+  filter: opacity(var(--opacity-base)) grayscale(0.5) opacity(0.8);
+  font-size: var(--font-size-small);
   transition: var(--transition-default);
 }
 
@@ -325,12 +323,14 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col) {
     opacity: 0.7;
+    filter: grayscale(50%) saturate(50%);
     transition: opacity 0.3s ease, filter 0.3s ease;
 }
 
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col):hover,
 .tw-flex-col:has(.tw-flex-col .WidgetPanel-module_container__jGmDJ .tw-flex-col):focus-within {
     opacity: 1;
+    filter: grayscale(0%) saturate(100%);
 }
 
 /* Decreases size of command buttons */
@@ -406,27 +406,8 @@ background-color: transparent !important;
 
 /* Calender entries (Bug: Colors everything) */
 .fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc:has(.tw-items-start) {
-  filter: hue-rotate(var(--hue));
+  filter: hue-rotate(var(--hue))
 }
-
-
-.NodePanelBanner-module_coverImageWrapper__BqFgB {
-    filter: hue-rotate(calc(var(--hue)*-1)) saturate(var(--saturation-base));
-}
-
-/* Ensures hashtags are not bolded */
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf :first-child {
-  font-weight: normal !important;
-}
-
-:has(span[data-tag="example"]):not(.expandedNodeContent) > .listContentItem,
-    :has(span[data-tag="block-quote"]):not(.expandedNodeContent) > .listContentItem {
-        background-color: var(--colorReferenceMentionBackground);
-        border-left: 5px solid var(--colorUIStroke) !important;
-        border-left-width: 3px !important;
-        border-radius: 3px !important;
-        padding: 8px 14px !important;
-    } 
 
 .tw-items-start [data-role="editable"] b i {
     font-style: normal;
