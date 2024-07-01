@@ -400,7 +400,7 @@ background-color: transparent !important;
   filter: hue-rotate(var(--hue))
 }
 
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i {
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline b i u {
     font-style: normal !important;
     font-size: var(--font-size-smaller) !important;
     font-family: var(--font-mono) !important;
