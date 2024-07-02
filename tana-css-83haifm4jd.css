@@ -270,6 +270,12 @@ html.isLightMode .DateNavigation-module_container__bbQzf .ContentPositionerConta
 /* Title fields */
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline {
   font-size: var(--font-size-smaller);
+  filter: opacity(var(--opacity-extra-low));
+  transition: var(--transition-default);
+}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline:hover{
+  filter: opacity(var(--opacity-base));
 }
 
 /* Descriptions */
@@ -502,7 +508,6 @@ b > i > i {
 
 .NodeAsCard-module_card__LdiGC .NodeAsCard-module_header__-W9k6 .navtarget .TemplateTag-module_tag__8TbLO, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC > :last-child, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC .tw-items-start  {display: none !important;}
 
-.nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC .NodeAsCard-module_content__uQbqj {
-  border: 0px !important;
-  inset: 0px !important;
-}
+.tw-items-start .Calendar-module_title__w0u4f .titleFields .noInteractiveInline {display: none !important;}
+
+.Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc {filter: grayscale(1) !important}
