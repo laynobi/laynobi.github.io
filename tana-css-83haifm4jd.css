@@ -527,7 +527,7 @@ b > i > i {
 }
 
 /* Highlight background if active */
-.tw-flex-col .tw-flex-col div:has(> .ActiveSoftLock-module_container__viYoC):has(.Button-module_buttonGroup__Xq194 [aria-label="Stop task"]) {
+.listItems .NodeAsListElement-module_main__kwj8T:has(.Button-module_buttonGroup__Xq194 [aria-label="Stop task"]) {
   background-color: rgba(248, 231, 162, 0.3);
   padding-left: 1em !important;
   border-radius: 5px;
