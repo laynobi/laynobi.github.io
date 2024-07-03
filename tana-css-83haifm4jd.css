@@ -515,3 +515,19 @@ b > i > i {
 .OutlinerItem-module_bullet__gMRnW [draggable="true"]:has(.ObjectAvatar-module_container__L7-TR .ObjectAvatar-module_image__6hnmd) {
   filter: hue-rotate(calc(var(--hue)*-1));
 }
+
+/* Don't rotate hue if image in icon */
+
+.OutlinerItem-module_bullet__gMRnW [draggable="true"]:has(.ObjectAvatar-module_container__L7-TR .ObjectAvatar-module_image__6hnmd) {
+  filter: hue-rotate(calc(var(--hue)*-1));
+}
+
+
+/* Truncated supertags */
+[tabindex="\30 "] span {display: none;}
+
+.TemplateTag-module_tagWrapper__wzRYf .TemplateTag-module_tag__8TbLO {
+  position: relative;
+  left: -2px;
+  z-index: -9 !important;
+}
