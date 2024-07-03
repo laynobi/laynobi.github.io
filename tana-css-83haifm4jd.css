@@ -516,12 +516,6 @@ b > i > i {
   filter: hue-rotate(calc(var(--hue)*-1));
 }
 
-/* Don't rotate hue if image in icon */
-
-.OutlinerItem-module_bullet__gMRnW [draggable="true"]:has(.ObjectAvatar-module_container__L7-TR .ObjectAvatar-module_image__6hnmd) {
-  filter: hue-rotate(calc(var(--hue)*-1));
-}
-
 
 /* Truncated supertags */
 [tabindex="\30 "] span {display: none;}
@@ -530,4 +524,13 @@ b > i > i {
   position: relative;
   left: -2px;
   z-index: -9 !important;
+}
+
+/* Highlight background if active */
+.tw-flex-col .tw-flex-col div:has(> .ActiveSoftLock-module_container__viYoC):has(.Button-module_buttonGroup__Xq194 [aria-label="Stop task"]) {
+  background-color: rgba(248, 231, 162, 0.3);
+  padding-left: 1em !important;
+  border-radius: 5px;
+  padding-right: 1em !important;
+  color: var(--colorTextHighlightedText) !important;
 }
