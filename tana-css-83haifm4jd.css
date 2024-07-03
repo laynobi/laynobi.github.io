@@ -527,7 +527,7 @@ b > i > i {
 
 
 /* Truncated supertags */
-[tabindex="\30 "] span {display: none;}
+[tabindex="\30 "] span:not(.tw-flex-col .PinnedNodesSection-module_section__W18Gd .navtarget span) {display: none;}
 
 .TemplateTag-module_tagWrapper__wzRYf .TemplateTag-module_tag__8TbLO {
   position: relative;
