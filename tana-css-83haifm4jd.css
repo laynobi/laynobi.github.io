@@ -388,8 +388,17 @@ font-family: var(--font-mono), "TossFaceFontMac", "Font Awesome 6 Pro", sans-ser
      font-style: normal;
      font-weight: normal;
      text-transform: uppercase;
-     font-size: calc(var(--font-size-smallest) * 0.9);
+     font-size: 0.7em;
      opacity: var(--opacity-extra-low);
+}
+
+.tw-inline-flex .titleFields :first-child > b > i {
+     font-family: var(--font-mono), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
+     font-style: normal;
+     font-weight: normal;
+     text-transform: uppercase;
+     font-size: 0.7em;
+     opacity: var(--opacity-extra-low);  
 }
 
 .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR :first-child {
@@ -534,3 +543,43 @@ b > i > i {
   padding-right: 1em !important;
   color: var(--colorTextHighlightedText) !important;
 }
+
+.tw-flex-col .tw-items-end .NodePanelAvatar-module_avatar__Kfqby span {
+  font-weight: 700;
+}
+
+[data-editable-wrapper="true"] [data-role="editable"] .inlinerefnode .inlinecontent {
+  color: var(--semaphore-lavender);
+    text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--semaphore-lavender); /* Different underline color */
+}
+
+.tw-flex-col .tw-flex-col [data-role="associated-data-list"] .SoftLockContainer-module_container__IfJrS {
+  float: right;
+  clear: right;
+  font-size: var(--font-size-smaller);
+}
+
+[data-role="associated-data-list"] .tw-items-start [draggable="true"] {
+  display: flex;
+  align-items: center; /* Vertically centers the children */
+}
+
+[data-role="associated-data-list"] .tw-items-start [draggable="true"] :first-child {
+  visibility: hidden; /* Make the first child invisible */
+  position: relative; /* Ensure the pseudo-element is positioned relative to this element */
+}
+
+[data-role="associated-data-list"] .tw-items-start [draggable="true"] :first-child::before {
+  content: "";
+  visibility: visible; /* Ensure the pseudo-element is visible */
+  position: absolute; /* Position the pseudo-element absolutely */
+  top: 3px;
+  left: 9px;
+  font-size: calc(var(--font-size-smallest)*0.8);
+}
+
+
