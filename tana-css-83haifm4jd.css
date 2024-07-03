@@ -509,3 +509,9 @@ b > i > i {
 .NodeAsCard-module_card__LdiGC .NodeAsCard-module_header__-W9k6 .navtarget .TemplateTag-module_tag__8TbLO, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC > :last-child, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC .tw-items-start  {display: none !important;}
 
 .tw-items-start .Calendar-module_title__w0u4f .titleFields .noInteractiveInline {display: none !important;}
+
+/* Don't rotate hue if image in icon */
+
+.OutlinerItem-module_bullet__gMRnW [draggable="true"]:has(.ObjectAvatar-module_container__L7-TR .ObjectAvatar-module_image__6hnmd) {
+  filter: hue-rotate(calc(var(--hue)*-1));
+}
