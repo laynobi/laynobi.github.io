@@ -509,28 +509,3 @@ b > i > i {
 .NodeAsCard-module_card__LdiGC .NodeAsCard-module_header__-W9k6 .navtarget .TemplateTag-module_tag__8TbLO, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC > :last-child, .nodeCardsView-module_cardsView__xNJNy .SoftLockContainer-module_container__IfJrS .NodeAsCard-module_card__LdiGC .tw-items-start  {display: none !important;}
 
 .tw-items-start .Calendar-module_title__w0u4f .titleFields .noInteractiveInline {display: none !important;}
-
-/* Don't rotate hue if image in icon */
-
-.OutlinerItem-module_bullet__gMRnW [draggable="true"]:has(.ObjectAvatar-module_container__L7-TR .ObjectAvatar-module_image__6hnmd) {
-  filter: hue-rotate(calc(var(--hue)*-1));
-}
-
-
-/* Truncated supertags */
-[tabindex="\30 "] span {display: none;}
-
-.TemplateTag-module_tagWrapper__wzRYf .TemplateTag-module_tag__8TbLO {
-  position: relative;
-  left: -2px;
-  z-index: -9 !important;
-}
-
-/* Highlight background if active */
-.listItems .NodeAsListElement-module_main__kwj8T:has(.Button-module_buttonGroup__Xq194 [aria-label="Stop task"]) {
-  background-color: rgba(248, 231, 162, 0.3);
-  padding-left: 1em !important;
-  border-radius: 5px;
-  padding-right: 1em !important;
-  color: var(--colorTextHighlightedText) !important;
-}
