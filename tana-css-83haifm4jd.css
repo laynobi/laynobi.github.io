@@ -446,3 +446,9 @@ b > i > i {
     filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(calc(var(--opacity-extra-low)*1)) !important;
     margin-right:-1px !important;
 }
+
+/* Hoist button */
+[data-role="tuple-label"] .Button-module_buttonGroup__Xq194 .navtarget:has(.ObjectAvatar-module_container__L7-TR) {
+position: absolute !important;
+right: -5px !important;
+}
