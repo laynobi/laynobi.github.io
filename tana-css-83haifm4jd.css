@@ -452,3 +452,30 @@ b > i > i {
 position: absolute !important;
 right: -5px !important;
 }
+
+
+/* Redacted */
+
+span[data-inlineref-node="Fy3EAQ4A284z"] {
+    position: relative !important;
+    display: inline-block !important;
+}
+
+span[data-inlineref-node="Fy3EAQ4A284z"]::after {
+    content: "Redacted" !important;
+    background-color: #E8EAEC !important;
+    color: #E8EAEC !important;
+    padding: 2px 4px !important;
+    border-radius: 2px !important;
+    display: inline-block !important;
+    visibility: visible !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -1px !important;
+    width: 105% !important;
+    height: 105% !important;
+    text-align: center !important;
+}
+
+
+
