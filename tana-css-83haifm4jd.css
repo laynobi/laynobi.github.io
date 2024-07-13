@@ -394,10 +394,7 @@ html.isLightMode [data-list-items="true"] .NodeListView-module_hiddenFields__BXU
   display: none !important;
 }
 
-[data-tag-name="task"] .itemdone-checkbox {
-filter: grayscale(100%) opacity(var(--opacity-extra-low)) !important;
 
-}
 
 div[data-is-reference="true"][data-tag-name="task"] .bulletSide {
   text-decoration: underline !important;
@@ -477,5 +474,8 @@ span[data-inlineref-node="Fy3EAQ4A284z"]::after {
     text-align: center !important;
 }
 
-
+.tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) {
+  opacity: var(--opacity-extra-low);
+  filter: grayscale(1)
+}
 
