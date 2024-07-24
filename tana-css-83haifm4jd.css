@@ -1,5 +1,5 @@
 :root {
-  --hue: 300deg; /* Default: 0deg */
+  --hue: 330deg; /* Default: 0deg */
   --hue-accent: -70deg; /* Applies to AI */
   --hue-accent-code: hsl(217deg, 64.8%, 51%, 1);
   --hue-accent-code-half: hsl(217deg, 64.8%, 51%, 0.5);
