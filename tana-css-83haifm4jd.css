@@ -488,3 +488,7 @@ span[data-inlineref-node="Fy3EAQ4A284z"]::after {
  margin-left: -15px !important;
 }
 
+.tw-flex-col .tw-flex-col .navtarget .ObjectAvatar-module_image__6hnmd {
+  font-size: var(--font-size-smaller);
+  margin-right: 0.5em !important;
+}
