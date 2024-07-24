@@ -88,12 +88,12 @@
 }
 
 [data-is-expanded="true"] [role="button"] {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-extra-low));
+  filter:  saturate(var(--saturation-low)) opacity(var(--opacity-extra-low));
   transition: var(--transition-default);
 }
 
 [data-is-expanded="true"] [role="button"]:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-extra-low)) opacity(var(--opacity-base)) !important;
+  filter: saturate(var(--saturation-extra-low)) opacity(var(--opacity-base)) !important;
 }
 
 /* In-line reference */
