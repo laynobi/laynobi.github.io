@@ -76,17 +76,6 @@
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-base)) opacity(var(--opacity-base));
 }
 
-/* Bullets (1/2) */
-.NodeAsListElement-module_main__kwj8T .has1Templates, .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"] {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
-  transition: var(--transition-default);
-}
-
-/* Bullets (2/2) */
-.NodeAsListElement-module_main__kwj8T .has1Templates:hover {
-  filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-base));
-}
-
 /* Bullets in table (1/2) */
 .NodeAsTableRow-module_columnContent__2fkKv .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"], .tw-items-start .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:hover {
   filter: hue-rotate(var(--hue)) saturate(var(--saturation-low)) opacity(var(--opacity-low));
