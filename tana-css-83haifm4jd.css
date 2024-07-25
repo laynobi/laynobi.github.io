@@ -500,9 +500,3 @@ span[data-inlineref-node="Fy3EAQ4A284z"]::after {
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node\ was\ scheduled\ in\ the\ past"] {
   display: none !important;
 }
-
-    [class*="References-module"] {
-        position: absolute !important;
-        bottom: 0 !important;
-        width: -webkit-fill-available !important;
-    }
