@@ -502,7 +502,7 @@ span[data-inlineref-node="Fy3EAQ4A284z"]::after {
 }
 
     [class*="References-module"] {
-        position: absolute;
-        bottom: 0;
-        width: -webkit-fill-available;
+        position: absolute !important;
+        bottom: 0 !important;
+        width: -webkit-fill-available !important;
     }
