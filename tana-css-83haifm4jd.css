@@ -491,3 +491,12 @@ span[data-inlineref-node="Fy3EAQ4A284z"]::after {
 .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col .ObjectAvatar-module_image__6hnmd {
   margin-right: 7px !important;
 }
+
+/* Highlights nodes scheduled in the past*/
+.tw-flex-col [data-depth="\32 "]:has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
+  color: #FF665E !important;
+}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node\ was\ scheduled\ in\ the\ past"] {
+  display: none !important;
+}
