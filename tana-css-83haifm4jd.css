@@ -193,4 +193,8 @@ opacity: 0.5;
 font-size: smaller;
 }
 
+[data-tag-name] div[class*="NodePanelBackgroundEffect-"] {
+  display: none;
+}
+
 .tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {display: none !important;}
