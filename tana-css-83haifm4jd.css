@@ -6,7 +6,6 @@
 * {
   font-family: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
   -webkit-font-smoothing: subpixel-antialiased;
-
 }
 
 html {
@@ -149,6 +148,12 @@ display: none !important;
 
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node\ was\ scheduled\ in\ the\ past"] {
   display: none !important;
+}
+
+.UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
+
+.tw-items-center .tw-items-center [style$=" \33 00px\;"] .navtarget {
+  text-transform: lowercase !important;
 }
 
 :first-child > .navtarget .tw-items-start .navtarget {
