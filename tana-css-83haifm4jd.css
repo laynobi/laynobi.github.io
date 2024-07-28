@@ -142,7 +142,7 @@ display: none !important;
 
 /* Highlights nodes scheduled in the past*/
 .tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #FF665E !important;
+  color: #FF533D !important;
   opacity: 1;
 }
 
