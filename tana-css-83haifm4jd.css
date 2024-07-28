@@ -58,7 +58,7 @@ display: none !important;
   background-color: transparent !important;
   margin-left: 5px !important;
   border-radius: 3px;
-  color: rgba(from var(--bulletColor1) r g b / 0.5) !important;
+  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
   border: 1px solid rgba(from var(--bulletColor1) r g b / 0.1) !important;
   transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
 }
@@ -69,8 +69,8 @@ display: none !important;
 }
 
 .TemplateTag-module_tagWrapper__wzRYf button:hover {
-  color: rgba(from var(--bulletColor1) r g b / 1) !important; /* Change to desired hover color */
-  border-color: rgba(from var(--bulletColor1) r g b / 0.5) !important; /* Change border color on hover */
+  color: rgb(from var(--bulletColor1) r g b / 1) !important; /* Change to desired hover color */
+  border-color: rgb(from var(--bulletColor1) r g b / 0.5) !important; /* Change border color on hover */
 }
 
 .tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf :first-child {
