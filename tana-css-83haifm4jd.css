@@ -193,4 +193,4 @@ opacity: 0.5;
 font-size: smaller;
 }
 
-.PlainListItem-module_wrapper__spmPJ [type] {display: none !important;}
+.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {display: none !important;}
