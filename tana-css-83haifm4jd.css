@@ -120,7 +120,6 @@ display: none !important;
 }
 
 
-
 [data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
   text-transform: lowercase;
 }
@@ -142,4 +141,4 @@ display: none !important;
   filter: grayscale(1)
 }
 
-.PlainListItem-module_wrapper__spmPJ [type] {display: none !important;
+.PlainListItem-module_wrapper__spmPJ [type] {display: none !important;}
