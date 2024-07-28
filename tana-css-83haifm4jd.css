@@ -87,6 +87,11 @@ display: none !important;
 [data-editable-wrapper="true"] .inlineelement .inlinecontent .inlineavatar {
   font-size: smaller;
   padding-right: 2px !important;
+  display: none;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [aria-expanded="false"] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
 }
 
 .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
@@ -94,6 +99,14 @@ display: none !important;
   text-transform: uppercase;
     font-family: "MonoLisa" !important;
         letter-spacing: -0.1px;
+}
+
+.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget .TemplateTag-module_tagPrefix__fUBU4 {
+  display: none !important;
+}
+
+.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget span {
+  margin-left: -1ch !important;
 }
 
 .inlineinteractive .inlinecontent:has(.inlineicon [href="\#inline-calendar-icon"]) {
