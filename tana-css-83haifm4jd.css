@@ -33,7 +33,7 @@ text-transform: none;
 /* Checkboxes */
 
 .tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) {
-  filter: opacity(0.2);
+  filter: opacity(0.2) grayscale(1);
   transition: filter 0.3s ease; /* Smooth transition for opacity */
 }
 
@@ -44,7 +44,7 @@ text-transform: none;
 
 .tw-items-start .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline {
   text-decoration: line-through;
-  text-decoration-color: var(--bulletColor1);
+  text-decoration-color: #A0A0A0;
 }
 
 /* Experimental */
@@ -134,7 +134,7 @@ display: none !important;
 .UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
 [data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 
@@ -192,3 +192,5 @@ font-weight: 900;
 opacity: 0.5;
 font-size: smaller;
 }
+
+.PlainListItem-module_wrapper__spmPJ [type] {display: none !important;}
