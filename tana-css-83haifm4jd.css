@@ -131,7 +131,7 @@ display: none !important;
   font-weight: 500;
 }
 
-
+.UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
 [data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
   text-transform: lowercase;
@@ -142,15 +142,11 @@ display: none !important;
 
 /* Highlights nodes scheduled in the past*/
 .tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #FF533D !important;
+  color: #FF665E !important;
   opacity: 1;
 }
 
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node\ was\ scheduled\ in\ the\ past"] {
-  display: none !important;
-}
 
-.UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
 .tw-items-center .tw-items-center [style$=" \33 00px\;"] .navtarget {
   text-transform: lowercase !important;
@@ -160,4 +156,39 @@ display: none !important;
   filter: grayscale(1)
 }
 
-.PlainListItem-module_wrapper__spmPJ [type] {display: none !important;}
+.Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"] {
+  display: none !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"] {
+  display: none !important;
+}
+
+div[data-tag-name="to do"]:has([aria-label="Node is scheduled in the future"]) {
+filter: grayscale(1) opacity(0.7) !important;
+}
+
+code 
+{
+  color: #EB5757 !important;
+  font-family: MonoLisa !important;
+  background-color: transparent !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  border: 0px !important;
+}
+
+code::before
+{
+content: "< ";
+font-weight: 900;
+opacity: 0.5;
+font-size: smaller;
+}
+code::after
+{
+content: " >";
+font-weight: 900;
+opacity: 0.5;
+font-size: smaller;
+}
