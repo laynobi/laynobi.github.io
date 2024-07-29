@@ -180,18 +180,6 @@ display: none !important;
   }
 }
 
-.Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
-  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
-  font-weight: 700 !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.8em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
 div[data-tag-name="to do"]:has([aria-label="Node is scheduled in the future"]):not(.Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"]) {
 filter: grayscale(1) opacity(0.7) !important;
 }
@@ -239,12 +227,7 @@ font-size: smaller;
 
 .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj {
 margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-opacity: 0.75 !important;
-transition: opacity 0.3s ease !important;
-}
-
-.NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj:hover, .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj:focus-within {
-opacity: 1 !important;
+opacity: 0.75;
 }
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
@@ -288,3 +271,13 @@ background-position: bottom !important;
 }
 
 .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT [data-workspace-avatar="true"], .WorkspaceAvatar-module_el__OHJM- {display: none !important;}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag-id="y9-1dHp05h7X"] span::before {
+content: '';
+font-family: "Font Awesome 6 Pro" !important;
+font-size: 1.2em;
+}
+
+span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
+  border: 0px !important;
+}
