@@ -250,3 +250,7 @@ opacity: 0.8;
 .Calendar-module_calendar__EN1Yb .fc {
       --fc-border-color: transparent !important;
 }
+
+.fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion {
+  display: none !important;
+}
