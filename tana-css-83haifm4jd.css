@@ -254,3 +254,7 @@ opacity: 0.8;
 .fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion {
   display: none !important;
 }
+
+ .tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"] {
+   font-weight: 700 !important;
+ }
