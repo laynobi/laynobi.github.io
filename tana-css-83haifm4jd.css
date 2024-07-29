@@ -262,3 +262,12 @@ background-position: bottom !important;
  .tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"] {
    font-weight: 700 !important;
  }
+
+.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"],
+.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="This\ feature\ requires\ Tana\ Core"],
+[aria-label="Set up Google Calendar sync"]
+ {
+  display: none !important;
+}
+
+.BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT [data-workspace-avatar="true"], .WorkspaceAvatar-module_el__OHJM- {display: none !important;}
