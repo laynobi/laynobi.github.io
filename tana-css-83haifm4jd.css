@@ -42,9 +42,13 @@ text-transform: none;
   filter: opacity(1); /* Change opacity back to normal on hover */
 }
 
-.tw-items-start .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline {
-  text-decoration: line-through;
+.tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 [data-list-position] > .noInteractiveInline {
+text-decoration: line-through;
   text-decoration-color: #A0A0A0;
+}
+
+.titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
+  text-decoration: none !important;
 }
 
 /* Experimental */
@@ -170,7 +174,7 @@ filter: grayscale(1) opacity(0.7) !important;
 
 code 
 {
-  color: #D34E2C !important;
+  color: #EB5757 !important;
   font-family: MonoLisa !important;
   background-color: transparent !important;
   padding-left: 5px !important;
@@ -207,7 +211,8 @@ font-size: smaller;
 
 .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj {
 margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-opacity: 0.75;
+opacity: 0.82;
+
 }
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
@@ -224,4 +229,8 @@ opacity: 0.8;
     height: 100%;
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9) 15%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 0) 50%);
     z-index: 1;
+}
+
+.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget span {
+  font-size: 1rem !important;
 }
