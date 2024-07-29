@@ -247,4 +247,6 @@ opacity: 0.8;
   font-size: 1rem !important;
 }
 
- 
+.Calendar-module_calendar__EN1Yb .fc {
+      --fc-border-color: transparent !important;
+}
