@@ -175,13 +175,12 @@ display: none !important;
   border: 0px !important;
   font-size: 0.5em !important;
   transition: color 0.3s ease !important;
-}
-
-  .Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"]:hover {
+  &:hover {
     color: hsl(from #EB5757 h s calc(l * 1.25)) !important;
   }
+}
 
-div[data-tag-name="to do"]:has([aria-label="Node is scheduled in the future"]) {
+div[data-tag-name="to do"]:has([aria-label="Node is scheduled in the future"]):not(.Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"]) {
 filter: grayscale(1) opacity(0.7) !important;
 }
 
@@ -224,7 +223,7 @@ font-size: smaller;
 
 .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj {
 margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-opacity: 0.75 !important;
+opacity: 0.82;
 
 }
 
