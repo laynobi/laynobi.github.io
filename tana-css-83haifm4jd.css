@@ -227,7 +227,12 @@ font-size: smaller;
 
 .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj {
 margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-opacity: 0.75;
+opacity: 0.75 !important;
+transition: opacity 0.3s ease !important;
+}
+
+.NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj:hover, .NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj:focus-within {
+opacity: 1 !important;
 }
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
