@@ -281,3 +281,15 @@ font-size: 1.2em;
 span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   border: 0px !important;
 }
+
+.Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
+  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
+  font-weight: 700 !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  font-size: 0.8em !important;
+  transition: color 0.3s ease !important;
+  &:hover {
+    color: rgb(from var(--bulletColor1) r g b / 1) !important;
+  }
+}
