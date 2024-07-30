@@ -293,3 +293,17 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
     color: rgb(from var(--bulletColor1) r g b / 1) !important;
   }
 }
+
+.modal-backdrop {
+backdrop-filter: blur(3px) brightness(90%) !important;
+}
+
+.QuickAdd-module_footer__bWhHO, QuickAdd-module_header__nbCEv {
+display: none !important;
+}
+
+.QuickAdd-module_quickAdd__PXCxQ {
+    border-top: 5px solid var(--colorBlue600) !important;
+}
+
+
