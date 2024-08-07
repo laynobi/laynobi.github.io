@@ -276,6 +276,7 @@ background-position: bottom !important;
 content: '';
 font-family: "Font Awesome 6 Pro" !important;
 font-size: 1.2em;
+  display: none !important;
 }
 
 span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
