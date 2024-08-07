@@ -326,3 +326,35 @@ div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.Outline
 .tw-flex-col .tw-flex-col .tw-flex-col .ObjectAvatar-module_image__6hnmd {
   display: none !important;
 }
+
+.PlainListItem-module_contentWrapper__CcDH9 [data-list-position] .titleFields [data-editable-wrapper="true"] {
+  filter: grayscale(1) opacity(0.5);
+  transition: filter 0.3s ease;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 [data-list-position]:focus-within .titleFields [data-editable-wrapper="true"] {
+  filter: grayscale(0) opacity(0.9);
+}
+
+
+
+
+
+.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b {
+  color: var(--bulletColor1) !important;
+  font-weight: 400 !important;
+  font-size: 0.7em !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline i {
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--bulletColor1);
+  font-size: 0.8em !important;
+  padding-left: 0.25ch !important;
+  font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b i {
+padding-left: 5px !important;
+}
