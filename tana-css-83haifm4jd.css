@@ -145,12 +145,15 @@ display: none !important;
 .SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
 
 /* Highlights nodes scheduled in the past*/
-.tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #FF665E !important;
+.tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled today"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
+  color: #1DBF8B !important;
   opacity: 1;
 }
 
-
+.tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
+  color: #5BD838 !important;
+  opacity: 1;
+}
 
 .tw-items-center .tw-items-center [style$=" \33 00px\;"] .navtarget {
   text-transform: lowercase !important;
@@ -161,6 +164,10 @@ display: none !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"] {
+  display: none !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled today"] {
   display: none !important;
 }
 
