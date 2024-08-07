@@ -336,14 +336,14 @@ div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.Outline
   display: none !important;
 }
 
-.PlainListItem-module_contentWrapper__CcDH9 [data-list-position] .titleFields [data-editable-wrapper="true"] {
+/*.PlainListItem-module_contentWrapper__CcDH9 [data-list-position] .titleFields [data-editable-wrapper="true"] {
   filter: grayscale(1) opacity(0.5);
   transition: filter 0.3s ease;
 }
 
 .PlainListItem-module_contentWrapper__CcDH9 [data-list-position]:focus-within .titleFields [data-editable-wrapper="true"] {
   filter: grayscale(0) opacity(0.9);
-}
+}*/
 
 
 
