@@ -323,4 +323,6 @@ div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.Outline
     border-style: dashed !important;
 }
 
-
+.tw-flex-col .tw-flex-col .tw-flex-col .ObjectAvatar-module_image__6hnmd {
+  display: none !important;
+}
