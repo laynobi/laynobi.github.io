@@ -318,4 +318,9 @@ display: none !important;
     border-top: 5px solid var(--colorBlue600) !important;
 }
 
+div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.OutlinerIndentLine-module_dashed__pl-L4 .OutlinerIndentLine-module_button__mSLca::after {
+    border-color: var(--bulletColor1) !important;
+    border-style: dashed !important;
+}
+
 
