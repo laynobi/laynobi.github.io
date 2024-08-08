@@ -151,7 +151,7 @@ display: none !important;
 }
 
 .tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #5BD838 !important;
+  color: #D1066D !important;
   opacity: 1;
 }
 
@@ -174,6 +174,24 @@ display: none !important;
 .Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"] {
   display: none !important;
 }
+
+.Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]) {
+  margin-left: 5px !important;
+  border-width: 1px !important;
+  border-color: #E4E4E9 !important;
+  background-color: transparent !important;
+  transform: scale(0.9);
+  color: #88839B !important;
+  filter: grayscale(0) !important;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
+  &:hover, &:focus-within{
+  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
+  border-color:  rgb(from var(--bulletColor1) r g b / 0.5) !important;
+transform: scale(1);
+  }
+}
+
+
 
 .Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"] {
   color: #EB5757 !important;
