@@ -385,7 +385,7 @@ padding-left: 5px !important;
 }
 
 /* Hides subtaskCount */
-div[data-depth="3"]:has([id$="INYW8vijctfw"])
+/*div[data-depth="3"]:has([id$="INYW8vijctfw"])
 {
     display: none; !important;
-}
+}*/
