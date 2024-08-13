@@ -137,9 +137,9 @@ display: none !important;
 
 .UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
-[data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
+/*[data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
   text-transform: lowercase !important;
-}
+}*/
 
 
 .SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
