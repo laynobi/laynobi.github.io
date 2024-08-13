@@ -388,3 +388,8 @@ padding-left: 5px !important;
 div[data-depth="3"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="4"] [id$="INYW8vijctfw"])), div[data-depth="4"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="5"] [id$="INYW8vijctfw"])), div[data-depth="5"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="6"] [id$="INYW8vijctfw"])) {
 display: none !important;
 }
+
+
+span[class="inlinecontent isempty"] {
+  filter: grayscale(1) brightness(1.2);
+}
