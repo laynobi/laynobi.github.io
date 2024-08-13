@@ -387,3 +387,11 @@ display: none !important;
 span[class="inlinecontent isempty"]:not(:has(use)) {
   filter: grayscale(1) brightness(1.2);
 }
+
+.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b b {
+  font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
+  font-size: 0.3em !important;
+  color: black !important;
+  padding-left: 1ch !important;
+  opacity: 0.2 !important;
+}
