@@ -137,11 +137,6 @@ display: none !important;
 
 .UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
-/*[data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
-  text-transform: lowercase !important;
-}*/
-
-
 .SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
 
 /* Highlights nodes scheduled in the past*/
@@ -389,7 +384,6 @@ div[data-depth="3"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="4"] [id$=
 display: none !important;
 }
 
-
-span[class="inlinecontent isempty"] {
+span[class="inlinecontent isempty"]:not(:has(use)) {
   filter: grayscale(1) brightness(1.2);
 }
