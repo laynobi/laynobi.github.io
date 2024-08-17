@@ -239,7 +239,7 @@ font-size: smaller;
 }
 
 .tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR span {
-    border: 2]px dashed !important; /* Set the border width and style */
+    border: 2px dashed !important; /* Set the border width and style */
     border-radius: 8px !important;  /* Set the border radius for rounded corners */
     padding-top: 4px !important;        /* Optional: Add padding inside the border */
     padding-left: 6px !important; 
@@ -250,7 +250,7 @@ font-size: smaller;
 }
 
 /* This one is problematic if you display: none; */
-.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {  position: absolute;
+.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {  position: absolute !important;
   left: -9999px !important;
   top: auto !important;
   width: 1px !important;
