@@ -250,7 +250,7 @@ font-size: smaller;
 }
 
 /* This one is problematic if you display: none; */
-.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {  position: absolute !important;
+.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {
   left: -9999px !important;
   top: auto !important;
   width: 1px !important;
