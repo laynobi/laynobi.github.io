@@ -137,6 +137,11 @@ display: none !important;
 
 .UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
 
+[data-is-node-container="true"] [data-list-description="true"] [data-editable-wrapper="true"] [placeholder="Add\ description"] {
+  text-transform: lowercase !important;
+}
+
+
 .SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
 
 /* Highlights nodes scheduled in the past*/
@@ -233,9 +238,24 @@ font-size: smaller;
   display: none;
 }
 
+.tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR span {
+    border: 1px dotted !important; /* Set the border width and style */
+    border-radius: 8px !important;  /* Set the border radius for rounded corners */
+    padding-top: 4px !important;        /* Optional: Add padding inside the border */
+    padding-left: 6px !important; 
+    padding-right: 6px !important; 
+    padding-bottom: 4px !important;
+    border-color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
 
+}
 
-.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {display: none !important;}
+/* This one is problematic if you display: none; */
+.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {  position: absolute;
+  left: -9999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;}
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
   height: min(25rem, max(25vh, 50rem)) !important;
@@ -379,14 +399,16 @@ div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.Outline
 padding-left: 5px !important;
 }
 
-/* Hides subTask count to 3 levels*/
-div[data-depth="2"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="3"] [id$="INYW8vijctfw"])), div[data-depth="3"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="4"] [id$="INYW8vijctfw"])), div[data-depth="4"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="5"] [id$="INYW8vijctfw"])), div[data-depth="5"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="6"] [id$="INYW8vijctfw"])) {
+/* Hides subtaskCount */
+
+/*div[data-depth="3"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="4"] [id$="INYW8vijctfw"])), div[data-depth="4"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="5"] [id$="INYW8vijctfw"])), div[data-depth="5"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="6"] [id$="INYW8vijctfw"])) {
 display: none !important;
-}
+}*/
 
 span[class="inlinecontent isempty"]:not(:has(use)) {
   filter: grayscale(1) brightness(1.2);
 }
+
 
 .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b b {
   font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
