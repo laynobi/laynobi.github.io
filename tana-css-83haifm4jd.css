@@ -241,16 +241,8 @@ font-size: smaller;
     padding-right: 6px !important; 
     padding-bottom: 4px !important;
     border-color: rgb(from var(--bulletColor1) r g b / 0.75) !important;
-
 }
 
-/* This one is problematic if you display: none; */
-.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {
-  left: -9999px !important;
-  top: auto !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;}
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
   height: min(25rem, max(25vh, 50rem)) !important;
@@ -422,3 +414,36 @@ div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
     opacity: 1;
 }
 
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9 {
+  /*background-color: red;*/
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"]) {
+margin-left: -6px !important;
+}
+
+/* This one is problematic if you display: none; */
+.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {
+  left: -9999px !important;
+  top: auto !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  }
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"] {
+  display: none !important;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"] {
+  text-decoration: line-through;
+  text-decoration-color: #A0A0A0;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
+font-style: italic;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"] {
+  display: none !important;
+}
