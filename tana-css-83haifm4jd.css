@@ -139,17 +139,6 @@ display: none !important;
 
 .SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
 
-/* Highlights nodes scheduled in the past*/
-.tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled today"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #1DBF8B !important;
-  opacity: 1;
-}
-
-.tw-flex-col .tw-items-start:has(.OutlinerItem-module_bulletWrapper__k0sMb .BulletChevron-module_container__xbTJW):has(.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"]) .titleFields .noInteractiveInline .inlinestatic .inlinecontent {
-  color: #D1066D !important;
-  opacity: 1;
-}
-
 .tw-items-center .tw-items-center [style$=" \33 00px\;"] .navtarget {
   text-transform: lowercase !important;
 }
@@ -158,13 +147,25 @@ display: none !important;
   filter: grayscale(1)
 }
 
-.Button-module_buttonGroup__Xq194 [aria-label="Node was scheduled in the past"] {
-  display: none !important;
-}
+/* STEP 1: CHANGES COLOR OF DATE FIELDS IN TITLES BUILT VIA TITLE EXPRESSION */
+    /* DUE TODAY: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node is scheduled today" */
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is scheduled today"]) .titleFields span[data-inlineref-date] .inlinecontent {
+        color: #1DBF8B !important; /* BRIGHT GREEN */
+    }
+    /* PAST DUE: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node was scheduled in the past" */
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was scheduled in the past"]) .titleFields span[data-inlineref-date] .inlinecontent {
+        color: #D1066D !important; /* DARK RED */
+    }
 
-.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled today"] {
-  display: none !important;
-}
+/* STEP 2: HIDE HELPER COMMAND NODES SO THEY DO NOT APPEAR IN COMMAND PALETTE */
+    /* DUE TODAY: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node is scheduled today" */
+    [class^="Button-module_buttonGroup"] [aria-label="Node is scheduled today"] {
+        display: none !important;
+    }
+    /* PAST DUE: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node was scheduled in the past" */
+    [class^="Button-module_buttonGroup"] [aria-label="Node was scheduled in the past"] {
+        display: none !important;
+    }
 
 .Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"] {
   display: none !important;
