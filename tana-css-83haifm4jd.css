@@ -147,22 +147,18 @@ display: none !important;
   filter: grayscale(1)
 }
 
-/* STEP 1: CHANGES COLOR OF DATE FIELDS IN TITLES BUILT VIA TITLE EXPRESSION */
-    /* DUE TODAY: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node is scheduled today" */
     .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is scheduled today"]) .titleFields span[data-inlineref-date] .inlinecontent {
         color: #1DBF8B !important; /* BRIGHT GREEN */
+        opacity: 1 !important;
     }
-    /* PAST DUE: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node was scheduled in the past" */
     .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was scheduled in the past"]) .titleFields span[data-inlineref-date] .inlinecontent {
         color: #D1066D !important; /* DARK RED */
+        opacity: 1 !important;
     }
 
-/* STEP 2: HIDE HELPER COMMAND NODES SO THEY DO NOT APPEAR IN COMMAND PALETTE */
-    /* DUE TODAY: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node is scheduled today" */
     [class^="Button-module_buttonGroup"] [aria-label="Node is scheduled today"] {
         display: none !important;
     }
-    /* PAST DUE: TARGETS NODES WITH COMMAND NODES THAT HAVE THE DESCRIPTION "Node was scheduled in the past" */
     [class^="Button-module_buttonGroup"] [aria-label="Node was scheduled in the past"] {
         display: none !important;
     }
@@ -232,16 +228,6 @@ font-size: smaller;
 
 [data-tag-name] div[class*="NodePanelBackgroundEffect-"] {
   display: none;
-}
-
-.tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW .ObjectAvatar-module_container__L7-TR span {
-    border: 2px dashed !important; /* Set the border width and style */
-    border-radius: 8px !important;  /* Set the border radius for rounded corners */
-    padding-top: 4px !important;        /* Optional: Add padding inside the border */
-    padding-left: 6px !important; 
-    padding-right: 6px !important; 
-    padding-bottom: 4px !important;
-    border-color: rgb(from var(--bulletColor1) r g b / 0.75) !important;
 }
 
 .NodePanelBanner-module_coverImageWrapper__BqFgB {
@@ -447,3 +433,15 @@ font-style: italic;
 .Button-module_buttonGroup__Xq194 [aria-label="This node is completed"] {
   display: none !important;
 }
+
+/* .ContentPositionerContainer-module_container__-TM27 .NodeAsListElement-module_main__kwj8T:focus-within {
+  outline: 1px dashed #D7D6DD !important;
+  border-radius: 4px !important; 
+  outline-offset: 2px !important;
+}*/
+
+.tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within:not(.OutlinerItem-module_children__9oZW1 [data-is-placeholder="false"]) {
+   background-color: #F5F5F7;
+   border-radius: 4px;
+}
+
