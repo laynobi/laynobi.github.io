@@ -358,7 +358,7 @@ div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.Outline
 .PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline i {
   font-style: normal;
   text-transform: uppercase;
-  color: var(--bulletColor1);
+  /*color: var(--bulletColor1);*/
   font-size: 0.95em !important;
   padding-left: 0.25ch !important;
   font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
