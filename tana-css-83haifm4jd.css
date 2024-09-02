@@ -421,6 +421,11 @@ margin-left: -6px !important;
   display: none !important;
 }
 
+
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"] {
+  display: none !important;
+}
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"] {
   text-decoration: line-through;
   text-decoration-color: var(--colorUITextDisabled);
@@ -428,9 +433,17 @@ margin-left: -6px !important;
   color: var(--colorUITextDisabled) !important;
 }
 
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) [data-role="editable"] {
+font-weight: 700;
+}
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
 font-style: italic;
 }
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"] {
+  display: none !important;
+}
+
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node is completed"] {
   display: none !important;
