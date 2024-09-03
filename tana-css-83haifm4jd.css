@@ -290,9 +290,6 @@ background-position: top !important;
       --fc-border-color: transparent !important;
 }
 
-.fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion, .fc-scrollgrid .fc-scrollgrid-section [style="overflow\:\ hidden\ scroll\;"]:has(.fc-daygrid-body) {
-  display: none !important;
-}
 
  .tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"] {
    font-weight: 700 !important;
@@ -534,3 +531,17 @@ color: var(--colorUITextDisabled) !important;
 .Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"] {
   display: none !important;
 }
+
+.fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc .Calendar-module_timeStamp__iJ4oU {
+  display: none;
+}
+
+.inlinestatic .inlinecontent:has(.inlineicon [href="\#inline-calendar-icon"]) {
+  font-style: normal;
+}
+
+[data-is-sidebar-home="false"] span, .tw-flex-col .tw-flex-col .navtarget .drag-item {
+  color: var(--colorButtonNeutralHoverStroke);
+}
+
+.tw-flex-col .tw-flex-col > .navtarget:has([aria-label^="Create "]), [data-editable-wrapper="true"] .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__fUBU4 {display: none !important;}
