@@ -454,6 +454,7 @@ margin-left: -6px !important;
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) [data-role="editable"] {
 font-weight: 700;
+  color: #1DBF8B !important; 
 }
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
 font-style: italic;
