@@ -255,7 +255,7 @@ opacity: 0.9;
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
 opacity: 0.75;
-background-position: center !important;
+background-position: bottom !important;
 }
 
 
@@ -480,3 +480,14 @@ font-style: italic;
   color: black;
   opacity: 0.1;
 }*/
+
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u::before {
+content: " ";
+font-size: 0.5em !important;
+}
