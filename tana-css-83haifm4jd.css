@@ -18,6 +18,7 @@ text-transform: none;
 
 .OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:has(.ObjectAvatar-module_container__L7-TR) {
   color: var(--bulletColor1);
+  font-size: 110%;
 }
 
 .NodeAsListElement-module_isTuple__k28TN > [style] {
