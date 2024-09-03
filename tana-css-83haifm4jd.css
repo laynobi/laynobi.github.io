@@ -316,9 +316,10 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   display: none !important; 
 }
 
+
 .Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
-  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
   font-weight: 700 !important;
+  color: red !important;
   background-color: transparent !important;
   border: 0px !important;
   font-size: 0.8em !important;
@@ -543,10 +544,6 @@ color: var(--colorUITextDisabled) !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
   display: none !important;
 }
 
