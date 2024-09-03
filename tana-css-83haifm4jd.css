@@ -502,6 +502,7 @@ font-style: italic;
 .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u::before {
 content: "";
 margin-right: 1px;
+color: var(--colorUITextDisabled) !important;
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
@@ -516,5 +517,9 @@ margin-right: 1px;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"] {
+  display: none !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
   display: none !important;
 }
