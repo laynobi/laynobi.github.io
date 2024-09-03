@@ -157,19 +157,31 @@ display: none !important;
   filter: grayscale(1)
 }
 
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is scheduled today"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
         color: #1DBF8B !important; /* BRIGHT GREEN */
         opacity: 1 !important;
     }
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was scheduled in the past"]) .titleFields span[data-inlineref-date] .inlinecontent {
+
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields i i i {
+        color: #1DBF8B !important; /* BRIGHT GREEN */
+        opacity: 1 !important;
+    }
+
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was due in the past"]) .titleFields i i i {
         color: #D1066D !important; /* DARK RED */
         opacity: 1 !important;
     }
 
-    [class^="Button-module_buttonGroup"] [aria-label="Node is scheduled today"] {
+  .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was due in the past"]) .titleFields span[data-inlineref-date] .inlinecontent {
+        color: #D1066D !important; /* DARK RED */
+        opacity: 1 !important;
+    }
+
+
+    [class^="Button-module_buttonGroup"] [aria-label="Node is due today"] {
         display: none !important;
     }
-    [class^="Button-module_buttonGroup"] [aria-label="Node was scheduled in the past"] {
+    [class^="Button-module_buttonGroup"] [aria-label="Node was due in the past"] {
         display: none !important;
     }
 
@@ -482,12 +494,29 @@ font-style: italic;
 }*/
 
 .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: normal;
   font-style: normal;
 }
 
 .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u::before {
-content: " ";
-font-size: 0.7em !important;
+content: "";
+font-size: 0.5em !important;
+margin-right: 1px;
+}
+
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
+  text-decoration: none !important; 
+  font-weight: normal !important;
+  font-style: normal !important;
+}
+
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
+content: "" !important;
+margin-right: 1px;
+font-size: 0.5em !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"] {
+  display: none !important;
 }
