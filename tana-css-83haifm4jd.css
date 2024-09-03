@@ -571,6 +571,10 @@ color: var(--colorUITextDisabled) !important;
   display: none !important;
 }
 
+.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"] {
+  display: none !important;
+}
+
 
 .fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc .Calendar-module_timeStamp__iJ4oU {
   display: none;
