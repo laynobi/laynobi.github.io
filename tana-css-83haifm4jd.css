@@ -30,6 +30,11 @@ text-transform: none;
   font-weight: 700;
 }
 
+.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) .OutlinerItem-module_bullet__gMRnW span {
+  color: #FFDB3A !important;
+  font-weight: 700;
+}
+
 .NodeAsListElement-module_isTuple__k28TN > [style] {
   opacity: 0.5;
   transition: opacity 0.3s ease; /* Adjust duration and easing as needed */
@@ -469,6 +474,12 @@ margin-left: -6px !important;
 font-weight: 700;
   color: #1DBF8B !important; 
 }
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) [data-role="editable"] {
+font-style: italic;
+color: #FFDB3A !important; 
+}
+
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
 font-style: italic;
 }
@@ -591,3 +602,7 @@ font-size: 0.5em !important;
 }
 
 .tw-flex-col .tw-flex-col > .navtarget:has([aria-label^="Create "]), [data-editable-wrapper="true"] .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__fUBU4 {display: none !important;}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="waiting"] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
+}
