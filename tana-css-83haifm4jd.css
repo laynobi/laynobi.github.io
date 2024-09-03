@@ -516,10 +516,21 @@ content: "" !important;
 margin-right: 1px;
 }
 
+.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
+content: "" !important;
+margin-right: 1px;
+color: var(--colorUITextDisabled) !important;
+}
+
+
 .Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"] {
   display: none !important;
 }
 
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
+  display: none !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"] {
   display: none !important;
 }
