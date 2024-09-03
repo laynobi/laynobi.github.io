@@ -489,5 +489,5 @@ font-style: italic;
 
 .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u::before {
 content: " ";
-font-size: 0.5em !important;
+font-size: 0.7em !important;
 }
