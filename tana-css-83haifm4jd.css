@@ -524,7 +524,7 @@ color: var(--colorUITextDisabled) !important;
   display: none !important;
 }
 
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="documentation"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
   display: none !important;
 }
 
