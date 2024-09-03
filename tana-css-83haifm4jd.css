@@ -21,6 +21,15 @@ text-transform: none;
   font-size: 110%;
 }
 
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span {
+  color: var(--colorUITextDisabled) !important;
+}
+
+.tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
+  color: black !important;
+  font-weight: 700;
+}
+
 .NodeAsListElement-module_isTuple__k28TN > [style] {
   opacity: 0.5;
   transition: opacity 0.3s ease; /* Adjust duration and easing as needed */
@@ -392,7 +401,7 @@ div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
     display: flex;
     justify-content: center;
     min-width: 2ch !important;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 
