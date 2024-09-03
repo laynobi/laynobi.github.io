@@ -26,7 +26,7 @@ text-transform: none;
 }
 
 .tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: black !important;
+  color: #1DBF8B !important;
   font-weight: 700;
 }
 
