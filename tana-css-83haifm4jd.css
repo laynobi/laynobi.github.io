@@ -329,6 +329,18 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   }
 }
 
+.Button-module_buttonGroup__Xq194 [aria-label="Has recording"] {
+  font-weight: 700 !important;
+  color: var(--colorUITextDisabled) !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  font-size: 0.8em !important;
+  transition: color 0.3s ease !important;
+  &:hover {
+    color: rgb(from var(--bulletColor1) r g b / 1) !important;
+  }
+}
+
 .Button-module_buttonGroup__Xq194 [aria-label="is time-tracked via toggl"] {
   color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
   font-weight: 700 !important;
@@ -511,6 +523,7 @@ color: var(--colorUITextDisabled) !important;
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="resourced"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
 }
+
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
   text-decoration: none !important; 
