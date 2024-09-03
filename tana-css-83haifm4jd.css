@@ -507,6 +507,10 @@ margin-right: 1px;
 color: var(--colorUITextDisabled) !important;
 }
 
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="resourced"] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
+}
+
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
   text-decoration: none !important; 
   font-weight: normal !important;
@@ -541,6 +545,11 @@ color: var(--colorUITextDisabled) !important;
 .Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"] {
   display: none !important;
 }
+
+.Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
+  display: none !important;
+}
+
 
 .fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc .Calendar-module_timeStamp__iJ4oU {
   display: none;
