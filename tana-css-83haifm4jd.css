@@ -664,10 +664,13 @@ b i u {
 }
 
 .ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ) {
+  filter: grayscale(1);
   opacity: 0.8;
-  transition: 0.3s opacity ease-in-out;
+  transition: 0.3s filter ease-in-out, 0.3s opacity ease-in-out;
 }
 
 .ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ):hover {
+  filter: grayscale(0);
   opacity: 1;
- }
+}
+
