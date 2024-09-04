@@ -204,7 +204,25 @@ display: none !important;
   display: none !important;
 }
 
-.Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]) {
+
+.Button-module_buttonGroup__Xq194 [aria-label^="See"], .Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
+  background-color: transparent !important;
+  transform: scale(0.9) !important;
+  color: rgb(from var(--colorUITextDisabled) r g b / 0.5) !important;
+  filter: grayscale(0) !important;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
+  &:hover, &:focus-within{
+  color: rgb(from var(--colorUITextDisabled) r g b / 0.9) !important;
+  border-color:  rgb(from var(--bulletColor1) r g b / 0.5) !important;
+transform: scale(1);
+  }
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
+  padding-left: 125px !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]):not([aria-label^="See"]):not([aria-label^="Un-snooze"]) {
 position: absolute !important;
 right: 0 !important;
 margin-left: -2ch !important;
@@ -372,10 +390,6 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
 
 .modal-backdrop {
 backdrop-filter: blur(3px) brightness(90%) !important;
-}
-
-.QuickAdd-module_footer__bWhHO, QuickAdd-module_header__nbCEv {
-display: none !important;
 }
 
 .QuickAdd-module_quickAdd__PXCxQ {
@@ -656,4 +670,4 @@ b i u {
 
 .ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ):hover {
   opacity: 1;
-}
+ }
