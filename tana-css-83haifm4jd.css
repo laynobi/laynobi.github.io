@@ -21,18 +21,28 @@ text-transform: none;
   font-size: 110%;
 }
 
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span {
+.Calendar-module_entry__TBeVc:has(b i u), .Calendar-module_entry__TBeVc:has(u i b) {
+   background-color: transparent !important;
+   filter: grayscale(1);
+   border-width: 0 !important;
+   padding-left: 2ch !important;
+}
+
+.Calendar-module_entry__TBeVc .editable.noInteractiveInline
+ {
+   filter: grayscale(1);
+}
+
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span, .tw-flex-col [data-tag-name="resourced"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span {
   color: var(--colorUITextDisabled) !important;
 }
 
 .tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
   color: #1DBF8B !important;
-  font-weight: 700;
 }
 
 .tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: #FFDB3A !important;
-  font-weight: 700;
+  color: #9E6C00 !important;
 }
 
 .NodeAsListElement-module_isTuple__k28TN > [style] {
@@ -59,7 +69,7 @@ text-transform: none;
 
 .tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 [data-list-position] > .noInteractiveInline {
 text-decoration: line-through;
-  text-decoration-color: #A0A0A0;
+text-decoration-color: #A0A0A0;
 }
 
 .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
@@ -195,12 +205,14 @@ display: none !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]) {
-  margin-left: 5px !important;
+position: absolute !important;
+right: 0 !important;
+margin-left: -2ch !important;
   border-width: 1px !important;
   border-color: #E4E4E9 !important;
   background-color: transparent !important;
   transform: scale(0.9);
-  color: #88839B !important;
+  color: var(--colorUITextDisabled);
   filter: grayscale(0) !important;
   transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
   &:hover, &:focus-within{
@@ -463,7 +475,7 @@ margin-left: -6px !important;
 .Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"] {
   display: none !important;
 }
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"] {
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-list-position] > .noInteractiveInline {
   text-decoration: line-through;
   text-decoration-color: var(--colorUITextDisabled);
   font-style: oblique;
@@ -477,7 +489,7 @@ font-weight: 700;
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) [data-role="editable"] {
 font-style: italic;
-color: #FFDB3A !important; 
+color: #9E6C00 !important; 
 }
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
@@ -547,6 +559,11 @@ content: "" !important;
 margin-right: 1px;
 }
 
+.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
+content: "" !important;
+margin-right: 1px;
+}
+
 .tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
 content: "" !important;
 margin-right: 1px;
@@ -589,8 +606,9 @@ color: var(--colorUITextDisabled) !important;
 }
 
 [data-tag-name="documentation"] .OutlinerItem-module_bullet__gMRnW span {
-font-size: 110%;
+font-size: 100%;
 margin-left: 2px !important;
+color: var(--colorUITextDisabled)
 }
 
 .tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .titleFields i i i::before {
@@ -609,4 +627,24 @@ font-size: 0.5em !important;
 
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="waiting"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
+}
+
+.fc-daygrid-body .fc-scrollgrid-sync-table .fc-daygrid-day .fc-daygrid-day-frame, .fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion {display: none;}
+
+b i u {
+  text-decoration: none;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"] {
+  display: none !important;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"]) [data-role="editable"] {
+  text-decoration-color: var(--colorUITextDisabled);
+  font-style: oblique;
+  color: var(--colorUITextDisabled) !important;
+}
+
+.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"]) .OutlinerItem-module_bullet__gMRnW span {
+  color: var(--colorUITextDisabled) !important;
 }
