@@ -495,10 +495,13 @@ margin-left: -6px !important;
   color: var(--colorUITextDisabled) !important;
 }
 
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) [data-role="editable"] {
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) {
 font-weight: 700;
   color: #1DBF8B !important; 
 }
+
+
+
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) [data-role="editable"] {
 font-style: italic;
@@ -628,6 +631,7 @@ color: var(--colorUITextDisabled)
 content: "" !important;
 margin-right: 2px;
 font-size: 0.8em !important;
+font-weight: 400 !important;
 }
 
 .NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .titleFields i i i::before {
