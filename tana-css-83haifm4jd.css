@@ -223,8 +223,6 @@ transform: scale(1);
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]):not([aria-label^="See"]):not([aria-label^="Un-snooze"]) {
-position: absolute !important;
-right: 0 !important;
 margin-left: -2ch !important;
   border-width: 1px !important;
   border-color: #E4E4E9 !important;
