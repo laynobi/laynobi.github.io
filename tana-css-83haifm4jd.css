@@ -627,7 +627,7 @@ margin-left: 2px !important;
 color: var(--colorUITextDisabled)
 }
 
-.tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .titleFields i i i::before {
+.tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Has deadline"]) .titleFields i i i::before {
 content: "" !important;
 margin-right: 2px;
 font-size: 0.8em !important;
