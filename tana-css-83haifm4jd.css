@@ -316,10 +316,14 @@ opacity: 0.9;
 }
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
-opacity: 0.75;
-background-position: center !important;
+    opacity: 0.75;
+    background-position: center !important;
+    transition: opacity 0.5s ease; /* Adjust the timing as desired */
 }
 
+.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center:hover {
+    opacity: 1; /* Change opacity to 1 on hover */
+}
 
 .tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center::before {
     content: '';
