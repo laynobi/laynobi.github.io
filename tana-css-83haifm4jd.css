@@ -381,19 +381,6 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   }
 }
 
-.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"] {
-  font-weight: 700 !important;
-  padding-left: 2ch !important;
-  color: var(--colorUITextDisabled) !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.8em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="session"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
 }
@@ -797,6 +784,12 @@ font-style: oblique;
   content: "";
   font-size: 0.8em;
   color: #D1066D !important;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is snoozed"])::before {
+  content: "";
+  font-size: 0.8em;
+  color: var(--colorUITextDisabled) !important;
 }
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"])::before {
