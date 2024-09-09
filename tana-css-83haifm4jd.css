@@ -603,8 +603,9 @@ font-style: italic;
 }*/
 
 .tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within:not(.OutlinerItem-module_children__9oZW1 [data-is-placeholder="false"]) {
-   background-color: #F5F5F7;
+   background-color: #fafafb;
    border-radius: 4px;
+   z-index: -2;
 }
 
 /*.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .tw-inline-flex [data-tag="day"] span {
