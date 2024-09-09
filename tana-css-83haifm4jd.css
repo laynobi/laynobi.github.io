@@ -190,7 +190,7 @@ display: none !important;
   filter: grayscale(1)
 }
 
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields i i i span[data-inlineref-date] .inlinecontent {
         color: #1DBF8B !important; /* BRIGHT GREEN */
         opacity: 1 !important;
     }
@@ -199,6 +199,8 @@ display: none !important;
         color: #1DBF8B !important; /* BRIGHT GREEN */
         opacity: 1 !important;
     }
+
+
 
     .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was due in the past"]) .titleFields i i i {
         color: #D1066D !important; /* DARK RED */
@@ -226,6 +228,7 @@ display: none !important;
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) {
 color: var(--colorUITextDisabled) !important; 
 }
+
 
 .Button-module_buttonGroup__Xq194 [aria-label^="See"], .Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
   background-color: transparent !important;
@@ -637,6 +640,28 @@ margin-right: 1px;
 color: var(--colorUITextDisabled) !important;
 }
 
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in past"]) .titleFields i i b::before {
+content: "";
+margin-right: 1px;
+color: #D1066D;
+}
+
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date today"]) .titleFields i i b::before {
+content: "";
+margin-right: 1px;
+color: #1DBF8B;
+}
+
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"]) .titleFields i i b::before {
+content: "";
+margin-right: 1px;
+color: var(--colorUITextDisabled);
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"] {
+  display: none !important;
+}
+
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="resourced"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
 }
@@ -791,7 +816,7 @@ font-style: oblique;
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is stale"])::before {
   content: "";
   font-size: 0.8em;
-  color: #D1066D !important;
+color: #D1066D !important;
 }
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is snoozed"])::before {
@@ -809,6 +834,27 @@ font-style: oblique;
 .Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
   display: none !important;
 }
+
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node has scheduled date today"]) .titleFields i i b span[data-inlineref-date] .inlinecontent {
+        color: #1DBF8B !important; /* BRIGHT GREEN */
+        opacity: 1 !important;
+    }
+
+
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in past"] {
+  display: none !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date today"] {
+  display: none !important;
+}
+
+    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node has scheduled date in past"]) .titleFields i i b span[data-inlineref-date] .inlinecontent {
+        color: #D1066D !important;
+        opacity: 1 !important;
+    }
+
 
 
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="subtask"] .TemplateTag-module_tag__8TbLO {
