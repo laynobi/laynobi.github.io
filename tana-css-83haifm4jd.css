@@ -654,8 +654,6 @@ color: #1DBF8B;
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"]) .titleFields i i b::before {
 content: "";
-margin-right: 1px;
-color: #7D798F !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"] {
