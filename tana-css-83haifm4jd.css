@@ -777,7 +777,7 @@ margin-right: 2px;
 font-size: 0.9em !important;
 }
 
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"]) [data-role="editable"] {
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"]) {
 font-style: oblique;
 }
 
