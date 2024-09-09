@@ -9,16 +9,6 @@
   
 }
 
-/* Define the keyframes for the rotation */
-@keyframes rotate {
-    0%, 100% {
-        transform: rotate(0deg) !important;
-    }
-    50% {
-        transform: rotate(360deg) !important; /* Change scaling if needed */
-    }
-}
-
 /* Apply the animation to the desired class */
 [data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
   font-size: 0.8em;
@@ -605,7 +595,6 @@ font-style: italic;
 .tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within:not(.OutlinerItem-module_children__9oZW1 [data-is-placeholder="false"]) {
    background-color: #fafafb;
    border-radius: 4px;
-   z-index: -2;
 }
 
 /*.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .tw-inline-flex [data-tag="day"] span {
@@ -754,7 +743,7 @@ font-weight: 400 !important;
 .tw-flex-col .tw-flex-col > .navtarget:has([aria-label^="Create "]), [data-editable-wrapper="true"] .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__fUBU4 {display: none !important;}
 
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="waiting"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
+display: none !important;
 }
 
 .fc-daygrid-body .fc-scrollgrid-sync-table .fc-daygrid-day .fc-daygrid-day-frame, .fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion {display: none;}
@@ -820,13 +809,6 @@ font-style: oblique;
   display: none !important;
 }
 
-.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27 {
-  display: none !important;
-}
-
-.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] > :last-child {
-  margin-top: -20px !important;
-}
 
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="subtask"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
@@ -834,4 +816,12 @@ font-style: oblique;
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"] {
   display: none !important;
+}
+
+.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27 {
+  display: none !important;
+}
+
+.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] > :last-child {
+  margin-top: -20px !important;
 }
