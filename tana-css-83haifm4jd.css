@@ -820,7 +820,7 @@ font-style: oblique;
   display: none !important;
 }
 
-.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27, [data-nav-layout-direction="vertical"] nav .navtarget:has(svg) {
+.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27 {
   display: none !important;
 }
 
