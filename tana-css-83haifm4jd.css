@@ -786,6 +786,12 @@ font-style: oblique;
   color: #D1066D !important;
 }
 
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"])::before {
+  content: "";
+  font-size: 0.8em;
+  color: var(--colorUITextDisabled) !important;
+}
+
 .Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
   display: none !important;
 }
@@ -796,4 +802,8 @@ font-style: oblique;
 
 .WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] > :last-child {
   margin-top: -20px !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="subtask"] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
 }
