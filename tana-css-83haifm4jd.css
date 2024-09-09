@@ -9,6 +9,7 @@
   
 }
 
+
 html {
 font-size: var(--font-size) !important;
 font-style: normal;
@@ -603,7 +604,7 @@ color: var(--colorUITextDisabled) !important;
   font-style: normal !important;
 }
 
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
+.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
 content: "" !important;
 margin-right: 1px;
 }
@@ -727,4 +728,8 @@ font-size: 0.9em !important;
 content: "" !important;
 margin-right: 2px;
 font-size: 0.9em !important;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"]) [data-role="editable"] {
+font-style: oblique;
 }
