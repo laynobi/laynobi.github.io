@@ -680,12 +680,6 @@ font-size: 0.8em !important;
 font-weight: 400 !important;
 }
 
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 2px;
-font-size: 0.5em !important;
-}
-
 .tw-flex-col .tw-flex-col > .navtarget:has([aria-label^="Create "]), [data-editable-wrapper="true"] .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__fUBU4 {display: none !important;}
 
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="waiting"] .TemplateTag-module_tag__8TbLO {
