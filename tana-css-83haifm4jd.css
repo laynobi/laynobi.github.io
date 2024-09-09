@@ -21,8 +21,8 @@
 
 /* Apply the animation to the desired class */
 [data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
-    animation: rotate 3s linear infinite; /* Adjust duration as needed */  
-    font-size: 0.9em;  
+    animation: rotate 3s linear infinite !important; /* Adjust duration as needed */  
+    font-size: 0.9em !important;  
 }
 
 html {
