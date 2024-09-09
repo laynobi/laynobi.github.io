@@ -643,6 +643,12 @@ margin-right: 1px;
 color: var(--colorUITextDisabled) !important;
 }
 
+.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
+content: "" !important;
+margin-right: 1px;
+color: var(--colorUITextDisabled) !important;
+}
+
 .tw-flex-col [data-tag-name="documentation"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node contains documentation"]) .titleFields i i i::before {
 content: "" !important;
 margin-right: 1px;
