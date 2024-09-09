@@ -21,7 +21,6 @@
 
 /* Apply the animation to the desired class */
 [data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
-    font-size: 1em !important;  
 }
 
 html {
