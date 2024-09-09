@@ -165,6 +165,10 @@ display: none !important;
   opacity: 0.5;
 }
 
+.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"] {
+  display: none !important;
+}
+
 .OutlinerItem-module_bullet__gMRnW [role="button"]:not([data-tag-name="doing"] .NodeAsListElement-module_main__kwj8T [draggable="true"] span) {
   transform: scale(0.8); /* Adjust scale factor as needed */
   transform-origin: center; /* Ensures scaling from the center */
