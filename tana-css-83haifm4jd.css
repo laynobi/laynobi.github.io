@@ -723,3 +723,14 @@ b i u {
   opacity: 1;
 }
 
+.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
+content: "" !important;
+margin-right: 2px;
+font-size: 0.5em !important;
+}
+
+.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
+content: "" !important;
+margin-right: 2px;
+font-size: 0.5em !important;
+}
