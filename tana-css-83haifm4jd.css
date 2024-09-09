@@ -752,3 +752,13 @@ font-size: 0.9em !important;
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"]) [data-role="editable"] {
 font-style: oblique;
 }
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is stale"])::before {
+  content: "";
+  font-size: 0.8em;
+  color: #D1066D !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
+  display: none !important;
+}
