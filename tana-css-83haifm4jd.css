@@ -793,6 +793,12 @@ font-style: oblique;
   color: var(--colorUITextDisabled) !important;
 }
 
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has subtasks"])::before {
+  content: "";
+  font-size: 0.8em;
+  color: var(--colorUITextDisabled) !important;
+}
+
 .Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
   display: none !important;
 }
