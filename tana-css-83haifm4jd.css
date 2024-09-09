@@ -9,6 +9,21 @@
   
 }
 
+/* Define the keyframes for the rotation */
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg) !important;
+    }
+    50% {
+        transform: rotate(360deg) !important; /* Change scaling if needed */
+    }
+}
+
+/* Apply the animation to the desired class */
+[data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
+    animation: rotate 3s linear infinite; /* Adjust duration as needed */  
+    font-size: 0.9em;  
+}
 
 html {
 font-size: var(--font-size) !important;
@@ -153,7 +168,7 @@ display: none !important;
   opacity: 0.5;
 }
 
-.OutlinerItem-module_bullet__gMRnW [role="button"] {
+.OutlinerItem-module_bullet__gMRnW [role="button"]:not([data-tag-name="doing"] .NodeAsListElement-module_main__kwj8T [draggable="true"] span) {
   transform: scale(0.8); /* Adjust scale factor as needed */
   transform-origin: center; /* Ensures scaling from the center */
 }
