@@ -397,6 +397,10 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   }
 }
 
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="session"] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
+}
+
 
 .Button-module_buttonGroup__Xq194 [aria-label="Has recording"] {
   font-weight: 700 !important;
