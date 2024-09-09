@@ -626,7 +626,7 @@ color: var(--colorUITextDisabled) !important;
 }
 
 .tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields b i u::before {
-content: "";
+content: "";
 margin-right: 1px;
 color: var(--colorUITextDisabled) !important;
 }
