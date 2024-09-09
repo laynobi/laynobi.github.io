@@ -823,6 +823,7 @@ color: #D1066D !important;
   content: "";
   font-size: 0.8em;
   color: var(--colorUITextDisabled) !important;
+  font-style: normal !important; 
 }
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"])::before {
