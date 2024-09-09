@@ -58,6 +58,10 @@ text-transform: none;
   color: #1DBF8B !important;
 }
 
+.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
+  color: #1DBF8B !important;
+}
+
 .tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) .OutlinerItem-module_bullet__gMRnW span {
   color: #9E6C00 !important;
 }
@@ -544,6 +548,7 @@ font-weight: 700;
 
 
 
+
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) [data-role="editable"] {
 font-style: italic;
 color: #9E6C00 !important; 
@@ -589,6 +594,12 @@ font-style: italic;
 }*/
 
 .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
+  text-decoration: none !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
   text-decoration: none !important;
   font-weight: normal;
   font-style: normal;
@@ -701,6 +712,10 @@ display: none !important;
 font-size: 100%;
 margin-left: 2px !important;
 color: var(--colorUITextDisabled)
+}
+
+.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
+color: #1DBF8B !important;
 }
 
 .tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Has deadline"]) .titleFields i i i::before {
