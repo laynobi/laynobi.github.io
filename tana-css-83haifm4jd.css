@@ -641,19 +641,19 @@ color: var(--colorUITextDisabled) !important;
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in past"]) .titleFields i i b::before {
-content: "";
+content: "";
 margin-right: 1px;
 color: #D1066D;
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date today"]) .titleFields i i b::before {
-content: "";
+content: "";
 margin-right: 1px;
 color: #1DBF8B;
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"]) .titleFields i i b::before {
-content: "";
+content: "";
   color: var(--colorUITextDisabled) !important;
 }
 
