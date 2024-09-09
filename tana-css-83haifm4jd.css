@@ -690,7 +690,7 @@ display: none !important;
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-list-position] > .noInteractiveInline {
   text-decoration: line-through;
   text-decoration-style: wavy;
-  text-decoration-color: var(--colorUITextDisabled);
+  text-decoration-color: #928DA4;
   font-style: oblique;
   color: var(--colorUITextDisabled) !important;
 }
@@ -767,13 +767,13 @@ b i u {
 }
 
 .tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
-content: "" !important;
+content: "" !important;
 margin-right: 2px;
 font-size: 0.9em !important;
 }
 
 .NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
-content: "" !important;
+content: "" !important;
 margin-right: 2px;
 font-size: 0.9em !important;
 }
@@ -790,4 +790,12 @@ font-style: oblique;
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
   display: none !important;
+}
+
+.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27, [data-nav-layout-direction="vertical"] nav .navtarget:has(svg) {
+  display: none !important;
+}
+
+.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] > :last-child {
+  margin-top: -20px !important;
 }
