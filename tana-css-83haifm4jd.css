@@ -819,7 +819,7 @@ font-style: oblique;
 color: #D1066D !important;
 }
 
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is snoozed"])::before {
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"])::before {
   content: "";
   font-size: 0.8em;
   color: var(--colorUITextDisabled) !important;
