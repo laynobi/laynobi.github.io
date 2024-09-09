@@ -807,3 +807,7 @@ font-style: oblique;
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="subtask"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
 }
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"] {
+  display: none !important;
+}
