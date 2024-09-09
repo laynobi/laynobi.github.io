@@ -689,7 +689,7 @@ display: none !important;
 
 .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-list-position] > .noInteractiveInline {
   text-decoration: line-through;
-  text-decoration-style: double;
+  text-decoration-style: wavy;
   text-decoration-color: var(--colorUITextDisabled);
   font-style: oblique;
   color: var(--colorUITextDisabled) !important;
