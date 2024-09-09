@@ -223,6 +223,8 @@ display: none !important;
 }
 
 
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) 
+
 .Button-module_buttonGroup__Xq194 [aria-label^="See"], .Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
   background-color: transparent !important;
   transform: scale(0.9) !important;
