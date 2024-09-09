@@ -553,7 +553,7 @@ font-weight: 700;
 
 
 
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) [data-role="editable"] {
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) {
 font-style: italic;
 color: #9E6C00 !important; 
 }
