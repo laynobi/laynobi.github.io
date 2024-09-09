@@ -353,6 +353,7 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
 
 .Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
   font-weight: 700 !important;
+    padding-left: 2ch !important;
   color: var(--colorUITextDisabled) !important;
   background-color: transparent !important;
   border: 0px !important;
@@ -363,8 +364,23 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
   }
 }
 
+.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"] {
+  font-weight: 700 !important;
+  padding-left: 2ch !important;
+  color: var(--colorUITextDisabled) !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  font-size: 0.8em !important;
+  transition: color 0.3s ease !important;
+  &:hover {
+    color: rgb(from var(--bulletColor1) r g b / 1) !important;
+  }
+}
+
+
 .Button-module_buttonGroup__Xq194 [aria-label="Has recording"] {
   font-weight: 700 !important;
+  padding-left: 2ch !important;
   color: var(--colorUITextDisabled) !important;
   background-color: transparent !important;
   border: 0px !important;
@@ -378,6 +394,7 @@ span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
 .Button-module_buttonGroup__Xq194 [aria-label="is time-tracked via toggl"] {
   color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
   font-weight: 700 !important;
+  padding-left: 2ch !important;
   background-color: transparent !important;
   border: 0px !important;
   font-size: 0.8em !important;
@@ -559,6 +576,22 @@ margin-right: 1px;
 color: var(--colorUITextDisabled) !important;
 }
 
+[data-tag-name="dropped"] .OutlinerItem-module_bullet__gMRnW span {
+color: var(--colorUITextDisabled) !important;
+}
+
+.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields b i u {
+  text-decoration: none !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields b i u::before {
+content: "";
+margin-right: 1px;
+color: var(--colorUITextDisabled) !important;
+}
+
 .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="resourced"] .TemplateTag-module_tag__8TbLO {
   display: none !important;
 }
@@ -596,7 +629,8 @@ color: var(--colorUITextDisabled) !important;
   display: none !important;
 }
 
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="documentation"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="documentation"] .TemplateTag-module_tag__8TbLO, 
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="dropped"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
   display: none !important;
 }
 
@@ -605,7 +639,19 @@ color: var(--colorUITextDisabled) !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"] {
-  display: none !important;
+display: none !important;
+}
+
+.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-list-position] > .noInteractiveInline {
+  text-decoration: line-through;
+  text-decoration-style: double;
+  text-decoration-color: var(--colorUITextDisabled);
+  font-style: oblique;
+  color: var(--colorUITextDisabled) !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"] {
+display: none !important;
 }
 
 
