@@ -654,6 +654,7 @@ color: #1DBF8B;
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"]) .titleFields i i b::before {
 content: "";
+  color: var(--colorUITextDisabled) !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"] {
@@ -674,6 +675,10 @@ content: "";
 .tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
 content: "" !important;
 margin-right: 1px;
+}
+
+.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline in the future"]) .titleFields i i i::before {
+color: var(--colorUITextDisabled);
 }
 
 .tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
@@ -830,6 +835,8 @@ color: #D1066D !important;
   color: var(--colorUITextDisabled) !important;
 }
 
+
+
 .Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
   display: none !important;
 }
@@ -861,6 +868,10 @@ color: #D1066D !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"] {
+  display: none !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline in the future"] {
   display: none !important;
 }
 
