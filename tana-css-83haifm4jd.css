@@ -1019,6 +1019,14 @@ display:none !important;
 display:none !important; 
 }
 
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i {
+  text-decoration: none !important;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 70% !important;
+  color: var(--colorUITextDisabled);
+}
+
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i {
   text-decoration: none !important;
   font-weight: normal;
@@ -1035,6 +1043,13 @@ display:none !important;
   color: var(--colorUITextDisabled);
 }
 
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::after {
+content: "m" !important;
+text-transform: lowercase;
+color: var(--colorUITextDisabled);
+}
+
+
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::after {
 content: "m" !important;
 text-transform: lowercase;
@@ -1048,6 +1063,18 @@ color: var(--colorUITextDisabled);
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
+content: "" !important;
+margin-right: 2px;
+text-transform: lowercase;
+}
+
+.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
+content: "" !important;
+text-transform: lowercase;
+color: var(--colorUITextDisabled);
+}
+
+.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
 content: "" !important;
 margin-right: 2px;
 text-transform: lowercase;
