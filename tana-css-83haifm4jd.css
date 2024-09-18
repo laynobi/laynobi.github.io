@@ -954,19 +954,19 @@ z-index: -1;
 }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This todo has a category"]) .OutlinerItem-module_bullet__gMRnW span::after {
-content: "";
+content: "";
 position: absolute;
-z-index: 0;
+z-index: -2;
 font-family: "Font Awesome 6 Pro" !important;
    transform: scaleX(-1);
 left: -6px !important;
-top: 4px !important;
+top: -4px !important;
             text-shadow: 
                 -1px -1px 0 white,  
                  1px -1px 0 white,
                 -1px 1px 0 white,
                  1px  1px 0 white !important; /* White stroke */
-font-size: 0.8em !important;
+font-size: 0.5em !important;
 }
 
 .Button-module_buttonGroup__Xq194 [aria-label="This todo has a category"] {
