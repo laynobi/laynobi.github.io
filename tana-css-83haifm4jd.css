@@ -942,6 +942,30 @@ font-size: 0.5em !important;
   display: none !important;
 }
 
+.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"]) .OutlinerItem-module_bullet__gMRnW span {
+z-index: -1;
+}
+
+.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"]) .OutlinerItem-module_bullet__gMRnW span::after {
+content: "";
+position: absolute;
+z-index: -2;
+font-family: "Font Awesome 6 Pro" !important;
+   transform: scaleX(-1);
+left: -6px !important;
+top: -4px !important;
+            text-shadow: 
+                -1px -1px 0 white,  
+                 1px -1px 0 white,
+                -1px 1px 0 white,
+                 1px  1px 0 white !important; /* White stroke */
+font-size: 0.5em !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"] {
+  display: none !important;
+}
+
 .tw-items-start .OutlinerItem-module_content__zB1rI .tw-items-start .Button-module_outline__mR4yE {
   color: var(--colorUITextDisabled) !important;
   font-size: 0.4em !important;
