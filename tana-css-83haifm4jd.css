@@ -672,7 +672,7 @@ content: "";
   font-style: normal !important;
 }
 
-.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
+.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i:not(:has(> i))::before {
 content: "" !important;
 margin-right: 1px;
 }
@@ -681,9 +681,9 @@ margin-right: 1px;
 color: var(--colorUITextDisabled);
 }
 
-.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 1px;
+.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i:not(:has(> i))::before {
+    content: "" !important;
+    margin-right: 1px;
 }
 
 .tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
