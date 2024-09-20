@@ -17,7 +17,6 @@
   font-size: smaller;
 }
 
-
 /* Apply the animation to the desired class */
 [data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
   font-size: 0.8em;
@@ -674,6 +673,13 @@ content: "";
   display: none !important;
 }
 
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="email\ "] span {
+  display: none;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="email\ "] .TemplateTag-module_tag__8TbLO {
+  display: none !important;
+}
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
   text-decoration: none !important; 
