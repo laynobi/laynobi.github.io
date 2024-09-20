@@ -9,6 +9,38 @@
   
 }
 
+/* ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
+[class*="NodeListView-module_hiddenFields"] {
+margin: .25rem 0rem 0rem -.35rem !important; 
+background: var(--colorUIStickyTemplateContentBackground) !important;
+border-top-right-radius: var(--radius400) !important;
+border-top-left-radius: var(--radius400) !important;
+padding: .265rem .3rem .15rem .35rem !important;
+display: inline-block !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
+[data-role="template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem .3rem 0rem .35rem !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
+[data-role="optional-template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem .3rem 0rem .35rem !important;   
+}
+
+/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
+[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+margin: 0 !important;
+padding: 0 !important;
+border-radius: 0px !important;
+background: transparent !important;
+}
+
 .tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start .OutlinerItem-module_content__zB1rI [data-testid="plain-list-item"] [data-list-description="true"] [data-role="editable"]::before {
   content: " waiting on ";
   font-family: "MonoLisa", "Font Awesome 6 Pro";
