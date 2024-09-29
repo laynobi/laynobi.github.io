@@ -249,7 +249,18 @@ font-size: var(--font-size) !important;
 
     [class^="Button-module_buttonGroup"] [aria-label^="Label:"] {
       display: none !important;
+
     }
+
+.NodeListView-module_hiddenFields__BXUql > .navtarget.Button-module_button__15yoI > svg {
+  display: none !important;
+  }
+
+.tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget::before {
+content: "+";
+  font-size: 0.8rem !important;
+  opacity: 0.5;
+}
 
 /* 902 - all bullets */
 
@@ -322,3 +333,5 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
   font-size: 0.8em;
   opacity: var(--med-opacity);
 }
+
+
