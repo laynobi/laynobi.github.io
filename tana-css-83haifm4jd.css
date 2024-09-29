@@ -1,1134 +1,225 @@
 :root {
   --font-primary: "Onest";
   --font-size: 80%;
+  --font-monotype: "MonoLisa";
+  --font-defualt-set: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif; 
+  --color-warning: oklch(65.29% 0.286 13.52);
+  --low-opacity: 0.3;
+  --med-opacity: 0.5;
 }
 
 * {
   font-family: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
   -webkit-font-smoothing: subpixel-antialiased;
-  
-}
-
-/* ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
-[class*="NodeListView-module_hiddenFields"] {
-margin: .25rem 0rem 0rem -.35rem !important; 
-background: var(--colorUIStickyTemplateContentBackground) !important;
-border-top-right-radius: var(--radius400) !important;
-border-top-left-radius: var(--radius400) !important;
-padding: .265rem .3rem .15rem .35rem !important;
-display: inline-block !important;
-}
-
-/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
-[data-role="template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem .3rem 0rem .35rem !important;
-}
-
-/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
-[data-role="optional-template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem .3rem 0rem .35rem !important;   
-}
-
-/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
-[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
-margin: 0 !important;
-padding: 0 !important;
-border-radius: 0px !important;
-background: transparent !important;
-}
-
-.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start .OutlinerItem-module_content__zB1rI [data-testid="plain-list-item"] [data-list-description="true"] [data-role="editable"]::before {
-  content: " waiting on ";
-  font-family: "MonoLisa", "Font Awesome 6 Pro";
-  color: #9E6C0080;
-  text-transform: uppercase;
-  font-size: smaller;
-}
-
-/* Apply the animation to the desired class */
-[data-tag-name="doing"] .OutlinerItem-module_bullet__gMRnW span {
-  font-size: 0.8em;
 }
 
 html {
 font-size: var(--font-size) !important;
-font-style: normal;
-font-weight: 400 !important;
-letter-spacing: normal !important;
-text-transform: none;
-}
-
-.OutlinerItem-module_bulletWrapper__k0sMb .OutlinerItem-module_bullet__gMRnW [role="button"]:has(.ObjectAvatar-module_container__L7-TR) {
-  color: var(--bulletColor1);
-  font-size: 110%;
-}
-
-.Calendar-module_entry__TBeVc:has(b i u), .Calendar-module_entry__TBeVc:has(u i b) {
-   background-color: transparent !important;
-   filter: grayscale(1);
-   border-width: 0 !important;
-   padding-left: 2ch !important;
-}
-
-.Calendar-module_entry__TBeVc .editable.noInteractiveInline
- {
-   filter: grayscale(1);
-}
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span, .tw-flex-col [data-tag-name="resourced"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: #1DBF8B !important;
-}
-
-.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: #1DBF8B !important;
-}
-
-.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: #9E6C00 !important;
-}
-
-.NodeAsListElement-module_isTuple__k28TN > [style] {
-  opacity: 0.5;
-  transition: opacity 0.3s ease; /* Adjust duration and easing as needed */
-}
-
-.NodeAsListElement-module_isTuple__k28TN:focus-within > [style] {
-  opacity: 1;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="output"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
 }
 
 
-/* Checkboxes */
+/* 002 - #todo */
 
-.tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) {
-  filter: opacity(0.2) grayscale(1);
-  transition: filter 0.3s ease; /* Smooth transition for opacity */
-}
-
-/* Hover effect only applies when the specific checkbox is present */
-.tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]):focus-within {
-  filter: opacity(1); /* Change opacity back to normal on hover */
-}
-
-.tw-flex-col .SoftLockContainer-module_container__IfJrS .tw-flex-col .NodeAsListElement-module_main__kwj8T:has(.itemdone-checkbox [type="checkbox"]) .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 [data-list-position] > .noInteractiveInline {
-text-decoration: line-through;
-text-decoration-color: #A0A0A0;
-}
-
-.titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-  text-decoration: none !important;
-}
-
-/* Experimental */
-
- .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf .TemplateTag-module_tagPrefix__fUBU4 {
-display: none !important;
-}
-
-.TemplateTag-module_tagWrapper__wzRYf button {
-  background-color: transparent !important;
-  margin-left: 5px !important;
-  border-radius: 3px;
-  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
-  border: 1px solid rgb(from var(--bulletColor1) r g b / 0.2) !important;
-  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
-}
-
-/* Hashtags in related content*/
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [aria-expanded="false"] .TemplateTag-module_tag__8TbLO {
-    margin-left: 0px !important;
-}
-
-.TemplateTag-module_tagWrapper__wzRYf button:hover {
-  color: rgb(from var(--bulletColor1) r g b / 1) !important; /* Change to desired hover color */
-  border-color: rgb(from var(--bulletColor1) r g b / 0.5) !important; /* Change border color on hover */
-}
-
-.tw-inline-flex .TemplateTag-module_tagWrapper__wzRYf :first-child {
-  font-family: "MonoLisa" !important;
-  font-size: smaller;
-  text-transform: uppercase;
-  word-spacing: -1ch;
-}
-
-.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm button {
-  border: 0px !important;
-}
-
-[data-editable-wrapper="true"] .inlineelement .inlinecontent .inlineavatar {
-  font-size: smaller;
-  padding-right: 2px !important;
-  display: none;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [aria-expanded="false"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
-}
-
-.titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-  font-size: smaller;
-  text-transform: uppercase;
-    font-family: "MonoLisa" !important;
-        letter-spacing: -0.1px;
-}
-
-.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget .TemplateTag-module_tagPrefix__fUBU4 {
-  display: none !important;
-}
-
-.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget span {
-  margin-left: -1ch !important;
-}
-
-.inlineinteractive .inlinecontent:has(.inlineicon [href="\#inline-calendar-icon"]) {
-    font-size: smaller;
-  text-transform: uppercase;
-    font-family: "MonoLisa" !important;
-        letter-spacing: -0.1px;
-}
-
-.inlineelement .inlinecontent .inlineicon svg {display: none !important;}
-
-
-.titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-  opacity: 0.5;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"] {
-  display: none !important;
-}
-
-.OutlinerItem-module_bullet__gMRnW [role="button"]:not([data-tag-name="doing"] .NodeAsListElement-module_main__kwj8T [draggable="true"] span) {
-  transform: scale(0.8); /* Adjust scale factor as needed */
-  transform-origin: center; /* Ensures scaling from the center */
-}
-
-.inlineelement .inlinecontent {
-  font-weight: 500;
-}
-
-.UnifiedSidebar-module_nav__oxpZP .tw-flex-col :last-child:has(svg) {display: none !important;}
-
-.SoftLockContainer-module_container__IfJrS .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql {display: none !important;}
-
-.tw-items-center .tw-items-center [style$=" \33 00px\;"] .navtarget {
-  text-transform: lowercase !important;
-}
-
-:first-child > .navtarget .tw-items-start .navtarget {
-  filter: grayscale(1)
-}
-
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields i i i span[data-inlineref-date] .inlinecontent {
-        color: #1DBF8B !important; /* BRIGHT GREEN */
-        opacity: 1 !important;
+    /* 002.01 - bullet for uncategorized todos */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Uncategorized todo"]) .OutlinerItem-module_bullet__gMRnW span {
+    color: transparent !important;
+    z-index: -1;
     }
 
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node is due today"]) .titleFields i i i {
-        color: #1DBF8B !important; /* BRIGHT GREEN */
-        opacity: 1 !important;
-    }
-
-
-
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was due in the past"]) .titleFields i i i {
-        color: #D1066D !important; /* DARK RED */
-        opacity: 1 !important;
-    }
-
-  .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node was due in the past"]) .titleFields span[data-inlineref-date] .inlinecontent {
-        color: #D1066D !important; /* DARK RED */
-        opacity: 1 !important;
-    }
-
-
-    [class^="Button-module_buttonGroup"] [aria-label="Node is due today"] {
-        display: none !important;
-    }
-    [class^="Button-module_buttonGroup"] [aria-label="Node was due in the past"] {
-        display: none !important;
-    }
-
-.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"] {
-  display: none !important;
-}
-
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) {
-color: var(--colorUITextDisabled) !important; 
-}
-
-
-.Button-module_buttonGroup__Xq194 [aria-label^="See"], .Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
-  background-color: transparent !important;
-  transform: scale(0.9) !important;
-  color: rgb(from var(--colorUITextDisabled) r g b / 0.5) !important;
-  filter: grayscale(0) !important;
-  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
-  &:hover, &:focus-within{
-  color: rgb(from var(--colorUITextDisabled) r g b / 0.9) !important;
-  border-color:  rgb(from var(--bulletColor1) r g b / 0.5) !important;
-transform: scale(1);
-  }
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label^="Un-snooze"] {
-  padding-left: 125px !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label]:not([aria-label^="Node"]):not([aria-label^="See"]):not([aria-label^="Un-snooze"]) {
-margin-left: -2ch !important;
-  border-width: 1px !important;
-  border-color: #E4E4E9 !important;
-  background-color: transparent !important;
-  transform: scale(0.9);
-  color: var(--colorUITextDisabled);
-  filter: grayscale(0) !important;
-  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease !important;
-  &:hover, &:focus-within{
-  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
-  border-color:  rgb(from var(--bulletColor1) r g b / 0.5) !important;
-transform: scale(1);
-  }
-}
-
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"] {
-  color: #EB5757 !important;
-  font-weight: 700 !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.5em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: hsl(from #EB5757 h s calc(l * 1.25)) !important;
-  }
-}
-
-div[data-tag-name="to do"]:has([aria-label="Node is scheduled in the future"]):not(.Button-module_buttonGroup__Xq194 [aria-label="Toggle flag"]) {
-filter: grayscale(1) opacity(0.7) !important;
-}
-
-code 
-{
-  color: #EB5757 !important;
-  font-family: MonoLisa !important;
-  background-color: transparent !important;
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-  border: 0px !important;
-}
-
-code::before
-{
-content: "< ";
-font-weight: 900;
-opacity: 0.5;
-font-size: smaller;
-}
-code::after
-{
-content: " >";
-font-weight: 900;
-opacity: 0.5;
-font-size: smaller;
-}
-
-[data-tag-name] div[class*="NodePanelBackgroundEffect-"] {
-  display: none;
-}
-
-.NodePanelBanner-module_coverImageWrapper__BqFgB {
-  height: min(25rem, max(25vh, 50rem)) !important;
-}
-
-.NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_main__JtXfF .NodePanel-module_contentLayout__4hIkd[data-has-layout-aside=true] .NodePanel-module_panelHeader__lSrkU {
-  margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-}
-
-.NodePanel-module_container__sGvu-:has(.PanelToolbar-module_container__QW3RU .tw-items-center .navtarget):has(.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center) .NodePanel-module_contentRight__5MGTj {
-margin-top: calc(min(30rem, max(25vh, 50rem))* -0.3) !important;
-opacity: 0.9;
-}
-
-.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center {
-    opacity: 0.75;
-    background-position: center !important;
-    transition: opacity 0.5s ease; /* Adjust the timing as desired */
-}
-
-.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center:hover {
-    opacity: 1; /* Change opacity to 1 on hover */
-}
-
-.tw-relative.tw-w-full.tw-h-full.tw-bg-cover.tw-bg-center::before {
-    content: '';
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Uncategorized todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    content: "";
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.9) 15%, rgba(255, 255, 255, 0.7) 30%, rgba(255, 255, 255, 0) 50%);
-    z-index: 1;
-}
-
-.tw-flex-col .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget span {
-  font-size: 1rem !important;
-}
-
-.Calendar-module_calendar__EN1Yb .fc {
-      --fc-border-color: transparent !important;
-}
-
-
- .tw-items-end .tw-flex-col .tw-inline-flex [data-role="editable"] {
-   font-weight: 700 !important;
- }
-
-.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"],
-.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="This\ feature\ requires\ Tana\ Core"],
-[aria-label="Set up Google Calendar sync"]
- {
-  display: none !important;
-}
-
-.BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT [data-workspace-avatar="true"], .WorkspaceAvatar-module_el__OHJM- {display: none !important;}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag-id="y9-1dHp05h7X"] span::before {
-content: '';
-font-family: "Font Awesome 6 Pro" !important;
-font-size: 1.2em;
-  display: none !important;
-}
-
-span.TemplateTag-module_tagWrapper__wzRYf[data-tag-id="y9-1dHp05h7X"] button {
-  border: 0px !important;
-  display: none !important; 
-}
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="Has resources"] {
-  font-weight: 700 !important;
-    padding-left: 2ch !important;
-  color: var(--colorUITextDisabled) !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.8em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="session"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Has subtasks"] {
-  font-weight: 700 !important;
-  padding-left: 2ch !important;
-  color: var(--colorUITextDisabled) !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.9em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="Has recording"] {
-  font-weight: 700 !important;
-  padding-left: 2ch !important;
-  color: var(--colorUITextDisabled) !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.8em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="is time-tracked via toggl"] {
-  color: rgb(from var(--bulletColor1) r g b / 0.5) !important;
-  font-weight: 700 !important;
-  padding-left: 2ch !important;
-  background-color: transparent !important;
-  border: 0px !important;
-  font-size: 0.8em !important;
-  transition: color 0.3s ease !important;
-  &:hover {
-    color: rgb(from var(--bulletColor1) r g b / 1) !important;
-  }
-}
-
-.modal-backdrop {
-backdrop-filter: blur(3px) brightness(90%) !important;
-}
-
-.QuickAdd-module_quickAdd__PXCxQ {
-    border-top: 5px solid var(--colorBlue600) !important;
-}
-
-div[data-is-reference="false"] .OutlinerIndentLine-module_wrapper__2aaiQ.OutlinerIndentLine-module_dashed__pl-L4 .OutlinerIndentLine-module_button__mSLca::after {
-    border-color: var(--bulletColor1) !important;
-    border-style: dashed !important;
-}
-
-/*.PlainListItem-module_contentWrapper__CcDH9 [data-list-position] .titleFields [data-editable-wrapper="true"] {
-  filter: grayscale(1) opacity(0.5);
-  transition: filter 0.3s ease;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 [data-list-position]:focus-within .titleFields [data-editable-wrapper="true"] {
-  filter: grayscale(0) opacity(0.9);
-}*/
-
-
-
-.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b {
-  color: var(--bulletColor1) !important;
-  font-weight: 400 !important;
-  font-size: 0.95em !important;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline i {
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--bulletColor1);
-  font-size: 0.95em !important;
-  padding-left: 0.25ch !important;
-  font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b i {
-padding-left: 5px !important;
-}
-
-/* Hides subtaskCount */
-
-div[data-depth="3"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="4"] [id$="INYW8vijctfw"])), div[data-depth="4"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="5"] [id$="INYW8vijctfw"])), div[data-depth="5"]:has([id$="INYW8vijctfw"]):not(:has(div[data-depth="6"] [id$="INYW8vijctfw"])) {
-display: none !important;
-}
-
-span[class="inlinecontent isempty"]:not(:has(use)) {
-  filter: grayscale(1) brightness(1.2);
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .titleFields .noInteractiveInline b b {
-  font-family: "MonoLisa", "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
-  font-size: 0.3em !important;
-  color: black !important;
-  padding-left: 1ch !important;
-  opacity: 0.2 !important;
-}
-
-div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
-    display: flex;
-    justify-content: center;
-    min-width: 2ch !important;
-    /* opacity: 0.6; */
-    transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-.tw-flex-col .tw-flex-col > .navtarget:has(.ObjectAvatar-module_container__L7-TR):hover 
-div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
-    opacity: 1;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9 {
-  /*background-color: red;*/
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"]) {
-margin-left: -6px !important;
-}
-
-/* This one is problematic if you display: none; */
-.tw-items-start [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ [type="checkbox"] {
-  left: -9999px !important;
-  top: auto !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  }
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"] {
-  display: none !important;
-}
-
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node has special spacing"] {
-  display: none !important;
-}
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) [data-list-position] > .noInteractiveInline {
-  text-decoration: line-through;
-  text-decoration-color: var(--colorUITextDisabled);
-  font-style: oblique;
-  color: var(--colorUITextDisabled) !important;
-}
-
-
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) {
-  position: relative; /* Make the parent element a positioning context */
-}
-
-/* Use the ::before pseudo-element for background effect */
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"])::after {
-  content: ''; /* Required for pseudo-elements */
-  position: absolute; /* Position it absolutely */
-  top: -1px; /* Adjust to your desired padding effect */
-  left: -25px; /* Adjust to your desired padding effect */
-  right: -5px; /* Adjust to your desired padding effect */
-  bottom: -1px; /* Adjust to your desired padding effect */
-  background-color: #1dbf8c18; /* The background color */
-  z-index: -1; /* Send it behind the content */
-  border-radius: 4px; /* Optional: Apply rounded corners */
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"]) {
-font-style: italic;
-color: #9E6C00 !important; 
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Node is scheduled in the future"]) [data-role="editable"] {
-font-style: italic;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"] {
-  display: none !important;
-}
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Node contains documentation"] {
-  display: none !important;
-}
-
-/* .ContentPositionerContainer-module_container__-TM27 .NodeAsListElement-module_main__kwj8T:focus-within {
-  outline: 1px dashed #D7D6DD !important;
-  border-radius: 4px !important; 
-  outline-offset: 2px !important;
-}*/
-
-.tw-flex-col .tw-flex-col .SoftLockContainer-module_container__IfJrS:has(.tw-flex-col):focus-within:not(.OutlinerItem-module_children__9oZW1 [data-is-placeholder="false"]) {
-   background-color: #fafafb;
-   border-radius: 4px;
-}
-
-/*.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .tw-inline-flex [data-tag="day"] span {
-  font-family: "Test Maelstrom" !important;
-  font-size: 10em !important;
-  letter-spacing: 0.2em;
-  position: absolute !important;
-  top: -100px;
-  right: 10px;
-  color: black;
-  opacity: 0.1;
-}*/
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is completed"]) .titleFields b i u::before {
-content: "";
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-[data-tag-name="dropped"] .OutlinerItem-module_bullet__gMRnW span {
-color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields b i u {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields b i u::before {
-content: "";
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in past"]) .titleFields i i b::before {
-content: "";
-margin-right: 1px;
-color: #D1066D;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date today"]) .titleFields i i b::before {
-content: "";
-margin-right: 1px;
-color: #1DBF8B;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"]) .titleFields i i b::before {
-content: "";
-  color: var(--colorUITextDisabled) !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in future"] {
-  display: none !important;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="resourced"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="email\ "] span {
-  display: none;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="email\ "] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i {
-  text-decoration: none !important; 
-  font-weight: normal !important;
-  font-style: normal !important;
-}
-
-.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i i:not(:has(> i))::before {
-content: "" !important;
-margin-right: 1px;
-}
-
-.tw-flex-col > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline in the future"]) .titleFields i i i::before {
-color: var(--colorUITextDisabled);
-}
-
-.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"]) .titleFields i i b:not(:has(> i))::before {
-    content: "b" !important;
-    margin-right: 1px;
-}
-
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
-content: "" !important;
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
-content: "" !important;
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="waiting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"]) .titleFields i i i i::before {
-content: "" !important;
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="documentation"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Node contains documentation"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 1px;
-color: var(--colorUITextDisabled) !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline"] {
-  display: none !important;
-}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="documentation"] .TemplateTag-module_tag__8TbLO, 
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="dropped"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="meeting"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="log"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="todo"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="done"] .TemplateTag-module_tag__8TbLO, .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="doing"] .TemplateTag-module_tag__8TbLO{
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Node has a scheduled date"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node is awaiting action"] {
-display: none !important;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) [data-list-position] > .noInteractiveInline {
-  text-decoration: line-through;
-  text-decoration-style: wavy;
-  text-decoration-color: #928DA4;
-  font-style: oblique;
-  color: var(--colorUITextDisabled) !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"] {
-display: none !important;
-}
-
-
-.fc-event-main .Calendar-module_entryWrapper__rJe8C .Calendar-module_entry__TBeVc .Calendar-module_timeStamp__iJ4oU {
-  display: none;
-}
-
-.inlinestatic .inlinecontent:has(.inlineicon [href="\#inline-calendar-icon"]) {
-  font-style: normal;
-}
-
-[data-is-sidebar-home="false"] span, .tw-flex-col .tw-flex-col .navtarget .drag-item {
-  color: var(--colorButtonNeutralHoverStroke);
-}
-
-[data-tag-name="documentation"] .OutlinerItem-module_bullet__gMRnW span {
-font-size: 100%;
-margin-left: 2px !important;
-color: var(--colorUITextDisabled)
-}
-
-.tw-flex-col [data-tag-name="session"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is in progress"]) .OutlinerItem-module_bullet__gMRnW span {
-color: #1DBF8B !important;
-}
-
-.tw-flex-col [data-tag-name="doing"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Has deadline"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 2px;
-font-size: 0.8em !important;
-font-weight: 400 !important;
-}
-
-.tw-flex-col .tw-flex-col > .navtarget:has([aria-label^="Create "]), [data-editable-wrapper="true"] .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__fUBU4 {display: none !important;}
-
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="waiting"] .TemplateTag-module_tag__8TbLO {
-display: none !important;
-}
-
-.fc-daygrid-body .fc-scrollgrid-sync-table .fc-daygrid-day .fc-daygrid-day-frame, .fc-scrollgrid-sync-table .fc-timegrid-axis .fc-timegrid-axis-frame .fc-timegrid-axis-cushion {display: none;}
-
-b i u {
-  text-decoration: none;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"] {
-  display: none !important;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"]) [data-role="editable"] {
-  text-decoration-color: var(--colorUITextDisabled);
-  font-style: oblique;
-  color: var(--colorUITextDisabled) !important;
-}
-
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event occured in the past"]) .OutlinerItem-module_bullet__gMRnW span {
-  color: var(--colorUITextDisabled) !important;
-}
-
-.ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ) {
-  filter: grayscale(1);
-  opacity: 0.8;
-  transition: 0.3s filter ease-in-out, 0.3s opacity ease-in-out;
-}
-
-.ContentPositionerContainer-module_container__-TM27 .tw-flex-col .tw-flex-col:has(.WidgetPanel-module_container__jGmDJ):hover {
-  filter: grayscale(0);
-  opacity: 1;
-}
-
-.tw-flex-col [data-tag-name="dropped"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 2px;
-font-size: 0.9em !important;
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node was dropped"]) .titleFields i i i::before {
-content: "" !important;
-margin-right: 2px;
-font-size: 0.9em !important;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"]) {
-font-style: oblique;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is stale"])::before {
-  content: "";
-  font-size: 0.8em;
-color: #D1066D !important;
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Is snoozed"])::before {
-  content: "";
-  font-size: 0.8em;
-  color: var(--colorUITextDisabled) !important;
-  font-style: normal !important; 
-}
-
-.tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"])::before {
-  content: "";
-  font-size: 0.8em;
-  color: var(--colorUITextDisabled) !important;
-}
-
-
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node is stale"] {
-  display: none !important;
-}
-
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node has scheduled date today"]) .titleFields i i b span[data-inlineref-date] .inlinecontent {
-        color: #1DBF8B !important; /* BRIGHT GREEN */
-        opacity: 1 !important;
+    z-index: 0;
+    font-family: "Font Awesome 6 Pro" !important;
+    color: var(--bulletColor1);
+    left: 2px !important;
+    }
+
+    /* 002.01 - bullet for categorized todos */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Categorized todo"]) .OutlinerItem-module_bullet__gMRnW span {
+    color: transparent !important;
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Categorized todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    font-family: "Font Awesome 6 Pro" !important;
+    color: var(--bulletColor1);
+    left: 2px !important;
+    }
+
+    /* 002.02 - bullet for past due todos */
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    color: var(--color-warning) !important;
+    }
+
+    /* 002.03 - title field for deadline */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has deadline"]) .titleFields b i::before {
+    content: "";
+    margin-right: -1px;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has deadline"]) .titleFields b i {
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 0.8em;
+    }
+
+    /* 002.04 - title field for deadline if past due */
+    .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    color: var(--color-warning) !important;
+    }
+
+    /* 002.05 - todo due > 2 days from today */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span::after {
+      opacity: var(--low-opacity);
+    }
+
+    /* 002.06 - title field for deadline */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .titleFields b i::before {
+      opacity: var(--low-opacity);
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .titleFields span[data-inlineref-date] .inlinecontent {
+      opacity: var(--low-opacity);
+    }
+
+/* 002.07 - task due in > 2 days */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--bulletColor1);
+      opacity: var(--low-opacity);
+      left: 4px !important;
+      top: 0px !important;
+      font-size: 0.7em;
+      transform: scale(0.8);
+     }
+
+/* 002.07 - done tasks */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    opacity: var(--med-opacity);
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .OutlinerItem-module_bullet__gMRnW span::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--bulletColor1);
+      left: 3px !important;
+      top: 0px !important;
+      font-size: 0.7em;
+      font-weight: 900;
+      transform: scale(0.65);
+      opacity: var(--med-opacity);
+     }
+
+    .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) [data-list-position] > .noInteractiveInline {
+      text-decoration: line-through;
+      text-decoration-color: var(--colorUITextDisabled);
+      color: var(--colorUITextDisabled) !important;
+      opacity: var(--med-opacity);
+    }
+
+    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields, .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    opacity: var(--med-opacity);
+    color: var(--colorUITextDisabled) !important;
+    }
+
+/* 003 - ids in title fields of categories */
+
+    .listContentItem:has(span[data-tag="category"]) .editable b {
+    font-family: var(--font-monotype) !important;
+    margin-right: 3px !important;
+    color: var(--bulletColor1);
+    font-weight: normal !important;
+    }
+
+    .listContentItem:has(span[data-tag="category"]) .editable {
+    font-family: var(--font-monotype) !important;
+    font-size: 0.7em;
+    text-transform: uppercase;
     }
 
 
+/* 100 - field enhancements */
 
-.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date in past"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="Node has scheduled date today"] {
-  display: none !important;
-}
-
-    .tw-flex-col .tw-items-start:has([class^="OutlinerItem-module_bulletWrapper"] [class^="BulletChevron-module_container"]):has([aria-label="Node has scheduled date in past"]) .titleFields i i b span[data-inlineref-date] .inlinecontent {
-        color: #D1066D !important;
-        opacity: 1 !important;
+    /* adds background color and bubble to hidden fields */
+    [class*="NodeListView-module_hiddenFields"] {
+    margin: .25rem 0rem 0rem -.35rem !important; 
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    border-top-right-radius: var(--radius400) !important;
+    border-top-left-radius: var(--radius400) !important;
+    padding: .265rem .3rem .15rem .35rem !important;
+    display: inline-block !important;
     }
 
+    /* add background color and padding to regular fields */
+    [data-role="template-children-container"] {
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    margin: 0rem 0rem .25rem -.35rem !important; 
+    padding: 0rem .3rem 0rem .35rem !important;
+    }
 
+    /* add background color and padding to connected optional fields */
+    [data-role="optional-template-children-container"] {
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    margin: 0rem 0rem .25rem -.35rem !important; 
+    padding: 0rem .3rem 0rem .35rem !important;   
+    }
 
-.PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag="subtask"] .TemplateTag-module_tag__8TbLO {
-  display: none !important;
-}
+    /* removes background and effects for supertag config panel */ 
+    [class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+    }
 
-.Button-module_buttonGroup__Xq194 [aria-label="This node is a subtask"] {
-  display: none !important;
-}
+/* 900 - all supertags */
 
-.Button-module_buttonGroup__Xq194 [aria-label="This node has a deadline in the future"] {
-  display: none !important;
-}
+    .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag] {
+      display: none !important;
+    }
 
-.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] .ContentPositionerContainer-module_container__-TM27 {
-  display: none !important;
-}
+/* 901 - All commands with descriptions starting with Label: */
 
-.WidgetPanel-module_collapsibleContent__oNG-w .tw-flex-col [data-nav-layout-direction="vertical"] > :last-child {
-  margin-top: -20px !important;
-}
+    [class^="Button-module_buttonGroup"] [aria-label^="Label:"] {
+      display: none !important;
+    }
 
-.tw-items-start .OutlinerItem-module_content__zB1rI .tw-items-start .Button-module_outline__mR4yE {
-  font-family: "MonoLisa" !important;
-  font-size: 0.7em !important;
-}
+/* 902 - all bullets */
 
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This unreconciled event occurred in the past"]) .OutlinerItem-module_bullet__gMRnW span {
-z-index: -1;
-}
+    [class^="ObjectAvatar-module_container"] span {
+      color: var(--bulletColor1);
+      font-size: 0.9em;
+    }
+    
+/* 903 - calendar icon in date fields */
 
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This unreconciled event occurred in the past"]) .OutlinerItem-module_bullet__gMRnW span::after {
-content: "";
-position: absolute;
-z-index: 0;
-font-family: "Font Awesome 6 Pro" !important;
-color: #D1066D;
-left: -7px !important;
-top: 6px !important;
-            text-shadow: 
-                -1px -1px 0 white,  
-                 1px -1px 0 white,
-                -1px  1px 0 white,
-                 1px  1px 0 white !important; /* White stroke */
-font-size: 0.5em !important;
-}
+    .inlineelement .inlinecontent .inlineicon svg {
+      display: none !important;
+      }
 
-.Button-module_buttonGroup__Xq194 [aria-label="This unreconciled event occurred in the past"] {
-  display: none !important;
-}
+/* 904 - date title fields */
+    .titleFields span[data-inlineref-date] .inlinecontent {
+     text-transform: uppercase;
+     letter-spacing: 0.05ch;
+     font-size: 0.9em;
+    }
 
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This reconciled event occurred in the past"]) .OutlinerItem-module_bullet__gMRnW span {
-z-index: -1;
-}
-
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This reconciled event occurred in the past"]) .OutlinerItem-module_bullet__gMRnW span::after {
-content: "";
-position: absolute;
-z-index: 0;
-font-family: "Font Awesome 6 Pro" !important;
-color: #1DBF8B;
-left: -7px !important;
-top: 6px !important;
-            text-shadow: 
-                -1px -1px 0 white,  
-                 1px -1px 0 white,
-                -1px  1px 0 white,
-                 1px  1px 0 white !important; /* White stroke */
-font-size: 0.5em !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This reconciled event occurred in the past"] {
-  display: none !important;
-}
-
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"]) .OutlinerItem-module_bullet__gMRnW span {
-z-index: -1;
-}
-
-.tw-flex-col [data-tag-name="meeting"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"]) .OutlinerItem-module_bullet__gMRnW span::after {
-content: "";
-position: absolute;
-z-index: -2;
-font-family: "Font Awesome 6 Pro" !important;
-   transform: scaleX(-1);
-left: -8px !important;
-top: -4px !important;
-            text-shadow: 
-                -1px -1px 0 white,  
-                 1px -1px 0 white,
-                -1px 1px 0 white,
-                 1px  1px 0 white !important; /* White stroke */
-font-size: 0.5em !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This event has a category"] {
-  display: none !important;
-}
-
-.tw-items-start .OutlinerItem-module_content__zB1rI .tw-items-start .Button-module_outline__mR4yE {
-  color: var(--colorUITextDisabled) !important;
-  font-size: 0.4em !important;
-  font-family: "MonoLisa" !important;
-  margin-top: 3px !important;
-  opacity: 0.5; /* Initial opacity set to 50% */
-  transition: opacity 0.3s ease-in; /* Transition for opacity change */
-}
-
-.tw-items-start .OutlinerItem-module_content__zB1rI .tw-items-start .Button-module_outline__mR4yE:hover {
-  opacity: 1; /* Change opacity to 100% on hover */
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This todo has a category"]) .OutlinerItem-module_bullet__gMRnW span {
-z-index: -1;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This todo has a category"]) .OutlinerItem-module_bullet__gMRnW span::after {
-content: "";
-position: absolute;
-z-index: -2;
-font-family: "Font Awesome 6 Pro" !important;
-   transform: scaleX(-1);
-left: -6px !important;
-top: -4px !important;
-            text-shadow: 
-                -1px -1px 0 white,  
-                 1px -1px 0 white,
-                -1px 1px 0 white,
-                 1px  1px 0 white !important; /* White stroke */
-font-size: 0.5em !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This todo has a category"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"] {
-  display: none !important;
-}
-
-.Button-module_buttonGroup__Xq194 [aria-label="This node does not have tracked time"] {
-  display: none !important;
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node does not have tracked time"]) .titleFields i b i {
-display:none !important; 
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node does not have tracked time"]) .titleFields i b i {
-display:none !important; 
-}
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 70% !important;
-  color: var(--colorUITextDisabled);
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 70% !important;
-  color: var(--colorUITextDisabled);
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i {
-  text-decoration: none !important;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 70% !important;
-  color: var(--colorUITextDisabled);
-}
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::after {
-content: "m" !important;
-text-transform: lowercase;
-color: var(--colorUITextDisabled);
-}
-
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::after {
-content: "m" !important;
-text-transform: lowercase;
-color: var(--colorUITextDisabled);
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::after {
-content: "m" !important;
-text-transform: lowercase;
-color: var(--colorUITextDisabled);
-}
-
-.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
-content: "" !important;
-margin-right: 2px;
-text-transform: lowercase;
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
-content: "" !important;
-text-transform: lowercase;
-color: var(--colorUITextDisabled);
-}
-
-.tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
-content: "" !important;
-margin-right: 2px;
-text-transform: lowercase;
-}
-
-.NodeAsTableRow-module_columnContent__2fkKv .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="This node has tracked time"]) .titleFields i b i::before {
-content: "" !important;
-text-transform: lowercase;
-color: var(--colorUITextDisabled);
-}
+/* 905 - all fields */
+    .tw-flex-col .tw-flex-col [data-role="template-children-container"] [data-is-expanded="true"] {
+      font-size: 0.9em;
+    }
