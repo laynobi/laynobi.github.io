@@ -294,3 +294,9 @@ div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
   font-family: "Font Awesome 6 Pro") !important;
 }
 
+/* 908 - grayscale nodes without template content */
+
+span[class="inlinecontent isempty"]:not(:has(use)) {
+  filter: grayscale(1) brightness(1.2);
+}
+
