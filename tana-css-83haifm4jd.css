@@ -6,6 +6,7 @@
   --color-warning: oklch(65.29% 0.286 13.52);
   --color-active: oklch(65% 0.205 158.23);
   --color-attention: #F76B15;
+  --color-waiting: #FFBA18;
   --low-opacity: 0.3;
   --med-opacity: 0.5;
 }
@@ -159,22 +160,34 @@ font-size: var(--font-size) !important;
 
 
 /* 002.10 - task with task status "in progress" */
-    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span {
-    z-index: -1;
-    }
+@keyframes movingArrow {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(5px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span::before {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      font-family: "Font Awesome 6 Pro" !important;
-      color: var(--color-active);
-      left: -10px !important;
-      top: 1px !important;
-      font-size: 0.7em;
-      transform: scale(0.85);
-      opacity: 0.8;
-     }
+.tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+  color: var(--color-active);
+  left: -10px !important;
+  top: 1px !important;
+  font-size: 0.7em;
+  transform: scale(0.85);
+  opacity: 0.8;
+  animation: movingArrow 2s infinite ease-in-out;
+}
 
     /* 002.11 - expiry date for rewind */
     .tw-flex-col [data-tag-name="rewind"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has expiry"]) .titleFields b i::before {
@@ -186,6 +199,25 @@ font-size: var(--font-size) !important;
     font-weight: normal !important;
     font-size: 0.8em;
     }
+
+/* 002.12 - task with task status "waiting on" */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW span::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--color-waiting);
+      left: -10px !important;
+      top: 1px !important;
+      font-size: 0.7em;
+      transform: scale(0.85);
+      opacity: 0.8;
+     }
+
 
 /* 003 - ids in title fields of categories */
 
