@@ -157,6 +157,26 @@ font-size: var(--font-size) !important;
     color: var(--color-active) !important;
     }
 
+
+/* 002.10 - task with task status "in progress" */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--color-active);
+      left: 5px !important;
+      top: 1px !important;
+      font-size: 0.7em;
+      transform: scale(0.85);
+      opacity: 1;
+     }
+
+
 /* 003 - ids in title fields of categories */
 
     .listContentItem:has(span[data-tag="category"]) .editable b {
