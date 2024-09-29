@@ -178,26 +178,16 @@ font-size: var(--font-size) !important;
     }
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span::before {
-  content: "";
+  content: "";
   position: absolute;
   font-weight: 700;
   z-index: 0;
   font-family: "Font Awesome 6 Pro" !important;
-color: var(--color-active-light) !important;
+color: var(--color-active) !important;
   left: -12px !important;
   top: 1px !important;
-  font-size: 0.7em !important;
-animation: movingArrow 2.5s infinite ease-in-out;
+  font-size: 0.6rem !important;
   opacity: 0.8;
-        text-shadow:
-        -1px -1px 0 var(--color-active),
-         1px -1px 0 var(--color-active),
-        -1px  1px 0 var(--color-active),
-         1px  1px 0 var(--color-active),
-        -1px  0px 0 var(--color-active),
-         1px  0px 0 var(--color-active),
-         0px -1px 0 var(--color-active),
-         0px  1px 0 var(--color-active); /* Add this block */
      }
 
 
@@ -223,22 +213,13 @@ animation: movingArrow 2.5s infinite ease-in-out;
   font-weight: 700;
   z-index: 0;
   font-family: "Font Awesome 6 Pro" !important;
-color: hsl(from var(--color-waiting) h s calc(l * 1.5)) !important;
-  left: -12px !important;
+  color: var(--color-waiting) !important;
+  left: -13px !important;
   top: 1px !important;
   font-size: 0.7em;
-  transform: scale(0.7);
+  transform: scale(0.8);
   opacity: 0.8;
-        text-shadow:
-        -1px -1px 0 var(--color-waiting),
-         1px -1px 0 var(--color-waiting),
-        -1px  1px 0 var(--color-waiting),
-         1px  1px 0 var(--color-waiting),
-        -1px  0px 0 var(--color-waiting),
-         1px  0px 0 var(--color-waiting),
-         0px -1px 0 var(--color-waiting),
-         0px  1px 0 var(--color-waiting); /* Add this block */
-     }
+       }
 
 
 /* 003 - ids in title fields of categories */
