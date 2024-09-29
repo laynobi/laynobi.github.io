@@ -294,9 +294,14 @@ div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
   font-family: "Font Awesome 6 Pro") !important;
 }
 
-/* 908 - grayscale nodes without template content */
-
+/* 909 - grayscale in-line references to nodes without template content */
 span[class="inlinecontent isempty"]:not(:has(use)) {
   filter: grayscale(1) brightness(1.2);
+}
+
+/* 910 - add space between title fields and name */
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields [data-editable-wrapper="true"] {
+  padding-left: 1ch !important;
 }
 
