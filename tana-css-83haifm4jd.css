@@ -4,6 +4,7 @@
   --font-monotype: "MonoLisa";
   --font-defualt-set: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif; 
   --color-warning: oklch(65.29% 0.286 13.52);
+  --color-active: oklch(65% 0.205 158.23);
   --low-opacity: 0.3;
   --med-opacity: 0.5;
 }
@@ -16,7 +17,6 @@
 html {
 font-size: var(--font-size) !important;
 }
-
 
 /* 002 - #todo */
 
@@ -100,7 +100,7 @@ font-size: var(--font-size) !important;
       color: var(--bulletColor1);
       opacity: var(--low-opacity);
       left: 4px !important;
-      top: 0px !important;
+      top: 1px !important;
       font-size: 0.7em;
       transform: scale(0.8);
      }
@@ -112,7 +112,7 @@ font-size: var(--font-size) !important;
     }
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .OutlinerItem-module_bullet__gMRnW span::before {
-      content: "";
+    content: "";
       position: absolute;
       z-index: 0;
       font-family: "Font Awesome 6 Pro" !important;
@@ -129,12 +129,32 @@ font-size: var(--font-size) !important;
       text-decoration: line-through;
       text-decoration-color: var(--colorUITextDisabled);
       color: var(--colorUITextDisabled) !important;
-      opacity: var(--med-opacity);
+    opacity: var(--med-opacity);
     }
 
-    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields, .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields span[data-inlineref-date] .inlinecontent {
-    opacity: var(--med-opacity);
+    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields b i, .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields span[data-inlineref-date] .inlinecontent {
+
+    font-style: normal;
+    font-size: 0.8em !important;
+    font-weight: normal !important;
     color: var(--colorUITextDisabled) !important;
+    }
+
+    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields b i::before {
+    content: "" !important;
+    color: var(--colorUITextDisabled) !important;
+    }
+
+    /* 002.08 - bullet for todos due today */
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    color: var(--color-active) !important;
+    }
+
+        /* 002.09 - title fields for todos due today */
+
+    .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    color: var(--color-active) !important;
     }
 
 /* 003 - ids in title fields of categories */
@@ -216,10 +236,41 @@ font-size: var(--font-size) !important;
     .titleFields span[data-inlineref-date] .inlinecontent {
      text-transform: uppercase;
      letter-spacing: 0.05ch;
-     font-size: 0.9em;
+     font-size: 0.8em;
     }
 
 /* 905 - all fields */
     .tw-flex-col .tw-flex-col [data-role="template-children-container"] [data-is-expanded="true"] {
       font-size: 0.9em;
     }
+
+/* 906 - node titles in sidebar */
+.tw-flex-col .tw-flex-col .navtarget .drag-item {
+  text-transform: lowercase;
+}
+
+/* 907 - icons in sidebar */
+div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
+    display: flex;
+    justify-content: center;
+    min-width: 2ch !important;
+    /* opacity: 0.6; */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* 908 - hide workspace icon and customize avatar */
+.tw-flex-col .tw-flex-col .navtarget [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"], .tw-flex-col .tw-flex-col .navtarget [data-workspace-avatar="true"] {
+  display: none !important;
+}
+
+.tw-flex-col .tw-flex-col [data-is-sidebar-home="true"] .drag-item {
+  padding-left: 2.4ch !important;
+}
+
+.tw-flex-col .tw-flex-col [data-is-sidebar-home="true"] .drag-item::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  font-family: "Font Awesome 6 Pro") !important;
+}
+
