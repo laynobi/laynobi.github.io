@@ -163,17 +163,18 @@ font-size: var(--font-size) !important;
 @keyframes movingArrow {
   0% {
     transform: translateX(0);
-    opacity: 1;
   }
   50% {
-    transform: translateX(5px);
-    opacity: 0.5;
+    transform: translateX(2px);
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
   }
 }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    }
 
 .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW span::before {
   content: "";
@@ -206,16 +207,18 @@ font-size: var(--font-size) !important;
     }
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW span::before {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      font-family: "Font Awesome 6 Pro" !important;
-      color: var(--color-waiting);
-      left: -10px !important;
-      top: 1px !important;
-      font-size: 0.7em;
-      transform: scale(0.85);
-      opacity: 0.8;
+  content: "";
+  position: absolute;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+  color: var(--color-waiting);
+  left: -10px !important;
+  top: 1px !important;
+  font-size: 0.7em;
+  transform: scale(0.85);
+  opacity: 0.8;
+  animation: movingArrow 2s infinite ease-in-out;
+
      }
 
 
