@@ -208,19 +208,35 @@ color: var(--color-active) !important;
     }
 
 .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
-  content: "";
+  content: "";
   position: absolute;
-  font-weight: 900 !important;
+  font-weight: 700 !important;
   z-index: 0;
   font-family: "Font Awesome 6 Pro" !important;
   color: var(--color-waiting) !important;
   left: -13px !important;
   top: 1px !important;
   font-size: 0.7em;
-  transform: scale(0.8);
   opacity: 0.8;
 }
 
+/* 002.14 - suspended */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo suspended"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo suspended"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
+  content: "";
+  position: absolute;
+  font-weight: 700;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+color: var(--colorUITextDisabled) !important;
+  left: -12px !important;
+  top: 1px !important;
+  font-size: 0.6rem !important;
+  opacity: 0.8;
+     }
 
 /* 003 - ids in title fields of categories */
 
