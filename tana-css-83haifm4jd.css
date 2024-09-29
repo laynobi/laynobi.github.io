@@ -192,6 +192,19 @@ font-size: var(--font-size) !important;
     text-transform: uppercase;
     }
 
+/* 004 - marker: has quick link */
+.Button-module_buttonGroup__Xq194 [aria-label^="Marker:"] {
+  font-weight: 700 !important;
+    padding-left: 2ch !important;
+  color: var(--colorUITextDisabled) !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  font-size: 0.8em !important;
+  transition: color 0.3s ease !important;
+  &:hover {
+    color: rgb(from var(--bulletColor1) r g b / 1) !important;
+  }
+}
 
 /* 100 - field enhancements */
 
@@ -261,7 +274,7 @@ font-size: var(--font-size) !important;
 
 /* 905 - all fields */
     .tw-flex-col .tw-flex-col [data-role="template-children-container"] [data-is-expanded="true"] {
-      font-size: 0.9em;
+      font-size: 0.9rem !important;
     }
 
 /* 906 - node titles in sidebar */
