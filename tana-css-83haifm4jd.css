@@ -169,7 +169,7 @@ font-size: var(--font-size) !important;
       z-index: 0;
       font-family: "Font Awesome 6 Pro" !important;
       color: var(--color-active);
-      left: 5px !important;
+      left: -7px !important;
       top: 1px !important;
       font-size: 0.7em;
       transform: scale(0.85);
@@ -305,3 +305,8 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
   padding-left: 1ch !important;
 }
 
+/* 911 - in-line reference avatars */
+[data-role="editable"] .inlineelement .inlinecontent .inlineavatar {
+  font-size: 0.8em;
+  opacity: var(--med-opacity);
+}
