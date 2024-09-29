@@ -5,6 +5,7 @@
   --font-defualt-set: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif; 
   --color-warning: oklch(65.29% 0.286 13.52);
   --color-active: oklch(65% 0.205 158.23);
+  --color-attention: #F76B15;
   --low-opacity: 0.3;
   --med-opacity: 0.5;
 }
@@ -147,13 +148,13 @@ font-size: var(--font-size) !important;
     /* 002.08 - bullet for todos due today */
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .OutlinerItem-module_bullet__gMRnW span::after {
-    color: var(--color-active) !important;
+    color: var(--color-attention) !important;
     }
 
         /* 002.09 - title fields for todos due today */
 
     .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
-    color: var(--color-active) !important;
+    color: var(--color-attention) !important;
     }
 
 
