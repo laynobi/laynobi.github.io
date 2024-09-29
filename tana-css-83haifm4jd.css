@@ -214,7 +214,7 @@ color: var(--color-active) !important;
   z-index: 0;
   font-family: "Font Awesome 6 Pro" !important;
   color: var(--color-waiting) !important;
-  left: -13px !important;
+  left: -12px !important;
   top: 1px !important;
   font-size: 0.7em;
   opacity: 0.8;
