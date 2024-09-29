@@ -118,7 +118,7 @@ font-size: var(--font-size) !important;
       font-family: "Font Awesome 6 Pro" !important;
       color: var(--bulletColor1);
       left: 3px !important;
-      top: 0px !important;
+      top: 1px !important;
       font-size: 0.7em;
       font-weight: 900;
       transform: scale(0.65);
