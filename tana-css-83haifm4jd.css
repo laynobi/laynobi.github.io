@@ -453,3 +453,466 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
     overflow: auto !important;
     height: 100% !important;
 }
+
+:root {
+  --font-primary: "Onest";
+  --font-size: 80%;
+  --font-monotype: "MonoLisa";
+  --font-defualt-set: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif; 
+  --color-warning: oklch(65.29% 0.286 13.52);
+  --color-active: oklch(65% 0.205 158.23 / 100%);
+  --color-active-light: #ccefe0;
+  --color-attention: #F76B15;
+  --color-waiting: #FFBA18;
+  --low-opacity: 0.3;
+  --med-opacity: 0.5;
+}
+
+* {
+  font-family: var(--font-primary), "TossFaceFontMac", "Font Awesome 6 Pro", sans-serif !important;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+html {
+font-size: var(--font-size) !important;
+}
+
+/* 002 - #todo */
+
+    /* 002.01 - bullet for uncategorized todos */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Uncategorized todo"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
+    color: transparent !important;
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Uncategorized todo"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    font-family: "Font Awesome 6 Pro" !important;
+    color: var(--bulletColor1);
+    left: 2px !important;
+    }
+
+    /* 002.01 - bullet for categorized todos */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Categorized todo"]) .OutlinerItem-module_bullet__gMRnW span {
+    color: transparent !important;
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Categorized todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    font-family: "Font Awesome 6 Pro" !important;
+    color: var(--bulletColor1);
+    left: 2px !important;
+    }
+
+    /* 002.02 - bullet for past due todos */
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
+    color: var(--color-warning) !important;
+    }
+
+    /* 002.03 - title field for deadline */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has deadline"]) .titleFields b i::before {
+    content: "";
+    margin-right: -1px;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has deadline"]) .titleFields b i {
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 0.8em;
+    }
+
+    /* 002.04 - title field for deadline if past due */
+    .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    color: var(--color-warning) !important;
+    }
+
+    /* 002.05 - todo due > 2 days from today */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span::after {
+      opacity: var(--low-opacity);
+    }
+
+    /* 002.06 - title field for deadline */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .titleFields b i::before {
+      opacity: var(--low-opacity);
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .titleFields span[data-inlineref-date] .inlinecontent {
+      opacity: var(--low-opacity);
+    }
+
+/* 002.07 - task due in > 2 days */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due >2 days"]) .OutlinerItem-module_bullet__gMRnW span::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--bulletColor1);
+      opacity: var(--low-opacity);
+      left: 4px !important;
+      top: 1px !important;
+      font-size: 0.7em;
+      transform: scale(0.8);
+     }
+
+/* 002.07 - done tasks */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .OutlinerItem-module_bullet__gMRnW span {
+    z-index: -1;
+    opacity: var(--med-opacity);
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .OutlinerItem-module_bullet__gMRnW span::before {
+    content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--bulletColor1);
+      left: 3px !important;
+      top: 1px !important;
+      font-size: 0.7em;
+      font-weight: 900;
+      transform: scale(0.65);
+      opacity: var(--med-opacity);
+     }
+
+    .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) [data-list-position] > .noInteractiveInline {
+      text-decoration: line-through;
+      text-decoration-color: var(--colorUITextDisabled);
+      color: var(--colorUITextDisabled) !important;
+    opacity: var(--med-opacity);
+    }
+
+    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields b i, .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    font-style: normal;
+    font-size: 0.8em !important;
+    font-weight: normal !important;
+    color: var(--colorUITextDisabled) !important;
+    }
+
+    .tw-flex-col [data-tag-name="done"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Done task"]) .titleFields b i::before {
+    content: "" !important;
+    color: var(--colorUITextDisabled) !important;
+    }
+
+    /* 002.08 - bullet for todos due today */
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::after {
+    color: var(--color-attention) !important;
+    }
+
+        /* 002.09 - title fields for todos due today */
+
+    .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    color: var(--color-attention) !important;
+    }
+
+
+/* 002.10 - task with task status "in progress" */
+@keyframes movingArrow {
+  0% {
+    transform: translateX(0) scale(0.7);
+  }
+  50% {
+    transform: translateX(2px) scale(0.65);
+  }
+  100% {
+    transform: translateX(0) scale(0.7);
+  }
+}
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo in progress"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
+  content: "";
+  position: absolute;
+  font-weight: 700;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+color: var(--color-active) !important;
+  left: -12px !important;
+  top: 1px !important;
+  font-size: 0.6rem !important;
+  opacity: 0.8;
+     }
+
+
+    /* 002.11 - expiry date for rewind */
+    .tw-flex-col [data-tag-name="rewind"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has expiry"]) .titleFields b i::before {
+      content:"";
+    }
+
+    .tw-flex-col [data-tag-name="rewind"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has expiry"]) .titleFields b i,  .tw-flex-col [data-tag-name="rewind"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Has expiry"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    font-style: normal;
+    font-weight: normal !important;
+    font-size: 0.8em;
+    }
+
+/* 002.12 - task with task status "waiting on" */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
+    z-index: -1;
+    }
+
+.tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
+  content: "";
+  position: absolute;
+  font-weight: 700 !important;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+  color: var(--color-waiting) !important;
+  left: -12px !important;
+  top: 1px !important;
+  font-size: 0.7em;
+  opacity: 0.8;
+}
+
+/* 002.14 - suspended */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo suspended"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
+    z-index: -1;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo suspended"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
+  content: "";
+  position: absolute;
+  font-weight: 700;
+  z-index: 0;
+  font-family: "Font Awesome 6 Pro" !important;
+color: var(--colorUITextDisabled) !important;
+  left: -12px !important;
+  top: 1px !important;
+  font-size: 0.6rem !important;
+  opacity: 0.8;
+     }
+
+/* 003 - ids in title fields of categories */
+
+    .listContentItem:has(span[data-tag="category"]) .editable b {
+    font-family: var(--font-monotype) !important;
+    margin-right: 3px !important;
+    color: var(--bulletColor1);
+    font-weight: normal !important;
+    }
+
+    .listContentItem:has(span[data-tag="category"]) .editable {
+    font-family: var(--font-monotype) !important;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    }
+
+/* 004 - marker: has quick link */
+.Button-module_buttonGroup__Xq194 [aria-label^="Marker:"] {
+    padding-left: 1ch !important;
+  color: var(--colorUITextDisabled) !important;
+  background-color: transparent !important;
+  border: 0px !important;
+  font-size: 0.7em !important;
+  transition: color 0.3s ease !important;
+  &:hover {
+    color: rgb(from var(--bulletColor1) r g b / 1) !important;
+  }
+}
+
+/* 005 - dates for log and changelog */
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Is log or changelog"]) .titleFields b i, .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Is log or changelog"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    font-style: normal;
+    font-size: 0.8em !important;
+    font-weight: normal !important;
+    color: var(--colorUITextDisabled) !important;
+    }
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Is log or changelog"]) .titleFields b i::before {
+    content: "" !important;
+    font-size: 0.75rem;
+    color: var(--colorUITextDisabled) !important;
+    }
+
+/* 100 - field enhancements */
+
+    /* adds background color and bubble to hidden fields */
+    [class*="NodeListView-module_hiddenFields"] {
+    margin: .25rem 0rem 0rem -.35rem !important; 
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    border-top-right-radius: var(--radius400) !important;
+    border-top-left-radius: var(--radius400) !important;
+    padding: .265rem .3rem .15rem .35rem !important;
+    display: inline-block !important;
+    }
+
+    /* add background color and padding to regular fields */
+    [data-role="template-children-container"] {
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    margin: 0rem 0rem .25rem -.35rem !important; 
+    padding: 0rem .3rem 0rem .35rem !important;
+    }
+
+    /* add background color and padding to connected optional fields */
+    [data-role="optional-template-children-container"] {
+    background: var(--colorUIStickyTemplateContentBackground) !important;
+    margin: 0rem 0rem .25rem -.35rem !important; 
+    padding: 0rem .3rem 0rem .35rem !important;   
+    }
+
+    /* removes background and effects for supertag config panel */ 
+    [class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0px !important;
+    background: transparent !important;
+    }
+
+/* 900 - all supertags */
+
+    .PlainListItem-module_contentWrapper__CcDH9 .tw-inline-flex [data-tag] {
+      display: none !important;
+    }
+
+/* 901 - All commands with descriptions starting with Label: */
+
+    [class^="Button-module_buttonGroup"] [aria-label^="Label:"] {
+      display: none !important;
+
+    }
+
+.NodeListView-module_hiddenFields__BXUql > .navtarget.Button-module_button__15yoI > svg {
+  display: none !important;
+  }
+
+.tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget::before {
+content: "+";
+  font-size: 0.8rem !important;
+  opacity: 0.5;
+}
+
+/* 902 - all bullets */
+
+    [class^="ObjectAvatar-module_container"] span {
+      color: var(--bulletColor1);
+      font-size: 0.9em;
+    }
+    
+/* 903 - calendar icon in date fields */
+
+    .inlineelement .inlinecontent .inlineicon svg {
+      display: none !important;
+      }
+
+/* 904 - date title fields */
+    .titleFields span[data-inlineref-date] .inlinecontent {
+     text-transform: uppercase;
+     letter-spacing: 0.05ch;
+     font-size: 0.8em;
+    }
+
+/* 905 - all fields */
+    .tw-flex-col .tw-flex-col [data-role="template-children-container"] [data-is-expanded="true"] {
+      font-size: 0.9rem !important;
+    }
+
+/* 906 - node titles in sidebar */
+.tw-flex-col .tw-flex-col .navtarget .drag-item {
+  text-transform: lowercase;
+}
+
+/* 907 - icons in sidebar */
+div.ObjectAvatar-module_container__L7-TR.ObjectAvatar-module_inherit__ciAQC {
+    display: flex;
+    justify-content: center;
+    min-width: 2ch !important;
+    /* opacity: 0.6; */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* 908 - hide workspace icon and customize avatar */
+.tw-flex-col .tw-flex-col .navtarget [src="https\:\/\/lh3\.googleusercontent\.com\/a\/ALm5wu1Ud9cNxn7Sr8bN7qNxXqF6eYmaGdWhYCvqADxSmw\=s96-c"], .tw-flex-col .tw-flex-col .navtarget [data-workspace-avatar="true"] {
+  display: none !important;
+}
+
+.tw-flex-col .tw-flex-col [data-is-sidebar-home="true"] .drag-item {
+  padding-left: 2.4ch !important;
+}
+
+.tw-flex-col .tw-flex-col [data-is-sidebar-home="true"] .drag-item::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  font-family: "Font Awesome 6 Pro") !important;
+}
+
+/* 909 - grayscale in-line references to nodes without template content */
+span[class="inlinecontent isempty"]:not(:has(use)) {
+  filter: grayscale(1) brightness(1.2);
+}
+
+/* 910 - add space between title fields and name */
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .titleFields [data-editable-wrapper="true"] {
+  padding-left: 1ch !important;
+}
+
+/* 911 - in-line reference avatars */
+[data-role="editable"] .inlineelement .inlinecontent .inlineavatar {
+  font-size: 0.8em;
+  opacity: var(--med-opacity);
+}
+
+/* 912 - add subtle animations to markers*/
+
+.PlainListItem-module_wrapper__spmPJ {
+  .PlainListItem-module_contentWrapper__CcDH9 {
+    .Button-module_buttonGroup__Xq194:has([aria-label^="Marker\: "]) {
+      &::after {
+        content: "";
+        color: var(--colorUITextDisabled) !important;
+        background-color: transparent !important;
+        border: 0px !important;
+        filter: brightness(0.8);
+        font-size: 0.5rem !important;
+        transition: transform 0.3s ease, filter 0.3s ease !important;
+        transform: rotate(0deg);
+      }
+    }
+
+    &:focus-within {
+      .Button-module_buttonGroup__Xq194:has([aria-label^="Marker\: "]) {
+        &::after {
+          transform: rotate(90deg);
+          filter: brightness(1);
+        }
+      }
+    }
+  }
+}
+
+/* 913 - side panels stack vertically */
+
+.DockArea-module_wrapper__OlSJt .DockArea-module_dockArea__nM20w.DockArea-module_vertical__Loj8O {
+    display: grid !important;
+    grid-auto-flow: column !important;
+    grid-auto-columns: 1fr !important;
+    overflow-y: auto !important;
+    height: 100% !important;
+}
+
+.DockArea-module_wrapper__OlSJt .DockArea-module_dockArea__nM20w.DockArea-module_horizontal__wwBp5 {
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: auto !important;
+    height: 100% !important;
+}
+
+/* 914 - in progress related content on day page disappears if no entries */
+div.WidgetPanel-module_container__jGmDJ:has(div.Message-module_subtle__dRvl2.Message-module_smaller__xatcf) {
+display: none;
+}
+
+
