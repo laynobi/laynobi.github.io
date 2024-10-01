@@ -915,4 +915,9 @@ div.WidgetPanel-module_container__jGmDJ:has(div.Message-module_subtle__dRvl2.Mes
 display: none;
 }
 
+/* 915 - flex wrap */
+
+.PlainListItem-module_contentWrapper__CcDH9 {
+    flex-wrap: nowrap !important;
+}
 
