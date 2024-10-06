@@ -965,3 +965,9 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
   .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm:has([aria-label]) {
     margin-left: -10px !important;
 }
+
+/* 919 - hide optional field icons */
+
+.PlainListItem-module_contentWrapper__CcDH9 [data-editable-wrapper="true"] .NodeFieldsSuggestionsButton-module_inline__aQGWq:has(svg) {
+  display: none !important; 
+}
