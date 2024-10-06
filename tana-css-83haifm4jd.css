@@ -932,3 +932,8 @@ box-shadow: inset 0 0 1px .5px var(--color-active) !important;
 div.WidgetPanel-module_container__jGmDJ:has(div[id$="caoMFvfzJXJr"]) {
 box-shadow: inset 0 0 1px .5px var(--color-warning) !important;
 }
+
+/* 917 - hide stray hashtag in related content aggregates */
+.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .tw-inline-flex [data-tag="aggregate"] .TemplateTag-module_tag__8TbLO, .tw-items-start .Heading-module_line-height-compact__g0Fxw .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm:has(.tw-inline-flex) {
+  display: none !important;
+}
