@@ -661,18 +661,18 @@ color: var(--color-active) !important;
 /* 002.12 - task with task status "waiting on" */
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span {
     z-index: -1;
+    
     }
 
 .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
-  content: "";
+  content: "W";
   position: absolute;
-  font-weight: 700 !important;
+  font-weight: 400 !important;
   z-index: 0;
-  font-family: "Font Awesome 6 Pro" !important;
+  font-family: "MonoLisa" !important;
   color: var(--color-waiting) !important;
   left: -12px !important;
-  top: 1px !important;
-  font-size: 0.7em;
+  top: 0.5px !important;
   opacity: 0.8;
 }
 
@@ -928,9 +928,17 @@ div.WidgetPanel-module_container__jGmDJ:has(div[id$="pwaWFCH09pDC"]) {
 box-shadow: inset 0 0 1px .5px var(--color-active) !important;
 }
 
+h1:has(div[id$="caoMFvfzJXJr"]) {
+  color:  var(--color-active);
+}
+
 /* past due*/
 div.WidgetPanel-module_container__jGmDJ:has(div[id$="caoMFvfzJXJr"]) {
 box-shadow: inset 0 0 1px .5px var(--color-warning) !important;
+}
+
+h1:has(div[id$="caoMFvfzJXJr"]) {
+  color: var(--color-warning);
 }
 
 /* 917 - hide stray hashtag in related content aggregates */
