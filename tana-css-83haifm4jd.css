@@ -6,7 +6,7 @@
   --color-warning: oklch(65.29% 0.286 13.52);
   --color-active: oklch(65% 0.205 158.23 / 100%);
   --color-active-light: #ccefe0;
-  --color-attention: #F76B15;
+  --color-attention: #8d4416;
   --color-waiting: #FFBA18;
   --low-opacity: 0.3;
   --med-opacity: 0.5;
@@ -159,6 +159,13 @@ font-size: var(--font-size) !important;
     color: var(--color-attention) !important;
     }
 
+.tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today (long-horizon)"]) .titleFields span[data-inlineref-date] .inlinecontent {
+    color: rgb(from var(--color-attention) r g b / 0.5) !important;
+    }
+
+    .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today (long-horizon)"]) .titleFields b i {
+    color: rgb(from var(--color-attention) r g b / 1) !important;
+    }
 
 /* 002.10 - task with task status "in progress" */
 @keyframes movingArrow {
