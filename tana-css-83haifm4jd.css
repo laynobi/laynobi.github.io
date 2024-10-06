@@ -674,12 +674,12 @@ color: var(--color-active) !important;
 .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo is waiting on"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::before {
   content: "";
   position: absolute;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
   z-index: 0;
   font-family: "Font Awesome 6 Pro" !important;
   color: var(--color-waiting) !important;
-  left: -12px !important;
-  top: 0.5px !important;
+  left: -11px !important;
+  top: 1px !important;
   opacity: 0.8;
 }
 
@@ -930,13 +930,13 @@ display: none;
 
 /* 916 - highlight related content */
 
-/* active*/
+/* in progress*/
 div.WidgetPanel-module_container__jGmDJ:has(div[id$="pwaWFCH09pDC"]) {
 box-shadow: inset 0 0 1px .5px var(--color-active) !important;
 }
 
-h1:has(div[id$="pwaWFCH09pDC"]) {
-  color:  var(--color-active) !important;
+h1:has(div[id$="caoMFvfzJXJr"]) {
+  color:  var(--color-active);
 }
 
 /* past due*/
@@ -949,6 +949,19 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
 }
 
 /* 917 - hide stray hashtag in related content aggregates */
-.NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .tw-inline-flex [data-tag="aggregate"] .TemplateTag-module_tag__8TbLO, .tw-items-start .Heading-module_line-height-compact__g0Fxw .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm:has(.tw-inline-flex) {
+.Heading-module_line-height-compact__g0Fxw .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm .navtarget .TemplateTag-module_tag__8TbLO {
   display: none !important;
+}
+
+/* 918 - hide command bars in related content if no commands */
+.tw-items-start 
+  .Heading-module_line-height-compact__g0Fxw 
+  .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm:not(:has([aria-label])) {
+    display: none !important;
+}
+
+.tw-items-start 
+  .Heading-module_line-height-compact__g0Fxw 
+  .NodePanelHeaderTitle-module_tagAndCommandBar__4OOFm:has([aria-label]) {
+    margin-left: -10px !important;
 }
