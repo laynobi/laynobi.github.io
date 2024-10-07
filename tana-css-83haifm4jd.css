@@ -935,7 +935,7 @@ div.WidgetPanel-module_container__jGmDJ:has(div[id$="pwaWFCH09pDC"]) {
 box-shadow: inset 0 0 1px .5px var(--color-active) !important;
 }
 
-h1:has(div[id$="pwaWFCH09pDC"]) {
+h1:has(div[id$="caoMFvfzJXJr"]) {
   color:  var(--color-active);
 }
 
@@ -970,4 +970,12 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
 
 .PlainListItem-module_contentWrapper__CcDH9 [data-editable-wrapper="true"] .NodeFieldsSuggestionsButton-module_inline__aQGWq:has(svg) {
   display: none !important; 
+}
+
+/* 920 - display fields and descriptions */
+
+.OutlinerItem-module_content__zB1rI [data-testid="plain-list-item"] [data-list-description="true"] [data-role], .tw-items-start .OutlinerItem-module_content__zB1rI [data-testid="plain-list-item"] [title=""] {
+  font-family: "MonoLisa" !important;
+  font-size: 0.8em;
+  text-transform: uppercase;
 }
