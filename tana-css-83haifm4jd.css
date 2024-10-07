@@ -287,6 +287,21 @@ color: var(--colorUITextDisabled) !important;
     color: var(--colorUITextDisabled) !important;
     }
 
+/* 006 - reconciled events */
+
+    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) .OutlinerItem-module_bullet__gMRnW span::before {
+    content: "";
+      position: absolute;
+      z-index: 0;
+      font-family: "Font Awesome 6 Pro" !important;
+      color: var(--bulletColor1);
+      left: 3px !important;
+      top: 2px !important;
+      font-size: 0.7em;
+      font-weight: 900;
+      transform: scale(0.6);
+     }
+
 /* 100 - field enhancements */
 
     /* adds background color and bubble to hidden fields */
