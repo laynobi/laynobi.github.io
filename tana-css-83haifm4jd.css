@@ -56,7 +56,7 @@ font-size: var(--font-size) !important;
     /* 002.02 - bullet for past due todos */
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
-    color: var(--color-warning) !important;
+
     }
 
     /* 002.03 - title field for deadline */
@@ -150,13 +150,12 @@ font-size: var(--font-size) !important;
     /* 002.08 - bullet for todos due today */
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::after {
-    color: var(--color-attention) !important;
+
     }
 
         /* 002.09 - title fields for todos due today */
 
     .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .titleFields span[data-inlineref-date] .inlinecontent {
-    color: var(--color-attention) !important;
     }
 
 .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today (long-horizon)"]) .titleFields span[data-inlineref-date] .inlinecontent {
@@ -519,7 +518,7 @@ font-size: var(--font-size) !important;
     /* 002.02 - bullet for past due todos */
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .OutlinerItem-module_bullet__gMRnW span::after {
-    color: var(--color-warning) !important;
+
     }
 
     /* 002.03 - title field for deadline */
@@ -536,7 +535,7 @@ font-size: var(--font-size) !important;
 
     /* 002.04 - title field for deadline if past due */
     .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields b i,  .tw-flex-col [data-tag-name="todo"] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Past due todo"]) .titleFields span[data-inlineref-date] .inlinecontent {
-    color: var(--color-warning) !important;
+
     }
 
     /* 002.05 - todo due > 2 days from today */
@@ -613,7 +612,7 @@ font-size: var(--font-size) !important;
     /* 002.08 - bullet for todos due today */
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Todo due today"]) .OutlinerItem-module_bullet__gMRnW:not(:has(:first-child > [role="button"])) span::after {
-    color: var(--color-attention) !important;
+
     }
 
         /* 002.09 - title fields for todos due today */
@@ -1004,3 +1003,43 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
   font-size: 0.8em;
   text-transform: uppercase;
 }
+
+/* 921 - Hide icons for in-line references and reveal on hover */
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent {
+    position: relative;
+    padding-left: 0; /* Default padding */
+    transition: padding-left 0.3s ease; /* Smooth padding transition */
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent > .inlineavatar {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(20px) translateY(-50%); /* Start 20px to the right */
+    opacity: 0;
+    transition: opacity 0.15s ease, transform 0.3s ease; /* Smooth fade and slide */
+    pointer-events: none;
+    z-index: 10; /* Ensure it appears above other elements if necessary */
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent:hover > .inlineavatar {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0) translateY(-50%); /* Slide to original position */
+    pointer-events: auto;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent:hover {
+    padding-left: 1.7ch !important;
+    }
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent:focus > .inlineavatar {
+    opacity: 1;
+    transform: translateX(0) translateY(-50%);
+    pointer-events: auto;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent:focus {
+    padding-left: 40px !important;
+}
+-
