@@ -287,21 +287,6 @@ color: var(--colorUITextDisabled) !important;
     color: var(--colorUITextDisabled) !important;
     }
 
-/* 006 - reconciled events */
-
-    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) .OutlinerItem-module_bullet__gMRnW span::before {
-    content: "";
-      position: absolute;
-      z-index: 0;
-      font-family: "Font Awesome 6 Pro" !important;
-      color: var(--bulletColor1);
-      left: 3px !important;
-      top: 2px !important;
-      font-size: 0.7em;
-      font-weight: 900;
-      transform: scale(0.6);
-     }
-
 /* 100 - field enhancements */
 
     /* adds background color and bubble to hidden fields */
@@ -765,20 +750,6 @@ color: var(--colorUITextDisabled) !important;
     opacity: var(--med-opacity);
     }
 
-    .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) .OutlinerItem-module_bullet__gMRnW span::before {
-    content: "";
-      position: absolute;
-      z-index: 0;
-      font-family: "Font Awesome 6 Pro" !important;
-      color: var(--bulletColor1);
-      left: 3px !important;
-      top: 1px !important;
-      font-size: 0.7em;
-      font-weight: 900;
-      transform: scale(0.65);
-      opacity: var(--med-opacity);
-     }
-
     .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) [data-role="editable"], .tw-items-start .PlainListItem-module_contentWrapper__CcDH9:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) [data-list-position] > .noInteractiveInline {
       text-decoration: line-through;
       text-decoration-color: var(--colorUITextDisabled);
@@ -795,7 +766,7 @@ color: var(--colorUITextDisabled) !important;
 
     .tw-flex-col [data-tag-name] > .tw-flex-col .tw-items-start:has(.Button-module_buttonGroup__Xq194 [aria-label="Label: Reconciled event"]) .titleFields b i::before {
     content: "" !important;
-    color
+    }
 
 /* 100 - field enhancements */
 
