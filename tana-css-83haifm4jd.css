@@ -948,8 +948,8 @@ display: none;
 
 /* 915 - flex wrap */
 
-.PlainListItem-module_contentWrapper__CcDH9 {
-    flex-wrap: nowrap !important;
+.PlainListItem-module_contentWrapper__CcDH9:not(:has(.Button-module_buttonGroup__Xq194 [aria-label*="Fix"])) {
+flex-wrap: nowrap !important;
 }
 
 /* 916 - highlight related content */
@@ -1008,6 +1008,7 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
 
 .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent {
     position: relative;
+    font-size: 0.95em;
     padding-left: 0; /* Default padding */
     transition: padding-left 0.3s ease; /* Smooth padding transition */
 }
@@ -1042,4 +1043,18 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
 .PlainListItem-module_contentWrapper__CcDH9 .noInteractiveInline .inlinerefnode .inlinecontent:focus {
     padding-left: 40px !important;
 }
--
+
+/* 922 - show fix command buttons on hover */
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9:hover .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
+  display: block !important;
+}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label^="Fix\: "] {
+margin-right: 5px !important;
+}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
+  display: none !important;
+}
+
