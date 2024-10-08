@@ -1048,19 +1048,29 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
 
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9:hover .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
   visibility: visible !important;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
-color: var(--color-active) !important;
-border-width: 0.5px !important;
-border-color: var(--color-active) !important;
   opacity: 1 !important;
 }
 
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label^="Fix\: "] {
 margin-right: 5px !important;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
+color: var(--color-active) !important;
+font-family: "MonoLisa" !important;
+border-width: 0.5px !important;
+border-color: var(--color-active) !important;
+}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label^="Fix\: "]:hover {
+  filter: brightness(110%) !important;
+  transform: scale(1.1) !important;
+    transition: filter 0.25s ease, transform 0.25s ease !important;
 }
 
 .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
   visibility: hidden !important;
     opacity: 0 !important;
-  transition: visibility 0.5s ease, opacity 0.5s ease !important;
+    filter: none;
+    transform: scale(1) !important; 
+  transition: visibility 0.5s ease, filter 0.5s ease, opacity 0.5s ease !important;
 }
+ 
