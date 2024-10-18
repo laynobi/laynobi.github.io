@@ -10,6 +10,15 @@
   --color-waiting: #FFBA18;
   --low-opacity: 0.3;
   --med-opacity: 0.5;
+    --status-text-in-progress: "● In Progress";
+  --status-padding: 2px;
+  --status-text-transform: var(--status-text-transform);
+  --status-letter-spacing: 0.03px;
+  --status-radius: 9999px;
+  --status-font-smoothing: antialiased;
+  --status-color-green-bg: #E5F6EB;
+  --status-color-green-text: #007F48;
+  --status-color-green-border: color(display-p3 0 0.4667 0.1529 / 0.538) 0px 0px 0px 1px inset;
 }
 
 * {
@@ -1044,33 +1053,25 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
     padding-left: 40px !important;
 }
 
-/* 922 - show fix command buttons on hover */
-
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9:hover .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
-  visibility: visible !important;
-  opacity: 1 !important;
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9:has([aria-label="Label: Todo in progress"]) > div > div > span:first-of-type::before {
+  background-color: var(--status-color-green-bg);
+  color: var(--status-color-green-text);
+  font-family: "MonoLisa";
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  content: var(--status-text-in-progress);
+  margin-right: calc(var(--status-padding) * 3);
+  padding-bottom: var(--status-padding);
+  padding-left: calc(var(--status-padding) * 3);
+  padding-right: calc(var(--status-padding) * 3);
+  padding-top: var(--status-padding);
+  letter-spacing: var(--status-letter-spacing);
+  border-bottom-left-radius: var(--status-radius);
+  border-bottom-right-radius: var(--status-radius);
+  border-top-left-radius: var(--status-radius);
+  border-top-right-radius: var(--status-radius);
+  box-sizing: border-box;
+  -webkit-font-smoothing: var(--status-font-smoothing);
+  box-shadow: var(--status-color-green-border);
 }
-
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label^="Fix\: "] {
-margin-right: 5px !important;
-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
-color: var(--color-active) !important;
-font-family: "MonoLisa" !important;
-border-width: 0.5px !important;
-border-color: var(--color-active) !important;
-}
-
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 [aria-label^="Fix\: "]:hover {
-  filter: brightness(110%) !important;
-  transform: scale(1.1) !important;
-    transition: filter 0.25s ease, transform 0.25s ease !important;
-}
-
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194:has([aria-label^="Fix\: "]) {
-  visibility: hidden !important;
-    opacity: 0 !important;
-    filter: none;
-    transform: scale(1) !important; 
-  transition: visibility 0.5s ease, filter 0.5s ease, opacity 0.5s ease !important;
-}
- 
