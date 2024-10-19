@@ -10,7 +10,7 @@
   --color-waiting: #FFBA18;
   --low-opacity: 0.3;
   --med-opacity: 0.5;
-    --status-text-in-progress: "● In Progress";
+  --status-text-in-progress: "● In Progress";
   --status-padding: 2px;
   --status-text-transform: var(--status-text-transform);
   --status-letter-spacing: 0.03px;
@@ -19,6 +19,7 @@
   --status-color-green-bg: #E5F6EB;
   --status-color-green-text: #007F48;
   --status-color-green-border: color(display-p3 0 0.4667 0.1529 / 0.538) 0px 0px 0px 1px inset;
+
 }
 
 * {
@@ -1053,7 +1054,7 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
     padding-left: 40px !important;
 }
 
-.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9:has([aria-label="Label: Todo in progress"]) > div > div > span:first-of-type::before {
+[class^="PlainListItem-module_wrapper"] [class^="PlainListItem-module_contentWrapper"]:has([aria-label="Label: Todo in progress"]) > div > div > span:first-of-type::before {
   background-color: var(--status-color-green-bg);
   color: var(--status-color-green-text);
   font-family: "MonoLisa";
@@ -1072,6 +1073,38 @@ h1:has(div[id$="caoMFvfzJXJr"]) {
   border-top-left-radius: var(--status-radius);
   border-top-right-radius: var(--status-radius);
   box-sizing: border-box;
+  vertical-align: middle;
   -webkit-font-smoothing: var(--status-font-smoothing);
   box-shadow: var(--status-color-green-border);
 }
+
+button[aria-label*="Label:"] {
+  display: none !important;
+}
+
+.listContentItem:has([data-tag="done"]) > div {
+  display: flex !important;
+  align-items: center;
+}
+
+.listContentItem:has([data-tag="done"]) .titleFields {
+  order: -1;
+}
+
+.listContentItem:has([data-tag="done"]) .titleFields .inlinerefdate {
+  font-family: "MonoLisa";
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.05px;
+}
+
+.listContentItem:has([data-tag="done"]) .titleFields .inlinerefdate .inlineicon {
+  display: none;
+}
+
+.listContentItem:has([data-tag="done"]) .editable {
+  order: 0;
+}
+
