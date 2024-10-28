@@ -790,9 +790,8 @@ display: none !important;
 [class*="WidgetPanel-module_standalone"]:has(.searchnode > [id$="BmqkqiWzk1am"]) {
   position: relative; /* Required for positioning the pseudo-element */
   opacity: 0.5;
-  filter: blur(0.3px) !important;
+  filter: blur(0.3px) grayscale(1) !important;
   transition: opacity 0.5s ease, filter 0.5s ease, transform 0.5s ease !important; /* Include transform in transition */
-  transform: translateX(250px) scale(0.9); /* Shift 300px to the right and scale to 90% */
   
   /* Pseudo-element for gradient overlay */
   &::before {
@@ -810,7 +809,7 @@ display: none !important;
 
   &:hover {
       opacity: 1;
-      filter: blur(0px) !important;
+      filter: blur(0px) grayscale(0) !important;
       transform: translateX(0) scale(1); /* Move back to original position and scale to 100% on hover */
       
       &::before {
