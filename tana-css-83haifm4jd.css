@@ -605,11 +605,14 @@ button[aria-label^="Marker"] {
   color: var(--command-hidden-color) !important;
   background-color:  color: var(--command-hidden-color) !important;
   transition: filter 0.3s ease, transform 0.3s ease;
-    transform: scale(0.95);
+      filter: brightness(1);
+      vertical-align: middle !important;
+    transform: scale(0.95) !important;
   &:hover {
     cursor: help !important;
     border-color: transparent !important;
-    filter: brightness(1.25), transform: scale(1.00);;
+    filter: brightness(1.25);
+    transform: scale(1.00) !important;
   }
 }
 
