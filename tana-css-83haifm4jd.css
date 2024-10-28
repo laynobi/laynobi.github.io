@@ -573,3 +573,15 @@ background: transparent !important;
 [data-id$="pnRpb0lF-q3Z"]:has([class*="Message-module_subtle"]) {
 display: none !important;
 }
+
+/* select Done related content */
+[class*="WidgetPanel-module_standalone"]:has(.searchnode > [id$="X5Z6uvvfYYRN"]) {
+  opacity: 0.3;
+  filter: blur(2px) !important;
+  transition: opacity 1s ease, filter 1s ease !important;
+  &:hover{
+      opacity: 1;
+  filter: blur(0px) !important;
+
+  }
+}
