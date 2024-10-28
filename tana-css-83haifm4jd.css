@@ -232,8 +232,8 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
 
 [data-containing-tuple="true"]:has(> div > div > div > div [id$="4tlcFJs-nRRu"]) > div > div > div > [class*="bulletSide"] {
   background-image: var(--svg-template) !important;
-  width: var(--icon-field-size) !important;
-  height: var(--icon-field-size) !important;
+  width: calc(var(--icon-field-size) * 1.1) !important;
+  height: calc(var(--icon-field-size) * 1.1) !important;
   background-repeat: no-repeat;
   background-size: contain !important;
 }
@@ -317,8 +317,8 @@ button[id="N-8GYQmJhZGU"]:not(svg):before {
 
 [data-tag-name="template"] > div > div > div > div > div > [class^="bullet"] {
   background-image: var(--svg-template) !important;
-  width: calc(var(--icon-node-size)*0.92) !important;
-  height: calc(var(--icon-node-size)*0.92) !important;
+  width: calc(var(--icon-node-size)*1) !important;
+  height: calc(var(--icon-node-size)*1) !important;
   & span {
     display: none !important;
   }
