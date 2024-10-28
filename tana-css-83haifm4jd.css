@@ -86,7 +86,7 @@ button[aria-label*="Label:"] {
 
 .inlineelement :has(.inlineicon [href="\#inline-calendar-icon"]) {
   font-family: "MonoLisa";
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -573,4 +573,3 @@ background: transparent !important;
 [data-id$="pnRpb0lF-q3Z"]:has([class*="Message-module_subtle"]) {
 display: none !important;
 }
-
