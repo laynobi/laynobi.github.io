@@ -306,8 +306,8 @@ button[id="N-8GYQmJhZGU"]:not(svg):before {
 
 [data-containing-tuple="true"]:has(> div > div > div > div [id$="yJqCWm4MYsi5"]) > div > div > div > [class*="bulletSide"] {
   background-image: var(--svg-priorities);
-  width: var(--icon-field-size) !important;
-  height: var(--icon-field-size) !important;
+  width: calc(var(--icon-field-size) * 1.2) !important;
+  height: calc(var(--icon-field-size) * 1.2) !important;
   background-repeat: no-repeat;
   background-size: contain !important;
 }
