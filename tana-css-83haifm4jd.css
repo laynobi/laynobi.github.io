@@ -4,7 +4,7 @@
   --status-text-in-progress: "● In Progress";
   --status-padding: 2px;
   --status-text-transform: var(--status-text-transform);
-  --status-letter-spacing: 0.2px;
+  --status-letter-spacing: 0.07ch;
   --status-radius: 9999px;
   --svg-color: blue;
   --status-font-smoothing: antialiased;
@@ -27,7 +27,8 @@
 
 /* Global Variables: Colors */
 :root {
-  --color-alert: #DC3B5D;
+  --color-accent: oklch(47.06% 0.3182 266.58);
+  --color-alert: oklch(60.59% 0.2664 13.52);
 }
 
 /* Global Variables: SVGs */
@@ -447,3 +448,22 @@ padding: 0 !important;
 border-radius: 0px !important;
 background: transparent !important;
 }
+
+
+/* global: in-line links */
+.inlineinteractive:not(:active):not(.inlinerefurl) {
+  --colorInlineElementText: var(--color-accent);
+  --colorInlineElementHoverBackground: rgb(from var(--color-accent) r g b / 0.3);
+  color: var(--colorInlineElementText) !important;
+  border-bottom: 1px solid var(--colorInlineElementHoverBackground) !important;
+  transition: color 0.3s ease-in;
+}
+
+.inlineinteractive:not(:active):not(.inlinerefurl):hover {
+     color: rgb(from var(--colorInlineElementText) r g b / 0.6) !important;
+}
+
+.Button-module_active__LkMZv {
+    --colorButtonText: var(--color-accent) !important;
+}
+
