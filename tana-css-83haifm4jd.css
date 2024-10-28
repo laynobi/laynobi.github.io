@@ -352,7 +352,7 @@ button[id="DY97phUj-v75"]:not(svg):before {
     display: inline-block;
     width: calc(var(--icon-field-size) * 0.9) !important;
     height: calc(var(--icon-field-size) * 0.9) !important;
-    background-image: var(--svg-later);
+    background-image: var(--svg-archive);
     background-size: contain; /* Adjust size as needed */
     background-repeat: no-repeat;
     vertical-align: middle;
