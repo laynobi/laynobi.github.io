@@ -604,11 +604,12 @@ button[aria-label="Search categories"] {
 button[aria-label^="Marker"] {
   color: var(--command-hidden-color) !important;
   background-color:  color: var(--command-hidden-color) !important;
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, transform 0.3s ease;
+    transform: scale(0.95);
   &:hover {
     cursor: help !important;
     border-color: transparent !important;
-    filter: brightness(1.25);
+    filter: brightness(1.25), transform: scale(1.00);;
   }
 }
 
