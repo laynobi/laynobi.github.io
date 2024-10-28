@@ -232,6 +232,22 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
   background-size: contain !important;
 }
 
+button[id="N-8GYQmJhZGU"] > svg {
+  display: none !important;
+}
+
+button[id="N-8GYQmJhZGU"]:not(svg):before {
+    content: '';
+    display: inline-block;
+    width: calc(var(--icon-field-size) * 0.9) !important;
+    height: calc(var(--icon-field-size) * 0.9) !important;
+    background-image: var(--svg-later);
+    background-size: contain; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 2px; /* Space between icon and text */
+}
+
 /* icon for field: done */
 [data-containing-tuple="true"]:has(> div > div > div > div [id$="gyPlDAviC9ib"]) > div > div > div > div > span {
   display: none !important;
@@ -346,6 +362,23 @@ button[aria-label] {
     position: relative;
 
 }
+
+button[id="gyPlDAviC9ib"] > svg {
+  display: none !important;
+}
+
+button[id="gyPlDAviC9ib"]:not(svg):before {
+    content: '';
+    display: inline-block;
+    width: calc(var(--icon-field-size) * 0.9) !important;
+    height: calc(var(--icon-field-size) * 0.9) !important;
+    background-image: var(--svg-done);
+    background-size: contain; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 2px; /* Space between icon and text */
+}
+
 
 button[aria-label]::before {
     content: "";
@@ -500,3 +533,13 @@ background: transparent !important;
     box-shadow: 0 0 0 1px rgb(from var(--colorInlineElementText) r g b / 0.2) !important;
     background-color: rgb(from var(--colorInlineElementText) r g b / 0.03) !important;
 }
+
+[data-id$="pnRpb0lF-q3Z"] [class*="NodeAsListElement-module_sectionHeading"] {
+  font-size: var(--size400) !important;
+  font-weight: 400 !important;
+}
+
+[data-id$="pnRpb0lF-q3Z"]:has([class*="Message-module_subtle"]) {
+display: none !important;
+}
+
