@@ -467,3 +467,8 @@ background: transparent !important;
     --colorButtonText: var(--color-accent) !important;
 }
 
+.NodeAsListElement-module_main__kwj8T.NodeAsListElement-module_topLevelSelected__zsSPd {
+    --colorInlineElementText: var(--color-accent);
+    box-shadow: 0 0 0 1px rgb(from var(--colorInlineElementText) r g b / 0.2) !important;
+    background-color: rgb(from var(--colorInlineElementText) r g b / 0.03) !important;
+}
