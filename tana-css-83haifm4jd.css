@@ -219,7 +219,7 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
 /* Global: Bullet, conditional on commands  */
 [data-tag-name]:has([class^="Button-module_buttonGroup"] [aria-label]) > div > div > div > div > div > [class^="bullet"], [data-tag-name] > div > div > div > div > div > [class^="bullet"]
 {
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   width: var(--icon-node-size) !important;
   height: var(--icon-node-size) !important;
   background-size: contain !important;
@@ -244,6 +244,8 @@ span[class="inlinecontent isempty"]:not(:has(use)) {
 /* Local: Bullet for meeting */
 [data-tag-name="meeting"] > div > div > div > div > div > [class^="bullet"] {
   background-image: var(--svg-event) !important;
+  width: calc(var(--icon-node-size)*0.92) !important;
+  height: calc(var(--icon-node-size)*0.92) !important;
   & span {
     display: none !important;
   }
@@ -389,11 +391,15 @@ min-height: auto !important;
 
 /* in progress*/
 div.WidgetPanel-module_container__jGmDJ:has(div[id$="pwaWFCH09pDC"]) {
-box-shadow: inset 0 0 1px .5px var(--status-color-green-border) !important;
+box-shadow: inset 0 0 1px .5px var(--status-color-green-text) !important;
+}
+
+h1:has(div[id$="pwaWFCH09pDC"]) {
+  color:  var(--status-color-green-text) !important;
 }
 
 h1:has(div[id$="caoMFvfzJXJr"]) {
-  color:  var(--status-color-green-border);
+  color:  var(--color-alert) !important;
 }
 
 /* past due*/
