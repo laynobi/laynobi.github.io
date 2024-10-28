@@ -574,14 +574,36 @@ background: transparent !important;
 display: none !important;
 }
 
-/* select Done related content */
+/* Select Done related content */
 [class*="WidgetPanel-module_standalone"]:has(.searchnode > [id$="X5Z6uvvfYYRN"]) {
+  position: relative; /* Required for positioning the pseudo-element */
   opacity: 0.3;
-  filter: blur(2px) !important;
-  transition: opacity 1s ease, filter 1s ease !important;
-  &:hover{
-      opacity: 1;
-  filter: blur(0px) !important;
+  filter: blur(0.5px) !important;
+  transition: opacity 1s ease, filter 1s ease, transform 1s ease !important; /* Include transform in transition */
+  transform: translateX(150px) scale(0.9); /* Shift 300px to the right and scale to 90% */
+  
+  /* Pseudo-element for gradient overlay */
+  &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      left: 0;
+      background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) !important; /* Gradient overlay */
+      transition: background 1s ease-in-out !important; /* Transition for gradient */
+      pointer-events: none; /* Allow clicks to pass through */
+  }
 
+  &:hover {
+      opacity: 1;
+      filter: blur(0px) !important;
+      transform: translateX(0) scale(1); /* Move back to original position and scale to 100% on hover */
+      
+      &::before {
+          background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) !important; /* Fade gradient on hover */
+
+      }
   }
 }
