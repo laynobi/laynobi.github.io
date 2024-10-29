@@ -2,6 +2,7 @@
   --font-primary: "Onest";
   --font-size: 82.5%;
   --status-text-in-progress: "● In Progress";
+    --status-text-waiting: "◆ Waiting On";
   --status-text-due-later: "Due Later";
   --status-padding: 2px;
   --status-text-transform: var(--status-text-transform);
@@ -11,7 +12,10 @@
   --status-font-smoothing: antialiased;
   --status-color-green-bg: #E5F6EB;
   --status-color-green-text: #007F48;
+    --status-color-yellow-bg: #FFFAE8;
+  --status-color-yellow: #A06B00;
   --status-color-green-border: color(display-p3 0 0.4667 0.1529 / 0.538) 0px 0px 0px 1px inset;
+    --status-color-yellow-border: #FFCC66 0px 0px 0px 1px inset;
   --icon-node-size: 1rem;
   --icon-field-size: 0.9rem;
   --command-display: inline-block;
@@ -95,6 +99,30 @@ font-size: var(--font-size) !important;
   vertical-align: middle;
   -webkit-font-smoothing: var(--status-font-smoothing);
   box-shadow: var(--status-color-green-border);
+}
+
+[class^="PlainListItem-module_wrapper"] [class^="PlainListItem-module_contentWrapper"]:has([aria-label="Label: Todo is waiting on"]) > div > div > span:first-of-type::before {
+  background-color: var(--status-color-yellow-bg);
+  color: var(--status-color-yellow) !important;
+  font-family: "MonoLisa";
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  content: var(--status-text-waiting);
+  margin-right: calc(var(--status-padding) * 3);
+  padding-bottom: var(--status-padding);
+  padding-left: calc(var(--status-padding) * 3);
+  padding-right: calc(var(--status-padding) * 3);
+  padding-top: var(--status-padding);
+  letter-spacing: var(--status-letter-spacing);
+  border-bottom-left-radius: var(--status-radius);
+  border-bottom-right-radius: var(--status-radius);
+  border-top-left-radius: var(--status-radius);
+  border-top-right-radius: var(--status-radius);
+  box-sizing: border-box;
+  vertical-align: middle;
+  -webkit-font-smoothing: var(--status-font-smoothing);
+  box-shadow: var(--status-color-yellow-border);
 }
 
 [class^="PlainListItem-module_wrapper"] [class^="PlainListItem-module_contentWrapper"]:has([aria-label="Label: Todo due >2 days"]) > div > div > span:first-of-type::before {
