@@ -11,18 +11,26 @@ html {
     font-smooth: always;
 }
 
+
 /* Hides supertags */
 [tabindex="\30 "] button {
     display: none;
 }
 
-.NodeAsListElement-module_sectionHeading__Utf6w {
-  font-family: "Circular Std";
-  font-size: 1.4em !important;
+
+.NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"], .NodePanelHeaderTitle-module_heading__8Pz-O {
+  font-family: "Euclid Circular A";
   color: rgb(33, 37, 41);
 }
 
-.NodePanelHeaderTitle-module_heading__8Pz-O {
-  font-family: "Circular Std";
-  color: rgb(33, 37, 41);
+.tw-flex-col .tw-inline-flex .searchnode [placeholder="Untitled"] {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+div[class*="WidgetPanel-module_container"]:has(
+  div[class*="Message-module_subtle"][class*="Message-module_smaller"]
+) {
+  display: none !important;
 }
