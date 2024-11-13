@@ -11,13 +11,6 @@ html {
     font-smooth: always;
 }
 
-
-/* Hides supertags */
-[tabindex="\30 "] button {
-    display: none;
-}
-
-
 .NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"], .NodePanelHeaderTitle-module_heading__8Pz-O {
   font-family: "Euclid Circular A";
   color: rgb(33, 37, 41);
@@ -34,3 +27,8 @@ div[class*="WidgetPanel-module_container"]:has(
 ) {
   display: none !important;
 }
+
+ .listContentItem:has(span[data-tag="task/done"]) span {
+     color: var(--colorGray350) !important;
+     text-decoration: line-through !important;
+ }
