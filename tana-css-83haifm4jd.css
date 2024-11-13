@@ -12,7 +12,7 @@ html {
 }
 /* Hides supertags */
 [tabindex="\30 "] button {
-    display: none;
+    display: none !important;
 }
 
 
