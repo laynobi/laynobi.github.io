@@ -1,37 +1,37 @@
-:root {
-  --primary-button-background: 0,122,255 !important;
-  --primary-button-text: 255,255,255 !important;
-  --accented-highlight: 179,215,255 !important
-}
-.bg-secondary-text {
-  background-color: #E9F3FF !important;
-  color: #0066EB !important;
-  font-weight: 500 !important;
-  font-family: "MonoLisa" !important;
-  border: 1px solid #3386ef  !important
-}
+ :root {
+        --primary-button-background: 0, 122, 255 !important;
+    --primary-button-text: 255, 255, 255 !important;
+--accented-highlight: 179, 215, 255 !important;
+    }
+    
+    .bg-secondary-text {
+        background-color: #E9F3FF !important;
+        color: #0066EB !important;
+font-weight: 500 !important;
+        font-family: "MonoLisa" !important;
+        border: 1px solid #0068EB !important;
+    }
+
+    .bg-accented-highlight{
+        background-color: #E9F3FF !important;
+                color: #ffffff !important;
+    }
+
 .bg-alternate-accented-highlight {
-  background-color: #E9F3FF !important;
-  color: #0066EB !important
+    background-color: #E9F3FF !important;
+        color: #0066EB !important;
 }
-.bg-secondary-highlight {
-  background-color: #E9F3FF !important;
-  color: #04316A !important;
-  font-weight: 500 !important
-}
-html * {
-  font-family: "iA Writer Quattro V",-apple-system,"system-ui","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-  font-smooth: always !important
+    
+    .bg-secondary-highlight {
+    background-color: #E9F3FF !important;
+        color: #04316A !important;
+        font-weight: 500 !important;
 }
 
-.items-center .items-center .items-center .text-2xl  {
-  font-weight: 700 !important;
-}
-
-.items-center .bg-secondary-text {
-    transform: scale(0.9);
-    transform-origin: center;
-}
+     html * {
+         font-family: "iA Writer Quattro V", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    font-smooth: always !important;
+    }
