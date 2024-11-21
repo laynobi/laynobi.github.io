@@ -1,25 +1,27 @@
+
 :root {
     --font-size: 80%;
 }
 
 html {
     font-size: var(--font-size);
-    font-family: "Bear Sans UI", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
- text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
+    font-family: -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
     font-smooth: always;
 }
+
+
 /* Hides supertags */
 [tabindex="\30 "] button {
-    display: none !important;
+    display: none;
 }
 
 
-.NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"],
-.NodePanelHeaderTitle-module_heading__8Pz-O {
-    font-family: "Euclid Circular A";
-    color: rgb(33, 37, 41);
+.NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"], .NodePanelHeaderTitle-module_heading__8Pz-O {
+  font-family: "Euclid Circular A";
+  color: rgb(33, 37, 41);
 }
 
 .tw-flex-col .tw-inline-flex .searchnode [placeholder="Untitled"] {
@@ -28,11 +30,15 @@ html {
     text-transform: lowercase;
 }
 
-div[class*="WidgetPanel-module_container"]:has(div[class*="Message-module_subtle"][class*="Message-module_smaller"]) {
-    display: none !important;
+div[class*="WidgetPanel-module_container"]:has(
+  div[class*="Message-module_subtle"][class*="Message-module_smaller"]
+) {
+  display: none !important;
 }
 
-.listContentItem:has(span[data-tag="task/done"]) span {
-    color: var(--colorGray350) !important;
-    text-decoration: line-through !important;
-}
+ .listContentItem:has(span[data-tag="task/done"]) span {
+     color: var(--colorGray350) !important;
+     text-decoration: line-through !important;
+ }
+
+
