@@ -64,7 +64,7 @@ div[class*="WidgetPanel-module_container"]:has(
 }
 
 .listContentItem:has([data-tag="done"]) .titleFields {
-  order: 1;
+  order: -1 !important;
   font-style: normal !important;
   font-family: "MonoLisa", "SF Pro";
   text-transform: uppercase !important;
