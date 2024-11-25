@@ -192,7 +192,7 @@ background: transparent !important;
   [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 1"]
 ) .titleFields u {
   color: var(--height-red) !important;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 0.8em !important;
   font-weight: 700;
 }
@@ -201,7 +201,7 @@ background: transparent !important;
   [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 2"]
 ) .titleFields u {
   color: var(--height-blue) !important;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 0.8em !important;
   font-weight: 700;
 }
@@ -210,7 +210,7 @@ background: transparent !important;
   [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 3"]
 ) .titleFields u {
   color: var(--height-cyan) !important;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 0.8em !important;
   font-weight: 700;
 }
