@@ -44,15 +44,62 @@ div[class*="WidgetPanel-module_container"]:has(
 
 :root {
   --color-success: #2EC36A;
+  --height-red: #E6405C;
+    --height-blue: #0470CA;
+      --height-cyan: #28A9D2;
+        --height-grey: #7D7A90;
 }
 
 [style$=" \33 00px\;"] .navtarget, .tw-flex-col .tw-flex-col .tw-inline-flex .lockedName {
   text-transform: lowercase !important;
 }
 
-.listContentItem:has(span[data-tag="done"]) .editable {
-    color:#D0D0D0 !important;
-    text-decoration: line-through !important;
+.listContentItem:has([data-tag="done"]) > div {
+  display: flex !important;
+  align-items: center;
+}
+
+.listContentItem:has([data-tag="done"]) .titleFields {
+  order: 1;
+  font-style: normal !important;
+  font-family: "MonoLisa", "SF Pro";
+  text-transform: uppercase !important;
+  font-size: 0.8em !important;
+      & .inlinerefdate::before {
+      content: "􀆅" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+  
+}
+
+.listContentItem:has([data-tag="done"]) .inlinerefnode {
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.listContentItem:has([data-tag="done"]) {
+text-decoration: line-through;
+text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.5);
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25);
+
+transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.listContentItem:has([data-tag="done"]):hover {
+  text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.2);
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.7);
+
+}
+
+.listContentItem:has(span[data-tag="done"]) .titleFields {
+    color: red !important;
+    text-decoration:  !important;
 }
 
 .PlainListItem-module_contentWrapper__CcDH9:has(
@@ -139,4 +186,40 @@ margin: 0 !important;
 padding: 0 !important;
 border-radius: 0px !important;
 background: transparent !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 1"]
+) .titleFields u {
+  color: var(--height-red) !important;
+  text-decoration: none;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 2"]
+) .titleFields u {
+  color: var(--height-blue) !important;
+  text-decoration: none;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 3"]
+) .titleFields u {
+  color: var(--height-cyan) !important;
+  text-decoration: none;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 4"]
+) .titleFields u {
+  color: var(--height-grey) !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: 700;
 }
