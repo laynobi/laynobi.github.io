@@ -42,6 +42,7 @@ div[class*="WidgetPanel-module_container"]:has(
 
 
 
+
 :root {
   --color-success: #2EC36A;
   --height-red: #E6405C;
@@ -222,4 +223,36 @@ background: transparent !important;
   text-decoration: none !important;
   font-size: 0.8em !important;
   font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has estimate"]
+) .titleFields i b {
+  font-family: "MonoLisa", "SF Pro";
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  padding-left: 1ch !important;
+  padding-right: 1ch !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  &::after {
+    content:"m";
+  }
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has urgency"]
+) .titleFields b i {
+  font-family: "MonoLisa", "SF Pro";
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  background-color: #F1F1F4;
+  padding-left: 0.8ch !important;
+    padding-right: 0.8ch !important;
+    padding-top: 0.2ch !important;
+        padding-bottom: 0.2ch !important;
+        border-radius: 9999px;
+
 }
