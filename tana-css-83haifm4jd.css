@@ -18,6 +18,9 @@ html {
 }
 
 
+.tw-items-start .Calendar-module_title__w0u4f .titleFields [data-editable-wrapper="true"] {display: none !important;}
+
+
 .NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"], .NodePanelHeaderTitle-module_heading__8Pz-O {
   font-family: "Euclid Circular A" !important;
   color: rgb(33, 37, 41) !important;
