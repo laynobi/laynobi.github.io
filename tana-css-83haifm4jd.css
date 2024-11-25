@@ -228,7 +228,7 @@ background: transparent !important;
 .PlainListItem-module_contentWrapper__CcDH9:has(
   [class^="Button-module_buttonGroup"] [aria-label="Label: Has estimate"]
 ) .titleFields i b {
-  font-family: "MonoLisa", "SF Pro";
+  font-family: "MonoLisa", "SF Pro"  !important;
   text-decoration: none !important;
   font-size: 0.8em !important;
   padding-left: 1ch !important;
@@ -236,14 +236,14 @@ background: transparent !important;
   font-weight: normal !important;
   font-style: normal !important;
   &::after {
-    content:"m";
+    content:"m"  !important;
   }
 }
 
 .PlainListItem-module_contentWrapper__CcDH9:has(
   [class^="Button-module_buttonGroup"] [aria-label="Label: Has urgency"]
 ) .titleFields b i {
-  font-family: "MonoLisa", "SF Pro";
+  font-family: "MonoLisa", "SF Pro" !important;
   text-decoration: none !important;
   font-size: 0.8em !important;
   font-weight: normal !important;
