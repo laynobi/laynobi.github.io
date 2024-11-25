@@ -1,21 +1,20 @@
-
 :root {
-    --font-size: 80% !important;
+    --font-size: 80%;
 }
 
 html {
-    font-size: var(--font-size) !important;
-    font-family: "iA Writer Quattro V", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: var(--font-size);
+    font-family: "Onest", "SF Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale; 
-    font-smooth: always !important;
+    -moz-osx-font-smoothing: grayscale !important; 
+    font-smooth: always !important
 }
 
 
 /* Hides supertags */
 [tabindex="\30 "] button {
-    display: none !important;
+    display: none;
 }
 
 
@@ -25,20 +24,87 @@ html {
 }
 
 .tw-flex-col .tw-inline-flex .searchnode [placeholder="Untitled"] {
-    font-size: 1.2em !important;
-    font-weight: 600 !important;
-    text-transform: lowercase !important;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: lowercase;
 }
 
 div[class*="WidgetPanel-module_container"]:has(
   div[class*="Message-module_subtle"][class*="Message-module_smaller"]
 ) {
-  display: none !important !important;
+  display: none !important;
 }
 
  .listContentItem:has(span[data-tag="task/done"]) span {
-     color: var(--colorGray350) !important !important;
-     text-decoration: line-through !important !important;
+     color: var(--colorGray350) !important;
+     text-decoration: line-through !important;
  }
 
 
+
+:root {
+  --color-success: #2EC36A;
+}
+
+[style$=" \33 00px\;"] .navtarget, .tw-flex-col .tw-flex-col .tw-inline-flex .lockedName {
+  text-transform: lowercase !important;
+}
+
+.listContentItem:has(span[data-tag="done"]) .editable {
+    color:#D0D0D0 !important;
+    text-decoration: line-through !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Is scheduled"]
+) .titleFields b {
+    & .inlinerefdate {
+    font-weight: normal !important;
+    font-family: "MonoLisa", "SF Pro";
+    text-transform: uppercase !important;
+    font-size: 0.8em !important;
+    }
+    & .inlinerefdate::before {
+      content: "􀄫" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has deadline"]
+) .titleFields i {
+    & .inlinerefdate {
+    font-style: normal !important;
+    font-family: "MonoLisa", "SF Pro";
+    text-transform: uppercase !important;
+    font-size: 0.8em !important;
+    }
+    & .inlinerefdate::before {
+      content: "􀢊" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+}
+
+[class^="Button-module_buttonGroup"] button[aria-label*="Label:"] {
+  display: none !important;
+}
+[src] {
+  font-size: 0.95em;
+  transition: font-size 0.2s ease; /* Smooth transition */
+}
+
+[src]:hover {
+  font-size: 1em; /* Increase size on hover */
+}
