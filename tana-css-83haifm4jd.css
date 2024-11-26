@@ -272,3 +272,19 @@ background: transparent !important;
   background-color: transparent !important;
 }
 
+
+.tw-items-start .OutlinerItem-module_content__zB1rI .itemdone-checkbox .navtarget {
+  background-color: var(--color-success) !important;
+}
+
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
+  font-size: 0.9em !important;
+}
+
+
+.itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
+text-decoration: line-through !important;
+text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+}
+
