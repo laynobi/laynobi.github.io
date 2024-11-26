@@ -257,5 +257,13 @@ background: transparent !important;
     padding-top: 0.2ch !important;
         padding-bottom: 0.2ch !important;
         border-radius: 9999px;
+}
 
+.tw-items-start .Calendar-module_title__w0u4f .titleFields [data-editable-wrapper="true"] {display: none !important;}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .searchnode [data-role="editable"]{
+  color: #686678;
+  text-transform: uppercase;
+  font-family: "MonoLisa", "SF Pro";
+  font-size: 0.8em !important;
 }
