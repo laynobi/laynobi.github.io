@@ -268,7 +268,7 @@ background: transparent !important;
   font-size: 0.8em !important;
 }
 
-.Button-module_buttonGroup__Xq194 [aria-label="Today\'s\ priority"] {
+.Button-module_buttonGroup__Xq194 [aria-label="Today\'s\ priority"], .Button-module_buttonGroup__Xq194 [aria-label="Has jot notes"] {
   background-color: transparent !important;
 }
 
