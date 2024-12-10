@@ -5,7 +5,24 @@
     --height-blue: #0470CA;
       --height-cyan: #28A9D2;
         --height-grey: #7D7A90;
+
 }
+
+.inlinerefnode .inlinecontent {
+          color: #0070F3 !important;
+}
+
+a[href^=http]:not(.hide-external-link-icon):before, a[href^="https://"]:not(.hide-external-link-icon):before, .inlinerefurl:before {
+    width: 0em !important;
+    height: 0em !important;
+    margin-right: 0px !important;
+    background-image: none !important;
+}
+
+.inlineelement.inlinerefnode.inlinerefurl.inlineinteractive::before {
+      color: green !important;
+}
+
 
 .tw-items-start .OutlinerItem-module_content__zB1rI .itemdone-checkbox .navtarget {
   background-color: var(--color-success) !important;
@@ -294,6 +311,63 @@ mark {
   outline-color: rgb(68, 68, 68) !important;
 }
 
+code {
+  background-color: rgba(239, 241, 241, 1) !important;
+  border-block-end-color: rgb(68, 68, 68) !important;
+  border-block-end-style: none !important;
+  border-block-end-width: 0px !important;
+  border-block-start-color: rgb(68, 68, 68) !important;
+  border-block-start-style: none !important;
+  border-block-start-width: 0px !important;
+  border-bottom-color: rgb(68, 68, 68) !important;
+  border-bottom-left-radius: 3.75px !important;
+  border-bottom-right-radius: 3.75px !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0px !important;
+  border-collapse: separate !important;
+  border-end-end-radius: 3.75px !important;
+  border-end-start-radius: 3.75px !important;
+  border-image-outset: 0 !important;
+  border-image-repeat: stretch !important;
+  border-image-slice: 100% !important;
+  border-image-source: none !important;
+  border-image-width: 1 !important;
+  border-inline-end-color: rgb(68, 68, 68) !important;
+  border-inline-end-style: none !important;
+  border-inline-end-width: 0px !important;
+  border-inline-start-color: rgb(68, 68, 68) !important;
+  border-inline-start-style: none !important;
+  border-inline-start-width: 0px !important;
+  border-left-color: rgb(68, 68, 68) !important;
+  border-left-style: none !important;
+  border-left-width: 0px !important;
+  border-right-color: rgb(68, 68, 68) !important;
+  border-right-style: none !important;
+  border-right-width: 0px !important;
+  border-start-end-radius: 3.75px !important;
+  border-start-start-radius: 3.75px !important;
+  border-top-color: rgb(68, 68, 68) !important;
+  border-top-left-radius: 3.75px !important;
+  border-top-right-radius: 3.75px !important;
+  border-top-style: none !important;
+  border-top-width: 0px !important;
+  caret-color: rgb(68, 68, 68) !important;
+  padding-block-end: 3.75px !important;
+  padding-block-start: 3.75px !important;
+  padding-bottom: 3.75px !important;
+  padding-inline-end: 3.75px !important;
+  padding-inline-start: 3.75px !important;
+  padding-left: 3.75px !important;
+  padding-right: 3.75px !important;
+  padding-top: 3.75px !important;
+  outline-color: rgb(68, 68, 68) !important;
+  color: #222223 !important;
+  font-family: "MonoLisa" !important;
+  -webkit-font-smoothing: antialiased !important; /* For WebKit browsers */
+  -moz-osx-font-smoothing: grayscale !important; /* For Firefox on macOS */
+  font-smoothing: antialiased !important; 
+}
+
 .UnifiedSidebar-module_nav__oxpZP .tw-flex-col .Button-module_button__15yoI div, .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_nav__oxpZP .CreateButton-module_fullCreateButton__Sj9iO {
   text-transform: lowercase !important;
 }
@@ -301,5 +375,6 @@ mark {
 .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT [src="https\:\/\/firebasestorage\.googleapis\.com\/v0\/b\/tagr-prod\.appspot\.com\/o\/notespace\%2Fa\.a\.binlayo\%40gmail\.com\%2Fuploads\%2F2024-11-29T10\%3A23\%3A45\.000Z-Notes\%20-\%20Light\.png\?alt\=media\&token\=d6616ea4-224a-4e7b-a83f-e8a1c4375e8c"], .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT span, .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT .WorkspaceAvatar-module_container__J3526,  .UnifiedSidebar-module_main__u1wcy .tw-flex-col .PinnedNodesSection-module_section__W18Gd .Heading-module_line-height-compact__g0Fxw, .tw-flex-col .tw-items-center .NodeAsDrilldownElement-module_navigationButton__r0uyP:has(.WorkspaceAvatar-module_container__J3526), .tw-flex-col .tw-flex-col .NodeAsDrilldownElement-module_container__W7vwz [aria-label="daily\ notes"], .tw-flex-col .tipy-container [aria-expanded="false"]:has(.navtarget)  {
   display: none !important;
 }
+
 
 .Button-module_ai__OHA9H {display: none !important;} 
