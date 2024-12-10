@@ -1,3 +1,345 @@
+:root {
+    --font-size: 80%;
+}
+
+html {
+    font-size: var(--font-size);
+    font-family: "Onest", "SF Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
+    font-smooth: always !important
+}
+
+
+/* Hides supertags */
+[tabindex="\30 "] button {
+    display: none;
+}
+
+
+.tw-items-start .Calendar-module_title__w0u4f .titleFields [data-editable-wrapper="true"] {display: none !important;}
+
+
+.NodeAsListElement-module_sectionHeading__Utf6w [data-role="editable"], .NodePanelHeaderTitle-module_heading__8Pz-O {
+  font-family: "Euclid Circular A" !important;
+  color: rgb(33, 37, 41) !important;
+}
+
+.tw-flex-col .tw-inline-flex .searchnode [placeholder="Untitled"] {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+div[class*="WidgetPanel-module_container"]:has(
+  div[class*="Message-module_subtle"][class*="Message-module_smaller"]
+) {
+  display: none !important;
+}
+
+ .listContentItem:has(span[data-tag="task/done"]) span {
+     color: var(--colorGray350) !important;
+     text-decoration: line-through !important;
+ }
+
+
+
+
+:root {
+  --color-success: #2EC36A;
+  --height-red: #E6405C;
+    --height-blue: #0470CA;
+      --height-cyan: #28A9D2;
+        --height-grey: #7D7A90;
+}
+
+[style$=" \33 00px\;"] .navtarget, .tw-flex-col .tw-flex-col .tw-inline-flex .lockedName {
+  text-transform: lowercase !important;
+}
+
+.listContentItem:has([data-tag="done"]) > div {
+  display: flex !important;
+  align-items: center;
+}
+
+.listContentItem:has([data-tag="done"]) .titleFields {
+  order: 1 !important;
+  font-style: normal !important;
+  font-family: "MonoLisa", "SF Pro";
+  text-transform: uppercase !important;
+  font-size: 0.8em !important;
+      & .inlinerefdate::before {
+      content: "􀆅" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+  
+}
+
+.listContentItem:has([data-tag="done"]) .inlinerefnode {
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.listContentItem:has([data-tag="done"]) {
+text-decoration: line-through;
+text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.5);
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25);
+
+transition: text-decoration-color 0.3s ease, color 0.3s ease;
+}
+
+.listContentItem:has([data-tag="done"]):hover {
+  text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.2);
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.7);
+
+}
+
+.listContentItem:has(span[data-tag="done"]) .titleFields {
+    color: red !important;
+    text-decoration:  !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Is scheduled"]
+) .titleFields b {
+    & .inlinerefdate {
+    font-weight: normal !important;
+    font-family: "MonoLisa", "SF Pro";
+    text-transform: uppercase !important;
+    font-size: 0.8em !important;
+    }
+    & .inlinerefdate::before {
+      content: "􀄫" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has deadline"]
+) .titleFields i {
+    & .inlinerefdate {
+    font-style: normal !important;
+    font-family: "MonoLisa", "SF Pro";
+    text-transform: uppercase !important;
+    font-size: 0.8em !important;
+    }
+    & .inlinerefdate::before {
+      content: "􀢊" !important;
+      font-size: 0.8em !important;
+      vertical-align: middle !important;
+      padding-right: 0.5ch;
+      opacity: 0.5;
+    }
+    & .inlineicon {
+      display: none !important;
+    }
+}
+
+[class^="Button-module_buttonGroup"] button[aria-label*="Label:"] {
+  display: none !important;
+}
+[src] {
+  font-size: 0.95em;
+  transition: font-size 0.2s ease; /* Smooth transition */
+}
+
+[src]:hover {
+  font-size: 1em; /* Increase size on hover */
+}
+
+/* ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
+[class*="NodeListView-module_hiddenFields"] {
+margin: .25rem 0rem 0rem -.35rem !important; 
+background: var(--colorUIStickyTemplateContentBackground) !important;
+border-top-right-radius: var(--radius400) !important;
+border-top-left-radius: var(--radius400) !important;
+padding: .265rem .3rem .15rem .35rem !important;
+display: inline-block !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
+[data-role="template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem .3rem 0rem .35rem !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
+[data-role="optional-template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem .3rem 0rem .35rem !important;   
+}
+
+/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
+[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+margin: 0 !important;
+padding: 0 !important;
+border-radius: 0px !important;
+background: transparent !important;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 1"]
+) .titleFields u {
+  color: var(--height-red) !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 2"]
+) .titleFields u {
+  color: var(--height-blue) !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 3"]
+) .titleFields u {
+  color: var(--height-cyan) !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Priority 4"]
+) .titleFields u {
+  color: var(--height-grey) !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: 700;
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has estimate"]
+) .titleFields i b {
+  font-family: "MonoLisa", "SF Pro"  !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  padding-left: 1ch !important;
+  padding-right: 1ch !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  &::after {
+    content:"m"  !important;
+  }
+}
+
+.PlainListItem-module_contentWrapper__CcDH9:has(
+  [class^="Button-module_buttonGroup"] [aria-label="Label: Has urgency"]
+) .titleFields b i {
+  font-family: "MonoLisa", "SF Pro" !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  background-color: #F1F1F4;
+  padding-left: 0.8ch !important;
+    padding-right: 0.8ch !important;
+    padding-top: 0.2ch !important;
+        padding-bottom: 0.2ch !important;
+        border-radius: 9999px;
+}
+
+.tw-items-start .Calendar-module_title__w0u4f .titleFields [data-editable-wrapper="true"] {display: none !important;}
+
+.PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .searchnode [data-role="editable"]{
+  color: #686678;
+  text-transform: uppercase;
+  font-family: "MonoLisa", "SF Pro";
+  font-size: 0.8em !important;
+}
+
+.Button-module_buttonGroup__Xq194 [aria-label="Today\'s\ priority"], .Button-module_buttonGroup__Xq194 [aria-label="Has jot notes"] {
+  background-color: transparent !important;
+}
+
+
+.tw-items-start .OutlinerItem-module_content__zB1rI .itemdone-checkbox .navtarget {
+  background-color: var(--color-success) !important;
+}
+
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
+  font-size: 0.9em !important;
+}
+
+
+.itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
+text-decoration: line-through !important;
+text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
+color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+}
+
+mark {
+  background-color: rgb(205, 247, 189) !important;
+  border-block-end-color: rgb(68, 68, 68) !important;
+  border-block-end-style: none !important;
+  border-block-end-width: 0px !important;
+  border-block-start-color: rgb(68, 68, 68) !important;
+  border-block-start-style: none !important;
+  border-block-start-width: 0px !important;
+  border-bottom-color: rgb(68, 68, 68) !important;
+  border-bottom-left-radius: 3.75px !important;
+  border-bottom-right-radius: 3.75px !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0px !important;
+  border-collapse: separate !important;
+  border-end-end-radius: 3.75px !important;
+  border-end-start-radius: 3.75px !important;
+  border-image-outset: 0 !important;
+  border-image-repeat: stretch !important;
+  border-image-slice: 100% !important;
+  border-image-source: none !important;
+  border-image-width: 1 !important;
+  border-inline-end-color: rgb(68, 68, 68) !important;
+  border-inline-end-style: none !important;
+  border-inline-end-width: 0px !important;
+  border-inline-start-color: rgb(68, 68, 68) !important;
+  border-inline-start-style: none !important;
+  border-inline-start-width: 0px !important;
+  border-left-color: rgb(68, 68, 68) !important;
+  border-left-style: none !important;
+  border-left-width: 0px !important;
+  border-right-color: rgb(68, 68, 68) !important;
+  border-right-style: none !important;
+  border-right-width: 0px !important;
+  border-start-end-radius: 3.75px !important;
+  border-start-start-radius: 3.75px !important;
+  border-top-color: rgb(68, 68, 68) !important;
+  border-top-left-radius: 3.75px !important;
+  border-top-right-radius: 3.75px !important;
+  border-top-style: none !important;
+  border-top-width: 0px !important;
+  caret-color: rgb(68, 68, 68) !important;
+  padding-block-end: 3.75px !important;
+  padding-block-start: 3.75px !important;
+  padding-bottom: 3.75px !important;
+  padding-inline-end: 3.75px !important;
+  padding-inline-start: 3.75px !important;
+  padding-left: 3.75px !important;
+  padding-right: 3.75px !important;
+  padding-top: 3.75px !important;
+  outline-color: rgb(68, 68, 68) !important;
+}
+
 
 :root {
   --color-success: #2EC36A;
