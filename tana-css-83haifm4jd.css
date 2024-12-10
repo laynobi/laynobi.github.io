@@ -288,3 +288,54 @@ text-decoration-color:  rgb(from var(--colorEditorTextMuted) r g b / 0.5) !impor
 color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
 }
 
+mark {
+  background-color: rgb(205, 247, 189) !important;
+  border-block-end-color: rgb(68, 68, 68) !important;
+  border-block-end-style: none !important;
+  border-block-end-width: 0px !important;
+  border-block-start-color: rgb(68, 68, 68) !important;
+  border-block-start-style: none !important;
+  border-block-start-width: 0px !important;
+  border-bottom-color: rgb(68, 68, 68) !important;
+  border-bottom-left-radius: 3.75px !important;
+  border-bottom-right-radius: 3.75px !important;
+  border-bottom-style: none !important;
+  border-bottom-width: 0px !important;
+  border-collapse: separate !important;
+  border-end-end-radius: 3.75px !important;
+  border-end-start-radius: 3.75px !important;
+  border-image-outset: 0 !important;
+  border-image-repeat: stretch !important;
+  border-image-slice: 100% !important;
+  border-image-source: none !important;
+  border-image-width: 1 !important;
+  border-inline-end-color: rgb(68, 68, 68) !important;
+  border-inline-end-style: none !important;
+  border-inline-end-width: 0px !important;
+  border-inline-start-color: rgb(68, 68, 68) !important;
+  border-inline-start-style: none !important;
+  border-inline-start-width: 0px !important;
+  border-left-color: rgb(68, 68, 68) !important;
+  border-left-style: none !important;
+  border-left-width: 0px !important;
+  border-right-color: rgb(68, 68, 68) !important;
+  border-right-style: none !important;
+  border-right-width: 0px !important;
+  border-start-end-radius: 3.75px !important;
+  border-start-start-radius: 3.75px !important;
+  border-top-color: rgb(68, 68, 68) !important;
+  border-top-left-radius: 3.75px !important;
+  border-top-right-radius: 3.75px !important;
+  border-top-style: none !important;
+  border-top-width: 0px !important;
+  caret-color: rgb(68, 68, 68) !important;
+  padding-block-end: 3.75px !important;
+  padding-block-start: 3.75px !important;
+  padding-bottom: 3.75px !important;
+  padding-inline-end: 3.75px !important;
+  padding-inline-start: 3.75px !important;
+  padding-left: 3.75px !important;
+  padding-right: 3.75px !important;
+  padding-top: 3.75px !important;
+  outline-color: rgb(68, 68, 68) !important;
+}
