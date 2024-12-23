@@ -416,3 +416,8 @@ div[class*="WidgetPanel-module_container"]:has(
      color: var(--colorGray350) !important;
      text-decoration: line-through !important;
  }
+
+/* Experimental formatting */
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 {
+  display: none !important;
+}
