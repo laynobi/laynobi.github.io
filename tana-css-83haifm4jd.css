@@ -421,3 +421,9 @@ div[class*="WidgetPanel-module_container"]:has(
 [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .Button-module_buttonGroup__Xq194 {
   display: none !important;
 }
+
+
+/* hide view mode*/
+.tw-flex-col .SoftLockContainer-module_container__IfJrS [data-containing-block="true"]:has(.listContentItem > div[id$="pAThKeOIbMCR"]) {
+ display: none !important;
+}
