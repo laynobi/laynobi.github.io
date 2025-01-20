@@ -49,7 +49,7 @@
         margin-bottom: 5px !important;
     }
     
-    .listContentItem :has(span[data-tag="task"]) b > i {
+    .listContentItem :has(span[data-tag="task"]) b > i, .listContentItem :has(span[data-tag="meeting"]) b > i, .listContentItem :has(span[data-tag="event"]) b > i {
     border-bottom: 0px solid transparent !important;
         border-radius: 2px !important;
         background-color: transparent !important;
