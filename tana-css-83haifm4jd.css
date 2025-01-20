@@ -2,6 +2,7 @@
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
+        --colorGreen400: #1DBF8B;
     }
 
     html {
