@@ -1,4 +1,4 @@
-:root {
+ :root {
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
@@ -24,7 +24,8 @@
         font-family: var(--font-monospace-family) !important;
     }
 
-    b u i, b > i {
+    b u i,
+    b > i {
         font-weight: 500 !important;
         font-family: var(--font-monospace-family) !important;
         border-bottom: 2px solid #D4D4DC !important;
@@ -49,4 +50,15 @@
 
     b u:has(i) {
         text-decoration: none !important;
+    }
+
+
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
+        text-decoration: line-through !important;
+        text-decoration-color: rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
+        color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+    }
+
+    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
+        display: none !important;
     }
