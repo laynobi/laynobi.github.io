@@ -1,12 +1,4 @@
-/* ==UserStyle==
-@name           Tana
-@namespace      app.tana.inc
-@version        0.0.1
-@description    Personal style for notes & personal knowledge management
-@author         Aian
-==/UserStyle== */
-@-moz-document domain("app.tana.inc") {
-    :root {
+:root {
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
@@ -58,4 +50,3 @@
     b u:has(i) {
         text-decoration: none !important;
     }
-}
