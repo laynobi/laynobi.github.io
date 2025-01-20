@@ -1,4 +1,4 @@
- :root {
+    :root {
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
@@ -46,6 +46,16 @@
         -webkit-font-smoothing: antialiased !important;
         padding-right: 1ch !important;
         margin-bottom: 5px !important;
+    }
+    
+    .listContentItem :has(span[data-tag="task"]) b > i {
+    border-bottom: 0px solid transparent !important;
+        border-radius: 2px !important;
+        background-color: transparent !important;
+        box-shadow: transparent 0px 0px 0px 0px inset !important;
+        padding-right: 0ch !important;
+        opacity: 0.54;
+        padding-left: 0px !important;
     }
 
     b u:has(i) {
