@@ -14,7 +14,7 @@
 
     html {
         font-size: var(--font-base-size) !important;
-        font-family: var(--font-default-family), "GeistMono Nerd Font" !important;
+        font-family: var(--font-default-family), "GeistMono Nerd Font", -apple-system, "system-ui", "TossFaceFontMac" !important;
         text-rendering: optimizeLegibility !important;
         -webkit-font-smoothing: antialiased !important;
         -moz-osx-font-smoothing: grayscale !important;
