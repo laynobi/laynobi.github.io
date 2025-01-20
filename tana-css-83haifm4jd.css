@@ -25,7 +25,7 @@
     }
 
     b u i, b > i {
-        font-weight: 700 !important;
+        font-weight: 500 !important;
         font-family: var(--font-monospace-family) !important;
         border-bottom: 2px solid #D4D4DC !important;
         border-radius: 2px !important;
