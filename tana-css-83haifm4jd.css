@@ -78,3 +78,35 @@
     [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
         display: none !important;
     }
+    
+    * ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
+[class*="NodeListView-module_hiddenFields"] {
+margin: .25rem 0rem 0rem -.35rem !important; 
+background: var(--colorUIStickyTemplateContentBackground) !important;
+border-top-right-radius: var(--radius400) !important;
+border-top-left-radius: var(--radius400) !important;
+padding: .265rem .3rem .15rem .35rem !important;
+display: inline-block !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
+[data-role="template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem 0rem 0rem .35rem !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
+[data-role="optional-template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem 0rem 0rem .35rem !important;   
+}
+
+/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
+[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+margin: 0 !important;
+padding: 0 !important;
+border-radius: 0px !important;
+background: transparent !important;
+}
