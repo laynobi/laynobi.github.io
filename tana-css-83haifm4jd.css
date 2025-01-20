@@ -47,6 +47,7 @@
         -webkit-font-smoothing: antialiased !important;
         padding-right: 1ch !important;
         margin-bottom: 5px !important;
+                text-decoration: none !important;
     }
     
     .listContentItem :has(span[data-tag="task"]) b > i, .listContentItem :has(span[data-tag="meeting"]) b > i, .listContentItem :has(span[data-tag="event"]) b > i {
@@ -56,16 +57,20 @@
         box-shadow: transparent 0px 0px 0px 0px inset !important;
         padding-right: 0ch !important;
         opacity: 0.54;
+                        text-decoration: none !important;
         padding-left: 0px !important;
     }
 
     b u:has(i) {
         text-decoration: none !important;
     }
+    
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span  {
+        text-decoration-color: red !important;
+    }
 
 
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
-        text-decoration: line-through !important;
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span {
         text-decoration-color: rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
         color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
     }
