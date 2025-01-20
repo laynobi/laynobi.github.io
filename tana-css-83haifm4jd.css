@@ -1,37 +1,61 @@
+/* ==UserStyle==
+@name           Tana
+@namespace      app.tana.inc
+@version        0.0.1
+@description    Personal style for notes & personal knowledge management
+@author         Aian
+==/UserStyle== */
+@-moz-document domain("app.tana.inc") {
     :root {
-        --font-base-size: 80%;
-        --font-default-family: "iA Writer Quattro V";
-        --font-monospace-family: "MonoLisa";
+        --font-base-size: 80% !important;
+        --font-default-family: "Bear Sans UI" !important;
+        --font-monospace-family: "MonoLisa" !important;
     }
 
     html {
-        font-size: var(--font-base-size);
-        font-family: var(--font-default-family), "GeistMono Nerd Font", -apple-system !important;
+        font-size: var(--font-base-size) !important;
+        font-family: var(--font-default-family), "GeistMono Nerd Font" !important;
         text-rendering: optimizeLegibility !important;
         -webkit-font-smoothing: antialiased !important;
         -moz-osx-font-smoothing: grayscale !important;
-        overflow-wrap: break-word;
+        overflow-wrap: break-word !important;
     }
 
     [tabindex="\30 "] button {
-        font-family: var(--font-default-family);
-        font-weight: normal;
+        font-family: var(--font-default-family) !important;
+        font-weight: normal !important;
         display: none !important;
     }
 
     .listContentItem:has(span[data-tag="decimal"]) {
-        font-weight: 700;
+        font-weight: 700 !important;
         font-family: var(--font-monospace-family) !important;
     }
 
-    /* Special formatting for decimals */
-    b u i {
-        font-style: normal !important;
+    b u i, b > i {
+        font-weight: 700 !important;
         font-family: var(--font-monospace-family) !important;
-        padding-right: 0.5ch;
+        border-bottom: 2px solid #D4D4DC !important;
+        border-radius: 2px !important;
+        background-color: #F0F0F3 !important;
+        box-shadow: #D4D4DC 0px 0px 0px 1px inset !important;
+        box-sizing: border-box !important;
+        color: #4B4B59 !important;
+        color-scheme: light !important;
+        font-size: 0.75em !important;
+        font-style: normal !important;
+        letter-spacing: 0.03px !important;
+        padding-bottom: 2px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        padding-top: 2px !important;
+        white-space-collapse: collapse !important;
+        -webkit-font-smoothing: antialiased !important;
+        padding-right: 1ch !important;
+        margin-bottom: 5px !important;
     }
 
     b u:has(i) {
         text-decoration: none !important;
     }
-    
+}
