@@ -2,7 +2,7 @@
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
-        --colorGreen400: #1DBF8B;
+        --colorGreen400: #1DBF8B !important;
     }
 
     html {
@@ -189,4 +189,13 @@ background: transparent !important;
 [class*="NodeProgressBar-module_label"] {
         font-family: var(--font-monospace-family) !important;
     font-weight: 500 !important;
+}
+
+[style$=" \33 00px\;"] .navtarget {
+font-family: var(--font-monospace-family) !important;
+text-transform: lowercase !important;
+}
+
+[data-testid="sidepane"] .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_nav__oxpZP, .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col:has(.Heading-module_line-height-compact__g0Fxw), .tw-flex-col .tw-items-center:has(.NodeAsDrilldownElement-module_navigationButton__r0uyP .WorkspaceAvatar-module_container__J3526), .tw-flex-col .tipy-container [aria-expanded="false"]:has(.navtarget), .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI:has(.WorkspaceAvatar-module_container__J3526), .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT .ObjectAvatar-module_image__6hnmd, .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Help"], .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Keyboard\ shortcuts"], .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"] {
+  display: none !important;
 }
