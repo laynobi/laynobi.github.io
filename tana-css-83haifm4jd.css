@@ -41,7 +41,7 @@ text-transform: uppercase;
 }
 
 div[class*="NodeAsDrilldownElement"] > div[aria-label=".10 Daily notes"]::after {
-content:".10 Daily Notes";
+content:"Today";
 font-family: "MonoLisa";
 font-size: 0.8em;
 padding-left: 0.5ch;
