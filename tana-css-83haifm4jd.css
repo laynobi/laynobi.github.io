@@ -115,3 +115,62 @@ background: transparent !important;
         font-family: var(--font-monospace-family) !important;
     font-weight: 500 !important;
 }
+
+.NodeAsDrilldownElement-module_label__nLxL- {
+  display: none !important;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
+content:"00.00 Index";
+font-family: "MonoLisa";
+font-size: 0.8em;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label="00.01 Tasks"]::after {
+content:"00.01 Tasks";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label=".10 Daily notes"]::after {
+content:".10 Daily Notes";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label=".97 Library"]::after {
+content:".97 Library";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label=".80 Commands"]::after {
+content:".80 Commands";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label=".98 Schema"]::after {
+content:".98 Schema";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
+
+div[class*="NodeAsDrilldownElement"] > div[aria-label=".99 Building blocks"]::after {
+content:".99 Building blocks";
+font-family: "MonoLisa";
+font-size: 0.8em;
+padding-left: 0.5ch;
+text-transform: uppercase;
+}
