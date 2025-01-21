@@ -121,14 +121,15 @@ background: transparent !important;
 }
 
 div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
-content:"00.00 Index";
+content:"Index";
+    padding-left: 0.5ch;
 font-family: "MonoLisa";
 font-size: 0.8em;
 text-transform: uppercase;
 }
 
 div[class*="NodeAsDrilldownElement"] > div[aria-label="00.01 Tasks"]::after {
-content:"00.01 Tasks";
+content:"Tasks";
 font-family: "MonoLisa";
 font-size: 0.8em;
 padding-left: 0.5ch;
