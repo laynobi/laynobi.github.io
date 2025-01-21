@@ -1,4 +1,4 @@
-    :root {
+ :root {
         --font-base-size: 80% !important;
         --font-default-family: "Bear Sans UI" !important;
         --font-monospace-family: "MonoLisa" !important;
@@ -19,104 +19,8 @@
         font-weight: normal !important;
         display: none !important;
     }
-
-    .listContentItem:has(span[data-tag="decimal"]) {
-        font-weight: 700 !important;
-        font-family: var(--font-monospace-family) !important;
-    }
-
-    b u i,
-    b > i {
-        font-weight: 500 !important;
-        font-family: var(--font-monospace-family) !important;
-        border-bottom: 2px solid #D4D4DC !important;
-        border-radius: 2px !important;
-        background-color: #F0F0F3 !important;
-        box-shadow: #D4D4DC 0px 0px 0px 1px inset !important;
-        box-sizing: border-box !important;
-        color: #4B4B59 !important;
-        color-scheme: light !important;
-        font-size: 0.75em !important;
-        font-style: normal !important;
-        letter-spacing: 0.03px !important;
-        padding-bottom: 2px !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
-        padding-top: 2px !important;
-        white-space-collapse: collapse !important;
-        -webkit-font-smoothing: antialiased !important;
-        padding-right: 1ch !important;
-        margin-bottom: 5px !important;
-                text-decoration: none !important;
-    }
     
-    .listContentItem :has(span[data-tag="task"]) b > i, .listContentItem :has(span[data-tag="meeting"]) b > i, .listContentItem :has(span[data-tag="event"]) b > i {
-    border-bottom: 0px solid transparent !important;
-        border-radius: 2px !important;
-        background-color: transparent !important;
-        box-shadow: transparent 0px 0px 0px 0px inset !important;
-        padding-right: 0ch !important;
-        opacity: 0.54;
-                        text-decoration: none !important;
-        padding-left: 0px !important;
-    }
-
-    b u:has(i) {
-        text-decoration: none !important;
-    }
-    
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span  {
-        text-decoration-color: red !important;
-    }
-
-
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span {
-        text-decoration-color: rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
-        color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
-    }
-
-    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
-        display: none !important;
-    }
-    
-    * ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
-[class*="NodeListView-module_hiddenFields"] {
-margin: .25rem 0rem 0rem -.35rem !important; 
-background: var(--colorUIStickyTemplateContentBackground) !important;
-border-top-right-radius: var(--radius400) !important;
-border-top-left-radius: var(--radius400) !important;
-padding: .265rem .3rem .15rem .35rem !important;
-display: inline-block !important;
-}
-
-/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
-[data-role="template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem 0rem 0rem .35rem !important;
-}
-
-/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
-[data-role="optional-template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem 0rem 0rem .35rem !important;   
-}
-
-/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
-[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
-margin: 0 !important;
-padding: 0 !important;
-border-radius: 0px !important;
-background: transparent !important;
-}
-    
-[class*="NodeProgressBar-module_label"] {
-        font-family: var(--font-monospace-family) !important;
-    font-weight: 500 !important;
-}
-
-.NodeAsDrilldownElement-module_label__nLxL- {
+    .NodeAsDrilldownElement-module_label__nLxL- {
   display: none !important;
 }
 
@@ -174,4 +78,115 @@ font-family: "MonoLisa";
 font-size: 0.8em;
 padding-left: 0.5ch;
 text-transform: uppercase;
+}
+
+ /*   .listContentItem:has(span[data-tag="decimal"]) {
+        font-weight: 700 !important;
+        font-family: var(--font-monospace-family) !important;
+    }*/
+
+    b u i,
+    b > i {
+        font-weight: 500 !important;
+        font-family: var(--font-monospace-family) !important;
+        border-bottom: 2px solid #D4D4DC !important;
+        border-radius: 2px !important;
+        background-color: #F0F0F3 !important;
+        box-shadow: #D4D4DC 0px 0px 0px 1px inset !important;
+        box-sizing: border-box !important;
+        color: #4B4B59 !important;
+        color-scheme: light !important;
+        font-size: 0.8em !important;
+        font-style: normal !important;
+        letter-spacing: 0.03px !important;
+        padding-bottom: 2px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        padding-top: 2px !important;
+        -webkit-font-smoothing: antialiased !important;
+        margin-bottom: 5px !important;
+        text-decoration: none !important;
+        text-transform: uppercase;
+    }
+    
+    .listContentItem:has(span[data-tag="instance"]) b > i {
+        background-color: transparent !important;
+        border-bottom: 1.5px solid #D4D4DC !important;
+                color: rgba(75, 75, 89, 0.8) !important;
+    }
+    
+    .listContentItem:has(span[data-tag="instance"]) span {
+     font-family:  var(--font-monospace-family) !important;
+             font-size: 0.8em !important;
+                letter-spacing: 0.03px !important;
+                text-transform: uppercase;
+                color: #4B4B59 !important;
+
+    }
+    
+
+    
+    .listContentItem :has(span[data-tag="task"]) b > i, .listContentItem :has(span[data-tag="meeting"]) b > i, .listContentItem :has(span[data-tag="event"]) b > i {
+    border-bottom: 0px solid transparent !important;
+        border-radius: 2px !important;
+        background-color: transparent !important;
+        box-shadow: transparent 0px 0px 0px 0px inset !important;
+        padding-right: 0ch !important;
+        opacity: 0.54;
+                        text-decoration: none !important;
+        padding-left: 0px !important;
+    }
+
+    b u:has(i) {
+        text-decoration: none !important;
+    }
+    
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span  {
+        text-decoration-color: red !important;
+    }
+
+
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span {
+        text-decoration-color: rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
+        color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
+    }
+
+    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
+        display: none !important;
+    }
+    
+[class*="NodeListView-module_hiddenFields"] {
+margin: .25rem 0rem 0rem -.35rem !important; 
+background: var(--colorUIStickyTemplateContentBackground) !important;
+border-top-right-radius: var(--radius400) !important;
+border-top-left-radius: var(--radius400) !important;
+padding: .265rem .3rem .15rem .35rem !important;
+display: inline-block !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
+[data-role="template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem 0rem 0rem .35rem !important;
+}
+
+/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
+[data-role="optional-template-children-container"] {
+background: var(--colorUIStickyTemplateContentBackground) !important;
+margin: 0rem 0rem .25rem -.35rem !important; 
+padding: 0rem 0rem 0rem .35rem !important;   
+}
+
+/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
+[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+margin: 0 !important;
+padding: 0 !important;
+border-radius: 0px !important;
+background: transparent !important;
+}
+    
+[class*="NodeProgressBar-module_label"] {
+        font-family: var(--font-monospace-family) !important;
+    font-weight: 500 !important;
 }
