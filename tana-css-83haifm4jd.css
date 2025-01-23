@@ -56,6 +56,14 @@
         text-transform: uppercase;
     }
 
+    div[class*="NodeAsDrilldownElement"] > div[aria-label="02 Documentation"]::after {
+        content: "Documentation";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
+
     div[class*="NodeAsDrilldownElement"] > div[aria-label=".97 Library"]::after {
         content: "Library";
         font-family: "MonoLisa";
