@@ -233,3 +233,17 @@
     .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span .inlineelement .inlinecontent .inlineavatar {
         filter: grayscale(100%) opacity(0.25);
     }
+
+/* Style hidden fields */
+    .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget {
+        font-family: var(--font-monospace-family) !important;
+        text-transform: uppercase !important;
+        font-size: 0.65rem !important;
+        padding-left: 2.5ch !important;
+        padding-right: 2.5ch !important;
+    }
+
+/* Hide SVG icons in hidden fields */
+    .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget svg {
+     display: none !important;
+    }
