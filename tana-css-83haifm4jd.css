@@ -32,6 +32,10 @@
         display: none !important;
     }
 
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .navtarget {
+    font-size: 0.7rem !important;
+}
+
     div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
         content: "Index";
         padding-left: 0.5ch;
@@ -245,7 +249,7 @@
 
 /* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
 /* Initial state of each button, hidden */
-button[aria-label*="This node is referenced"] {
+button[aria-label*="New"], button[aria-label*="This node is referenced"] {
 opacity: 0 !important;
 transform: translateX(-5px) !important; /* Subtle movement to the left */
 transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
