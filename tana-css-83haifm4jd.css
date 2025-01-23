@@ -1,6 +1,6 @@
- :root {
+    :root {
         --font-base-size: 80% !important;
-        --font-default-family: "Bear Sans UI" !important;
+        --font-default-family: "iA Writer Quattro V" !important;
         --font-monospace-family: "MonoLisa" !important;
         --colorGreen400: #1DBF8B !important;
     }
@@ -19,72 +19,79 @@
         font-weight: normal !important;
         display: none !important;
     }
-    
+
+    .tw-flex-col .UnifiedSidebar-module_main__u1wcy .tw-flex-col:has(.PinnedNodesSection-module_section__W18Gd) {
+        margin-top: -20px !important;
+    }
+
+    .tw-flex-col .tw-flex-col .tw-items-center:has([aria-label="Create\ new\ item\ in\ 00\.01\ Tasks"]) {
+        margin-bottom: 20px !important;
+    }
+
     .NodeAsDrilldownElement-module_label__nLxL- {
-  display: none !important;
-}
+        display: none !important;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
-content:"Index";
-    padding-left: 0.5ch;
-font-family: "MonoLisa";
-font-size: 0.8em;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
+        content: "Index";
+        padding-left: 0.5ch;
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label="00.01 Tasks"]::after {
-content:"Tasks";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label="00.01 Tasks"]::after {
+        content: "Tasks";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label=".10 Daily notes"]::after {
-content:"Today";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label=".10 Daily notes"]::after {
+        content: "Today";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label=".97 Library"]::after {
-content:".97 Library";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label=".97 Library"]::after {
+        content: "Library";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label=".80 Commands"]::after {
-content:".80 Commands";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label=".80 Commands"]::after {
+        content: "Commands";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label=".98 Schema"]::after {
-content:".98 Schema";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label=".98 Schema"]::after {
+        content: "Schema";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
-div[class*="NodeAsDrilldownElement"] > div[aria-label=".99 Building blocks"]::after {
-content:".99 Building blocks";
-font-family: "MonoLisa";
-font-size: 0.8em;
-padding-left: 0.5ch;
-text-transform: uppercase;
-}
+    div[class*="NodeAsDrilldownElement"] > div[aria-label=".99 Building blocks"]::after {
+        content: "Building blocks";
+        font-family: "MonoLisa";
+        font-size: 0.8em;
+        padding-left: 0.5ch;
+        text-transform: uppercase;
+    }
 
- /*   .listContentItem:has(span[data-tag="decimal"]) {
+    /*   .listContentItem:has(span[data-tag="decimal"]) {
         font-weight: 700 !important;
         font-family: var(--font-monospace-family) !important;
     }*/
-
     b u i,
     b > i {
         font-weight: 500 !important;
@@ -105,97 +112,116 @@ text-transform: uppercase;
         padding-top: 2px !important;
         -webkit-font-smoothing: antialiased !important;
         margin-bottom: 5px !important;
-        text-decoration: none !important;
         text-transform: uppercase;
     }
-    
+
     .listContentItem:has(span[data-tag="instance"]) b > i {
         background-color: transparent !important;
         border-bottom: 1.5px solid #D4D4DC !important;
-                color: rgba(75, 75, 89, 0.8) !important;
+        color: rgba(75, 75, 89, 0.8) !important;
     }
-    
+
     .listContentItem:has(span[data-tag="instance"]) span {
-     font-family:  var(--font-monospace-family) !important;
-             font-size: 0.8em !important;
-                letter-spacing: 0.03px !important;
-                text-transform: uppercase;
-                color: #4B4B59 !important;
-
+        font-family: var(--font-monospace-family) !important;
+        font-size: 0.8em !important;
+        letter-spacing: 0.03px !important;
+        text-transform: uppercase;
+        color: #4B4B59 !important;
     }
-    
 
-    
-    .listContentItem :has(span[data-tag="task"]) b > i, .listContentItem :has(span[data-tag="meeting"]) b > i, .listContentItem :has(span[data-tag="event"]) b > i {
-    border-bottom: 0px solid transparent !important;
+
+
+    .listContentItem :has(span[data-tag="task"]) b > i,
+    .listContentItem :has(span[data-tag="meeting"]) b > i,
+    .listContentItem :has(span[data-tag="event"]) b > i {
+        border-bottom: 0px solid transparent !important;
         border-radius: 2px !important;
         background-color: transparent !important;
         box-shadow: transparent 0px 0px 0px 0px inset !important;
         padding-right: 0ch !important;
         opacity: 0.54;
-                        text-decoration: none !important;
         padding-left: 0px !important;
     }
 
     b u:has(i) {
         text-decoration: none !important;
     }
-    
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span  {
+
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
         text-decoration-color: red !important;
     }
 
 
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span {
-        text-decoration-color: rgb(from var(--colorEditorTextMuted) r g b / 0.5) !important;
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
+        /*text-decoration: line-through;*/
+        /*text-decoration-color: #E0DFE6 !important;*/
         color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
     }
 
     [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
         display: none !important;
     }
-    
-[class*="NodeListView-module_hiddenFields"] {
-margin: .25rem 0rem 0rem -.35rem !important; 
-background: var(--colorUIStickyTemplateContentBackground) !important;
-border-top-right-radius: var(--radius400) !important;
-border-top-left-radius: var(--radius400) !important;
-padding: .265rem .3rem .15rem .35rem !important;
-display: inline-block !important;
-}
 
-/* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
-[data-role="template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem 0rem 0rem .35rem !important;
-}
+    [class*="NodeListView-module_hiddenFields"] {
+        margin: .25rem 0rem 0rem -.35rem !important;
+        background: var(--colorUIStickyTemplateContentBackground) !important;
+        border-top-right-radius: var(--radius400) !important;
+        border-top-left-radius: var(--radius400) !important;
+        padding: .265rem .3rem .15rem .35rem !important;
+        display: inline-block !important;
+    }
 
-/* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
-[data-role="optional-template-children-container"] {
-background: var(--colorUIStickyTemplateContentBackground) !important;
-margin: 0rem 0rem .25rem -.35rem !important; 
-padding: 0rem 0rem 0rem .35rem !important;   
-}
+    /* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
+    [data-role="template-children-container"] {
+        background: var(--colorUIStickyTemplateContentBackground) !important;
+        margin: 0rem 0rem .25rem -.35rem !important;
+        padding: 0rem 0rem 0rem .35rem !important;
+    }
 
-/* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */ 
-[class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
-margin: 0 !important;
-padding: 0 !important;
-border-radius: 0px !important;
-background: transparent !important;
-}
-    
-[class*="NodeProgressBar-module_label"] {
+    /* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
+    [data-role="optional-template-children-container"] {
+        background: var(--colorUIStickyTemplateContentBackground) !important;
+        margin: 0rem 0rem .25rem -.35rem !important;
+        padding: 0rem 0rem 0rem .35rem !important;
+    }
+
+    /* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */
+    [class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0px !important;
+        background: transparent !important;
+    }
+
+    [class*="NodeProgressBar-module_label"] {
         font-family: var(--font-monospace-family) !important;
-    font-weight: 500 !important;
-}
+        font-weight: 500 !important;
+    }
 
-[style$=" \33 00px\;"] .navtarget {
-font-family: var(--font-monospace-family) !important;
-text-transform: lowercase !important;
-}
+    [style$=" \33 00px\;"] .navtarget {
+        font-family: var(--font-monospace-family) !important;
+        text-transform: lowercase !important;
+    }
 
-[data-testid="sidepane"] .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_nav__oxpZP, .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col:has(.Heading-module_line-height-compact__g0Fxw), .tw-flex-col .tw-items-center:has(.NodeAsDrilldownElement-module_navigationButton__r0uyP .WorkspaceAvatar-module_container__J3526), .tw-flex-col .tipy-container [aria-expanded="false"]:has(.navtarget), .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI:has(.WorkspaceAvatar-module_container__J3526), .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT .ObjectAvatar-module_image__6hnmd, .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Help"], .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Keyboard\ shortcuts"], .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"], .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"] {
-  display: none !important;
-}
+    [data-testid="sidepane"] .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_nav__oxpZP,
+    .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col:has(.Heading-module_line-height-compact__g0Fxw),
+    .tw-flex-col .tw-items-center:has(.NodeAsDrilldownElement-module_navigationButton__r0uyP .WorkspaceAvatar-module_container__J3526),
+    .tw-flex-col .tipy-container [aria-expanded="false"]:has(.navtarget),
+    .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI:has(.WorkspaceAvatar-module_container__J3526),
+    .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT .ObjectAvatar-module_image__6hnmd,
+    .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Help"],
+    .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Keyboard\ shortcuts"],
+    .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"],
+    .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"] {
+        display: none !important;
+    }
+
+/* reduce size of node icons inline */
+    .inlineelement .inlinecontent .inlineavatar {
+        font-size: 0.8rem;
+    }
+
+
+    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span .inlineelement .inlinecontent .inlineavatar {
+        filter: grayscale(100%) opacity(0.25);
+    }
