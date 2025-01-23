@@ -131,7 +131,7 @@
 
     .listContentItem:has(span[data-tag="instance"]) span {
         font-family: var(--font-monospace-family) !important;
-        font-size: 0.8em !important;
+        font-size: 0.8rem !important;
         letter-spacing: 0.03px !important;
         text-transform: uppercase;
         color: #4B4B59 !important;
