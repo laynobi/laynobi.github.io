@@ -170,7 +170,7 @@
         color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
     }
 
-    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget {
+    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget, [data-testid="plain-list-item"] .PlainListItem-module_wrapper__g19B8 .NodeDoneCheckbox-module_container__UsIbz .navtarget {
         display: none !important;
     }
 
