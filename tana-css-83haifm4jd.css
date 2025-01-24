@@ -254,7 +254,7 @@
 
 /* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
 /* Initial state of each button, hidden */
-button[aria-label*="New"], button[aria-label*="This node is referenced"] {
+button[aria-label*="Open"], button[aria-label*="Resolve issue(s) with node"], button[aria-label*="New"], button[aria-label*="This node is referenced"] {
 opacity: 0 !important;
 transform: translateX(-5px) !important; /* Subtle movement to the left */
 transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
