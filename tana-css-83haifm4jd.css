@@ -14,11 +14,11 @@
         overflow-wrap: break-word !important;
     }
 
-   /* [tabindex="\30 "] button {
+   [tabindex="\30 "] button {
         font-family: var(--font-default-family) !important;
         font-weight: normal !important;
         display: none !important;
-    } */
+    }
 
     .tw-flex-col .UnifiedSidebar-module_main__u1wcy .tw-flex-col:has(.PinnedNodesSection-module_section__W18Gd) {
         margin-top: -20px !important;
