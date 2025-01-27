@@ -277,58 +277,6 @@ z-index: -999 !important;
         display: none !important;
     }
 
-    /* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
-    /* Initial state of each button, hidden */
-    button[aria-label*="Open"],
-    button[aria-label*="Resolve issue(s) with node"],
-    button[aria-label*="New"],
-    button[aria-label*="This node is referenced"] {
-        opacity: 0 !important;
-        transform: translateX(-5px) !important;
-        /* Subtle movement to the left */
-        transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
-    }
-    /* Hover state for the main node to reveal the buttons */
-    .contentWrapper:focus-within [class*="Button-module_neutral"], .contentWrapper:hover [class*="Button-module_neutral"],
-    .isReference:hover button[aria-label*="This node is referenced"] {
-        opacity: 1 !important;
-        transform: translateX(0) !important;
-    }
-
-    /* Applying different delays to each button for the cascading effect */
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
-        transition-delay: 0s !important;
-        /* The first button appears instantly */
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
-        transition-delay: 0.05s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
-        transition-delay: 0.1s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
-        transition-delay: 0.15s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
-        transition-delay: 0.2s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
-        transition-delay: 0.25s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
-        transition-delay: 0.3s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
-        transition-delay: 0.35s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
-        transition-delay: 0.4s !important;
-    }
-    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
-        transition-delay: 0.45s !important;
-        /* The last button has the longest delay */
-    }
-
     /* Hide SVG icons in hidden fields */
     .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget svg {
         display: none !important;
