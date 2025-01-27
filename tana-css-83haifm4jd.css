@@ -17,35 +17,154 @@
 
 div[class="listContentItem"] > div:has(.titleFields) {
     display: grid!important;
-    grid-template-columns: 1fr 190px!important; /* Adjust 200px as needed for margin-note width */
+    grid-template-columns: 1fr 170px!important; /* Adjust 200px as needed for margin-note width */
     align-items: start!important;               /* Vertically align to the top */
     gap: 0px!important;                        /* Space between columns */
     box-sizing: border-box!important;
-    /*border: 1px solid #ccc!important; */         /* Optional: For visualization */            /* Allow overflow for bleeding effect */
+    margin-bottom: 0px !important;
+    
+    /*border: 1px solid #ccc!important;         /* Optional: For visualization */            /* Allow overflow for bleeding effect */
     }
 
 
 div[class="listContentItem"]:has(> div .titleFields) {
-    width: 1020% !important;                  /* Ensure parent can expand */
-    overflow-x: hidden !important;  
-    }
+    width: 120% !important;                  /* Ensure parent can expand */
+    overflow-x: visible !important;  
+}
 
 .inlinecontent > span:not(:has(svg)) {
     display: none !important;
 }
 
-    div[class="listContentItem"] > div > .titleFields {
-text-align: right!important;                /* Right-align text within margin-note */
-        overflow: visible!important;      
-       /* background: #f9f9f9!important; */              /* Optional: Background for visibility */
-        padding: 10px!important;
-        box-sizing: border-box!important;
-        position: relative!important;
-        right: -10px!important;         /* Include padding in width */
-        opacity: 0.7 !important;
-        white-space: nowrap !important;
-        top: -3px !important;
+div[class="listContentItem"] > div > .titleFields {
+    text-align: right !important;
+    top: -2px;
+    overflow: visible !important;      
+    box-sizing: border-box !important;
+    position: absolute !important;
+    right: -10px !important;         
+    white-space: nowrap !important;
+}
+.PlainListItem-module_wrapper__g19B8:has([class*="Button-module_neutral"]:hover) .titleFields {
+    opacity: 0;
+    transition: opacity 0.3s ease-out !important; /* Smooth transition for movement */
+
+}
+
+
+.PlainListItem-module_contentWrapper__M5J2E [aria-label] {
+
+    width: 20px !important;
+            background-color: #F0F0F3 !important;
+                border-top: 1px solid #D4D4DC !important;
+                border-left: 1px solid #D4D4DC !important;
+                border-right: 1px solid #D4D4DC !important;
+
+        border-bottom: 1.5px solid #D4D4DC !important;
+        color: rgba(75, 75, 89, 0.8) !important;
+
+}
+[data-testid="plain-list-item"] .PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E [aria-label="New"]:not(:has(.ObjectAvatar-module_container__P-mlO)) {
+        display: flex !important;                    /* Use flexbox */
+        justify-content: center !important;          /* Center horizontally */
+        align-items: center;              /* Center vertically */
+        text-align: center;               /* Center text */
     }
+
+
+
+div[class="listContentItem"] > div:has(> .titleFields) .titleFields {
+    transform: translateY(0); /* Original position */
+    transition: transform 0.15s ease-out !important; /* Smooth transition for movement */
+}
+
+div[class="listContentItem"] > div:has(> .titleFields):hover .titleFields {
+    transform: translateY(-20px); /* Move up by 10 pixels on hover or focus */
+}
+
+
+.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E:has(.tw-flex .Button-module_button__-xmQE) {
+    display: inline-block !important;
+    padding-right: 0px !important; /* Add padding for breathing room */
+    vertical-align: top !important; /* Aligns the elements at the top */
+}
+
+.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .tw-flex:has(.Button-module_button__-xmQE)  {
+    margin-left: 10px !important; /* Optional: Add margin for spacing */
+    /* Optional: Adjust width if needed */
+    flex-wrap: nowrap !important;
+        position: absolute !important;
+        right: 0px;
+        top: 0px;
+    /* width: auto !important; */
+
+}
+
+/* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
+/* Initial state of each button, hidden */
+.contentWrapper [aria-label*="Resolve issue(s) with node"], .contentWrapper [aria-label*="New"], button[aria-label*="This node is referenced"] {
+opacity: 0 !important;
+transform: translateY(-5px) !important; /* Subtle movement to the left */
+transition: opacity 0.4s ease-in-out, transform 0.3s ease-out !important;
+}
+/* Hover state for the main node to reveal the buttons */
+.contentWrapper:focus-within [class*="Button-module_neutral"], .contentWrapper:hover [class*="Button-module_neutral"], .isReference:hover button[aria-label*="This node is referenced"], .isReference:focus-within button[aria-label*="This node is referenced"] {
+opacity: 1 !important;
+transform: translateY(0) !important;
+}
+
+/* Applying different delays to each button for the cascading effect */
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
+transition-delay: 0s !important; /* The first button appears instantly */
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
+transition-delay: 0.05s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
+transition-delay: 0.1s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
+transition-delay: 0.15s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
+transition-delay: 0.2s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
+transition-delay: 0.25s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
+transition-delay: 0.3s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
+transition-delay: 0.35s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
+transition-delay: 0.4s !important;
+}
+.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
+transition-delay: 0.45s !important; /* The last button has the longest delay */
+}
+
+.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E > .tw-flex > .Button-module_button__-xmQE svg {
+display: none !important;
+}
+
+.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E > .tw-flex > .Button-module_button__-xmQE  {
+    display: inline-block !important; /* Make it inline-block to align next to the parent */
+    /* Optional: Adjust width if needed */
+    /* width: auto !important; */
+    float:right !important;
+}
+
+
+
+
+
+.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .tw-flex:has(.Button-module_button__-xmQE) {
+/*position: absolute !important;
+right:0;
+text-align: left !important;*/
+}
 
     div[class="listContentItem"] > div > .titleFields .disappearingCaret {
 display: none !important; 
