@@ -14,6 +14,47 @@
         overflow-wrap: break-word !important;
     }
 
+
+div[class="listContentItem"] > div:has(.titleFields) {
+    display: grid!important;
+    grid-template-columns: 1fr 190px!important; /* Adjust 200px as needed for margin-note width */
+    align-items: start!important;               /* Vertically align to the top */
+    gap: 0px!important;                        /* Space between columns */
+    box-sizing: border-box!important;
+    /*border: 1px solid #ccc!important; */         /* Optional: For visualization */            /* Allow overflow for bleeding effect */
+    }
+
+
+div[class="listContentItem"]:has(> div .titleFields) {
+    width: 1020% !important;                  /* Ensure parent can expand */
+    overflow-x: hidden !important;  
+    }
+
+.inlinecontent > span:not(:has(svg)) {
+    display: none !important;
+}
+
+    div[class="listContentItem"] > div > .titleFields {
+text-align: right!important;                /* Right-align text within margin-note */
+        overflow: visible!important;      
+       /* background: #f9f9f9!important; */              /* Optional: Background for visibility */
+        padding: 10px!important;
+        box-sizing: border-box!important;
+        position: relative!important;
+        right: -10px!important;         /* Include padding in width */
+        opacity: 0.7 !important;
+        white-space: nowrap !important;
+        top: -3px !important;
+    }
+
+    div[class="listContentItem"] > div > .titleFields .disappearingCaret {
+display: none !important; 
+    }
+
+    .PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .navtarget:has(svg) {
+        font-size:0.7rem !important;
+    }
+
 .tw-inline-flex :last-child > [data-editable-wrapper="true"] [data-role="editable"] {
     font-weight: bolder !important;
 }
@@ -276,6 +317,7 @@ z-index: -999 !important;
     .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__LE0Ci .navtarget svg {
         display: none !important;
     }
+
 
     /* Hide SVG icons in hidden fields */
     .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget svg {
