@@ -109,7 +109,7 @@ transform: translateY(-5px) !important; /* Subtle movement to the left */
 transition: opacity 0.4s ease-in-out, transform 0.3s ease-out !important;
 }
 /* Hover state for the main node to reveal the buttons */
-.contentWrapper:focus-within [class*="Button-module_neutral"], .contentWrapper:hover [class*="Button-module_neutral"], .isReference:hover button[aria-label*="This node is referenced"], .isReference:focus-within button[aria-label*="This node is referenced"] {
+.contentWrapper:hover [class*="Button-module_neutral"], .isReference:hover button[aria-label*="This node is referenced"], .isReference:focus-within button[aria-label*="This node is referenced"] {
 opacity: 1 !important;
 transform: translateY(0) !important;
 }
