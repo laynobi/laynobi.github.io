@@ -1,445 +1,76 @@
-
-:root {
-        --font-base-size: 90% !important;
-        --font-default-family: "Product Sans" !important;
-        --font-monospace-family: "MonoLisa" !important;
-        --colorGreen400: #1DBF8B !important;
+ :root {
+        --base-font-family: "Bear Sans UI", "TossFaceFontMac";
+        --base-font-size: 90%;
+        --base-accent: #DC4C4F;
+        --base-accent-text-color: #ffffff;
+        --colorGreen400: var(--base-accent); /* Progress bar fill; checkbox fill*/
+        --colorTextHighlightedBackground: #D2FFA4 !important; /* Highlight background */
+        --size-checkbox: 87.5%;
+        --colorCanvasBackground: #2E3235 !important; /* Sidebar background */ 
     }
 
     html {
-        font-size: var(--font-base-size) !important;
-        font-family: var(--font-default-family), "GeistMono Nerd Font", -apple-system, "system-ui", "TossFaceFontMac" !important;
-        text-rendering: optimizeLegibility !important;
-        -webkit-font-smoothing: antialiased !important;
-        -moz-osx-font-smoothing: grayscale !important;
-        overflow-wrap: break-word !important;
+        font-family: var(--base-font-family);
+        font-size: var(--base-font-size);
+        -webkit-font-smoothing: subpixel-antialiased;
     }
 
-
-div[class="listContentItem"] > div:has(.titleFields) {
-    display: grid!important;
-    grid-template-columns: 1fr 170px!important; /* Adjust 200px as needed for margin-note width */
-    align-items: start!important;               /* Vertically align to the top */
-    gap: 0px!important;                        /* Space between columns */
-    box-sizing: border-box!important;
-    margin-bottom: 0px !important;
+    button[role="checkbox"] {
+        font-size: var(--size-checkbox);
+    }
     
-    /*border: 1px solid #ccc!important;         /* Optional: For visualization */            /* Allow overflow for bleeding effect */
-    }
-
-
-div[class="listContentItem"]:has(> div .titleFields) {
-    width: 120% !important;                  /* Ensure parent can expand */
-    overflow-x: visible !important;  
-}
-
-.inlinecontent > span:not(:has(svg)) {
-    display: none !important;
-}
-
-div[class="listContentItem"] > div > .titleFields {
-    text-align: right !important;
-    top: -2px;
-    overflow: visible !important;      
-    box-sizing: border-box !important;
-    position: absolute !important;
-    right: -10px !important;         
-    white-space: nowrap !important;
-}
-.PlainListItem-module_wrapper__g19B8:has([class*="Button-module_neutral"]:hover) .titleFields {
-    opacity: 0;
-    transition: opacity 0.3s ease-out !important; /* Smooth transition for movement */
-
-}
-
-
-.PlainListItem-module_contentWrapper__M5J2E [aria-label] {
-
-    width: 20px !important;
-            background-color: #F0F0F3 !important;
-                border-top: 1px solid #D4D4DC !important;
-                border-left: 1px solid #D4D4DC !important;
-                border-right: 1px solid #D4D4DC !important;
-
-        border-bottom: 1.5px solid #D4D4DC !important;
-        color: rgba(75, 75, 89, 0.8) !important;
-
-}
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E [aria-label="New"]:not(:has(.ObjectAvatar-module_container__P-mlO)) {
-        display: flex !important;                    /* Use flexbox */
-        justify-content: center !important;          /* Center horizontally */
-        align-items: center;              /* Center vertically */
-        text-align: center;               /* Center text */
-    }
-
-
-
-div[class="listContentItem"] > div:has(> .titleFields) .titleFields {
-    transform: translateY(0); /* Original position */
-    transition: transform 0.15s ease-out !important; /* Smooth transition for movement */
-}
-
-div[class="listContentItem"] > div:has(> .titleFields):hover .titleFields {
-    transform: translateY(-20px); /* Move up by 10 pixels on hover or focus */
-}
-
-
-.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E:has(.tw-flex .Button-module_button__-xmQE) {
-    display: inline-block !important;
-    padding-right: 0px !important; /* Add padding for breathing room */
-    vertical-align: top !important; /* Aligns the elements at the top */
-}
-
-.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .tw-flex:has(.Button-module_button__-xmQE)  {
-    margin-left: 10px !important; /* Optional: Add margin for spacing */
-    /* Optional: Adjust width if needed */
-    flex-wrap: nowrap !important;
-        position: absolute !important;
-        right: 0px;
-        top: 0px;
-    /* width: auto !important; */
-
-}
-
-/* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
-/* Initial state of each button, hidden */
-.contentWrapper [aria-label*="Resolve issue(s) with node"], .contentWrapper [aria-label*="New"], button[aria-label*="This node is referenced"] {
-opacity: 0 !important;
-transform: translateY(-5px) !important; /* Subtle movement to the left */
-transition: opacity 0.4s ease-in-out, transform 0.3s ease-out !important;
-}
-/* Hover state for the main node to reveal the buttons */
-.contentWrapper:focus-within [class*="Button-module_neutral"], .contentWrapper:hover [class*="Button-module_neutral"], .isReference:hover button[aria-label*="This node is referenced"], .isReference:focus-within button[aria-label*="This node is referenced"] {
-opacity: 1 !important;
-transform: translateY(0) !important;
-}
-
-/* Applying different delays to each button for the cascading effect */
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
-transition-delay: 0s !important; /* The first button appears instantly */
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
-transition-delay: 0.05s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
-transition-delay: 0.1s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
-transition-delay: 0.15s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
-transition-delay: 0.2s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
-transition-delay: 0.25s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
-transition-delay: 0.3s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
-transition-delay: 0.35s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
-transition-delay: 0.4s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
-transition-delay: 0.45s !important; /* The last button has the longest delay */
-}
-
-.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E > .tw-flex > .Button-module_button__-xmQE svg {
-display: none !important;
-}
-
-.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E > .tw-flex > .Button-module_button__-xmQE  {
-    display: inline-block !important; /* Make it inline-block to align next to the parent */
-    /* Optional: Adjust width if needed */
-    /* width: auto !important; */
-    float:right !important;
-}
-
-
-
-
-
-.PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .tw-flex:has(.Button-module_button__-xmQE) {
-/*position: absolute !important;
-right:0;
-text-align: left !important;*/
-}
-
-    div[class="listContentItem"] > div > .titleFields .disappearingCaret {
-display: none !important; 
-    }
-
-    .PlainListItem-module_wrapper__g19B8 .PlainListItem-module_contentWrapper__M5J2E .navtarget:has(svg) {
-        font-size:0.7rem !important;
-    }
-
-.tw-inline-flex :last-child > [data-editable-wrapper="true"] [data-role="editable"] {
-    font-weight: bolder !important;
-}
-.titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-    font-family: var(--font-monospace-family) !important;
-    font-size: 0.7rem;
-    text-transform: uppercase !important;
-    padding-left:1ch !important;
-}
-
-/* Hide related content if it's a search node that returns no results */
-div[class*="WidgetPanel-module_container"]:has(
-  div[class*="Message-module_subtle"][class*="Message-module_smaller"]
-) {
-  display: none !important;
-}
-
-   [tabindex="\30 "] button {
-        font-family: var(--font-default-family) !important;
-        font-weight: normal !important;
-        display: none !important;
-    }
-
-    .tw-flex-col .UnifiedSidebar-module_main__u1wcy .tw-flex-col:has(.PinnedNodesSection-module_section__W18Gd) {
-        margin-top: -20px !important;
-    }
-
-    .tw-flex-col .tw-flex-col .tw-items-center:has([aria-label="Create\ new\ item\ in\ 00\.01\ Tasks"]) {
-        margin-bottom: 20px !important;
-    }
-
-    .NodeAsDrilldownElement-module_label__nLxL-, [data-is-sidebar-home="false"] .NodeAsDrilldownElement-module_label__AZOsW {
-        display: none !important;
-    }
-
-    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .PlainListItem-module_contentWrapper__CcDH9 .navtarget {
-        font-size: 0.7rem !important;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label="00.00 Index"]::after {
-        content: "Index";
-        padding-left: 0.5ch;
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label="00.01 Tasks"]::after {
-        content: "Tasks";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label=".10 Daily notes"]::after {
-        content: "Today";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label="02 Documentation"]::after {
-        content: "Documentation";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label=".97 Library"]::after {
-        content: "Library";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label=".80 Commands"]::after {
-        content: "Commands";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label=".98 Schema"]::after {
-        content: "Schema";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    div[class*="NodeAsDrilldownElement"] > div[aria-label=".99 Building blocks"]::after {
-        content: "Building blocks";
-        font-family: "MonoLisa";
-        font-size: 0.8em;
-        padding-left: 0.5ch;
-        text-transform: uppercase;
-    }
-
-    /*   .listContentItem:has(span[data-tag="decimal"]) {
+    h1 {
         font-weight: 700 !important;
-        font-family: var(--font-monospace-family) !important;
-    }*/
-    b u i,
-    b > i {
-        font-weight: 500 !important;
-        font-family: var(--font-monospace-family) !important;
-        border-bottom: 2px solid #D4D4DC !important;
-        border-radius: 2px !important;
-        background-color: #F0F0F3 !important;
-        box-shadow: #D4D4DC 0px 0px 0px 1px inset !important;
-        box-sizing: border-box !important;
-        color: #4B4B59 !important;
-        color-scheme: light !important;
-        font-size: 0.8em !important;
-        font-style: normal !important;
-        letter-spacing: 0.03px !important;
-        padding-bottom: 2px !important;
-        padding-left: 6px !important;
-        padding-right: 6px !important;
-        padding-top: 2px !important;
-        -webkit-font-smoothing: antialiased !important;
-        margin-bottom: 5px !important;
-        text-transform: uppercase;
     }
 
-    .listContentItem:has(span[data-tag="instance"]) b > i {
-        background-color: transparent !important;
-        border-bottom: 1.5px solid #D4D4DC !important;
-        color: rgba(75, 75, 89, 0.8) !important;
+    [class*="UnifiedSidebar-module_wrapper"] {
+        --colorUITextMuted: #D1D1D1 !important;
+        --colorUIText: #D1D1D1 !important;
+        --colorSidebarItemHoverText: #D1D1D1 !important;
+        &:not(.UnifiedSidebar-module_header__6Wf4T svg) {
+        stroke: #9FA09F !important;
+        }
+        & button:hover, div[id="floatingTourHomeNodeSidebarButton"] div:has(> [aria-label]):hover {
+        background-color: lch(from var(--colorCanvasBackground) calc(l + 10) c h / 1); 
+        color: lch(from var(--colorSidebarItemHoverText) calc(l + 10) c h / 0.9);
+        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+        }
+        & [class*="PinnedDropArea"] p {
+            color: lch(from var(--colorSidebarItemHoverText) l c h / 0.5) !important;
+           
+        }
+        & button[class*="AiChatButton"], [class*="Button-module_smaller"], div[id="floatingTourHomeNodeSidebarButton"], h5, div:has(> button[class*="CreateButton-module_fullCreateButton"]) {
+            display: none;
+        }
+        & button[class*="CreateButton-module_fullCreateButton"] {
+            background-color: var(--base-accent) !important;
+            color: var(--base-accent-text-color) !important;
+            & svg {
+                stroke-width: 3!important;
+            }
+        }
+        & button[class*="SearchButton-module_compact"] {
+                    background-color: var(--base-accent-text-color) !important;
+            color: var(--base-accent) !important;
+            font-weight: 700 !important;
+            & svg {
+                stroke-width: 1;
+            }
+        }
+    }
+   
+    
+    mark {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5px;
+    }
+    
+    div[class*="OutlinerItem-module_content"] label button[role="checkbox"]:not(.listContentItem) {
+        margin-left: -21px;
     }
 
-    .listContentItem:has(span[data-tag="instance"]) span {
-        font-family: var(--font-monospace-family) !important;
-        font-size: 0.85rem !important;
-        letter-spacing: 0.03px !important;
-        text-transform: uppercase;
-        color: #4B4B59 !important;
+    div[class*="OutlinerItem-module_content"]:has(label button[role="checkbox"]) .listContentItem {
+        margin-left: 6px;
     }
-
-
-
-    .listContentItem :has(span[data-tag="task"]) b > i,
-    .listContentItem :has(span[data-tag="meeting"]) b > i,
-    .listContentItem :has(span[data-tag="event"]) b > i {
-        border-bottom: 0px solid transparent !important;
-        border-radius: 2px !important;
-        background-color: transparent !important;
-        box-shadow: transparent 0px 0px 0px 0px inset !important;
-        padding-right: 0ch !important;
-        opacity: 0.54;
-        padding-left: 0px !important;
-    }
-
-    b u:has(i) {
-        text-decoration: none !important;
-    }
-
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
-        text-decoration-color: red !important;
-    }
-
-
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9 span {
-        /*text-decoration: line-through;*/
-        /*text-decoration-color: #E0DFE6 !important;*/
-        color: rgb(from var(--colorEditorTextMuted) r g b / 0.25) !important;
-    }
-
-    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__spmPJ .NodeDoneCheckbox-module_container__DCZVl .navtarget,
-    [data-testid="plain-list-item"] .PlainListItem-module_wrapper__g19B8 .NodeDoneCheckbox-module_container__UsIbz .navtarget {
-font-size: 0.7rem !important;
-margin-left: -3.2ch !important;
-z-index: -999 !important;
-    }
-
-.ObjectAvatar-module_container__P-mlO [src="https\:\/\/firebasestorage\.googleapis\.com\/v0\/b\/tagr-prod\.appspot\.com\/o\/notespace\%2Fa\.a\.binlayo\%40gmail\.com\%2Fuploads\%2F2025-01-20T11\%3A54\%3A17\.628Z-checkbox-unchecked\.svg\?alt\=media\&token\=75a26321-17e1-4241-b026-32ac7b36a9df"] {
-        z-index: 999 !important;
-        background-color: white !important;
-    }
-
-    [class*="NodeListView-module_hiddenFields"] {
-        margin: .25rem 0rem 0rem -.35rem !important;
-        background: var(--colorUIStickyTemplateContentBackground) !important;
-        border-top-right-radius: var(--radius400) !important;
-        border-top-left-radius: var(--radius400) !important;
-        padding: .265rem .3rem .15rem .35rem !important;
-        display: inline-block !important;
-    }
-
-    /* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
-    [data-role="template-children-container"] {
-        background: var(--colorUIStickyTemplateContentBackground) !important;
-        margin: 0rem 0rem .25rem -.35rem !important;
-        padding: 0rem 0rem 0rem .35rem !important;
-    }
-
-    /* ADD BACKGROUND COLOR AND PADDING TO CONNECTED OPTIONAL FIELDS */
-    [data-role="optional-template-children-container"] {
-        background: var(--colorUIStickyTemplateContentBackground) !important;
-        margin: 0rem 0rem .25rem -.35rem !important;
-        padding: 0rem 0rem 0rem .35rem !important;
-    }
-
-    /* REMOVES BACKGROUND AND EFFECTS FOR SUPERTAG CONFIG PANEL */
-    [class*="TagConfigPanelNext-module_main"] [data-role="template-children-container"] {
-        margin: 0 !important;
-        padding: 0 !important;
-        border-radius: 0px !important;
-        background: transparent !important;
-    }
-
-    [class*="NodeProgressBar-module_label"] {
-        font-family: var(--font-monospace-family) !important;
-        font-weight: 500 !important;
-    }
-
-    [style$=" \33 00px\;"] .navtarget {
-        font-family: var(--font-monospace-family) !important;
-        text-transform: lowercase !important;
-    }
-
-    [data-testid="sidepane"] .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_nav__oxpZP,
-    .tw-flex-col .PinnedNodesSection-module_section__W18Gd .tw-flex-col:has(.Heading-module_line-height-compact__g0Fxw),
-    .tw-flex-col .tw-items-center:has(.NodeAsDrilldownElement-module_navigationButton__r0uyP .WorkspaceAvatar-module_container__J3526),
-    .tw-flex-col .tipy-container [aria-expanded="false"]:has(.navtarget),
-    .tw-items-center .BreadcrumbItemWrapper-module_item__eWJZO .Button-module_button__15yoI:has(.WorkspaceAvatar-module_container__J3526),
-    .BreadcrumbItemWrapper-module_item__eWJZO .navtarget .NodeBreadcrumbs-module_icon__kA-LT .ObjectAvatar-module_image__6hnmd,
-    .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Help"],
-    .UnifiedSidebar-module_wrapper__Ha5qH .tw-flex-col .UnifiedSidebar-module_footer__87FQH [aria-label="Keyboard\ shortcuts"],
-    .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Ask\ AI\ about\ this\ content"],
-    .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__ByubU [aria-label="Help"] {
-        display: none !important;
-    }
-
-    /* reduce size of node icons inline */
-    .inlineelement .inlinecontent .inlineavatar {
-        font-size: 0.8rem;
-    }
-
-
-    .itemdone-checkbox .PlainListItem-module_contentWrapper__CcDH9:not(b > i) span .inlineelement .inlinecontent .inlineavatar {
-        filter: grayscale(100%) opacity(0.25);
-    }
-
-    /* Style hidden fields */
-    .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__LE0Ci .navtarget {
-        font-family: "MonoLisa" !important;
-        text-transform: uppercase !important;
-        font-size: 0.7rem !important;
-        opacity: 0.7 !important;
-        padding-left: 1.5ch !important;
-        padding-right: 1.5ch !important;
-    }
-
-    .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__LE0Ci .navtarget svg {
-        display: none !important;
-    }
-
-
-    /* Hide SVG icons in hidden fields */
-    .tw-flex-col .tw-flex-col .NodeListView-module_hiddenFields__BXUql .navtarget svg {
-        display: none !important;
-    }
+    
