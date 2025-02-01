@@ -1,3 +1,5 @@
+
+
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac";
         --heading-font-family: "Bear Sans UI Headline";
@@ -7,7 +9,10 @@
         --base-accent: #DC4C4F;
         --base-accent-text-color: #ffffff;
         --color-code-text-color: #DC4C4F;
+
         --color-code-bg: #EFF1F2;
+        --colorGray250: #D9D9D9;
+        /* Common gray */
         --colorGreen400: var(--base-accent);
         /* Progress bar fill; checkbox fill*/
         --colorTextHighlightedBackground: #D2FFA4 !important;
@@ -29,11 +34,99 @@
         font-size: var(--size-checkbox);
     }
 
-    h1, h2, h3, h4, h5, [class*="sectionHeading"] {
+    [data-role="layout-and-docks"] {
+        & [aria-label="Ask AI about this content"],
+        [aria-label="Help"],
+        [aria-label="Set content width"],
+        [aria-label="Set up Google Calendar sync"] {
+            display: none;
+        }
+    }
+
+    [class*="NodeProgressBar-module_label"] {
+
+        font-weight: normal;
+        font-family: var(--monospace-font-family);
+    }
+    
+    [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"] {
+        background-color: rgb(255, 255, 255) !important;
+        background-image: none !important;
+        border-bottom-color: rgb(228, 228, 231) !important;
+        border-bottom-left-radius: 6px !important;
+        border-bottom-right-radius: 6px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 0.555556px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(228, 228, 231) !important;
+        border-left-style: solid !important;
+        border-left-width: 0.555556px !important;
+        border-right-color: rgb(228, 228, 231) !important;
+        border-right-style: solid !important;
+        border-right-width: 0.555556px !important;
+        border-top-color: rgb(228, 228, 231) !important;
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        border-top-style: solid !important;
+        border-top-width: 0.555556px !important;
+        margin-left: 1px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+        margin-right: 1px;
+        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !important;
+    }
+
+    [data-panel-breadcrumbs="true"] {
+        .BreadcrumbItemWrapper-module_truncated__kSbvH {
+            --fade-width: 0px;
+        }
+        background-color: rgb(255, 255, 255) !important;
+        background-image: none !important;
+        border-bottom-color: rgb(228, 228, 231) !important;
+        border-bottom-left-radius: 6px !important;
+        border-bottom-right-radius: 6px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 0.555556px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(228, 228, 231) !important;
+        border-left-style: solid !important;
+        border-left-width: 0.555556px !important;
+        border-right-color: rgb(228, 228, 231) !important;
+        border-right-style: solid !important;
+        border-right-width: 0.555556px !important;
+        border-top-color: rgb(228, 228, 231) !important;
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        border-top-style: solid !important;
+        border-top-width: 0.555556px !important;
+        margin-left: 1px;
+        margin-right: 1px;
+        padding-right: 20px;
+
+        & [class*="NodeBreadcrumbs-module_icon"] {
+            display: none !important;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    [class*="sectionHeading"] {
         font-weight: 700 !important;
         font-family: var(--heading-font-family) !important;
         color: var(--heading-text-color) !important;
-        
     }
 
     [class*="UnifiedSidebar-module_wrapper"] {
@@ -87,10 +180,10 @@
         padding-top: 3px !important;
         padding-bottom: 3px !important;
         font-family: var(--monospace-font-family) !important;
-        
     }
 
-    mark, code {
+    mark,
+    code {
         padding-left: 5px !important;
         padding-right: 5px !important;
         border-radius: 5px !important;
