@@ -1,15 +1,14 @@
 
 
     :root {
-        --base-font-family: "Bear Sans UI", "TossFaceFontMac";
+        --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
         --heading-text-color: #222222;
         --monospace-font-family: "Berkeley Mono";
         --base-font-size: 90%;
         --base-accent: #DC4C4F;
         --base-accent-text-color: #ffffff;
-        --color-code-text-color: #DC4C4F;
-
+        --color-code-text-color: var(--base-accent);
         --color-code-bg: #EFF1F2;
         --colorGray250: #D9D9D9;
         /* Common gray */
@@ -22,6 +21,12 @@
         --colorBulletDefaultFill: #B5B4B5 !important;
         --colorPanelBackground: #F9F9F9 !important;
         /* Sidebar background */
+        --colorHoverLink: var(--base-accent) !important;
+        --colorInlineElementText: var(--base-accent) !important;
+        --colorInlineElementHoverText: lch(from var(--base-accent) calc(l - 20) c h) !important;
+        --colorInlineElementHoverBackground: transparent !important;
+        --colorInlineElementBottomBorderColor: blue !important;
+        --colorLink: var(--base-accent) !important;
     }
 
     html {
@@ -48,8 +53,8 @@
         font-weight: normal;
         font-family: var(--monospace-font-family);
     }
-    
-    [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"] {
+
+    [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"]:not(:is([aria-label="Show children"])) {
         background-color: rgb(255, 255, 255) !important;
         background-image: none !important;
         border-bottom-color: rgb(228, 228, 231) !important;
@@ -74,23 +79,64 @@
         border-top-style: solid !important;
         border-top-width: 0.555556px !important;
         margin-left: 1px;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 5px;
         margin-right: 1px;
+        padding: 5px;
         box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !important;
+        &:is([aria-label="Collapse"], [aria-label="Expand"], [aria-label="Collapse"]) {
+            padding: 0px;
+        }
+    }
+
+    .inlinerefurl:before {
+        content: "\f08e";
+        font-size: 0.7em !important;
+        margin-right: 0.8ch;
+        margin-left: 0.8ch;
+        background-image: none !important;
+        background-position: 50% 0%;
+        background-repeat: no-repeat;
+        background-size: 0%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 3px;
+    }
+
+    .inlinecontent {
+        text-underline-offset: 3px !important;
+        /* Offset on hover */
+        text-decoration-thickness: 0.5px !important;
+        text-decoration: none !important;
+        text-decoration-style: dotted !important;
+        text-decoration-skip-ink: all !important;
+        /* Skips descenders */
+        text-decoration-color: rgba(from var(--base-accent) r g b / 0.5) !important;
+        &:hover {
+            text-decoration-thickness: 0px !important;
+            outline: 0px !important;
+            border-width: 0px !important;
+        }
+    }
+
+    .inlinerefurl {
+        outline: 0px !important;
+
+        &:hover {
+            outline: 0px !important;
+            text-underline-offset: 4px !important;
+            /* Offset on hover */
+            text-decoration-thickness: 0.5px !important;
+            color: lch(from var(--base-accent) calc(l - 20) c h) !important;
+            transition: color 0.1s ease-in !important;
+        }
     }
 
     [data-panel-breadcrumbs="true"] {
-        .BreadcrumbItemWrapper-module_truncated__kSbvH {
-            --fade-width: 0px;
-        }
+
         background-color: rgb(255, 255, 255) !important;
         background-image: none !important;
         border-bottom-color: rgb(228, 228, 231) !important;
-        border-bottom-left-radius: 6px !important;
-        border-bottom-right-radius: 6px !important;
+        border-bottom-left-radius: 8px !important;
+        border-bottom-right-radius: 8px !important;
         border-bottom-style: solid !important;
         border-bottom-width: 0.555556px !important;
         border-image-outset: 0 !important;
@@ -105,17 +151,91 @@
         border-right-style: solid !important;
         border-right-width: 0.555556px !important;
         border-top-color: rgb(228, 228, 231) !important;
-        border-top-left-radius: 6px !important;
-        border-top-right-radius: 6px !important;
+        border-top-left-radius: 8px !important;
+        border-top-right-radius: 8px !important;
         border-top-style: solid !important;
         border-top-width: 0.555556px !important;
         margin-left: 1px;
-        margin-right: 1px;
-        padding-right: 20px;
-
         & [class*="NodeBreadcrumbs-module_icon"] {
             display: none !important;
         }
+        & button {
+            text-transform: lowercase !important;
+        }
+        & [class*="BreadcrumbDivider-module_divider"] {
+            color: transparent !important;
+            opacity: 1 !important;
+            &::before {
+                content: "›" !important;
+                margin-left: 1.5px;
+                margin-top: 1.5px;
+                margin-bottom: 2px;
+                color: var(--colorBulletDefaultFill) !important;
+                opacity: 1 !important;
+            }
+        }
+        & [class*="BreadcrumbItemWrapper-module_item"]:nth-of-type(2)::before {
+            content: "";
+            margin-left: 0.5ch !important;
+            font-weight: 700;
+
+            opacity: 0.6 !important;
+            margin-right: 0.5ch !important
+        }
+        & .BreadcrumbItemWrapper-module_truncated__kSbvH {
+            --fade-width: 0px;
+            --item-full-width: auto !important;
+        }
+    }
+
+
+
+    [data-list-element="true"] [class*="itemdone-checkbox"] .contentWrapper > .listContentItem {
+        text-decoration: line-through !important;
+        text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;
+        & > .wrapEditableAndMenu {
+            display: inline !important;
+        }
+    }
+
+    div > span[data-tag] button {
+        align-items: center !important;
+        background-color: transparent !important;
+        color: var(--colorTextButtonText) !important;
+        background-image: none !important;
+        border-bottom-color: var(--colorBulletDefaultFill) !important;
+        border-bottom-left-radius: 6px !important;
+        border-bottom-right-radius: 6px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 1px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: var(--colorBulletDefaultFill) !important;
+        border-left-style: solid !important;
+        border-left-width: 1px !important;
+        border-right-color: var(--colorBulletDefaultFill) !important;
+        border-right-style: solid !important;
+        border-right-width: 1px !important;
+        border-top-color: var(--colorBulletDefaultFill) !important;
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        border-top-style: solid !important;
+        border-top-width: 1px !important;
+        margin-left: 1px !important;
+        padding-top: 2px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        padding-bottom: 2px !important;
+        margin-right: 1px !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    div > span[data-tag] button[class*="TemplateTag-module_tagPrefix"] {
+        display: none !important;
     }
 
     h1,
