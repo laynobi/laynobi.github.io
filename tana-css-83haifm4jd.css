@@ -1,3 +1,6 @@
+
+@-moz-document domain("app.tana.inc") {
+
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
@@ -31,6 +34,7 @@
         font-family: var(--base-font-family) !important;
         font-size: var(--base-font-size) !important;
         -webkit-font-smoothing: antialiased !important;
+        --sideBarWidth: 12rem !important;
     }
 
     button[role="checkbox"] {
@@ -46,6 +50,10 @@
         }
     }
 
+    .Button-module_topBar__CzgsH:active {
+      color: lch(from var(--colorUITextMuted) calc(l - 20) c h) !important;
+    }
+    
     [class*="NodeProgressBar-module_label"] {
 
         font-weight: normal !important;
