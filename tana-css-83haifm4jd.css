@@ -1,7 +1,4 @@
-
-@-moz-document domain("app.tana.inc") {
-
-    :root {
+:root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
         --heading-text-color: #222222;
