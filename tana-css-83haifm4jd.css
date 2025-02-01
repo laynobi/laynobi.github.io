@@ -53,7 +53,7 @@
         font-family: var(--monospace-font-family);
     }
 
-    [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"]:not(:is([aria-label="Show children"])) {
+    [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"]:not(:is([aria-label$="children"])) {
         background-color: rgb(255, 255, 255) !important;
         background-image: none !important;
         border-bottom-color: rgb(228, 228, 231) !important;
@@ -187,9 +187,14 @@
         }
     }
 
+    [class*="NodeAsListElement-module_wrapper"] > [class*="NodeAsListElement-module_main"]:has(div.bulletSide > [class*="hasAssociatedData"]) .listContentItem:before {
+        color: var(--base-accent);
+        padding-right: 0.7ch;
+        content: "";
+        font-weight: 400 !important;
+    }
 
-
-    [data-list-element="true"] [class*="itemdone-checkbox"] .contentWrapper > .listContentItem {
+    [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
         text-decoration: line-through !important;
         text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;
         & > .wrapEditableAndMenu {
@@ -323,6 +328,8 @@
     div[class*="OutlinerItem-module_content"] label button[role="checkbox"]:not(.listContentItem) {
         margin-left: -21px;
     }
+    
+    
 
     div[class*="OutlinerItem-module_content"]:has(label button[role="checkbox"]) .listContentItem {
         margin-left: 3px;
