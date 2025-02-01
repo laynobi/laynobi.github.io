@@ -218,7 +218,7 @@
     }
 
     .tw-inline-flex .navtarget .TemplateTag-module_tag__-6Liu {
-        background-color: red !important;
+        background-color: transparent !important;
         align-items: center !important;
         /*background-color: lch(from var(--colorBulletDefaultFill) l c h / 0.05) !important;*/
         color: lch(from var(--colorBulletDefaultFill) calc(l - 30) c h / 0.8) !important;
