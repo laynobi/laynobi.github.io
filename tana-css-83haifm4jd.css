@@ -15,7 +15,7 @@
         --colorTextHighlightedBackground: lch(from var(--base-accent) calc(l + 35) calc(c + 10) calc(h + 110) / 0.5) !important;
         /* Highlight background */
         --size-checkbox: 87.5%;
-        --colorCanvasBackground: #2E3235 !important;
+        --colorCanvasBackground: rgba(18%, 19.6%, 20.8%, 0.7) !important;
         --colorBulletDefaultFill: #B5B4B5 !important;
         --colorPanelBackground: #F9F9F9 !important;
         /* Sidebar background */
