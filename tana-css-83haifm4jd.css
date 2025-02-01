@@ -1,26 +1,39 @@
- :root {
+    :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac";
+        --heading-font-family: "Bear Sans UI Headline";
+        --heading-text-color: #222222;
+        --monospace-font-family: "Berkeley Mono";
         --base-font-size: 90%;
         --base-accent: #DC4C4F;
         --base-accent-text-color: #ffffff;
-        --colorGreen400: var(--base-accent); /* Progress bar fill; checkbox fill*/
-        --colorTextHighlightedBackground: #D2FFA4 !important; /* Highlight background */
+        --color-code-text-color: #DC4C4F;
+        --color-code-bg: #EFF1F2;
+        --colorGreen400: var(--base-accent);
+        /* Progress bar fill; checkbox fill*/
+        --colorTextHighlightedBackground: #D2FFA4 !important;
+        /* Highlight background */
         --size-checkbox: 87.5%;
-        --colorCanvasBackground: #2E3235 !important; /* Sidebar background */ 
+        --colorCanvasBackground: #2E3235 !important;
+        --colorBulletDefaultFill: #B5B4B5 !important;
+        --colorPanelBackground: #F9F9F9 !important;
+        /* Sidebar background */
     }
 
     html {
         font-family: var(--base-font-family);
         font-size: var(--base-font-size);
-        -webkit-font-smoothing: subpixel-antialiased;
+        -webkit-font-smoothing: antialiased;
     }
 
     button[role="checkbox"] {
         font-size: var(--size-checkbox);
     }
-    
-    h1 {
+
+    h1, h2, h3, h4, h5, [class*="sectionHeading"] {
         font-weight: 700 !important;
+        font-family: var(--heading-font-family) !important;
+        color: var(--heading-text-color) !important;
+        
     }
 
     [class*="UnifiedSidebar-module_wrapper"] {
@@ -28,18 +41,26 @@
         --colorUIText: #D1D1D1 !important;
         --colorSidebarItemHoverText: #D1D1D1 !important;
         &:not(.UnifiedSidebar-module_header__6Wf4T svg) {
-        stroke: #9FA09F !important;
+            stroke: #9FA09F !important;
         }
-        & button:hover, div[id="floatingTourHomeNodeSidebarButton"] div:has(> [aria-label]):hover {
-        background-color: lch(from var(--colorCanvasBackground) calc(l + 10) c h / 1); 
-        color: lch(from var(--colorSidebarItemHoverText) calc(l + 10) c h / 0.9);
-        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+        /* & button:hover,
+        div[id="floatingTourHomeNodeSidebarButton"] div:has(> [aria-label]):hover {
+            background-color: lch(from var(--colorCanvasBackground) calc(l + 10) c h / 1);
+            color: lch(from var(--colorSidebarItemHoverText) calc(l + 10) c h / 0.9);
+            transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+        } */
+        & button:hover svg {
+            transform: scale(1.2);
+            transition: transform 0.2s ease-in;
         }
         & [class*="PinnedDropArea"] p {
             color: lch(from var(--colorSidebarItemHoverText) l c h / 0.5) !important;
-           
         }
-        & button[class*="AiChatButton"], [class*="Button-module_smaller"], div[id="floatingTourHomeNodeSidebarButton"], h5, div:has(> button[class*="CreateButton-module_fullCreateButton"]) {
+        & button[class*="AiChatButton"],
+        [class*="Button-module_smaller"],
+        div[id="floatingTourHomeNodeSidebarButton"],
+        h5,
+        div:has(> button[class*="CreateButton-module_fullCreateButton"]) {
             display: none;
         }
         & button[class*="CreateButton-module_fullCreateButton"] {
@@ -50,7 +71,7 @@
             }
         }
         & button[class*="SearchButton-module_compact"] {
-                    background-color: var(--base-accent-text-color) !important;
+            background-color: var(--base-accent-text-color) !important;
             color: var(--base-accent) !important;
             font-weight: 700 !important;
             & svg {
@@ -58,19 +79,27 @@
             }
         }
     }
-   
-    
-    mark {
-        padding-left: 5px;
-        padding-right: 5px;
-        border-radius: 5px;
+
+    code {
+        color: var(--color-code-text-color) !important;
+        background-color: var(--color-code-bg) !important;
+        border: none !important;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+        font-family: var(--monospace-font-family) !important;
+        
     }
-    
+
+    mark, code {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+        border-radius: 5px !important;
+    }
+
     div[class*="OutlinerItem-module_content"] label button[role="checkbox"]:not(.listContentItem) {
         margin-left: -21px;
     }
 
     div[class*="OutlinerItem-module_content"]:has(label button[role="checkbox"]) .listContentItem {
-        margin-left: 6px;
+        margin-left: 3px;
     }
-    
