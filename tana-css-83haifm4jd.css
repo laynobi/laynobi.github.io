@@ -188,48 +188,66 @@
 
     [class*="NodeAsListElement-module_wrapper"] > [class*="NodeAsListElement-module_main"]:has(div.bulletSide > [class*="hasAssociatedData"]) .listContentItem:before {
         color: var(--base-accent) !important;
-        padding-right: 0.7ch !important;
+        padding-right: 1ch !important;
         content: "" !important;
         font-weight: 400 !important;
+        font-size: 0.7em !important;
     }
 
+    [data-list-element="true"] [class*="itemdone-checkbox"]:has(div > .contentWrapper > .listContentItem) {
+       
+        filter: grayscale(1) brightness(180%) contrast(80%) !important;
+        transition: filter 0.3s ease-in-out !important;
+        &:focus-within {
+             filter: grayscale(0) brightness(100%) contrast(100%) !important;
+        }
+    }
+    
     [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
         text-decoration: line-through !important;
+
         text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;
         & > .wrapEditableAndMenu {
             display: inline !important;
         }
     }
+    
+        /*[class*="NodeAsListElement-module_wrapper"]:has(div > label > [role="checkbox"]) .bulletSide > span {
+            background-color: red !important;
+    }*/
+    
+
+        
+}
 
     div > span[data-tag] button {
         align-items: center !important;
-        background-color: lch(from var(--colorBulletDefaultFill) l c h / 0.05) !important;
+        background-color: transparent !important;
+        /*background-color: lch(from var(--colorBulletDefaultFill) l c h / 0.05) !important;*/
         color: lch(from var(--colorBulletDefaultFill) calc(l - 30) c h / 0.8) !important;
         font-size: 0.5em !important;
         background-image: none !important;
-        border-bottom-color: lch(from var(--colorBulletDefaultFill) l c h / 0.9) !important;
-        border-top-left-radius: 6px !important;
+        /*border-bottom-color: lch(from var(--colorBulletDefaultFill) l c h / 0.9) !important;*/
+        /* border-top-left-radius: 6px !important;
         border-bottom-right-radius: 0px !important;
         border-bottom-left-radius: 0px !important;
         border-top-right-radius: 6px !important;
-
         border-bottom-style: solid !important;
-        border-bottom-width: 1px !important;
+        border-bottom-width: 1px !important;*/
         border-image-outset: 0 !important;
         border-image-repeat: stretch !important;
         border-image-slice: 100% !important;
         border-image-source: none !important;
         border-image-width: 1 !important;
-        border-left-color: var(--colorBulletDefaultFill) !important;
-        border-left-style: solid !important;
-        border-left-width: 1px !important;
-        border-right-color: var(--colorBulletDefaultFill) !important;
-        border-right-style: solid !important;
-        border-right-width: 1px !important;
-        border-top-color: var(--colorBulletDefaultFill) !important;
-
-        border-top-style: solid !important;
-        border-top-width: 1px !important;
+        /*border-left-color: var(--colorBulletDefaultFill) !important;*/
+        /*border-left-style: solid !important;*/
+        /*border-left-width: 1px !important;*/
+        /*border-right-color: var(--colorBulletDefaultFill) !important;*/
+        /*border-right-style: solid !important;*/
+       /* border-right-width: 1px !important;*/
+        /*border-top-color: var(--colorBulletDefaultFill) !important;*/
+        /*border-top-style: solid !important;
+        border-top-width: 1px !important;*/
         margin-left: 1px !important;
         padding-top: 2px !important;
         text-transform: uppercase !important;
@@ -240,10 +258,18 @@
         margin-right: 1px !important;
         -webkit-font-smoothing: antialiased !important;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
-        &:before {
-            content: "#" !important;
+        &:before{
+            content:"#" !important;
             padding-right: 0.3ch !important;
             opacity: 0.6 !important;
+            
+        }
+        &:hover {
+            border-width: 0px !important;
+            box-shadow: none !important;
+            background-color: lch(from var(--colorBulletDefaultFill) l c h / 0.2) !important;
+            transition: background-color 0.3s ease-out !important;
+            
         }
     }
 
@@ -293,7 +319,7 @@
             background-color: var(--base-accent) !important;
             color: var(--base-accent-text-color) !important;
             & svg {
-                stroke-width: 3 !important;
+                stroke-width: 3!important;
             }
         }
         & button[class*="SearchButton-module_compact"] {
@@ -308,7 +334,7 @@
 
     code {
         /* color:lch(from var(--base-accent) calc(l - 10) c calc(h + 240) / 1) !important; */
-        color: var(--base-accent) !important;
+        color: var(--base-accent) !important; 
         background-color: var(--color-code-bg) !important;
         border: none !important;
         padding-top: 3px !important;
@@ -326,8 +352,6 @@
     div[class*="OutlinerItem-module_content"] label button[role="checkbox"]:not(.listContentItem) {
         margin-left: -21px !important;
     }
-
-
 
     div[class*="OutlinerItem-module_content"]:has(label button[role="checkbox"]) .listContentItem {
         margin-left: 3px !important;
