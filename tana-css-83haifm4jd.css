@@ -1,3 +1,4 @@
+
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
@@ -524,6 +525,11 @@ border-radius: 0px !important;
 background: transparent !important;
 }
 
+    
+    div[data-panel-content="true"] .listContentItem:has(span[data-tag="log"]) .editable {
+        font-family: var(--monospace-font-family) !important;
+        font-size: 0.9em !important;
+    }
    
    
     
