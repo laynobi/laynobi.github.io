@@ -1,4 +1,4 @@
-    :root {
+ :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
         --heading-text-color: #222222;
@@ -9,8 +9,14 @@
         --color-code-text-color: var(--base-accent);
         --color-code-bg: #EFF1F2;
         --colorGray250: #D9D9D9;
+        --colorSelectionPrimaryBorder: #E8F2FD !important;
+    --colorSelectionPrimaryBackground: #E8F2FD !important;
+    --colorSelectionSecondaryBackground: #E8F2FD !important;
+        
+        --icon-gray: #ADABB8;
         /* Common gray */
-        --colorGreen400: var(--base-accent);
+        --colorGreen400: var(--base-accent) !important;
+        --colorProgressFreshness3: var(--base-accent) !important;
         /* Progress bar fill; checkbox fill*/
         --colorTextHighlightedBackground: lch(from var(--base-accent) calc(l + 35) calc(c + 10) calc(h + 110) / 0.5) !important;
         /* Highlight background */
@@ -25,6 +31,8 @@
         --colorInlineElementHoverBackground: transparent !important;
         --colorInlineElementBottomBorderColor: blue !important;
         --colorLink: var(--base-accent) !important;
+        --icon-checked: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Ctitle%3Echeck%2D3%3C%2Ftitle%3E%3Cg%20fill%3D%22%23adabb8%22%3E%3Cpath%20d%3D%22M6%2E5%2C15h%2D%2E003c%2D%2E279%2C0%2D%2E535%2D%2E157%2D%2E663%2D%2E405%2D1%2E054%2D2%2E033%2D2%2E236%2D3%2E689%2D3%2E614%2D5%2E064%2D%2E293%2D%2E292%2D%2E294%2D%2E767%2C0%2D1%2E061%2C%2E292%2D%2E294%2C%2E767%2D%2E294%2C1%2E061%2C0%2C1%2E203%2C1%2E2%2C2%2E264%2C2%2E591%2C3%2E221%2C4%2E227%2C2%2E265%2D3%2E942%2C5%2E054%2D7%2E15%2C8%2E304%2D9%2E549%2C%2E333%2D%2E246%2C%2E803%2D%2E175%2C1%2E049%2C%2E158s%2E175%2C%2E803%2D%2E158%2C1%2E049c%2D3%2E392%2C2%2E504%2D6%2E263%2C5%2E951%2D8%2E532%2C10%2E247%2D%2E13%2C%2E246%2D%2E385%2C%2E399%2D%2E663%2C%2E399Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+        --icon-unchecked: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Ctitle%3Emedia%2Dstop%3C%2Ftitle%3E%3Cg%20fill%3D%22none%22%20stroke%2Dlinecap%3D%22round%22%20stroke%2Dlinejoin%3D%22round%22%20stroke%2Dwidth%3D%221%2E5%22%20stroke%3D%22%23adabb8%22%3E%3Crect%20x%3D%222%2E75%22%20y%3D%222%2E75%22%20width%3D%2212%2E5%22%20height%3D%2212%2E5%22%20rx%3D%222%22%20ry%3D%222%22%3E%3C%2Frect%3E%3C%2Fg%3E%3C%2Fsvg%3E');
     }
 
     html {
@@ -85,7 +93,9 @@
         margin-right: 1px !important;
         padding: 5px !important;
         box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !important;
-        &:is([aria-label="Collapse"], [aria-label="Expand"], [aria-label="Collapse"]) {
+        &:is([aria-label="Collapse"],
+        [aria-label="Expand"],
+        [aria-label="Collapse"]) {
             padding: 0px !important;
         }
     }
@@ -199,21 +209,20 @@
         font-size: 0.7em !important;
     }
 
-    [data-list-element="true"] [class*="itemdone-checkbox"]:has(div > .contentWrapper > .listContentItem) {
 
-        filter: grayscale(1) brightness(180%) contrast(80%) !important;
-        transition: filter 0.3s ease-in-out !important;
-        &:focus-within {
-            filter: grayscale(0) brightness(100%) contrast(100%) !important;
-        }
-    }
 
     [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
         text-decoration: line-through !important;
-
-        text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;
+        text-decoration-thickness: 1.5px !important;
+        text-decoration-color: var(--icon-gray) !important;
+        /*text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;*/
         & > .wrapEditableAndMenu {
             display: inline !important;
+        }
+        &:focus-within {
+
+            text-decoration-color: transparent !important;
+            transition: text-decoration-color 0.1s ease-out;
         }
     }
 
@@ -305,7 +314,7 @@
         [class*="Button-module_smaller"],
         div[id="floatingTourHomeNodeSidebarButton"],
         h5,
-        div:has(> button[class*="CreateButton-module_fullCreateButton"]) {
+        div:has( > button[class*="CreateButton-module_fullCreateButton"]) {
             display: none !important;
         }
         & button[class*="CreateButton-module_fullCreateButton"] {
@@ -342,10 +351,100 @@
         border-radius: 5px !important;
     }
 
-    div[class*="OutlinerItem-module_content"] label button[role="checkbox"]:not(.listContentItem) {
-        margin-left: -21px !important;
+    div[class*="OutlinerItem-module_content"] {
+        &:has([data-state]) label button[role="checkbox"]:not(.listContentItem) {
+            margin: -22px !important;
+        }
+        &:has([data-tag]) label button[role="checkbox"]:not(.listContentItem) {
+            margin: -22px !important;
+            background-color: transparent;
+        }
     }
 
     div[class*="OutlinerItem-module_content"]:has(label button[role="checkbox"]) .listContentItem {
-        margin-left: 3px !important;
+        margin-left: 1px !important;
+    }
+
+
+    .Checkbox-module_root__1SkAw:focus:before {
+        content: "";
+        position: absolute;
+        inset: -4px;
+        border-radius: 6px !important;
+        border-bottom: 2px solid var(--base-accent) !important;
+        border-right: 2px solid var(--base-accent) !important;
+        border-top: 2px solid var(--base-accent) !important;
+        border-left: 2px solid var(--base-accent) !important;
+    }
+
+
+
+
+    .tw-items-start {
+        &:not(:has([data-tag])) .bulletSide .bullet {
+            width: var(--icon-size, 16px) !important;
+            height: var(--icon-size, 16px) !important;
+            background-image: var(--icon-svg);
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            vertical-align: middle !important;
+            border-radius: 0px !important;
+            background-color: var(--icon-bg-color, transparent) !important;
+        }
+
+        &:has([data-state]) [data-state] {
+            background-color: var(--icon-bg-color, transparent) !important;
+
+            color: var(--icon-text-color, transparent) !important;
+        }
+        &:has([data-state="unchecked"]) .bulletSide > .bullet {
+            --bulletColor1: transparent !important;
+            --bulletColor1Dimmed: transparent !important;
+            --icon-svg: var(--icon-unchecked);
+        }
+
+        &:has([data-state="checked"]) .bulletSide > .bullet {
+            --bulletColor1: transparent !important;
+            --bulletColor1Dimmed: transparent !important;
+            --icon-svg: var(--icon-checked);
+        }
+
+        &:has(.listContentItem [data-tag]) > [class*="OutlinerItem-module_bulletWrapper"] > [class*="OutlinerItem-module_bullet"] > .bulletSide > .bullet {
+            background-color: var(--icon-bg-color, transparent) !important;
+            --bulletColor1: var(--icon-color, transparent) !important;
+            &::before {
+                content: var(--icon-content, "") !important;
+                color: var(--icon-text-color, inherit) !important;
+                width: var(--icon-size, 16px) !important;
+                height: var(--icon-size, 16px) !important;
+                background-image: var(--icon-svg);
+                background-size: contain !important;
+                background-repeat: no-repeat !important;
+                position: absolute !important;
+                vertical-align: middle !important;
+            }
+        }
+        /* 
+        --icon-bg-color
+        --icon-color
+        --icon-content
+        --icon-text-color
+        --icon-svg
+        --icon-size
+        */
+        /* Start of icon */
+        &:has([data-tag="todo"]) {
+            --icon-size: 16px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Ctitle%3Earchive-bookmark%3C%2Ftitle%3E%3Cg%20fill%3D%22none%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20stroke%3D%22currentColor%22%3E%3Cpath%20d%3D%22m16.25%2C7.25l-2.25-2.25-2.25%2C2.25V1.75c0-.5523.4477-1%2C1-1h2.5c.5523%2C0%2C1%2C.4477%2C1%2C1v5.5Z%22%20fill%3D%22currentColor%22%20opacity%3D%22.3%22%20stroke-width%3D%220%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m11.25%2C10.25v1c0%2C.552-.448%2C1-1%2C1h-2.5c-.552%2C0-1-.448-1-1v-1H2.75v3c0%2C1.104.895%2C2%2C2%2C2h8.5c1.105%2C0%2C2-.896%2C2-2v-3h-4Z%22%20fill%3D%22%232aba72%22%20opacity%3D%22.3%22%20stroke-width%3D%220%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m11.25%2C10.25v1c0%2C.552-.448%2C1-1%2C1h-2.5c-.552%2C0-1-.448-1-1v-1H2.75v3c0%2C1.104.895%2C2%2C2%2C2h8.5c1.105%2C0%2C2-.896%2C2-2v-3h-4Z%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m9.25%2C2.75h-4.5c-1.105%2C0-2%2C.896-2%2C2v5.5%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22m16.25%2C7.25l-2.25-2.25-2.25%2C2.25V1.75c0-.5523.4477-1%2C1-1h2.5c.5523%2C0%2C1%2C.4477%2C1%2C1v5.5Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+        }
+        /* MARKER: New icons added here */
+        /* START: Icon template */
+        &:has([data-tag="log"]) {
+             --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ADA8BB%22%20stroke%2Dwidth%3D%221%2E5%22%20stroke%2Dlinecap%3D%22round%22%20stroke%2Dlinejoin%3D%22round%22%20class%3D%22lucide%20lucide%2Dminus%22%3E%3Cpath%20d%3D%22M5%2012h14%22%2F%3E%3C%2Fsvg%3E');
+        }
+        /* START: Icon template */
+        &:has([data-tag="meeting"]) {
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%3Ctitle%3Esuit%2Ddiamonds%3C%2Ftitle%3E%3Cg%20fill%3D%22%23aeacb9%22%3E%3Cpath%20d%3D%22M12%2E195%2C5%2E033c%2D%2E953%2D1%2E159%2D1%2E809%2D2%2E39%2D2%2E546%2D3%2E66%2D%2E268%2D%2E463%2D1%2E029%2D%2E463%2D1%2E297%2C0%2D%2E737%2C1%2E27%2D1%2E594%2C2%2E5%2D2%2E546%2C3%2E659%2D%2E992%2C1%2E206%2D2%2E102%2C2%2E351%2D3%2E301%2C3%2E404%2D%2E162%2C%2E143%2D%2E255%2C%2E348%2D%2E255%2C%2E563s%2E093%2C%2E421%2C%2E255%2C%2E563c1%2E199%2C1%2E053%2C2%2E309%2C2%2E198%2C3%2E3%2C3%2E403%2C%2E953%2C1%2E159%2C1%2E809%2C2%2E39%2C2%2E546%2C3%2E66%2C%2E134%2C%2E231%2C%2E381%2C%2E374%2C%2E648%2C%2E374s%2E515%2D%2E142%2C%2E648%2D%2E374c%2E737%2D1%2E27%2C1%2E594%2D2%2E5%2C2%2E546%2D3%2E659%2C%2E992%2D1%2E206%2C2%2E102%2D2%2E351%2C3%2E301%2D3%2E404%2C%2E162%2D%2E143%2C%2E255%2D%2E348%2C%2E255%2D%2E563s%2D%2E093%2D%2E421%2D%2E255%2D%2E563c%2D1%2E199%2D1%2E053%2D2%2E309%2D2%2E198%2D3%2E3%2D3%2E403Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+        }
+        /* END: Icon template */
     }
