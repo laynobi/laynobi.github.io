@@ -1,9 +1,10 @@
 
+
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
-        --heading-font-family: "Bear Sans UI Headline";
+        --heading-font-family: "Bear Sans UI Headline", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-text-color: #222222;
-        --monospace-font-family: "Berkeley Mono";
+        --monospace-font-family: "Berkeley Mono", "TossFaceFontMac", "Font Awesome 6 Pro";
         --base-font-size: 90%;
         --base-accent: #DC4C4F;
         --base-accent-text-color: #ffffff;
@@ -213,7 +214,7 @@
     }
 
     [class*="NodeAsListElement-module_wrapper"] > [class*="NodeAsListElement-module_main"]:has(div.bulletSide > [class*="hasAssociatedData"]) .listContentItem:before {
-        color: var(--base-accent) !important;
+
         padding-right: 1ch !important;
         content: "" !important;
         font-weight: 400 !important;
