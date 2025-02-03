@@ -1,4 +1,3 @@
-
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
@@ -301,6 +300,13 @@
         font-family: var(--heading-font-family) !important;
         color: var(--heading-text-color) !important;
     }
+
+[data-testid="sidepane"] .UnifiedSidebar-module_buttons__VctTY .tw-flex-col .navtarget {
+            --colorUITextMuted: #D1D1D1 !important;
+        --colorUIText: #D1D1D1 !important;
+        --colorSidebarItemHoverText: #D1D1D1 !important;
+
+}
 
     [class*="UnifiedSidebar-module_wrapper"] {
         --colorUITextMuted: #D1D1D1 !important;
