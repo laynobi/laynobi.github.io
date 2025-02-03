@@ -1,4 +1,5 @@
-:root {
+
+    :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline";
         --heading-text-color: #222222;
@@ -240,7 +241,7 @@
         background-color: transparent !important;
         align-items: center !important;
         /*background-color: lch(from var(--colorBulletDefaultFill) l c h / 0.05) !important;*/
-        color: lch(from var(--colorBulletDefaultFill) calc(l - 30) c h / 0.8) !important;
+        color: transparent !important;
         font-size: 0.8em !important;
         background-image: none !important;
         /*border-bottom-color: lch(from var(--colorBulletDefaultFill) l c h / 0.9) !important;*/
