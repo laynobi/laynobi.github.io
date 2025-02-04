@@ -78,7 +78,7 @@
             left: -4px !important;
             right: -4px !important;
             bottom: -2px !important;
-            background-color: #D3FFA4 !important;
+            /*background-color: #D3FFA4 !important;*/
             z-index: -1 !important;
             /* Ensures the pseudo-element is behind the content */
         }
