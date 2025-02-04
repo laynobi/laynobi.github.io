@@ -1,4 +1,3 @@
-
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline", "TossFaceFontMac", "Font Awesome 6 Pro";
@@ -33,7 +32,7 @@
         --colorInlineElementBottomBorderColor: blue !important;
         --colorLink: var(--base-accent) !important;
     }
-    
+
     *:focus-visible {
         --colorFocus: var(--base-accent) !important;
     }
@@ -71,19 +70,19 @@
 
     .listContentItem:has(span[data-tag="doing"]) .editable {
         position: relative !important;
-    &::before {
-    content: "" !important;
-    position: absolute !important;
-    top: -2px !important;
-    border-radius: 5px;
-    left: -4px !important;
-    right: -4px !important;
-    bottom: -2px !important;
-    background-color: #D3FFA4 !important;
-    z-index: -1 !important; /* Ensures the pseudo-element is behind the content */
-
+        &::before {
+            content: "" !important;
+            position: absolute !important;
+            top: -2px !important;
+            border-radius: 5px;
+            left: -4px !important;
+            right: -4px !important;
+            bottom: -2px !important;
+            background-color: #D3FFA4 !important;
+            z-index: -1 !important;
+            /* Ensures the pseudo-element is behind the content */
+        }
     }
-}
 
     [class*="NodeProgressBar-module_label"] {
 
@@ -173,11 +172,9 @@
         }
     }
 
-div[class*="WidgetPanel-module_container"]:has(
-  div[class*="Message-module_subtle"][class*="Message-module_smaller"]
-) {
-  display: none !important;
-}
+    div[class*="WidgetPanel-module_container"]:has( div[class*="Message-module_subtle"][class*="Message-module_smaller"]) {
+        display: none !important;
+    }
 
     [data-panel-breadcrumbs="true"] {
 
@@ -245,30 +242,30 @@ div[class*="WidgetPanel-module_container"]:has(
         font-size: 0.7em !important;*/
     }
 
-.titleFields {
-    font-family: var(--monospace-font-family) !important;
-    font-size: 0.7em !important;
-    letter-spacing: -0.04ch !important;
-    text-transform: uppercase !important;
-    opacity: 0.6 !important;
-}
+    .titleFields {
+        font-family: var(--monospace-font-family) !important;
+        font-size: 0.7em !important;
+        letter-spacing: -0.04ch !important;
+        text-transform: uppercase !important;
+        opacity: 0.6 !important;
+    }
 
-.listContentItem:focus-within .titleFields {
-opacity: 1;
-}
+    .listContentItem:focus-within .titleFields {
+        opacity: 1;
+    }
 
-.titleFields svg {
-    display: none !important;
-}
+    .titleFields svg {
+        display: none !important;
+    }
 
-.OutlinerItem-module_content__UKChg .itemdone-checkbox .PlainListItem-module_contentWrapper__M5J2E [data-role="editable"] {
-    opacity: 0.7 !important;
-}
+    .OutlinerItem-module_content__UKChg .itemdone-checkbox .PlainListItem-module_contentWrapper__M5J2E [data-role="editable"] {
+        opacity: 0.7 !important;
+    }
 
     [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
         text-decoration: line-through !important;
         text-decoration-thickness: px !important;
-   
+
         text-decoration-color: lch(from var(--icon-gray) calc(l - 20) c h) !important;
 
         /*text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;*/
@@ -509,8 +506,6 @@ opacity: 1;
         }
         /* MARKER: New icons added here */
         /* START: Icon template */
- 
-
         /* START: Icon template */
         &:has([data-tag]) .bulletSide {
             position: relative !important;
@@ -539,84 +534,84 @@ opacity: 1;
         /* END: Icon template */
     }
 
-/* ICONS FOR SUPERTAGS */
+    /* ICONS FOR SUPERTAGS */
     [data-tag-name] [class*="NodeAsListElement-module_main"] {
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Echevron%2Dright%3C%2Ftitle%3E%3Cg%20fill%3D%22%23aeacb9%22%3E%3Cpath%20d%3D%22m4%2E25%2C11c%2D%2E192%2C0%2D%2E384%2D%2E073%2D%2E53%2D%2E22%2D%2E293%2D%2E293%2D%2E293%2D%2E768%2C0%2D1%2E061l3%2E72%2D3%2E72%2D3%2E72%2D3%2E72c%2D%2E293%2D%2E293%2D%2E293%2D%2E768%2C0%2D1%2E061s%2E768%2D%2E293%2C1%2E061%2C0l4%2E25%2C4%2E25c%2E293%2E293%2E293%2E768%2C0%2C1%2E061l%2D4%2E25%2C4%2E25c%2D%2E146%2E146%2D%2E338%2E22%2D%2E53%2E22Z%22%20stroke%2Dwidth%3D%220%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ctitle%3Echevron%2Dright%3C%2Ftitle%3E%3Cg%20fill%3D%22%23aeacb9%22%3E%3Cpath%20d%3D%22m4%2E25%2C11c%2D%2E192%2C0%2D%2E384%2D%2E073%2D%2E53%2D%2E22%2D%2E293%2D%2E293%2D%2E293%2D%2E768%2C0%2D1%2E061l3%2E72%2D3%2E72%2D3%2E72%2D3%2E72c%2D%2E293%2D%2E293%2D%2E293%2D%2E768%2C0%2D1%2E061s%2E768%2D%2E293%2C1%2E061%2C0l4%2E25%2C4%2E25c%2E293%2E293%2E293%2E768%2C0%2C1%2E061l%2D4%2E25%2C4%2E25c%2D%2E146%2E146%2D%2E338%2E22%2D%2E53%2E22Z%22%20stroke%2Dwidth%3D%220%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fsvg%3E');
         }
-&:has(.listContentItem [data-tag="done"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M232%2E49%2C80%2E49l%2D128%2C128a12%2C12%2C0%2C0%2C1%2D17%2C0l%2D56%2D56a12%2C12%2C0%2C1%2C1%2C17%2D17L96%2C183%2C215%2E51%2C63%2E51a12%2C12%2C0%2C0%2C1%2C17%2C17Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-    }
-&:has(.listContentItem [data-tag="log"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M228%2C128a12%2C12%2C0%2C0%2C1%2D12%2C12H40a12%2C12%2C0%2C0%2C1%2C0%2D24H216A12%2C12%2C0%2C0%2C1%2C228%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-    }
-
-
-        &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M228%2C128a12%2C12%2C0%2C0%2C1%2D12%2C12H40a12%2C12%2C0%2C0%2C1%2C0%2D24H216A12%2C12%2C0%2C0%2C1%2C228%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        &:has(.listContentItem [data-tag="done"]) .bullet {
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M232%2E49%2C80%2E49l%2D128%2C128a12%2C12%2C0%2C0%2C1%2D17%2C0l%2D56%2D56a12%2C12%2C0%2C1%2C1%2C17%2D17L96%2C183%2C215%2E51%2C63%2E51a12%2C12%2C0%2C0%2C1%2C17%2C17Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
-        &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M232%2E49%2C80%2E49l%2D128%2C128a12%2C12%2C0%2C0%2C1%2D17%2C0l%2D56%2D56a12%2C12%2C0%2C1%2C1%2C17%2D17L96%2C183%2C215%2E51%2C63%2E51a12%2C12%2C0%2C0%2C1%2C17%2C17Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        &:has(.listContentItem [data-tag="log"]) .bullet {
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M228%2C128a12%2C12%2C0%2C0%2C1%2D12%2C12H40a12%2C12%2C0%2C0%2C1%2C0%2D24H216A12%2C12%2C0%2C0%2C1%2C228%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
+
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M243%2E31%2C90%2E91l%2D128%2E4%2C128%2E4a16%2C16%2C0%2C0%2C1%2D22%2E62%2C0l%2D71%2E62%2D72a16%2C16%2C0%2C0%2C1%2C0%2D22%2E61l20%2D20a16%2C16%2C0%2C0%2C1%2C22%2E58%2C0L104%2C144%2E22l96%2E76%2D95%2E57a16%2C16%2C0%2C0%2C1%2C22%2E59%2C0l19%2E95%2C19%2E54A16%2C16%2C0%2C0%2C1%2C243%2E31%2C90%2E91Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M228%2C128a12%2C12%2C0%2C0%2C1%2D12%2C12H40a12%2C12%2C0%2C0%2C1%2C0%2D24H216A12%2C12%2C0%2C0%2C1%2C228%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        }
+        &:has(.listContentItem [data-tag="instance"]) .bullet {
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M232%2E49%2C80%2E49l%2D128%2C128a12%2C12%2C0%2C0%2C1%2D17%2C0l%2D56%2D56a12%2C12%2C0%2C1%2C1%2C17%2D17L96%2C183%2C215%2E51%2C63%2E51a12%2C12%2C0%2C0%2C1%2C17%2C17Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M79%2E51%2C144%2E49a12%2C12%2C0%2C1%2C1%2C17%2D17L112%2C143l47%2E51%2D47%2E52a12%2C12%2C0%2C0%2C1%2C17%2C17l%2D56%2C56a12%2C12%2C0%2C0%2C1%2D17%2C0ZM228%2C48V208a20%2C20%2C0%2C0%2C1%2D20%2C20H48a20%2C20%2C0%2C0%2C1%2D20%2D20V48A20%2C20%2C0%2C0%2C1%2C48%2C28H208A20%2C20%2C0%2C0%2C1%2C228%2C48Zm%2D24%2C4H52V204H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M243%2E31%2C90%2E91l%2D128%2E4%2C128%2E4a16%2C16%2C0%2C0%2C1%2D22%2E62%2C0l%2D71%2E62%2D72a16%2C16%2C0%2C0%2C1%2C0%2D22%2E61l20%2D20a16%2C16%2C0%2C0%2C1%2C22%2E58%2C0L104%2C144%2E22l96%2E76%2D95%2E57a16%2C16%2C0%2C0%2C1%2C22%2E59%2C0l19%2E95%2C19%2E54A16%2C16%2C0%2C0%2C1%2C243%2E31%2C90%2E91Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        }
+
+        &:has(.listContentItem [data-tag="instance"]) .bullet {
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M79%2E51%2C144%2E49a12%2C12%2C0%2C1%2C1%2C17%2D17L112%2C143l47%2E51%2D47%2E52a12%2C12%2C0%2C0%2C1%2C17%2C17l%2D56%2C56a12%2C12%2C0%2C0%2C1%2D17%2C0ZM228%2C48V208a20%2C20%2C0%2C0%2C1%2D20%2C20H48a20%2C20%2C0%2C0%2C1%2D20%2D20V48A20%2C20%2C0%2C0%2C1%2C48%2C28H208A20%2C20%2C0%2C0%2C1%2C228%2C48Zm%2D24%2C4H52V204H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
         &:has(.listContentItem [data-tag="todo"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-    }
-        &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
-    &:has(.listContentItem [data-tag="meeting"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
---icon-size: 15px !important;    
-    }
+        &:has(.listContentItem [data-tag="instance"]) .bullet {
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        }
+        &:has(.listContentItem [data-tag="meeting"]) .bullet {
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 15px !important;
+        }
         &:has(.listContentItem [data-tag="session"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
---icon-size: 15px !important;    
-    }
-&:has(.listContentItem [data-tag="doing"]) .bullet {
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
-    }
-
-
-        &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 15px !important;
+        }
+        &:has(.listContentItem [data-tag="doing"]) .bullet {
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
 
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23404447%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
 
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204ZM76%2C128a12%2C12%2C0%2C0%2C1%2C12%2D12h51l%2D11%2E52%2D11%2E51a12%2C12%2C0%2C1%2C1%2C17%2D17l32%2C32a12%2C12%2C0%2C0%2C1%2C0%2C17l%2D32%2C32a12%2C12%2C0%2C1%2C1%2D17%2D17L139%2C140H88A12%2C12%2C0%2C0%2C1%2C76%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23404447%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
 
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204ZM76%2C128a12%2C12%2C0%2C0%2C1%2C12%2D12h51l%2D11%2E52%2D11%2E51a12%2C12%2C0%2C1%2C1%2C17%2D17l32%2C32a12%2C12%2C0%2C0%2C1%2C0%2C17l%2D32%2C32a12%2C12%2C0%2C1%2C1%2D17%2D17L139%2C140H88A12%2C12%2C0%2C0%2C1%2C76%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204ZM76%2C128a12%2C12%2C0%2C0%2C1%2C12%2D12h51l%2D11%2E52%2D11%2E51a12%2C12%2C0%2C1%2C1%2C17%2D17l32%2C32a12%2C12%2C0%2C0%2C1%2C0%2C17l%2D32%2C32a12%2C12%2C0%2C1%2C1%2D17%2D17L139%2C140H88A12%2C12%2C0%2C0%2C1%2C76%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+        }
+
+
+        &:has(.listContentItem [data-tag="instance"]) .bullet {
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204ZM76%2C128a12%2C12%2C0%2C0%2C1%2C12%2D12h51l%2D11%2E52%2D11%2E51a12%2C12%2C0%2C1%2C1%2C17%2D17l32%2C32a12%2C12%2C0%2C0%2C1%2C0%2C17l%2D32%2C32a12%2C12%2C0%2C1%2C1%2D17%2D17L139%2C140H88A12%2C12%2C0%2C0%2C1%2C76%2C128Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
         &:has(.listContentItem [data-tag="instance"]) .bullet {
-        --icon-size: 10px;
-        --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+            --icon-size: 10px;
+            --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23b4b4b5%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M240%2E26%2C186%2E1%2C152%2E81%2C34%2E23h0a28%2E74%2C28%2E74%2C0%2C0%2C0%2D49%2E62%2C0L15%2E74%2C186%2E1a27%2E45%2C27%2E45%2C0%2C0%2C0%2C0%2C27%2E71A28%2E31%2C28%2E31%2C0%2C0%2C0%2C40%2E55%2C228h174%2E9a28%2E31%2C28%2E31%2C0%2C0%2C0%2C24%2E79%2D14%2E19A27%2E45%2C27%2E45%2C0%2C0%2C0%2C240%2E26%2C186%2E1Zm%2D20%2E8%2C15%2E7a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2C2%2E2H40%2E55a4%2E46%2C4%2E46%2C0%2C0%2C1%2D4%2D2%2E2%2C3%2E56%2C3%2E56%2C0%2C0%2C1%2C0%2D3%2E73L124%2C46%2E2a4%2E75%2C4%2E75%2C0%2C0%2C1%2C8%2C0l87%2E45%2C151%2E87A3%2E56%2C3%2E56%2C0%2C0%2C1%2C219%2E46%2C201%2E8Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
     }
 
@@ -631,7 +626,6 @@ opacity: 1;
         border-top-left-radius: var(--radius400) !important;
         padding: .265rem .3rem .15rem .35rem !important;
         display: inline-block !important;
-  
     }
 
     /* ADD BACKGROUND COLOR AND PADDING TO REGULAR FIELDS */
@@ -717,73 +711,81 @@ opacity: 1;
         display: none !important;
     }
 
-.contentWrapper [aria-label*="New"], button[aria-label*="This node is referenced"] {
-opacity: 0 !important;
-transform: translateX(-5px) !important; /* Subtle movement to the left */
-transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
-}
-/* Hover state for the main node to reveal the buttons */
-.contentWrapper:focus-within [class*="Button-module_neutral"], .contentWrapper:hover [class*="Button-module_neutral"], .isReference:hover button[aria-label*="This node is referenced"], .isReference:focus-within button[aria-label*="This node is referenced"] {
-opacity: 1 !important;
-transform: translateX(0) !important;
-}
+    .contentWrapper [aria-label*="New"],
+    button[aria-label*="This node is referenced"] {
+        opacity: 0 !important;
+        transform: translateX(-5px) !important;
+        /* Subtle movement to the left */
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
+    }
+    /* Hover state for the main node to reveal the buttons */
+    .contentWrapper:focus-within [class*="Button-module_neutral"],
+    .contentWrapper:hover [class*="Button-module_neutral"],
+    .isReference:hover button[aria-label*="This node is referenced"],
+    .isReference:focus-within button[aria-label*="This node is referenced"] {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
 
-/* Applying different delays to each button for the cascading effect */
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
-transition-delay: 0s !important; /* The first button appears instantly */
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
-transition-delay: 0.05s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
-transition-delay: 0.1s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
-transition-delay: 0.15s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
-transition-delay: 0.2s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
-transition-delay: 0.25s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
-transition-delay: 0.3s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
-transition-delay: 0.35s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
-transition-delay: 0.4s !important;
-}
-.contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
-transition-delay: 0.45s !important; /* The last button has the longest delay */
-}
+    /* Applying different delays to each button for the cascading effect */
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
+        transition-delay: 0s !important;
+        /* The first button appears instantly */
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
+        transition-delay: 0.05s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
+        transition-delay: 0.1s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
+        transition-delay: 0.15s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
+        transition-delay: 0.2s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
+        transition-delay: 0.25s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
+        transition-delay: 0.3s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
+        transition-delay: 0.35s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
+        transition-delay: 0.4s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
+        transition-delay: 0.45s !important;
+        /* The last button has the longest delay */
+    }
 
-html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after, html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after {
-    content: "" !important;
-    position: absolute !important;
-    top: calc(var(--listItemVerticalSpacing)* -1) !important;
-    bottom: calc(var(--listItemVerticalSpacing)* -1 - 1px) !important;
-    left: 0 !important;
-    right: 0 !important;
-    pointer-events: none !important;
-    border-top: 1px solid var(--colorUITupleStroke) !important;
-    border-bottom: 1px solid var(--colorUITupleStroke) !important;
-}
-.tw-items-start .OutlinerItem-module_content__UKChg [data-testid="plain-list-item"] .tw-items-center {
-    padding-top: 3px !important;
-}
+    html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after,
+    html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after {
+        content: "" !important;
+        position: absolute !important;
+        top: calc(var(--listItemVerticalSpacing)* -1) !important;
+        bottom: calc(var(--listItemVerticalSpacing)* -1 - 1px) !important;
+        left: 0 !important;
+        right: 0 !important;
+        pointer-events: none !important;
+        border-top: 1px solid var(--colorUITupleStroke) !important;
+        border-bottom: 1px solid var(--colorUITupleStroke) !important;
+    }
+    .tw-items-start .OutlinerItem-module_content__UKChg [data-testid="plain-list-item"] .tw-items-center {
+        padding-top: 3px !important;
+    }
 
-.tw-flex-col .tw-flex-col [style="position\:\ relative\;"] {
-    opacity: 0.6 !important;
-transition: opacity 0.3s ease-in-out !important; 
+    .tw-flex-col .tw-flex-col [style="position\:\ relative\;"] {
+        opacity: 0.6 !important;
+        transition: opacity 0.3s ease-in-out !important;
+    }
 
-}
-
-.tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:focus-within, .tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:hover {
-    opacity: 1 !important;
-
-}
-[data-id="uhuOSFtMiYQO\|6NNraak71Fuh\|DyNep5_RbJh7"] .navtarget {display: none !important;}
-
+    .tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:focus-within,
+    .tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:hover {
+        opacity: 1 !important;
+    }
+    [data-id="uhuOSFtMiYQO\|6NNraak71Fuh\|DyNep5_RbJh7"] .navtarget {
+        display: none !important;
+    }
