@@ -775,6 +775,20 @@
         /* The last button has the longest delay */
     }
 
+
+    [class*="NodeProgressBar-module_label"] {
+        opacity: 0 !important;
+        transform: translateX(-20px) !important;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out !important;
+    }
+
+    [class*="NodeAsListElement-module_main"]:focus-within [class*="NodeProgressBar-module_label"] {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+
+
+
     html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after,
     html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after {
         content: "" !important;
