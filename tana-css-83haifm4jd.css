@@ -810,6 +810,11 @@
         transition: opacity 0.3s ease-in-out !important;
     }
 
+.inlinecontent.hastemplate {
+        text-decoration: underline !important;
+    text-decoration-style: dotted !important;
+}
+
     .tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:focus-within,
     .tw-flex-col .tw-flex-col [style="position\:\ relative\;"]:hover {
         opacity: 1 !important;
