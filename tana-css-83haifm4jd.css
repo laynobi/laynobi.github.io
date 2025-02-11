@@ -811,6 +811,28 @@
         transition: opacity 0.3s ease-in-out !important;
     }
 
+.listContentItem:has(span[data-tag="doing"]) > .wrapEditableAndMenu {
+        display: flex !important;
+        align-items: flex-start !important;
+        /* Align items at the top */
+        & > .titleFields {
+            order: 1 !important;
+            flex-shrink: 0 !important;
+            flex-basis: auto !important;
+            white-space: nowrap !important;
+            margin-left: -3px !important;
+            /* Remove left margin */
+            margin-top: 4px !important;
+            /* Remove left margin */
+            margin-right: 6px !important;
+            /* Remove left margin */
+        }
+
+        & > span:not(.titleFields) {
+            order: 2 !important;
+        }
+    }
+
 .inlinecontent.hastemplate {
         text-decoration: underline !important;
     text-decoration-style: dotted !important;
