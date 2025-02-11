@@ -68,28 +68,29 @@
         color: lch(from var(--colorUITextMuted) calc(l - 20) c h) !important;
     }
 
-.listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-    --bg-highlight-2: red;
-                background-color: var(--bg-highlight-2, #D3FFA4) !important;
-}
+    .listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
+        --bg-highlight-2: red;
+        background-color: var(--bg-highlight-2, #D3FFA4) !important;
+    }
 
     .listContentItem:has(span[data-tag="doing"]) [data-list-position] > [contenteditable] {
         position: relative !important;
-  
+        display: inline-block !important;
+
         &::before {
             content: "" !important;
             position: absolute !important;
             top: -2px !important;
-            border-radius: 5px;
+            border-radius: 5px !important;
             left: -4px !important;
             right: -4px !important;
             bottom: -2px !important;
             background-color: var(--bg-highlight-2, #D3FFA4) !important;
+
             z-index: -1 !important;
             /* Ensures the pseudo-element is behind the content */
         }
     }
-
     [class*="NodeProgressBar-module_label"] {
 
         font-weight: normal !important;
