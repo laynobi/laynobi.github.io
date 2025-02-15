@@ -1,4 +1,5 @@
-:root {
+
+    :root {
 	--base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
 	--heading-font-family: "Bear Sans UI Headline", "TossFaceFontMac", "Font Awesome 6 Pro";
 	--heading-text-color: #222222;
@@ -975,7 +976,7 @@ html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after {
 	display: none !important;
 }
 
-/* Slide related content on focus */
+/* Slide related content on focus
 [class*="NodePanelContent-module_content"][data-has-content-right="true"] {
 	--main-fraction: calc(var(--panel__main-ratio, --main-fraction) + var(--panel__right-offset, 10%)) !important;
 	--right-fraction: var(--panel__right-ratio, --right-fraction) !important;
@@ -997,4 +998,6 @@ html:not(.mobile) .TupleListItem-module_tupleListItem__fkaCZ:after {
 		--main-fraction: calc(var(--panel__main-ratio)) !important;
 		transition: grid-template-columns var(--ease__easeInOutBackFast) !important;
 	}
+}
+ */
 }
