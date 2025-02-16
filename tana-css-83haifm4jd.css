@@ -5,6 +5,7 @@
         --monospace-font-family: "Berkeley Mono", "TossFaceFontMac", "Font Awesome 6 Pro";
         --base-font-size: 90%;
         --base-accent: #DC4C4F;
+	--base-secondary: #A0D7E4;
         --base-accent-text-color: #ffffff;
         --color-code-text-color: var(--base-accent);
         --color-code-bg: #EFF1F2;
@@ -86,8 +87,7 @@
     }
 
     .listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
-        --bg-highlight-2: red;
-        background-color: var(--bg-highlight-2, #D3FFA4) !important;
+        background-color: var(--base-secondary) !important;
     }
 
     .listContentItem:has(span[data-tag="doing"]) [data-list-position] > [contenteditable] {
@@ -640,7 +640,7 @@
             --icon-size: 15px !important;
         }
 
-        &:has(.listContentItem [data-tag="doing"]) .bullet {
+        &:has(.listContentItem [data-tag=""]) .bullet {
             --icon-svg: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%23dc4c4f%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20d%3D%22M208%2C28H48A20%2C20%2C0%2C0%2C0%2C28%2C48V208a20%2C20%2C0%2C0%2C0%2C20%2C20H208a20%2C20%2C0%2C0%2C0%2C20%2D20V48A20%2C20%2C0%2C0%2C0%2C208%2C28Zm%2D4%2C176H52V52H204Z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
         }
 
