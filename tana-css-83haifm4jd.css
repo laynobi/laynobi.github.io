@@ -86,7 +86,8 @@
         color: lch(from var(--colorUITextMuted) calc(l - 20) c h) !important;
     }
 
-    .listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
+    .listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent,
+.listContentItem:has(span[data-tag="done"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent{
         background-color: var(--base-secondary) !important;
     }
 
@@ -103,11 +104,13 @@
             right: -4px !important;
             bottom: -2px !important;
             background-color: var(--bg-highlight-2, #D3FFA4) !important;
-
             z-index: -1 !important;
+
             /* Ensures the pseudo-element is behind the content */
         }
     }
+
+
 
     [class*="NodeProgressBar-module_label"] {
 
@@ -933,7 +936,7 @@ var(--bulletColor1Dimmed) h s l)
         transition: opacity 0.3s ease-in-out !important;
     }
 
-    .listContentItem:has(span[data-tag="doing"]) > .wrapEditableAndMenu {
+    .listContentItem:has(span[data-tag="doing"]) > .wrapEditableAndMenu, .listContentItem:has(span[data-tag="done"]) > .wrapEditableAndMenu {
         display: flex !important;
         align-items: flex-start !important;
 
