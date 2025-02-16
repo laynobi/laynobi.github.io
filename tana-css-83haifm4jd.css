@@ -970,6 +970,17 @@ var(--bulletColor1Dimmed) h s l)
         display: none !important;
     }
 
+      [class*="Button-module_button"]:has(> [class*="ObjectAvatar-module_container"]) {
+        color: #1E1F24 !important;
+    }
+    
+          [class*="Button-module_button"]:has(> [class*="ObjectAvatar-module_container"]) span {
+        color: oklch(from #343539 calc(l + 0.2) c h) !important;
+              font-weight: 500 !important;
+              	-webkit-font-smoothing: antialiased !important;
+    }
+
+
     /* Slide related content on focus
 [class*="NodePanelContent-module_content"][data-has-content-right="true"] {
 	--main-fraction: calc(var(--panel__main-ratio, --main-fraction) + var(--panel__right-offset, 10%)) !important;
