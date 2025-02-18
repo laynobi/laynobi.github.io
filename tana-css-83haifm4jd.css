@@ -683,6 +683,11 @@ font-style: oblique;
         }
     }
 
+/* Hides comments if none found */
+[class*="NodeAsListElement-module_isTuple"]:has([class*="TupleListItem-module_tupleListItem"] > [class*="TupleListItem-module_value"] [class*="Message-module_smaller"]) {
+    background: pink !important;
+    display: none !important;
+}
 
     /* ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
     [class*="NodeListView-module_hiddenFields"] {
