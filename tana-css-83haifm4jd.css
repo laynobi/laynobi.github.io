@@ -202,10 +202,6 @@
         }
     }
 
-    div[class*="WidgetPanel-module_container"]:has(div[class*="Message-module_subtle"][class*="Message-module_smaller"]) {
-        display: none !important;
-    }
-
     [data-panel-breadcrumbs="true"] {
 
         background-color: rgb(255, 255, 255) !important;
