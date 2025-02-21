@@ -1,3 +1,4 @@
+
     :root {
         --base-font-family: "Bear Sans UI", "TossFaceFontMac", "Font Awesome 6 Pro";
         --heading-font-family: "Bear Sans UI Headline", "TossFaceFontMac", "Font Awesome 6 Pro";
@@ -5,7 +6,7 @@
         --monospace-font-family: "Berkeley Mono", "TossFaceFontMac", "Font Awesome 6 Pro";
         --base-font-size: 90%;
         --base-accent: #DC4C4F;
-	--base-secondary: #A0D7E4;
+        --base-secondary: #A0D7E4;
         --base-accent-text-color: #ffffff;
         --color-code-text-color: var(--base-accent);
         --color-code-bg: #EFF1F2;
@@ -87,7 +88,7 @@
     }
 
     .listContentItem:has(span[data-tag="doing"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent,
-.listContentItem:has(span[data-tag="done"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent{
+    .listContentItem:has(span[data-tag="done"]) .editable .titleFields .noInteractiveInline .inlinerefdate .inlinecontent {
         background-color: var(--base-secondary) !important;
     }
 
@@ -282,19 +283,19 @@
         display: none !important;
     }
 
-    .OutlinerItem-module_content__UKChg .itemdone-checkbox .PlainListItem-module_contentWrapper__M5J2E [data-role="editable"]  {
+    .OutlinerItem-module_content__UKChg .itemdone-checkbox .PlainListItem-module_contentWrapper__M5J2E [data-role="editable"] {
         opacity: 0.7 !important;
     }
 
     [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
-    
+
         text-decoration-color: lch(from var(--icon-gray) calc(l - 20) c h) !important;
-				text-decoration: none;
-font-style: oblique;
+        text-decoration: none;
+        font-style: oblique;
         /*text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;*/
         & > .wrapEditableAndMenu .titleFields .inlinecontent {
 
-			 font-style: normal;
+            font-style: normal;
         }
 
         &:focus-within {
@@ -302,6 +303,12 @@ font-style: oblique;
             text-decoration-color: transparent !important;
             transition: text-decoration-color 0.1s ease-out;
         }
+    }
+
+    /* Hides comments if none found */
+    [class*="NodeAsListElement-module_isTuple"]:has([class*="TupleListItem-module_tupleListItem"] > [class*="TupleListItem-module_value"] [class*="Message-module_smaller"]) {
+        background: pink !important;
+        display: none !important;
     }
 
 
@@ -683,11 +690,6 @@ font-style: oblique;
         }
     }
 
-/* Hides comments if none found */
-[class*="NodeAsListElement-module_isTuple"]:has([class*="TupleListItem-module_tupleListItem"] > [class*="TupleListItem-module_value"] [class*="Message-module_smaller"]) {
-    background: pink !important;
-    display: none !important;
-}
 
     /* ADDS BACKGROUND COLOR AND BUBBLE TO HIDDEN FIELDS */
     [class*="NodeListView-module_hiddenFields"] {
@@ -938,7 +940,8 @@ var(--bulletColor1Dimmed) h s l)
         transition: opacity 0.3s ease-in-out !important;
     }
 
-    .listContentItem:has(span[data-tag="doing"]) .wrapEditableAndMenu, .listContentItem:has(span[data-tag="done"]) .wrapEditableAndMenu {
+    .listContentItem:has(span[data-tag="doing"]) .wrapEditableAndMenu,
+    .listContentItem:has(span[data-tag="done"]) .wrapEditableAndMenu {
         display: flex !important;
         align-items: flex-start !important;
 
@@ -975,15 +978,68 @@ var(--bulletColor1Dimmed) h s l)
         display: none !important;
     }
 
-      [class*="Button-module_button"]:has(> [class*="ObjectAvatar-module_container"]) {
+    [class*="Button-module_button"]:has( > [class*="ObjectAvatar-module_container"]) {
         color: #1E1F24 !important;
     }
-    
-          [class*="Button-module_button"]:has(> [class*="ObjectAvatar-module_container"]) span {
+
+    [class*="Button-module_button"]:has( > [class*="ObjectAvatar-module_container"]) span {
         color: oklch(from #343539 calc(l + 0.2) c h) !important;
-              font-weight: 500 !important;
-              	-webkit-font-smoothing: antialiased !important;
+        font-weight: 500 !important;
+        -webkit-font-smoothing: antialiased !important;
     }
+
+
+    /* HOVER AND REVEAL COMMAND BUTTONS, ONLY FOR WHOSE DESCRIPTION HAS THE WORDS "MARK TASK" IN THEM */
+    /* Initial state of each button, hidden */
+    .contentWrapper [aria-label*="-OH"] {
+        opacity: 0 !important;
+        transform: translateX(-5px) !important;
+        /* Subtle movement to the left */
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out !important;
+    }
+    /* Hover state for the main node to reveal the buttons */
+    .contentWrapper:focus-within [class*="Button-module_neutral"],
+    .contentWrapper:hover [class*="Button-module_neutral"],
+    .isReference:hover button[aria-label*="This node is referenced"],
+    .isReference:focus-within button[aria-label*="This node is referenced"] {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+    }
+
+    /* Applying different delays to each button for the cascading effect */
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(1) {
+        transition-delay: 0s !important;
+        /* The first button appears instantly */
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(2) {
+        transition-delay: 0.05s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(3) {
+        transition-delay: 0.1s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(4) {
+        transition-delay: 0.15s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(5) {
+        transition-delay: 0.2s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(6) {
+        transition-delay: 0.25s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(7) {
+        transition-delay: 0.3s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(8) {
+        transition-delay: 0.35s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(9) {
+        transition-delay: 0.4s !important;
+    }
+    .contentWrapper:hover [class*="Button-module_neutral"]:nth-child(10) {
+        transition-delay: 0.45s !important;
+        /* The last button has the longest delay */
+    }
+
 
 
     /* Slide related content on focus
