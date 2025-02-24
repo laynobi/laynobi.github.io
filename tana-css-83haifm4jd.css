@@ -66,7 +66,7 @@
         font-family: var(--base-font-family) !important;
         font-size: var(--base-font-size) !important;
         -webkit-font-smoothing: antialiased !important;
-        --sideBarWidth: 12rem !important;
+        --sideBarWidth: 11rem !important;
     }
 
     button[role="checkbox"] {
