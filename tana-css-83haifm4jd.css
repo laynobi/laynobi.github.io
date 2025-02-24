@@ -120,9 +120,9 @@
     }
 
     [data-role="layout-and-docks"] [class*="NodePanelContent-module_main"] button[class*="Button-module_button"]:not(:is([aria-label$="children"])) {
-        background-color: rgb(255, 255, 255) !important;
+        background-color: var(--button-bg, #FFFFFF) !important;
         background-image: none !important;
-        border-bottom-color: rgb(228, 228, 231) !important;
+        border-bottom-color: var(--button-border-color, rgb(228, 228, 231));
         border-bottom-left-radius: 6px !important;
         border-bottom-right-radius: 6px !important;
         border-bottom-style: solid !important;
@@ -132,13 +132,13 @@
         border-image-slice: 100% !important;
         border-image-source: none !important;
         border-image-width: 1 !important;
-        border-left-color: rgb(228, 228, 231) !important;
+        border-left-color: var(--button-border-color, rgb(228, 228, 231));
         border-left-style: solid !important;
         border-left-width: 0.555556px !important;
-        border-right-color: rgb(228, 228, 231) !important;
+        border-right-color: var(--button-border-color, rgb(228, 228, 231));
         border-right-style: solid !important;
         border-right-width: 0.555556px !important;
-        border-top-color: rgb(228, 228, 231) !important;
+        border-top-color: var(--button-border-color, rgb(228, 228, 231));
         border-top-left-radius: 6px !important;
         border-top-right-radius: 6px !important;
         border-top-style: solid !important;
@@ -146,7 +146,7 @@
         margin-left: 1px !important;
         margin-right: 1px !important;
         padding: 5px !important;
-        box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px !important;
+        box-shadow: var(--button-box-shadow-color, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px);
 
         &:is([aria-label="Collapse"],
         [aria-label="Expand"],
