@@ -1041,6 +1041,60 @@ var(--bulletColor1Dimmed) h s l)
     }
 
 
+:root {
+	--triage-color-1: oklch(57.94% 0.2603 27.94);
+	--triage-color-2: #D1453B;
+	--triage-color-3: oklch(76.92% 0.1863 62.3);
+	--triage-color-4: #bc8350;
+	--triage-color-5: #919191;
+}
+
+[class*="Button-module_button"][aria-label*="-TG"] {
+	--button-box-shadow-color: none !important;
+	--button-bg: rgba(0, 0, 0, 0.03);
+	--button-border-color: transparent;
+	font-family: var(--monospace-font-family);
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.5) !important;
+	font-size: 0.7em !important;
+	transition: background-color 0.2s ease;
+
+	&:hover {
+		--button-bg: rgba(0, 0, 0, 0.07);
+		transition: background-color 0.2s ease-in;
+	}
+
+	&[aria-label*="must today"]>div>span {
+		color: var(--triage-color-1) !important;
+		font-weight: 700 !important;
+		padding-right: 0.5ch;
+	}
+
+	&[aria-label*="must later"]>div>span {
+		color: var(--triage-color-2) !important;
+		font-weight: 700 !important;
+		padding-right: 0.5ch;
+	}
+
+	&[aria-label*="should today"]>div>span {
+		color: var(--triage-color-3) !important;
+		font-weight: 700 !important;
+		padding-right: 0.5ch;
+	}
+
+	&[aria-label*="should later"]>div>span {
+		color: var(--triage-color-4) !important;
+		font-weight: 700 !important;
+		padding-right: 0.5ch;
+	}
+
+	&[aria-label*="could anytime"]>div>span {
+		color: var(--triage-color-5) !important;
+		font-weight: 700 !important;
+		padding-right: 0.5ch;
+	}
+}
+
 
     /* Slide related content on focus
 [class*="NodePanelContent-module_content"][data-has-content-right="true"] {
