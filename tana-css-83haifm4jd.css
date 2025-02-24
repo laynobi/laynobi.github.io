@@ -287,11 +287,10 @@
         opacity: 0.7 !important;
     }
 
-    [data-list-element="true"] [class*="itemdone-checkbox"] div > .contentWrapper > .listContentItem {
-
-        text-decoration-color: lch(from var(--icon-gray) calc(l - 20) c h) !important;
-        text-decoration: none;
-        font-style: oblique;
+    .listContentItem:has(span[data-tag="done"]) .editable {
+color: rgba(from black r g b / 0.7) !important;
+      text-decoration: line-through lch(from var(--icon-gray) calc(l - 20) c h / 0.6) !important;
+        font-style: oblique !important;
         /*text-decoration-color: lch(from var(--base-accent) calc(l + 0) c h / 0.5) !important;*/
         & > .wrapEditableAndMenu .titleFields .inlinecontent {
 
@@ -304,6 +303,7 @@
             transition: text-decoration-color 0.1s ease-out;
         }
     }
+
 
     /* Hides comments if none found */
     [class*="NodeAsListElement-module_isTuple"]:has([class*="TupleListItem-module_tupleListItem"] > [class*="TupleListItem-module_value"] [class*="Message-module_smaller"]) {
