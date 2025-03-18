@@ -11,7 +11,7 @@
         --heading--font-weight: 600;
         /* --heading--color: blue; */
         --checkbox--font-size: 0.8em;
-        /*--checkbox--checked-color: blue;*/
+        --checkbox--checked-color: #0084F2;
         --panel--bg-color: #F2F2F2;
         --colorUITextMuted: #40506A !important; 
         --colorEditorText: #172849 !important;
