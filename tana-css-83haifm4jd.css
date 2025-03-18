@@ -12,8 +12,61 @@
         /* --heading--color: blue; */
         --checkbox--font-size: 0.8em;
         /*--checkbox--checked-color: blue;*/
-        --panel--bg-color: #F2F2F2;        
+        --panel--bg-color: #F2F2F2;
+        --colorUITextMuted: #40506A !important; 
+        --colorEditorText: #172849 !important;
+        --colorTextButtonText: #ff0000 !important;
+        --colorButtonNeutralText: #3F4E69 !important;
+        --colorButtonNeutralBackground: #E9EAEB !important;
+           --colorPanelBackground: #fff !important;
     }
+.ContentPositioner-module_container__U6-bf [aria-label$=" day"] {
+    color: var(--colorButtonNeutralText) !important;
+    
+}
+
+.EditorPage-module_mainContent__YR1-G .NodePanel-module_container__Vawg5 .tw-items-center:has(.BreadcrumbBar-module_wrapper__M5dD-) {
+      font-feature-settings: 'zero' 0;
+}
+
+.tw-items-center .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .navtarget {
+    color: #636F84 !important;
+}
+
+.UnifiedSidebar-module_wrapper__E1Htd .tw-flex-col .UnifiedSidebar-module_nav__eZXP7 [aria-label="Search"] {background-color: #E9EAEB !important; outline: 1px #E9EAEB solid; font-weight: 600 !important}
+
+.UnifiedSidebar-module_wrapper__E1Htd .tw-flex-col .UnifiedSidebar-module_nav__eZXP7 .CreateButton-module_fullCreateButton__u0ZQT {background-color: #0D60D9 !important; color: white !important; font-weight: 600 !important;}
+
+.ContentPositioner-module_container__U6-bf [aria-label] {
+    font-weight: 600 !important;
+}
+
+.tw-flex-col .PinnedNodesSection-module_section__orG0K .tw-flex-col .Heading-module_line-height-compact__szSA- {
+    color: var(--colorEditorText) !important;
+}
+
+.UnifiedSidebar-module_wrapper__E1Htd .tw-flex-col .UnifiedSidebar-module_footer__NRFZT .navtarget {
+    color: #172849 !important;
+}
+.tw-flex-col .tw-flex-col [aria-expanded="false"] .navtarget, .PinnedNodesSection-module_section__orG0K .tw-flex-col .tw-flex-col .Text-module_text__RqcAw {
+    color: #5D697F !important;
+}
+
+
+.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__HiElB [aria-label="Help"], .tw-flex-col .ContentPositioner-module_container__U6-bf #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__HiElB [aria-label="Ask\ AI\ about\ this\ content"], .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .Button-module_button__-xmQE:has(.WorkspaceAvatar-module_container__bhx0Z), .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5:has(.NodeBreadcrumbs-module_icon__kChhr .WorkspaceAvatar-module_container__bhx0Z), .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .Button-module_button__-xmQE:has(.WorkspaceAvatar-module_container__bhx0Z), .navtarget .NodeBreadcrumbs-module_icon__kChhr .ObjectAvatar-module_container__P-mlO :first-child, .tw-flex-col .tw-flex-col .Text-module_text__RqcAw em, .tw-items-center .NodeAsDrilldownElement-module_icon__tpAP0 .ObjectAvatar-module_container__P-mlO :first-child {
+    display: none !important;
+}
+
+.UnifiedSidebar-module_wrapper__E1Htd .tw-flex-col .UnifiedSidebar-module_nav__eZXP7 .Button-module_ai__3Eg6z {display: none !important;}
+
+.tw-flex-col .tw-flex-col .tw-inline-flex [data-role="editable"] {
+    color: #172849;
+    font-weight: 650;
+    font-kerning: auto !important;
+    font-optical-sizing: auto !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: -0.7px;
+}
 
     /* 002. defaults */
     :root {
