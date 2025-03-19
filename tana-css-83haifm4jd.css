@@ -7,7 +7,7 @@
         --root--font-size: 90%;
         --root--primary-color: #0084F2;
         --root--font-smoothing: antialiased;
-        --heading--font-family: "Inter Variable";
+        --heading--font-family: "Bear Sans UI Headline";
         --heading--font-weight: 600;
         /* --heading--color: blue; */
         --checkbox--font-size: 0.8em;
@@ -165,3 +165,36 @@ border-radius:3px !important;
     [class*="NodeProgressBar-module_label"] {
         opacity: 0 !important; 
     }
+
+:root {
+    --color-background-neutral: #091E420F;
+    --color-text-subtle: #172B4DFF;
+}
+
+[data-tag] {
+    & :is(span, button) {
+    --templateColorDimmed: var(--color-background-neutral) !important;
+    --templateColor: var(--color-text-subtle) !important;
+    font-size: 0.75rem !important;
+    font-weight: 400 !important;
+    }
+    & button { /* Vertically centers tag name text */
+        display: flex;
+        align-items: center;
+        padding-inline-end: 0.25rem !important;
+        padding-inline-start: 0.25rem !important;
+        border-radius: 3px !important;
+        padding-block-end: 0px !important;
+        padding-block-start: 0px !important;
+        padding-top: 1px !important;
+                padding-bottom: 1px !important;
+    }
+}
+
+[class*="TemplateTag-module_tagPrefix"] {
+    display: none !important;
+}
+
+[class*="Checkbox-module_root"][data-state=checked] {
+   background-color: var(--checkbox--checked-color) !important;
+}
