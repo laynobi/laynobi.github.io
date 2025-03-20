@@ -521,5 +521,21 @@ display: none !important;
 
 [placeholder*="Add description"] {
       color: var(--color-text-subtlest) !important;
-      font-size: 0.75rem !important;
+      font-size: 0.7rem !important;
+}
+
+[class*="NodeListView-module_hiddenFields"] > button {
+      color: var(--color-text-subtlest) !important;
+  font-size: 0.8rem !important;
+        font-size: 0.7rem !important;
+          font-family: var(--font-monospace) !important;
+
+}
+
+[class*="NodeListView-module_hiddenFields"] > button::before {
+  content:"+";
+}
+
+[class*="NodeListView-module_hiddenFields"] > button > svg {
+  display: none !important;
 }
