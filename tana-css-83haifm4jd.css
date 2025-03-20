@@ -21,6 +21,8 @@
            --colorPanelBackground: #fff !important;
     --color-icon: #44546F;
     --color-icon-information: #1E7AFD;
+    --color-border: #DDDFE5;
+    --elevation-color-sunken: #F1F2F4;
     }
 .ContentPositioner-module_container__U6-bf [aria-label$=" day"] {
     color: var(--colorButtonNeutralText) !important;
@@ -498,8 +500,8 @@ display: none !important;
 
 [data-role="tuple-label"] {
   color: var(--color-text-subtlest) !important;
-  font-family: var(--font-monospace) !important;
   font-size: 0.8rem !important;
+  font-weight: 500 !important;
 }
 
 [placeholder*="Add title"] {
@@ -521,14 +523,13 @@ display: none !important;
 
 [placeholder*="Add description"] {
       color: var(--color-text-subtlest) !important;
-      font-size: 0.7rem !important;
+      font-size: 0.75rem !important;
 }
 
 [class*="NodeListView-module_hiddenFields"] > button {
       color: var(--color-text-subtlest) !important;
-  font-size: 0.8rem !important;
-        font-size: 0.7rem !important;
-          font-family: var(--font-monospace) !important;
+        font-size: 0.75rem !important;
+        
 
 }
 
@@ -538,4 +539,8 @@ display: none !important;
 
 [class*="NodeListView-module_hiddenFields"] > button > svg {
   display: none !important;
+}
+
+[data-containing-tuple="false"] > [class*="OutlinerItem-module_children"] > div > div:has([data-role="template-children-container"]) {
+
 }
