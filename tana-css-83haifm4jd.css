@@ -19,6 +19,8 @@
         --colorButtonNeutralText: #3F4E69 !important;
         --colorButtonNeutralBackground: #E9EAEB !important;
            --colorPanelBackground: #fff !important;
+    --color-icon: #44546F;
+    --color-icon-information: #1E7AFD;
     }
 .ContentPositioner-module_container__U6-bf [aria-label$=" day"] {
     color: var(--colorButtonNeutralText) !important;
@@ -28,7 +30,7 @@
 [class*="NodeDoneCheckbox-module_container"] .navtarget[aria-checked="false"] {
     background-color: transparent !important;
 border-radius:3px !important;
-      box-shadow: inset 0 0 0 1.5px #7E899A;
+      box-shadow: inset 0 0 0 1.5px ;
     margin-right: 1ch !important;
 }
 
@@ -128,10 +130,10 @@ border-radius:3px !important;
     }
     /* checkbox → checked */
     .Checkbox-module_root__1SkAw[data-state="checked"] {
-        background-color: var(--checkbox--checked-color, var(--checkbox--default-checked-color));
+        background-color: var(--color-border-selected, var(--checkbox--default-checked-color));
         /* checkbox → checked → on focus */
         &:focus:before {
-            border: 2px solid var(--checkbox--checked-color, var(--checkbox--default-checked-color));
+            border: 2px solid var(--color-border-selected, var(--checkbox--default-checked-color));
         }
     }
     
@@ -161,11 +163,12 @@ border-radius:3px !important;
     --color-background-neutral: rgba(9, 30, 66, 0.06);
     --color-text: #182A4E;
     --color-text-subtle: #172B4DFF;
-    --color-text-subtlest: #5D697F;
+    --color-text-subtlest: #616F86;
+    --color-icon-subtlest: #616F86;
     --color-text-accent-gray: #40506A;
     --font-monospace: "Berkeley Mono";
-    --color-background-selected-bold: #004EC2 !important;
-
+    --color-background-selected-bold: #004EC2;
+    --color-border-selected: #0D60D9;
 }
 
 [class*="Text-module_text"][class*="Text-module_muted"] {
@@ -294,6 +297,7 @@ word-break: normal !important;
   }
   &::before {
   content: "\f059";
+  font-family: "Font Awesome 6 Pro";
   }
 }
 
@@ -478,4 +482,44 @@ span[data-state="checked"]::before {
   text-align: center !important;
   vertical-align: middle !important;
   color: white;
+}
+
+.bullet.hasAvatar {
+ font-size: 1.25rem;
+}
+
+[class*="NodeAsListElement-module_sectionHeading"] .bulletSide > .isReference {
+display: none !important;
+}
+
+.isTuple > svg {
+  color: var(--color-icon-subtlest) !important;
+}
+
+[data-role="tuple-label"] {
+  color: var(--color-text-subtlest) !important;
+  font-family: var(--font-monospace) !important;
+  font-size: 0.8rem !important;
+}
+
+[placeholder*="Add title"] {
+      color: var(--color-text-subtle) !important;
+      font-size: 0.8rem !important;
+
+}
+
+.isTuple > svg {
+
+display: none !important;
+}
+
+.isTuple::before {
+  content:"\f105";
+  font-weight: 400 !important;
+  font-size: 0.6rem;
+}
+
+[placeholder*="Add description"] {
+      color: var(--color-text-subtlest) !important;
+      font-size: 0.75rem !important;
 }
