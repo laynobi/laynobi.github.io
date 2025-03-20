@@ -32,13 +32,8 @@ border-radius:3px !important;
     margin-right: 1ch !important;
 }
 
-.EditorPage-module_mainContent__YR1-G .NodePanel-module_container__Vawg5 .tw-items-center:has(.BreadcrumbBar-module_wrapper__M5dD-) {
-      font-feature-settings: 'zero' 0;
-}
 
-.tw-items-center .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .navtarget {
-    color: #636F84 !important;
-}
+
 
 .PlainListItem-module_contentWrapper__M5J2E .tw-inline-flex .navtarget .TemplateTag-module_tagPrefix__b7Zxt {color:transparent !important; background-color: transparent !important;}
 
@@ -61,10 +56,6 @@ border-radius:3px !important;
     color: #5D697F !important;
 }
 
-
-.tw-flex-col .tw-items-end .NodePanelHeader-module_aside__HiElB [aria-label="Help"], .tw-flex-col .ContentPositioner-module_container__U6-bf #floatingTourDateNavigatorContainer > .navtarget, .tw-flex-col .tw-items-end .NodePanelHeader-module_aside__HiElB [aria-label="Ask\ AI\ about\ this\ content"], .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .Button-module_button__-xmQE:has(.WorkspaceAvatar-module_container__bhx0Z), .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5:has(.NodeBreadcrumbs-module_icon__kChhr .WorkspaceAvatar-module_container__bhx0Z), .tw-items-center .BreadcrumbItemWrapper-module_item__xruH5 .Button-module_button__-xmQE:has(.WorkspaceAvatar-module_container__bhx0Z), .navtarget .NodeBreadcrumbs-module_icon__kChhr .ObjectAvatar-module_container__P-mlO :first-child, .tw-flex-col .tw-flex-col .Text-module_text__RqcAw em, .tw-items-center .NodeAsDrilldownElement-module_icon__tpAP0 .ObjectAvatar-module_container__P-mlO :first-child {
-    display: none !important;
-}
 
 .PlainListItem-module_contentWrapper__M5J2E .tw-inline-flex .navtarget .TemplateTag-module_tag__-6Liu {background-color: transparent !important;}
 
@@ -170,10 +161,33 @@ border-radius:3px !important;
     --color-background-neutral: rgba(9, 30, 66, 0.06);
     --color-text: #182A4E;
     --color-text-subtle: #172B4DFF;
+    --color-text-subtlest: #5D697F;
     --color-text-accent-gray: #40506A;
     --font-monospace: "Berkeley Mono";
     --color-background-selected-bold: #004EC2 !important;
 
+}
+
+[class*="Text-module_text"][class*="Text-module_muted"] {
+        color: var(--color-text-subtlest) !important;
+        opacity: 1 !important;
+}
+
+[class*="BreadcrumbButton-module_button"], [class*="BreadcrumbDivider-module_divider"] {
+    color: var(--color-text-subtlest) !important;
+      font-feature-settings: 
+    'cv05' 1,
+    'cv07' 1,
+    'cv08' 1,
+    'cv09' 1,
+    'cv10' 1,
+    'cv11' 1,
+    'ss07' 1,
+    'ss08' 1,
+    'tnum' 0,
+    'zero' 0 !important;
+    font-size: 0.75rem !important;
+    
 }
 
 [data-tag] {
@@ -259,7 +273,7 @@ word-break: normal !important;
     background-color: transparent !important;
 }
 
-[aria-label][class*="Button-module_button"]:not([aria-label*="Show children"]) {
+[aria-label][class*="Button-module_button"]:not([aria-label*="Show children"], [class*="BreadcrumbButton-module_button"]) {
     color: var(--color-text-accent-gray) !important;
 }
 
