@@ -6,12 +6,12 @@
         --root--font-family: "Inter Variable";
         --root--font-size: 90%;
         --root--primary-color: #0084F2;
-        --root--font-smoothing: antialiased;
+        --root--font-smoothing: subpixel-antialiased;
         --heading--font-family: "Bear Sans UI Headline";
         --heading--font-weight: 600;
         /* --heading--color: blue; */
         --checkbox--font-size: 0.8em;
-        --checkbox--checked-color: #0084F2;
+        --checkbox--checked-color: var(--color-background-selected-bold);
         --panel--bg-color: #F2F2F2;
         --colorUITextMuted: #40506A !important; 
         --colorEditorText: #172849 !important;
@@ -25,7 +25,7 @@
     
 }
 
-[data-testid="plain-list-item"] .PlainListItem-module_wrapper__g19B8 .NodeDoneCheckbox-module_container__UsIbz .navtarget {
+[class*="NodeDoneCheckbox-module_container"] .navtarget[aria-checked="false"] {
     background-color: transparent !important;
 border-radius:3px !important;
       box-shadow: inset 0 0 0 1.5px #7E899A;
@@ -167,8 +167,13 @@ border-radius:3px !important;
     }
 
 :root {
-    --color-background-neutral: #091E420F;
+    --color-background-neutral: rgba(9, 30, 66, 0.06);
+    --color-text: #182A4E;
     --color-text-subtle: #172B4DFF;
+    --color-text-accent-gray: #40506A;
+    --font-monospace: "Berkeley Mono";
+    --color-background-selected-bold: #004EC2 !important;
+
 }
 
 [data-tag] {
@@ -187,8 +192,20 @@ border-radius:3px !important;
         padding-block-end: 0px !important;
         padding-block-start: 0px !important;
         padding-top: 1px !important;
-                padding-bottom: 1px !important;
+        padding-bottom: 1px !important;
     }
+}
+
+[class*="NodePanelHeaderTitle-module_tagAndCommandBar"] [data-tag] :is(span) {
+    font-size: 0.85rem !important;
+    padding-inline-end: 0.25rem !important;
+    padding-inline-start: 0.25rem !important;
+    padding-top: 1.5px !important;
+    padding-bottom: 1.5px !important;
+
+
+
+
 }
 
 [class*="TemplateTag-module_tagPrefix"] {
@@ -197,4 +214,254 @@ border-radius:3px !important;
 
 [class*="Checkbox-module_root"][data-state=checked] {
    background-color: var(--checkbox--checked-color) !important;
+}
+
+code {
+    --inlineCode: var(--color-text) !important;
+    --inlineCodeBackground: var(--color-background-neutral) !important;
+    border-width: 0px !important;
+    border-radius: 4px !important;
+    font-family: var(--font-monospace) !important;
+
+border-bottom-style: none !important;
+border-collapse: collapse !important;
+border-left-style: none !important;
+border-right-style: none !important;
+box-decoration-break: clone !important;
+border-top-style: none !important;
+display: inline !important;
+font-feature-settings: normal !important;
+font-kerning: auto !important;
+font-optical-sizing: auto !important;
+font-size-adjust: none !important;
+font-stretch: 100% !important;
+font-style: normal !important;
+font-weight: 400 !important;
+letter-spacing: normal !important;
+overflow-wrap: anywhere !important;
+overflow-x: auto !important;
+overflow-y: auto !important;
+padding-bottom: 0.15rem !important;
+padding-left: 0.45rem !important;
+padding-right: 0.45rem !important;
+padding-top: 0.15rem !important;
+text-transform: none !important;
+text-wrap-mode: wrap !important;
+white-space-collapse: preserve !important;
+word-break: normal !important;
+}
+
+[style*="--bulletColor1: #6b6d8c"] .bullet::after { 
+    --bulletColor1: var(--color-text) !important;
+}
+
+[class*="NodeAsListElement-module_sectionHeading"] > [class*="OutlinerItem-module_bulletWrapper"] .bulletSide > .bullet::after {
+    background-color: transparent !important;
+}
+
+[aria-label][class*="Button-module_button"]:not([aria-label*="Show children"]) {
+    color: var(--color-text-accent-gray) !important;
+}
+
+/* Swap icons on buttons */
+[aria-label*="Go to date"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f133";
+
+  }
+}
+
+[aria-label*="Help"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f059";
+  }
+}
+
+[aria-label*="Options"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f141";
+  }
+}
+
+[aria-label*="Show toolbar"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f141";
+  }
+}
+
+[aria-label*="Supertags"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f02b";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[aria-label="Set up Google Calendar sync"] {
+    display: none !important; 
+}
+
+[aria-label*="Today"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f736";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[class*="UnifiedSidebar-module_buttons"] > div [aria-label*="Open sidebar"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f0c9";
+  font-weight: 700 !important;
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[aria-label*="Inbox"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f01c";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+
+[aria-label*="Previous day"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f053";
+    font-size: 12px !important;
+    
+  }
+}
+
+[aria-label*="Back"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f053";
+        height: 16px !important;
+  width: 16px !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  }
+}
+
+[aria-label*="Forward"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f054";
+        height: 16px !important;
+  width: 16px !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  }
+}
+
+
+[aria-label*="Search"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f002";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[aria-label*="Pinned nodes"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f304";
+  text-align: center !important;
+  height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[aria-label*="Create new"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f055";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+[aria-label*="Workspaces"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f542";
+    height: 16px !important;
+  width: 16px !important;
+    text-align: center !important;
+  }
+}
+
+
+[aria-label*="Next day"][class*="Button-module_button"] {
+  & svg {
+  display: none !important;
+  }
+  &::before {
+  content: "\f054";
+  font-size: 12px !important;
+  }
+}
+
+[data-state="checked"] svg {
+    display: none !important;
+}
+
+span[data-state="checked"]::before {
+  content: "\f00c";
+  font-weight: 700 !important;
+  font-size: 0.75em !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  color: white;
 }
