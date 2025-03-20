@@ -28,6 +28,9 @@
         --font-size-body-small: 0.75rem;
                 --font-weight-body-small: 400;
                 --font-line-height-body-small: 1rem;
+                --font-size-heading-small: 1rem;
+                --font-weight-heading-small: 500;
+                --font-line-height-heading-small: 1.25rem;
     --color-border: #DDDFE5;
     --elevation-color-sunken: #F1F2F4;
                     --colorTooltipBackground: var(--color-background-neutral-bold) !important;
@@ -85,14 +88,50 @@ border-radius:3px !important;
 
 .UnifiedSidebar-module_wrapper__E1Htd .tw-flex-col .UnifiedSidebar-module_nav__eZXP7 .Button-module_ai__3Eg6z {display: none !important;}
 
-.tw-flex-col .tw-flex-col .tw-inline-flex [data-role="editable"] {
+[class*="NodePanelHeaderTitle-module_heading"]:not([class*="WidgetPanel-module_panelHeading"]) {
     color: #172849 !important;
-    font-weight: 650;
+    font-weight: 600 !important;
     font-kerning: auto !important;
     font-optical-sizing: auto !important;
     text-rendering: optimizelegibility !important;
     letter-spacing: -0.7px;
+
 }
+    
+    [class*="WidgetPanel-module_container"] {
+  transition-behavior: normal, normal, normal !important;
+  transition-delay: 0s, 0s, 0s !important;
+  transition-duration: 0.2s, 0.2s, 0.2s !important;
+  transition-property: box-shadow, background, border !important;
+  transition-timing-function: ease, ease, ease !important;
+  border-bottom-left-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px 0px, rgba(9, 30, 66, 0.31) 0px 0px 1px 0px !important;
+  box-sizing: border-box !important;
+    }
+    
+    [class*="WidgetPanel-module_container"]:hover {
+  background-color: var(--ds-surface-raised-hovered, #F1F2F4) !important;
+  box-shadow: var(--ds-shadow-raised, 0px 1px 1px #091E4240, 0px 0px 1px #091E424F) !important;
+}
+
+[class*="WidgetPanel-module_container"]:active {
+  background-color: var(--ds-surface-raised-pressed, #DCDFE4) !important;
+  box-shadow: var(--ds-shadow-raised, 0px 1px 1px #091E4240, 0px 0px 1px #091E424F) !important;
+}
+    
+[class*="WidgetPanel-module_panelHeading"] .listContentItem > div > span {
+            letter-spacing: -0.4px !important;
+
+        font-kerning: auto !important;
+    font-optical-sizing: auto !important;
+    text-rendering: optimizelegibility !important;
+            font-size: var(--font-size-heading-small) !important;
+        line-height: var(--font-line-height-heading-small) !important;
+        font-weight: var(--font-weight-heading-small) !important;
+    }
 
     /* 002. defaults */
     :root {
