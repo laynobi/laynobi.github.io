@@ -1,14 +1,16 @@
+
 /* 000. resets */
 *,::after,::before{box-sizing:border-box!important}html{-moz-text-size-adjust:none!important;-webkit-text-size-adjust:none!important;text-size-adjust:none!important}blockquote,body,dd,dl,figure,h1,h2,h3,h4,p{margin-block-end:0!important}ol[role=list],ul[role=list]{list-style:none!important}body{min-height:100vh!important;line-height:1.5!important}button,h1,h2,h3,h4,input{line-height:1.1!important}h1,h2,h3,h4{text-wrap:balance!important}a:not([class]){text-decoration-skip-ink:auto!important;color:currentColor!important}img,picture{max-width:100%!important;display:block!important}button,input,select,textarea{font-family:inherit!important;font-size:inherit!important}textarea:not([rows]){min-height:10em!important}:target{scroll-margin-block:5ex!important}
 
     /* 001. variables */
     :root {
         --root--font-family: "Inter Variable";
-        --root--font-size: 90%;
+        --root--font-size: 95%;
         --root--primary-color: #0084F2;
         --root--font-smoothing: subpixel-antialiased;
         --heading--font-family: "Bear Sans UI Headline";
         --heading--font-weight: 600;
+
         /* --heading--color: blue; */
         --checkbox--font-size: 0.8em;
         --checkbox--checked-color: var(--color-background-selected-bold);
@@ -20,9 +22,16 @@
         --colorButtonNeutralBackground: #E9EAEB !important;
            --colorPanelBackground: #fff !important;
     --color-icon: #44546F;
+        --color-background-neutral-bold: #44546F;
+        --color-text-neutral-inverse: rgb(255,255,255);
     --color-icon-information: #1E7AFD;
+        --font-size-body-small: 0.75rem;
+                --font-weight-body-small: 400;
+                --font-line-height-body-small: 1rem;
     --color-border: #DDDFE5;
     --elevation-color-sunken: #F1F2F4;
+                    --colorTooltipBackground: var(--color-background-neutral-bold) !important;
+    --colorTooltipText: var(--color-text-neutral-inverse) !important;
     }
 .ContentPositioner-module_container__U6-bf [aria-label$=" day"] {
     color: var(--colorButtonNeutralText) !important;
@@ -35,6 +44,10 @@ border-radius:3px !important;
       box-shadow: inset 0 0 0 1.5px ;
     margin-right: 1ch !important;
 }
+    
+    [class*="NodeDoneCheckbox-module_container"] .navtarget[aria-checked="true"] {
+            margin-right: 1ch !important;
+    }
 
 
 
@@ -542,5 +555,33 @@ display: none !important;
 }
 
 [data-containing-tuple="false"] > [class*="OutlinerItem-module_children"] > div > div:has([data-role="template-children-container"]) {
-
+/* content: "h" */
 }
+
+    .titleFields span {
+        color: var(--color-text-subtlest) !important;
+        font-size: var(--font-size-body-small);
+        line-height: var(--font-line-height-body-small) !important;
+        font-weight: var(--font-weight-body-small) !important;
+    }
+    
+    
+button[aria-label*="ITG"] {
+    color: var(--color-icon-subtlest) !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: background-color 0.2s linear !important;
+    border: none !important;
+}
+
+button[aria-label*="ITG"]:hover {
+    background-color: rgba(9, 30, 66, 0.06) !important;
+}
+
+button[aria-label*="ITG"]:active {
+    background-color: rgba(9, 30, 66, 0.14) !important;
+}
+    
+    
+    
