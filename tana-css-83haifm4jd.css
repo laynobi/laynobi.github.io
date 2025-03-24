@@ -641,3 +641,6 @@ button[aria-label*="ITG"]:active {
 color: var(--color-text-disabled) !important;
     }
     
+div[data-tag-name="task"] {
+    margin-left: -27px !important;
+} 
