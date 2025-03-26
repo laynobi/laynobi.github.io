@@ -651,10 +651,24 @@ div[data-tag-name="task"] {
     margin-left: -27px !important;
 } 
 
+.inlineavatar img {
+    display: inline !important;
+}
+
+:root {
+    --color-link: #0B66E4;
+    --colorLink: var(--color-link) !important;
+    --colorInlineElementText: var(--color-link) !important;
+}
+
+html.inlineRefLinks .inlineelement {
+    border-width: 0px;
+}
+
+
 .titleFields span > i {
     font-family: var(--font-monospace) !important;
     font-style: normal !important;
-    letter-spacing: -0.3ch !important;
-    
+    letter-spacing: -0.2ch !important;
     color: var(--color-text-subtlest) !important;
 }
