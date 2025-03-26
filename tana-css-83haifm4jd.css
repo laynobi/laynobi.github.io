@@ -229,7 +229,7 @@ border-radius:3px !important;
     --color-text-subtlest: #616F86;
     --color-icon-subtlest: #616F86;
     --color-text-accent-gray: #40506A;
-    --font-monospace: "Berkeley Mono";
+    --font-monospace: "TX-02";
     --color-background-selected-bold: #004EC2;
     --color-border-selected: #0D60D9;
 }
@@ -650,3 +650,9 @@ color: var(--color-text-disabled) !important;
 div[data-tag-name="task"] {
     margin-left: -27px !important;
 } 
+
+.titleFields span > i {
+    font-family: var(--font-monospace) !important;
+    font-style: normal !important;
+    color: var(--color-text-subtlest) !important;
+}
