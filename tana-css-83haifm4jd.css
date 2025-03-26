@@ -655,7 +655,7 @@ div[data-tag-name="task"] {
     display: inline-block !important;
     font-size: 0.7rem !important;  
     vertbical-align: middle !important;
-    margin-bottom: 3px !important;
+    margin-bottom: 1px !important;
 }
 
 :root {
