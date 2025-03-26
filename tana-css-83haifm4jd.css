@@ -654,5 +654,7 @@ div[data-tag-name="task"] {
 .titleFields span > i {
     font-family: var(--font-monospace) !important;
     font-style: normal !important;
+    letter-spacing: -0.3ch !important;
+    
     color: var(--color-text-subtlest) !important;
 }
