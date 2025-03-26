@@ -652,7 +652,10 @@ div[data-tag-name="task"] {
 } 
 
 .inlineavatar img {
-    display: inline !important;
+    display: inline-block !important;
+    font-size: 0.7rem !important;  
+    vertbical-align: middle !important;
+    margin-bottom: 3px !important;
 }
 
 :root {
