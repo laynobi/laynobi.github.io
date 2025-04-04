@@ -668,6 +668,16 @@ html.inlineRefLinks .inlineelement {
     border-width: 0px;
 }
 
+/* REMOVE THE GAP AT THE TOP OF THE APP THAT'S DESIGNED FOR THE TITLE BAR */
+[class*="ElectronTitleBar-module_titlebar"] {
+  display: none !important;
+}
+
+/* MAKE THE TOP NAV BAR DRAGGABLE (via @READY) */
+[data-panel-toolbar="true"] {
+  -webkit-app-region: drag !important;
+}
+
 
 .titleFields span > i {
     font-family: var(--font-monospace) !important;
