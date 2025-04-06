@@ -678,6 +678,13 @@ html.inlineRefLinks .inlineelement {
   -webkit-app-region: drag !important;
 }
 
+.EditorPage-module_hasTitleBar__ypZoI .EditorPage-module_layoutAndDocks__j0ILG {
+    height: 98.5vh !important;
+}
+
+.EditorPage-module_mainContent__lp4WA {
+    border-radius: 5px !important;
+}
 
 .titleFields span > i {
     font-family: var(--font-monospace) !important;
